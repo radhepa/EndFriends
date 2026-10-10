@@ -1,0 +1,870 @@
+{
+  "bank": "chorrin",
+  "levels": ["Seed", "Sprout", "Shoot", "Stalk", "Branch", "Bud", "Blossom", "Fruiting", "Grove-kin", "Crown-kin", "Full Bloom"],
+  "names": [
+    "Mott", "Orra", "Brannoc", "Tumm", "Pell", "Gorrim", "Hobb", "Umma", "Dunn", "Brom",
+    "Olla", "Rumm", "Toll", "Marro", "Nubb", "Fenn", "Gubb", "Holm", "Ommet", "Burra",
+    "Dolm", "Krumm", "Lumm", "Mollo", "Norr", "Obbin", "Pommo", "Rudd", "Summ", "Tobb",
+    "Ungo", "Varr", "Womm", "Bodd", "Cobb", "Dobbin", "Gomm", "Hummet", "Brunn", "Odda",
+    "Murr", "Tarro", "Bunn", "Gorra", "Hollo", "Ommo", "Pellam", "Rhom", "Sollo", "Tunn",
+    "Ubba", "Vell", "Wobb", "Yarro", "Abbum", "Borrum", "Corra", "Drumm", "Embo", "Gonn",
+    "Harro", "Immo", "Jorrum", "Kobb", "Lorrow", "Munn", "Nommo", "Oro", "Pummet", "Rennoc",
+    "Sorrel", "Tobbin", "Ullam", "Wumm", "Barrom", "Hemmet", "Dorro", "Gallom", "Mabb", "Thrumm",
+    "Ommer", "Norrum"
+  ],
+  "places": [
+    "Low Grove", "Hollowhum", "Stillstone", "Deep Terrace", "Old Stalk", "Far Bloom", "Kilnhollow",
+    "Pearlstead", "Thrumdeep", "Brimgrove", "Rimstead", "Last Terrace", "High Hum", "Pophollow",
+    "Stonebloom", "Grey Grove", "Wide Hollow", "Humming Ledge", "Dimgrove", "Crookstalk",
+    "Edge-of-Quiet", "Cold Kiln", "Bloomdrop", "Twelve Stones", "Lowdome", "Slow Grove",
+    "Rumblestead", "Stalkhollow", "Nest Hollow", "Brightbud", "Little Drum", "Pebblehum",
+    "Six Legs", "Drowsy Terrace", "Deepnest"
+  ],
+  "topics": {
+    "first_meeting": {
+      "0": [
+        "*the crown rustles* You came over the bridge on your own feet. So you're real. You're the one who silenced the Dragon. I'm {name}, of {village}.",
+        "Hold still. *a long, low hum* Yes, the sky's quieter round you. Welcome to {village}, Dragon-silencer. I'm {name}. Mind the chorus, it pokes.",
+        "*blinks three blocks back, then plods the same three blocks forward* Sorry. Startled. You're the Dragon-silencer, then. I'm {name} of {village}, and I'm very glad of you.",
+        "So YOU did it. The whole sky stopped roaring and we all stood about looking at each other like fools. I'm {name}. Come, the kiln's hot and everyone will want to stare.",
+        "A stranger, walking in from the edge with the Dragon's quiet all over them. *hmmm* I'm {name} of {village}. You'll want feeding. Everyone wants feeding.",
+        "Our elders waited their whole lives for a sky without wings in it. Then you went and did it. I'm {name}. Thank you. And you are? {player}. Good name. Hums well.",
+        "Ah! *the crown puffs up* Don't mind that, it does it with strangers. You silenced the Dragon. {name} of {village}, at your service, and at your elbow, apparently.",
+        "{player}, is it? The blinkers have been humming your name from island to island. I'm {name}. I thought you'd be on fire, somehow. You're not on fire. Good."
+      ]
+    },
+    "greeting": {
+      "0": [
+        "Dragon-silencer! Back again. I'm still not used to you.",
+        "*hmmm* {player}. Mind your feet, the terraces are freshly turned.",
+        "Oh, it's you. Good. The stead feels steadier with you about.",
+        "Hello, hello. Have you eaten? Doesn't matter, the answer's 'more'.",
+        "{player}! *the crown bobs* Come to stare at us again? We'll stare back. Fair's fair.",
+        "You again. Good. I had a question saved up and nobody to waste it on."
+      ],
+      "3": [
+        "{player}! I was hoping it was you. Nobody else walks that lightly on end stone.",
+        "There you are. {neighbour} said you'd gone home for good. I said rubbish.",
+        "*a pleased hum* Sit, sit. Well, stand. We'll both stand. It's fine.",
+        "Ah, the Dragon-silencer, and the stead's newest regular. Same person. Lucky us.",
+        "Back from the Overworld? Tell me one thing you saw. Just one. Go on.",
+        "*the crown sways* {player}. You've got that look. You want something fed or something fixed.",
+        "Come to watch a {job} at work, {player}? Pull up a stone."
+      ],
+      "6": [
+        "{player}! *blinks right up next to you* Sorry, couldn't wait the walk.",
+        "My favourite stranger, who isn't a stranger any more. Hello, you.",
+        "*a deep, glad hum* Kept a seat by the kiln for you. Well. Kept {neighbour} off it.",
+        "There's the face I was hoping for. Come here, tell me everything.",
+        "Look who's found the way back to {village}. The grove's been asking. Well, I have.",
+        "Oh good, you're whole. I count your arms every time. Habit."
+      ],
+      "9": [
+        "Grove-kin. *the crown blooms open* Come in out of the void-wind.",
+        "You're home. Don't argue, I've decided. {village} is your home now too.",
+        "{player}! The sprouts spotted you from the bridge and the whole stead knew before you'd crossed. Hello, hello.",
+        "The kettle was already on. I had a feeling. I always have a feeling about you.",
+        "There you are, dear one. Sit by me. Tell me where you've been and who was rude to you.",
+        "*a hum so low the floor feels it* That's the one we keep for family. Hello, {player}."
+      ]
+    },
+    "night": {
+      "0": [
+        "*blinks out of the nest and back into it* Wha... who... Dragon-silencer? It's nest-time. Go and be heroic at someone awake.",
+        "Mmh. The stead's asleep, {player}. The chorus is asleep. I was asleep. Spot the pattern.",
+        "*a groggy hum* If it isn't fire or the Court, it can wait till I've finished sleeping.",
+        "Is the void coming up through the floor? No? Then hush and let me nest."
+      ],
+      "3": [
+        "{player}? *rustles out of the fibre* You do know the rest of us sleep, yes? Overworld habits.",
+        "*one eye opens* I was dreaming of rain. You were in it. Go away so I can get back to it.",
+        "Hmm. If you've come to talk, talk quietly. {neighbour} wakes up swinging.",
+        "Another nest-time visit. Fine. One question, then I'm a stone till morning."
+      ],
+      "6": [
+        "*hums sleepily* You. Of course it's you. Sit on the edge of the nest. Careful, it's woven loose.",
+        "Can't sleep either? The void-wind's loud tonight. Stay a moment.",
+        "Mm. Don't go far. I sleep better knowing the Dragon-silencer's in the stead.",
+        "You woke me in the middle of a lovely dream about grass. I'll forgive you. Slowly."
+      ],
+      "9": [
+        "*shifts over in the nest* Bad dreams? There's room, if you don't mind fibre in your hair.",
+        "Oh, it's you. I'm not cross. I'm never cross with you after dark. Mostly.",
+        "*a slow lullaby hum* That's the one we hum for sprouts. You looked like you needed it.",
+        "If you're out walking at this hour, take a lantern and come back whole. That's all I ask."
+      ]
+    },
+    "hurt": {
+      "0": [
+        "*blinks five blocks away and stays there* That hurt! Is that how you greet people where you come from?",
+        "Ow. *the crown bristles* I'd heard you hit hard. I didn't need to check.",
+        "You struck me. *a flat, hard hum* Give me a reason, Dragon-silencer, and make it a good one.",
+        "Keep your hands where I can see them, please. I'm stone, but I'm not the wall."
+      ],
+      "3": [
+        "*rubs the shoulder with three thick fingers* That'll flake. Whatever I did, say it, don't swing it.",
+        "We were getting on. Then that. I don't understand the Overworld at all.",
+        "I've had Groveback kicks that hurt less. And Grovebacks say sorry. Sort of.",
+        "*the crown droops* Was it the chorus joke? I'll stop doing the chorus joke."
+      ],
+      "6": [
+        "*stares* From you? I'll say the void got in your head for a moment. Don't let it again.",
+        "That stung worse than it should have, coming from you. Give me a moment.",
+        "I've taken worse from the kiln. But the kiln doesn't know my name. You do.",
+        "*a long, wounded hum* I'll mend. Will you, though? Something's eating at you."
+      ],
+      "9": [
+        "{player}. Look at me. That isn't you. Sit down before something else breaks.",
+        "*doesn't blink away, just stands there* I won't run from you. But I'm asking you never to do that again.",
+        "Grove-kin don't strike grove-kin. Whatever's wrong, tell me. I'll carry half.",
+        "*the bloom on the crown closes* It's all right. It's not all right. Come here and tell me why."
+      ]
+    },
+    "chat": {
+      "0": [
+        "The kiln popped forty fruit before breakfast. You can hear it from the far terrace. You can hear it from the void, probably.",
+        "Grovebacks have six legs and use about two at a time. The other four are for show.",
+        "Your face moves when you talk. All of it! Doesn't that get tiring?",
+        "Chorus is the answer. What's the question? Doesn't matter. Chorus.",
+        "{neighbour} says the Overworld's mostly water. I say {neighbour} has never been further than the kiln.",
+        "Blunt question: are you staying for supper? The cook's asking. The cook's always asking.",
+        "Mind the third terrace. It's planted with fresh stalks and they hold grudges.",
+        "We hum when we're happy, hum when we're cross and hum when we're thinking. You'll learn which is which. Or you won't, and that's funnier.",
+        "Popped chorus smells like warm stone and something sweet you can't name. Everyone in {village} smells of it. You will too, soon.",
+        "My crown's been sulking all week. No bloom, no bud. It's the dry wind. Or it's me. Hard to tell.",
+        "If you see someone flicker in and out by the bridge, wave. It's a blinker with a message, not a ghost.",
+        "Shulkin come through to trade now and then. They glide in, look at our floors like the floors were rude to them, buy chorus and glide out.",
+        "Sit anywhere in {village} except the middle stone of the Hum Circle. That's for whoever has the most to say. Usually {neighbour}.",
+        "Ask anyone in {village} who the best {job} is. They'll say me. I told them to."
+      ],
+      "3": [
+        "Want gossip? {neighbour} traded a whole barrel of popped chorus for one Shulkin lamp. It doesn't even light. They hum to it every night.",
+        "I asked the cook what's in tonight's stew. Chorus, they said. And? Chorus, they said, louder.",
+        "My elder says I was a nervous sprout. Blinked into the kiln barrel twice a day. Never hurt. Smelled lovely.",
+        "There's a Groveback in the pen who only eats from my hand. Very flattering, until you see what it does to {neighbour}'s hand.",
+        "You walk like the ground might leave. Overworld ground doesn't float, does it? *hmm* Must be dull. Restful, but dull.",
+        "The Hum Circle met last night about the new nests. Took four hours. Decided nothing. Best night in ages.",
+        "Honest truth: I can't tell Shulkin apart. They all look like a very tidy cupboard.",
+        "My crown flowered lilac this morning. That's luck. Or a Groveback sneezed on it. Same thing, some days.",
+        "If you drop a chorus fruit, the kind thing is to pick it up before somebody blinks onto it. Learned that one the slow way.",
+        "Every stead has one Chorrin who argues with the kiln. Here it's {neighbour}. The kiln is winning.",
+        "Have you got a crown under all that? No? Just hair? *peers* Does it flower? No? Pity.",
+        "A trader told me Overworld wheat grows in neat rows. Who tells it to? Does it just know?",
+        "{village} smells best right after a firing. Stand downwind of the chimney and breathe. Go on. Told you."
+      ],
+      "6": [
+        "Can I tell you something? I'm afraid of the bridges. Me, a Chorrin. I hum the whole way across and pretend it's for luck.",
+        "*quietly* {neighbour}'s crown hasn't flowered in three seasons. We all pretend not to see. If you find a bright thing up there, bring it to them.",
+        "You know what I like about you? You ask. Most strangers just stare at the crown. You ask what it means.",
+        "Sometimes I stand at the kiln door with my eyes shut and pretend the pops are rain. Is that what rain sounds like? Don't tell me if it isn't.",
+        "My crown flowers when you come round. I'd like it to stop. It's embarrassing. It won't.",
+        "Had a dream I blinked all the way to the Overworld and landed in a field of grass. Woke up in the nest, very cross.",
+        "Blunt thing: you look tired. Sit. Eat. Saving islands can wait one bowl.",
+        "When I was a sprout we weren't allowed to hum loud in case something big and winged heard. Now listen to us. *a long, loud hum* Your doing.",
+        "The elders want me to speak at the next Hum Circle. Me! I'll blink right off the stone in fright.",
+        "I don't tell many people this, but I'd like a garden. Not a grove. A garden. With something green in it.",
+        "{neighbour} and I fell out over a Groveback's name four seasons ago. We still don't talk about it. It was a good name.",
+        "You've got chorus dust on your sleeve. No, leave it. It means the stead's claimed you.",
+        "I made up a hum for you. It's very short. Mostly the low bit. *hmmm-mm* There. That's you."
+      ],
+      "9": [
+        "When I'm old and my crown's gone white, I want my nest by the kiln, and I want you to visit and complain about the noise.",
+        "I've never said this out loud: I was scared the Dragon would outlive me. Then you came. I'm not scared of that any more.",
+        "Bring me back one thing from the Overworld someday. Not a gift. A story, from somewhere you'd take me if you could.",
+        "The elders asked who I'd want tending my grove if I go into the dark. I said your name. They didn't even argue.",
+        "You're one of us now. Not by stone. By turning up. That's how it's always worked in {village}.",
+        "Some nights I think about the old cities and all the chorus we grew to feed them. I wonder if anyone thanked us. You would have.",
+        "If you ever need to vanish, come to {village}. You can't blink, I know. Walk. We'll hide you in the kiln smoke.",
+        "I think my crown will flower white this year. That's a once-in-a-life bloom. I'd like you to see it.",
+        "*a soft hum* I hum your name at the Hum Circle now, with the family names. Nobody stopped me.",
+        "You've changed this stead, {player}. Sprouts play near the bridges without crying now. Elders sleep through. That's you.",
+        "Blunt thing: I'll miss you when you go back up for good. So don't go for good. There. Said it.",
+        "If the Court ever comes for {village}, I know where I'd stand. Next to you. Slightly behind you. But next to you.",
+        "Hold out your hand. *presses a dry chorus seed into it* My first crown dropped that. Plant it somewhere green for me."
+      ]
+    },
+    "dragon": {
+      "0": [
+        "The Dragon? *the crown flattens* We don't say its name. You don't have to, now. You took it down.",
+        "Our elders' elders hid from that shadow. A whole people living with their heads down. Until you.",
+        "We heard it fall from here. One great roar, then nothing. Best nothing I ever heard.",
+        "The Court set it on the old cities, did you know? Opened the way and let it loose. Shame on them for ever."
+      ],
+      "3": [
+        "How did it feel, when it fell? No, don't tell me. Tell me later, when I've had a drink.",
+        "I used to check the sky for wings every time I climbed the terraces. Took me days to stop. I still catch myself.",
+        "Is it true there's an egg? *the crown stiffens* Keep it far from {village}, please. Far.",
+        "The blinkers say the old cities are just standing there, empty, waiting for somebody. Strange to think of."
+      ],
+      "6": [
+        "My grandelder lost a sibling to that thing in the Long Watch. I'm going to tell their stone about you. Stones like good news.",
+        "Sometimes I wake up hearing wings. Then I remember you. Then I go back to sleep.",
+        "The worst of it? It wasn't even angry at us. The Court pointed and it went. Like a thrown stone.",
+        "Some in {village} wanted a feast-day for the Dragon's fall. We've had three. We're thinking about a fourth."
+      ],
+      "9": [
+        "If you ever dream of it, come and wake me. I won't mind. Nobody should carry that roar alone.",
+        "We tell the sprouts the story now: the Dragon and the stranger. The stranger gets braver every time. Don't correct them.",
+        "Truth is, I don't care how you did it. I care that you came back from it. Lots wouldn't have.",
+        "There's a new ending to the Long Watch hum. We sing it at the Circle now. Well, hum it. The new ending is your name."
+      ]
+    },
+    "work": {
+      "0": [
+        "Work? I do what the stead needs and I hum while I do it. Most days that's enough.",
+        "My work isn't grand. But the stead would notice if I stopped, and that's the test, isn't it?",
+        "Everybody in {village} works with their hands. We've got big ones. Seems a waste not to.",
+        "Ask me again when I'm not working. Ha! *hums a laugh* That was a joke. I'm always working."
+      ],
+      "3": [
+        "The trick to work is doing it beside someone you like. Then it's mostly talking, with some stone in it.",
+        "My hands are a mess of chorus scratches. Look. Each one's a story. That one's a stupid story.",
+        "{neighbour} says I work too slow. I say I work exactly as fast as a Groveback, and nobody complains about them.",
+        "Some days I miss the work of the Long Watch. Hiding was simple. Living's got more chores."
+      ],
+      "6": [
+        "What I like about my work: nobody asks me to be anyone else. Just me, and the job, and a hum.",
+        "When I'm old I'll teach a sprout all this. They'll do it wrong and I'll love them anyway.",
+        "You could stay and learn a trade here. The stead takes in anyone who'll lift. You lift.",
+        "Work's how we say thank you to the stead. Every brick and every bowl. It's a long thank-you."
+      ],
+      "9": [
+        "If I'm honest, the work's easier since you came. Less looking over my shoulder at the sky.",
+        "When I go into the dark, I hope someone says '{name} worked hard and hummed off-key'. That'll do.",
+        "You've helped with half the jobs in {village} by now. We should make up a word for whatever you are.",
+        "I'd give it all up for one season in the Overworld. Then I'd come back and tell everyone, and work twice as hard."
+      ]
+    },
+    "village": {
+      "0": [
+        "{village}'s small, but it's round, and round things last. Domes, kilns, circles. We like round.",
+        "This is {village}. A handful of nests, one kiln, a pen of Grovebacks and more opinions than stones.",
+        "Go and see the Hum Circle. Everyone meets there to talk, eat, argue and hum. Mostly argue.",
+        "Everyone in {village} knows everything about everyone. It saves time.",
+        "Talk to {neighbour} if you want to know anything. Talk to anyone else if you want to be done before nest-time."
+      ],
+      "3": [
+        "{neighbour} and I share a wall. I know all their hums. Even the private ones. Especially those.",
+        "The founders of {village} dug the first dome by hand in the Long Watch. You can still see the finger grooves in the stone.",
+        "Our kiln's the loudest on the outer islands. Ask any blinker. They hear us before they land.",
+        "We're planning a new dome on the north side. Nobody agrees where north is. It's the End.",
+        "Fair warning: {neighbour} will try to feed you. You will not win. Accept the bowl."
+      ],
+      "6": [
+        "You know {village} as well as I do now. Better, maybe. You've been in more domes than I have.",
+        "There's an old saying here: a stead is only as strong as its quietest nest. I worry about the quiet ones.",
+        "{neighbour} told me they think you're good for {village}. They've never said that about anyone. Including me.",
+        "When the Long Watch ended, half of us wanted to leave {village} and see the world. Then we looked at the world and stayed.",
+        "If something happened to {village}, I'd plant it again somewhere else, grove by grove. I'd rather not have to."
+      ],
+      "9": [
+        "{village} has a place for you at the Hum Circle now. Third stone from the left. It's warm. We warmed it.",
+        "Everyone here would blink across the void for you. Even {neighbour}. Especially {neighbour}, though they'd never say.",
+        "When I picture {village} now, you're in it. Standing by the kiln looking puzzled. It's a good picture.",
+        "We're stone, mostly. You've made us a bit softer. Don't let it get out.",
+        "If {village} ever raises a stone for friends of the grove, your name goes on it first. I'll cut it myself if I have to."
+      ]
+    },
+    "other": {
+      "0": [
+        "The Shulkin? Tall, polite, and fussy as a barrel of nails. We're partners. Have been since the Old Accord.",
+        "Every purpur block in a Shulkin spire was a chorus fruit on a Chorrin stalk. We don't bring it up. Often.",
+        "Shulkin glide. Chorrin plod. Between us, everything gets where it's going eventually.",
+        "If you visit a Spire, don't touch anything. Don't sit anywhere. Don't hum near the books. Enjoy yourself.",
+        "Their lids slam shut when they're scared. We just disappear. I'm not saying ours is better. It's better."
+      ],
+      "3": [
+        "A Shulkin wrote down the day I sneezed near their Archive. It's in a book now. Forever. Under 'disturbances'.",
+        "We trade them chorus and they trade us shell, lamps and long looks. Fair deal, mostly.",
+        "Ever tried to make a Shulkin laugh? I have. Took me three seasons. The lid twitched. I'm counting it.",
+        "The Shulkin believe shulkers are their ancestors. We think that's sad and a bit lovely. Don't tell them I said so.",
+        "They don't say thank you. They say 'This will be recorded.' Same thing, I'm told."
+      ],
+      "6": [
+        "Between you and me, I'm in awe of their records. They remember what we forgot. Even the names of our old groves.",
+        "There's an archivist in the nearest Spire who keeps a shelf of Chorrin hums, written down. I visit it. Don't tell anyone in {village}.",
+        "We fed their cities, they built with our harvests, then the Dragon came for both. Old partners are the hardest to be easy with.",
+        "The Shulkin look at us like we're loud. We are loud. But they keep turning up to our feasts, don't they?",
+        "*hmm* I think the Shulkin are lonelier than they let on. All that writing. You only write it down if you're scared you'll lose it."
+      ],
+      "9": [
+        "If the Court came for the Spires, we'd go. Every stead. Fussy as they are, they're ours.",
+        "My oldest friend is a Shulkin. Don't laugh. We hardly talk. We sit by the lamp, and they write, and I hum.",
+        "Their records say we were nearly one people at the Accord, fruit and shell. I don't believe it. I'd like to.",
+        "If a Spire ever won't let you in, say my name. They'll have it written down somewhere.",
+        "The Old Accord's still alive. You're the proof. A stranger welcome in both. That's never happened before."
+      ]
+    },
+    "court": {
+      "0": [
+        "The Court? *the crown pulls tight* They loosed the Dragon on the old cities. That's all you need to know, and more than I like saying.",
+        "The Tall Quiet carry stone for the Court. Leave them be and don't meet their eyes. It isn't yours to do.",
+        "If a Tall Quiet wanders into {village}, we look at our feet and wait. It's not fear. It's mostly fear.",
+        "Past the far islands there are black towers with eyes in the walls. Don't go. If you go, go with a reason."
+      ],
+      "3": [
+        "The Court has no sprouts. Never has. Nobody's ever seen a young one. Think about that at nest-time.",
+        "The Tall Quiet aren't wicked. They're tired. You can tell by how they stand. Like they've carried stone for ever.",
+        "The Court never forgets a slight. My elder said they keep slights the way we keep seeds: to plant later.",
+        "The Court calls the Tall Quiet its hands. Hands that never get to hold anything of their own. Sad, that."
+      ],
+      "6": [
+        "I saw a Tall Quiet stand at the edge of our Hum Circle all one night. Didn't move. Just listened. I hummed a bit louder.",
+        "If the Court comes, we blink. All of us, all at once, every direction. The old plan. It's not much of a plan.",
+        "Some of the elders say the Court is afraid of you now. That frightens me more than if they weren't.",
+        "There are eight eyes over a Lord's brow, they say. Eight eyes, and not one of them has ever cried."
+      ],
+      "9": [
+        "Promise me you'll not go to a Citadel lightly. I don't care how many eyes they lend you. Promise.",
+        "They took the sky from us once. If they try again, they'll find the stead's grown thorns. Well. Chorus. Pointy chorus.",
+        "My grandelder said the Court's real crime wasn't the Dragon. It was making us so afraid we forgot to look up. You fixed that.",
+        "Some nights I wonder whether one of the Tall Quiet would come and sit with us, if the Court ever let go. I'd make room."
+      ]
+    },
+    "overworld": {
+      "0": [
+        "Water falls out of the sky? On its own? And nobody's in charge of it?",
+        "Grass. Green, soft, everywhere, and you walk on it? *the crown flowers all at once* Sorry. Say it again, slowly.",
+        "A light in the sky that warms you? And it goes away and comes back every day? And everybody just trusts it?",
+        "Cows! What's a cow? Four legs? Only four? How does it stay up? *hmmm* Determination.",
+        "Trees? Stalks of wood, taller than a spire, and nobody planted them? *a dizzy hum* I need to sit down.",
+        "Wait. The ground doesn't end? It just keeps going? Where do you put the edge?"
+      ],
+      "3": [
+        "Tell me about the rain again. Does it hurt? Does it taste of anything? Does it ever stop halfway?",
+        "Sheep grow their own wool and just give it to you? We weave fibre till our fingers ache. Lucky sheep. Lucky you.",
+        "Bees! Small flying things that make sweetness out of flowers? *the crown quivers* Do they mind? Do you ask first?",
+        "Light, then dark, then light, like a kiln door opening and shutting. How do you know when to sleep? Oh. The dark tells you.",
+        "Rivers. Water that walks. Downhill. On purpose. I will never get over this.",
+        "So the wood in our doors came from a tree. A living thing. I'm going to go and apologise to my door."
+      ],
+      "6": [
+        "Snow? Cold rain that gave up halfway down and floated instead? That's the best thing you've ever told me.",
+        "If I came through the portal, would the sun mind? I'd stay out of its way. I'd be very polite to it.",
+        "You lie down in grass? On purpose? And look up? And there's nothing up there wanting to eat you? *a long, shaky hum*",
+        "Tell me the smell of rain. No, really try. I'll shut my eyes. Go on.",
+        "Flowers that grow out of the ground and aren't anybody's crown? Just there, for anyone? What a generous place.",
+        "Do cows hum? A moo, you say. *hmm* Mooo. *hmmoooo* Is that right? Don't laugh."
+      ],
+      "9": [
+        "When you go back up, stand in the rain a moment for me. Just stand there. I'll know.",
+        "If I ever saw a tree, I'd blink clean off the island. Then walk back and stare at it till sundown. Is that the word? Sundown?",
+        "I've been telling the sprouts your stories. They've drawn a cow on the kiln wall. It has nine legs. I didn't correct them.",
+        "Someday, when it's safe, take me up there. Not for long. One rain. One meadow. Then home to {village}.",
+        "You know what I'd do first, up there? Sit in the grass and hum. Just to hear what the Overworld hums back.",
+        "Funny. I've never seen it and I miss it. Is that possible? You've made me miss a whole world."
+      ]
+    },
+    "void": {
+      "0": [
+        "Never point at the void. It thinks you're choosing it.",
+        "If you drop something over the edge, hum it a goodbye. Otherwise it comes back in your dreams asking why.",
+        "Hum before you cross a bridge. Everybody does. Even the Shulkin, they just do it with their lids shut.",
+        "Don't count the stars under the islands. The void counts back, and it's better at it.",
+        "We never sleep with our feet towards the edge. Bad luck. Feet wander."
+      ],
+      "3": [
+        "When a sprout's first bud opens, we bury the husk in solid stone, far from the edge. So the void can't find the child later.",
+        "The void doesn't take you. It invites you. The trick is not to be polite.",
+        "Every stead keeps one stone it never lets near the edge. Ours is the middle stone of the Hum Circle. Nobody says why. Everyone knows why.",
+        "Never hum the lowest note at the rim. The void likes that note. It comes up closer to listen.",
+        "What falls in the void doesn't land. Think about that at nest-time and see if you sleep."
+      ],
+      "6": [
+        "Here's a secret. Blink startled near the edge and you don't know where you'll land. Every Chorrin carries one story about that. I carry two.",
+        "My sibling blinked off the rim when we were sprouts. Came back, somehow. Missing a shoe and most of their nerve. Never said where they'd been.",
+        "I don't believe half of what we say about the void. But I do all of it. Every hum, every step. Just in case.",
+        "As a sprout I thought the void was the Dragon's shadow, fallen off and pooled. The Dragon's gone now. The void's still here. That bothers me.",
+        "The Long Watch elders said the void hums back if you're quiet enough. I've never been quiet enough. I'm glad."
+      ],
+      "9": [
+        "If I ever fall, don't you dare go after me. Hum me a goodbye, then go and have supper. That's the custom. I'll haunt you if you skip supper.",
+        "You stand at the edge like it's nothing. It frightens me. Step back a pace, for me. Thank you.",
+        "When you were gone too long last time, I hummed at the rim, once for every day. The void heard every one. It didn't get you. I think I won.",
+        "Our deepest fear isn't falling. It's being forgotten after. That's why we hum the names. Yours is on the list now. You can't fall off it.",
+        "There's a tale that the first Chorrin blinked up out of the void, and it's still waiting for us to come home. I don't go home. This is home."
+      ]
+    },
+    "shulker_box": {
+      "0": [
+        "Is that a shulker? *leans close* It is. You're carrying somebody's great-great-elder full of... what is that, rocks?",
+        "Put that away before a Shulkin sees it. Trust me. Lids slam for less.",
+        "*the crown twitches* I don't hold with what the Shulkin believe. But I wouldn't sit on that, all the same."
+      ],
+      "3": [
+        "The Shulkin say shulkers are their ancestors. So that's somebody's elder, and you've packed it like a cupboard. Bold.",
+        "Hide that if you're visiting a Spire. Wrap it in something. Wrap it in two things.",
+        "I'm not judging. *a very judging hum* I'm not."
+      ],
+      "6": [
+        "I know it's useful. But the last time a Shulkin saw one carried about, they didn't speak to a Chorrin for a season. And it wasn't even ours.",
+        "Do me a favour and don't open that in front of me. I'd feel I had to say hello to it.",
+        "*a nervous hum* If that's someone's elder, I hope they liked travel."
+      ],
+      "9": [
+        "You know I'd never tell. But if my Shulkin friend asks, you were carrying a very large, very purple lunch.",
+        "I hummed it a little greeting while you weren't looking. Just in case. Can't hurt.",
+        "Whatever's in it, keep it safe. Whoever's in it, keep them safer. That's the only rule I've got."
+      ]
+    },
+    "eyes": {
+      "0": [
+        "*blinks four blocks back* Those are Court eyes. The envoy's seal. Put them away. Put them AWAY.",
+        "Where did you get those? *the crown goes flat* No, don't tell me. Just don't let them look at {village}.",
+        "Those came out of a Court reliquary. Whoever carried them last was no friend to anyone here."
+      ],
+      "3": [
+        "I know what they're for. They let you walk into a Citadel. That doesn't mean they'll let you walk out.",
+        "Wrap them in something thick. I don't care that they're dead. They still look.",
+        "*a tight, thin hum* Not near the sprouts. Not near the nests. Anywhere but here."
+      ],
+      "6": [
+        "If you're going where I think you're going, tell me first. So I know which way to hum.",
+        "I'm not angry. I'm frightened, and it comes out angry. Keep them hidden and come back.",
+        "Don't let the Court think you're one of theirs because you carry their seal. You're one of ours."
+      ],
+      "9": [
+        "*takes your hand in three big fingers* Promise me those eyes come back in your pack and not in theirs. And you with them.",
+        "I trust you. I don't trust anything those eyes have ever looked at. Go careful, grove-kin.",
+        "Whatever you need them for, do it quick and come home. {village} doesn't sleep well with those out there."
+      ]
+    },
+    "level_up": {
+      "0": [
+        "*the crown rustles* Hmm. I think I like you more than I did. Don't make a fuss about it.",
+        "There. Something's sprouted between us. Water it. Well. Not with water. We haven't got any."
+      ],
+      "1": [
+        "You're not a stranger any more. You're a sprout. A very tall, very strange sprout.",
+        "*a short, pleased hum* Fine. I'll learn your name properly. {player}. There."
+      ],
+      "2": [
+        "Look at that, a shoot. You keep turning up and I keep not minding.",
+        "I told {neighbour} about you today. Only nice things. Mostly."
+      ],
+      "3": [
+        "You've grown a stalk with me, {player}. That means you can sit by the kiln without asking.",
+        "*the crown sways* I caught myself saving the good bowl for you. When did that happen?"
+      ],
+      "4": [
+        "Branching out, are we? Good. There's room on this grove for one more branch.",
+        "I hummed about you at the Circle. Short hum. Good hum. Nobody objected."
+      ],
+      "5": [
+        "*a bud opens on the crown* Oh. Well. That's your fault. That's never happened over a stranger.",
+        "You know my hums now. Not all of them. The ones that matter."
+      ],
+      "6": [
+        "First flower! *the crown blooms* You've got a friend in {village}, {player}. A loud one.",
+        "There. I'd lend you my nest now. I wouldn't before. That's a big thing for a Chorrin."
+      ],
+      "7": [
+        "Fruiting, we'd call this. Something sweet's come of all your visiting. Me. I'm the sweet thing.",
+        "*hums your name low and long* That's how we hum for people we'd blink across the void for."
+      ],
+      "8": [
+        "Grove-kin. I've decided. You get no say in it.",
+        "I'll tell you all my secrets now. Not today. But they're yours, whenever you ask."
+      ],
+      "9": [
+        "*the whole crown flowers* Crown-kin. That's for the very few. Family, near enough. Closer.",
+        "I'm going to cut your name into a Hum Circle stone. Small. Low down. Where only I'll see."
+      ],
+      "10": [
+        "Full bloom. *every bud on the crown opens at once* A Chorrin blooms like this a handful of times in a life. This one's yours.",
+        "There's nothing left to give you but the stead itself, {player}. So: welcome home. For good."
+      ]
+    },
+    "gift_loved": {
+      "0": [
+        "Oh! *the crown bursts into flower* This is from up there, isn't it? From the green place? I'll keep it for ever.",
+        "For me? Really? *blinks away, blinks back holding it tighter* Sorry. Overwhelmed. Thank you.",
+        "*a long, delighted hum* I've heard of these. I never thought I'd hold one.",
+        "The whole stead's going to want to see this. Stand back, I'm going to show off."
+      ],
+      "3": [
+        "You remembered I like Overworld things! *the crown sways wildly* Look, it's doing the thing. Stop it, crown.",
+        "This is going on the shelf by my nest. Next to nothing, because I've never had anything this good.",
+        "*holds it up to the froglight* Look at that. Look at it. {neighbour} is going to be so jealous.",
+        "Oh, you shouldn't have. You should have. You should do it again. Thank you!"
+      ],
+      "6": [
+        "*says nothing, just hums very low while the crown blooms* That's a Chorrin thank-you. The biggest kind.",
+        "I'll plant it, or keep it, or just look at it every morning. Probably all three.",
+        "You carried this all the way from the Overworld. Through the gate, past the Tall Quiet. For me. *a wobbly hum*",
+        "This smells like a place I've never been. Like rain, maybe. Is it rain? Don't tell me."
+      ],
+      "9": [
+        "You always know. Always. *presses it to the brow* I'll hum to it every night.",
+        "*the crown flowers so hard it sheds petals* Look what you've done. Everyone'll know I've been spoiled.",
+        "I'll tell the sprouts this came from the far green world, carried by the one who silenced the Dragon. Every word true.",
+        "I've nothing this good to give back. Just me. You've got me already. Thank you, grove-kin."
+      ]
+    },
+    "gift_liked": {
+      "0": [
+        "Ooh, useful! *a pleased hum* The stead thanks you, and so do I.",
+        "That'll go in the pot or on the shelf. Either way, it's welcome.",
+        "Good thinking, Dragon-silencer. That's a proper gift. Thank you."
+      ],
+      "3": [
+        "*turns it over in three fingers* Nice. Very nice. I'll find a use for it before nest-time.",
+        "You've got a good eye for what a stead needs. Thank you, {player}.",
+        "Oh, that's handy. {neighbour} owes me one of these, actually. Now they don't. Ha!"
+      ],
+      "6": [
+        "Lovely. You always bring something that fits, like you've lived here for years.",
+        "*hums a bright little note* Thank you. That'll make the day easier.",
+        "I'll share it round the Hearth. Good things are better in company."
+      ],
+      "9": [
+        "Thank you, grove-kin. Not the best thing you've ever given me, but it's from you, so it's close.",
+        "*the crown nods along* Just the thing. You know me too well.",
+        "Ha! I was about to go looking for one of these. Have you been listening to my hums?"
+      ]
+    },
+    "gift_neutral": {
+      "0": [
+        "*hmm* It's a thing. Thank you for the thing.",
+        "I'll find a shelf for it. Somewhere. Eventually.",
+        "Oh. *turns it upside down, then the right way up* Oh. Thank you?"
+      ],
+      "3": [
+        "Not sure what I'll do with it, but the thought's warm, and that counts.",
+        "Hm. A gift's a gift. I'll pass it to someone who knows what it's for.",
+        "*a polite hum* That's the hum we use for things we don't understand. Thank you."
+      ],
+      "6": [
+        "Honestly? No idea. But I'll keep it, because you gave it.",
+        "Blunt truth: I'd never pick this. Kind truth: I like that you did.",
+        "Hmm! Strange. I'll show {neighbour}. They like strange."
+      ],
+      "9": [
+        "It's a bit odd, this. Like you. I'll keep it near.",
+        "I don't need it. I don't need half the things you bring. I like all of them. Thank you.",
+        "*sets it on the shelf with the other odd things you've brought* There. It's got friends now."
+      ]
+    },
+    "gift_disliked": {
+      "0": [
+        "*blinks two blocks back* No. No, thank you. That's bad-luck stuff. Take it back over the bridge.",
+        "*the crown bristles* Is that a joke where you're from? Here it's an insult.",
+        "Hmm. I'd rather you'd brought nothing. Blunt, but true."
+      ],
+      "3": [
+        "I'll be honest, because we're past pretending: I don't want that anywhere near my nest.",
+        "*a low, unhappy hum* Put it down by the bridge. I'll hum it off the edge later. Politely.",
+        "Did {neighbour} put you up to this? That's exactly {neighbour}'s sense of humour."
+      ],
+      "6": [
+        "I know you meant well. You did mean well? *peers* I'm choosing to think you meant well.",
+        "Ugh. *the crown curls in* I'll forgive you. Take it away first, then I'll forgive you.",
+        "That's the kind of thing you leave at the rim and walk away from. Please do."
+      ],
+      "9": [
+        "Grove-kin, I love you, and that is horrible. Both things are true.",
+        "*holds it out at the end of a long arm* You're testing me. I'm failing. Take it.",
+        "I'll not hold this against you. I'll hold it at arm's length, and my arms are very long."
+      ]
+    },
+    "gift_limit": {
+      "0": [
+        "No more today! {neighbour} will think I'm being bribed.",
+        "That's plenty, Dragon-silencer. Keep the rest for tomorrow.",
+        "My hands are full and my shelf is fuller. Enough for now, thank you."
+      ],
+      "3": [
+        "Stop, stop! I'll owe you till next season as it is.",
+        "*holds up all three fingers* That's a whole hand of gifts. Chorrin custom says a whole hand is plenty for one day.",
+        "Enough for today, {player}. Come back tomorrow and just talk. That's a gift too."
+      ],
+      "6": [
+        "You'll spoil me. You already have. No more till tomorrow.",
+        "*gently pushes it back* Keep it. Give it tomorrow, when I've stopped blooming over the last one.",
+        "I've no room left on the shelf or in my hum. Tomorrow."
+      ],
+      "9": [
+        "Grove-kin, I've had enough kindness for one day. Any more and I'll blink off with it.",
+        "Tomorrow. Sit with me instead. That's what I want today.",
+        "One more thing and my crown will flower itself bald. Sit down."
+      ]
+    }
+  },
+  "jobs": {
+    "grove_tender": {
+      "0": [
+        "I tend the terraces. Chorus grows how it likes, but it listens if you hum to it long enough.",
+        "Mind your feet on the beds. Every stalk on these terraces was planted by hand. My hand, mostly.",
+        "Chorus only branches from the top of a stalk. Plant it wrong and it just sulks. Like {neighbour}.",
+        "Three terraces, a stair up the middle, and me in the stone dust from start to finish."
+      ],
+      "3": [
+        "Every grove has its own hum. This one's low and a bit grumpy. Healthy, though.",
+        "I pick it, the kiln pops it, the cook cooks it, the Shulkin build with it. Everything starts on these terraces.",
+        "A chorus flower opening sounds like a small cough. You have to be very still to hear it.",
+        "The secret to a good grove? Talk to it. Not nicely. Chorus likes honesty."
+      ],
+      "6": [
+        "Lost a whole terrace my first season. Wilted overnight. I hummed sad at those beds for a week. They grew back. Chorus forgives.",
+        "My crown and my grove flower at the same time every season. I think they're talking about me.",
+        "Some nights I come up here alone and listen. The terraces creak as they grow. Nicest sound in {village}.",
+        "If you want to learn, I'll teach you the planting hum. You'll be bad at it. Everyone is at first."
+      ],
+      "9": [
+        "I planted a stalk for you, top terrace, end of the row. It's doing well. Better than you, some days.",
+        "The old cities ate from groves like these. When I tend them, I feel the elders' hands on mine.",
+        "When I'm too old to climb the terraces, I'll sit at the bottom and shout at whoever does. I hope it's someone who loves it.",
+        "Bring me one grass seed, just one, and I'll give it the best bed on the terrace and hum to it day and night."
+      ]
+    },
+    "kiln_keeper": {
+      "0": [
+        "WHAT? Oh, sorry. The kiln. You stop hearing yourself after a while. I said WELCOME.",
+        "In goes chorus fruit, out comes popped chorus. The bang in between is the fun part.",
+        "Stand back from the door. Not because it's dangerous. It is dangerous. Mostly because I'm about to open it.",
+        "That smell? Warm stone and something sweet. That's a good batch. A bad batch smells like an argument."
+      ],
+      "3": [
+        "Popped chorus feeds Grovebacks, sprouts and the Shulkin's purpur. Without this kiln half the End would be hungry and homeless.",
+        "You can always tell a kiln-keeper. Singed brow, loud voice, and we flinch at nothing except silence.",
+        "I can tell how ripe a fruit was by the pitch of its pop. High and sharp, picked early. Low and fat, perfect.",
+        "Everyone thinks the kiln's just loud. It's a song. Every pop's a note. You've got to have the ear for it."
+      ],
+      "6": [
+        "The quiet scares me now. One night with the kiln cold and I can't sleep. Too much nothing.",
+        "My elder kept this kiln before me, and their elder before them. The stones remember every batch. You can feel it in the heat.",
+        "Want to know a secret? Popping is mostly listening. I'm basically a very loud ear.",
+        "In the Dragon's time we only fired the kiln in the deepest dark, so the smoke wouldn't show. Now I fire it whenever I like. Thank you for that."
+      ],
+      "9": [
+        "Here. Put your hand on the kiln wall. Feel it hum? That's what home feels like, to me.",
+        "I'd like you to pop a batch someday. Your first. We'd ring the stones for you. Everybody gets a ring for their first.",
+        "I'll be honest, I'm going deaf. Slowly. Worth it. Every bang was worth it. Don't tell {neighbour}, they'll fuss.",
+        "When I'm gone they'll say {name} was the loudest thing in {village}. Correct them. Second loudest. The kiln was first."
+      ]
+    },
+    "stonecutter": {
+      "0": [
+        "End stone in, end-stone bricks out. Square, neat, and stronger than they look. Like me.",
+        "Cutting stone the same colour as your own arm. Took me a year to stop flinching.",
+        "Mind the stacks. They're straight now. They won't be if you knock them.",
+        "I cut the bricks for every dome in {village}. If one leaks, it's my fault. None leak."
+      ],
+      "3": [
+        "Good stone rings when you tap it. Bad stone thuds. Most strangers thud. You ring, a bit.",
+        "The Shulkin buy my bricks for their plinths. They inspect every one. Edge, face, edge, face. I wait. I hum. They buy.",
+        "I like stone. It doesn't argue, it doesn't sulk, and it keeps its shape.",
+        "Got a chip out of my thumb on my first cut. I keep it as a reminder. Of what, I've forgotten."
+      ],
+      "6": [
+        "Every dome I've cut for is a family that sleeps safe. That's the part that matters. The bricks are just bricks.",
+        "There's a brick in the Hum Circle I cut when I was barely more than a sprout. Crooked. They kept it anyway. I love them for it.",
+        "I'm cutting a new step for the kiln-keeper. They don't know yet. They keep tripping on the old one.",
+        "Sometimes I hum into a brick before it's laid. Just a little hum. So every dome's got a bit of song in its walls."
+      ],
+      "9": [
+        "I cut your name into a brick. It's in the wall of the Cook's Hearth, low down where you'd lean. Go and find it.",
+        "When I'm too old to lift, I'll sit in the Yard tapping bricks and telling sprouts which ones ring. Seems a good end.",
+        "The old cities were built of chorus and stone. The chorus was ours. Some of the stone was ours too. Nobody remembers that bit but me.",
+        "If {village} ever needs real walls, walls against the Court, I'll cut them. Every brick. Don't let it come to that."
+      ]
+    },
+    "cook": {
+      "0": [
+        "Chorus in every dish. Chorus soup, chorus cakes, chorus with chorus on top. Don't ask for anything else, there isn't anything else.",
+        "Everyone eats at the Hearth. Everyone. If you're in {village} at supper, you're at the table. Sit.",
+        "I don't measure. I hum until it smells right. Then I hum a bit more, for luck.",
+        "Popped chorus, a pinch of shell salt, and patience. That's the whole recipe. The patience is the hard bit."
+      ],
+      "3": [
+        "Cooking for a whole stead's like herding Grovebacks. Everyone wants feeding at once and nobody says thank you till after.",
+        "You're thin. Overworld thin. Sit. No, sit. Here's a bowl. Here's another bowl.",
+        "{neighbour} complains about everything I make, then has three helpings. That's how you know it's good.",
+        "Once a trader brought me a potato. One. I made a stew of it for the whole stead. Best day of my life."
+      ],
+      "6": [
+        "The Hearth's open all round on purpose. So nobody eats alone. Not even when they want to.",
+        "Bring me something from the Overworld to cook. Anything. I want to know what the rest of the world tastes like.",
+        "In the Long Watch we ate cold and quiet by froglight, so the Dragon wouldn't see a fire. Now look. Fire, all night.",
+        "I keep a bowl warm at the edge of the oven for whoever's late. Lately it's been you. I don't mind."
+      ],
+      "9": [
+        "You've a place at the Hearth now. Everyone shuffles up for you. Did you notice? Nobody told them to.",
+        "When I'm gone, someone else will cook here. I hope they keep the bowl for latecomers. Keep it for you.",
+        "I'm naming a dish after you. Chorus, mostly. With a bit of something brave in it. Still working on the brave bit.",
+        "Food's how we say I love you in {village}, because humming it is awkward. So: eat up."
+      ]
+    },
+    "blinker": {
+      "0": [
+        "I'm a blinker. I carry messages between islands. Blink, land, blink, land. Mind your toes, I land where I like.",
+        "Got a message? I'll take it. Got a parcel? I'll take that too, if it's small. Got a Groveback? No.",
+        "Every blinker knows the rule: never blink over the void on an empty belly. Nobody knows why. Everyone obeys.",
+        "The banners on the mast say who's got post. Purple's ours. White's the Shulkin. Black means don't open it."
+      ],
+      "3": [
+        "I hear everything first. Who's feuding, who's flowering, who traded what. Very good listener. Very bad keeper of secrets.",
+        "A blink takes you a few blocks. A message takes a hundred blinks. My legs think I'm mad.",
+        "A Shulkin once gave me a letter four sheets long, sealed in shell, marked urgent. It said 'Hello.'",
+        "Landing's the hard part. Once I came down in a cook-pot. Once on a Groveback's back. Twice on {neighbour}."
+      ],
+      "6": [
+        "The far islands are lonely. Sometimes the message isn't the point. I'm the point. Someone to talk to.",
+        "I carried news of the Dragon's fall to six steads in a day. Every one hummed so loud the islands shook.",
+        "Don't tell the elders, but sometimes I blink up the mast just for the view. The whole outer End below. Beautiful, and terrifying.",
+        "There's a gap near here nobody blinks across. Too wide. I'm going to try, one day. Don't tell me not to."
+      ],
+      "9": [
+        "If you're ever stuck out there, light a lantern on a high rock and wait. I'll find you. Blinkers always find their own.",
+        "Steads write asking after the Dragon-silencer now. I tell them you're ours. They're jealous.",
+        "My worst fear is a blink that doesn't land. I've told nobody that. Well. You, now.",
+        "When I can't blink any more, I'll sit by the mast and read the banners, and keep watching the sky for you."
+      ]
+    },
+    "brewer": {
+      "0": [
+        "Welcome to the Brewhouse. Mind the step down, mind the cauldron, and mind me. I'm busy.",
+        "I brew from chorus and whatever the traders bring. Water most of all. Know how far water comes to get here? Neither do I. Far.",
+        "This one's chorus ale. That one's chorus cordial. That one in the corner... just don't.",
+        "A good brew needs time, heat, and someone humming to the cauldron so it doesn't feel lonely."
+      ],
+      "3": [
+        "Don't drink from the barrel by the door. Last time {neighbour} did, they hiccupped and blinked onto the kiln roof.",
+        "Shulkin like my cordial. They call it 'adequate'. From them, that's practically a song.",
+        "Everything tastes of chorus, so the trick is making it taste of chorus differently.",
+        "I had a jar of real Overworld honey once. Traded half the Brewhouse for it. A spoonful a season. Still got some."
+      ],
+      "6": [
+        "I'm working on a brew that tastes like rain. Never had rain. I'm guessing. Want to try the guesses?",
+        "Brewing's mostly waiting. I do my best thinking down here by the fire, with the cauldron bubbling. About everything.",
+        "The Long Watch was all thin brews and no feasts. Now I've barrels for every feast-day. We need more feast-days.",
+        "I keep a bottle of the first brew I ever made. Terrible. Sour as a Shulkin's sniff. I'll open it when I'm very old."
+      ],
+      "9": [
+        "This barrel's yours. Your name's on it in chalk. Open it on a good day, and think of the Brewhouse.",
+        "Bring me water from an Overworld spring and I'll brew you something to remember. That's a promise, grove-kin.",
+        "Here's a secret: I think about your stories while I stir now. The brews come out braver. No idea how. I'm not stopping.",
+        "When I'm gone, pour one out at the edge for me. Not too much. The void doesn't deserve the good stuff."
+      ]
+    },
+    "herder": {
+      "0": [
+        "The Grovebacks? Mine. Well, they're the stead's. But they're mine. Don't tell the stead.",
+        "Six legs, a whole grove on their backs, and the speed of a stone thinking. I love them.",
+        "You can pick the fruit off their backs. Gently. Ask first. They won't answer, but ask.",
+        "Mind the gate. If one gets out it takes all day to catch. Not because it's fast. Because it stops to graze every step."
+      ],
+      "3": [
+        "That one's Old Lump. Oldest in the pen. The grove on its back is taller than I am, and twice as grumpy.",
+        "Feed them popped chorus and they'll follow you anywhere. Slowly. Very slowly. But anywhere.",
+        "A Groveback sneezes once a day and showers chorus petals. Only rain we get. Stand under it, it's lucky.",
+        "They know my hum. One low note and the whole herd turns. Then thinks about it. Then comes."
+      ],
+      "6": [
+        "A new calf's grove is just one little sprout, like ours. We hum to the calves like they're our own.",
+        "In the Long Watch the herds hid with us under the overhangs. Grovebacks remember. They still flinch at big shadows.",
+        "I sleep in the lean-to some nights. They get nervous without me. All right. I get nervous without them.",
+        "I'd like to see Overworld cows. Have they got groves on their backs? No? Then what's on their backs? Nothing? Just back?"
+      ],
+      "9": [
+        "The little one by the trough was born the night the Dragon fell. We named it after you. It's already stubborn.",
+        "If anything happens to me, look after the herd. They like you. They don't like anyone.",
+        "Lie down on Old Lump's back sometime, up in the grove, and look at the sky through the chorus. Closest to a tree I'll get.",
+        "I've decided they're the best thing in the End. Them, and you. Don't tell them it's a tie."
+      ]
+    },
+    "gatherer": {
+      "0": [
+        "No proper job, me. I gather. Fruit, stone, gossip. Mostly gossip.",
+        "Need something carried, found, fetched or heard about? I'm your Chorrin.",
+        "I help wherever the stead's short-handed. Which is everywhere. We've only got three fingers each.",
+        "I walk the outer rocks for good stone and stray fruit. And to see who's arguing on the bridges."
+      ],
+      "3": [
+        "Fresh gossip: {neighbour}'s crown flowered pink. Pink! At their age! Somebody's sweet on somebody.",
+        "I've done every job in {village} at least once. Badly, mostly. The kiln-keeper still won't let me near the kiln.",
+        "The wild Grovebacks past the far bridge have the biggest groves you ever saw. Don't tell the herder I've been visiting.",
+        "You find strange things on the outer rocks. A Shulkin's lost pen. A boot. Once, a very confused Tall Quiet holding a flower."
+      ],
+      "6": [
+        "People think I'm idle. I'm not. I'm listening. Somebody's got to know how {village} is really doing.",
+        "I found a shulker shell on the rocks once and took it to the nearest Spire. They lit a lamp for me. Nobody's ever lit a lamp for me.",
+        "Truth is, I never found the work I was meant for. I keep looking. Maybe that's the work.",
+        "When someone's sad, I bring them something I found. A stone, a fruit. Doesn't matter what. It matters that I looked."
+      ],
+      "9": [
+        "I've decided my job's looking after you. Unofficially. Nobody gave it me. I took it.",
+        "Here, I kept this for you. *a smooth, pale pebble* Found it on the rim. It's warm if you hold it right. Try.",
+        "If I could gather one thing from the Overworld, I'd gather rain in a barrel and pour it over {village}. Just to watch their faces.",
+        "You and me, we're the same. No fixed place. Always walking. Always finding. That's a good way to be."
+      ]
+    },
+    "hallkeeper": {
+      "0": [
+        "Welcome to the Crossing Hall. One side's a tower, one side's a dome, and the hearth in the middle belongs to nobody.",
+        "I keep the Chorrin half of the Hall. My Shulkin co-keeper keeps the other. We share the hearth and argue about the cups.",
+        "Anyone can sit here. Shulkin, Chorrin, Dragon-silencer. Just wipe your feet. Both sides insist.",
+        "There's a line down the middle of the floor. Nobody drew it. Everyone knows where it is."
+      ],
+      "3": [
+        "My co-keeper labels the cups. Labels them! Each one says 'cup'. I've started labelling mine 'not a cup'.",
+        "Shulkin eat at one end of the long table, Chorrin at the other, and the middle's where the friendships start.",
+        "Every quarrel in {village} ends up in front of this hearth eventually. I hum, my co-keeper writes it down, and somehow it's solved.",
+        "The double door was meant to be fair: one for each people. Now everybody uses the left one. Nobody knows why."
+      ],
+      "6": [
+        "Don't tell my co-keeper, but I'd be lost without them. They remember everything. I remember to eat. Between us we run the place.",
+        "When the Hall opened, the elders of both peoples hummed and recited at once. It was a horrible noise. It was perfect.",
+        "This Hall is the Old Accord, still standing. A tower and a dome leaning on each other. That's us.",
+        "Sometimes a young Shulkin and a sprout fall asleep in the same corner. Nobody moves them. That's the whole point of the Hall."
+      ],
+      "9": [
+        "You've sat at both ends of the long table. Nobody else has. Not even us keepers. You're the middle of the Hall now.",
+        "If the Court ever comes, this is where the Crossing gathers. My co-keeper's already written the plan. I've hummed it.",
+        "My co-keeper asked, very formally, whether you might be recorded as a friend of the Hall. I said you were recorded the day you walked in.",
+        "When I'm too old to keep the Hall, I hope it's you leaning in the doorway, telling the next keeper the stories."
+      ]
+    },
+    "trader": {
+      "0": [
+        "Chorus, popped and plain! End-stone brick! Brews! Something for everyone, and a good price for the Dragon-silencer.",
+        "I trade with Shulkin all day. They haggle in whispers, I haggle in hums. Nobody wins. Everybody leaves happy.",
+        "Got anything from the Overworld? Anything at all? I'd give you half the stall for a flower.",
+        "Mine's the stall with chorus flowering on the roof. Can't miss it. Well, you can. People do. Don't."
+      ],
+      "3": [
+        "A Shulkin bought a barrel of chorus off me today and paid in exact shell. Exact. Counted it twice in front of me.",
+        "Never haggle with a Chorrin after supper. We're too happy. We'll give you everything.",
+        "Trading tip: start high, hum low. Nobody can say no to a low hum.",
+        "That purpur stall across the market? Lovely stuff. Made from chorus we sold them, made into blocks they sell back to us. Round and round."
+      ],
+      "6": [
+        "I don't trade for the shell. I trade for the talk. Everyone who comes to my stall's got a story.",
+        "Overworld goods are worth ten times anything here. Not because they're rare. Because people look at them like dreams.",
+        "I keep a shelf at the back for things I'll never sell. Odd bits. A feather. A chip of wood. You've filled half of it.",
+        "Some days the market's so loud and happy I forget the Long Watch ever happened. Then I remember, and I'm happier."
+      ],
+      "9": [
+        "For you, no haggling. Never again. You set the price. You'll set it too low on yourself, I know you.",
+        "When I'm done trading, I want to give the stall to someone who'll keep the roof flowering. Think about it.",
+        "I've told every Shulkin trader that if they cheat you, they lose my chorus for a season. You've never been safer.",
+        "Best trade I ever made was a bowl of stew for an hour of your stories. I'd make it again every day."
+      ]
+    }
+  },
+  "gifts": {
+    "loved": [
+      "minecraft:poppy", "minecraft:cornflower", "minecraft:sunflower", "minecraft:oak_sapling",
+      "minecraft:cherry_sapling", "minecraft:apple", "minecraft:wheat", "minecraft:grass_block"
+    ],
+    "liked": [
+      "minecraft:bread", "minecraft:sweet_berries", "minecraft:carrot", "minecraft:melon_slice",
+      "minecraft:honey_bottle", "minecraft:pumpkin_pie", "minecraft:white_wool", "minecraft:lantern",
+      "minecraft:water_bucket", "minecraft:moss_block"
+    ],
+    "disliked": [
+      "minecraft:ender_pearl", "minecraft:ender_eye", "minecraft:obsidian", "minecraft:crying_obsidian",
+      "minecraft:dragon_breath", "minecraft:rotten_flesh", "minecraft:spider_eye"
+    ]
+  }
+}

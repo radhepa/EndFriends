@@ -1,0 +1,1372 @@
+{
+  "layout": "crossing_a",
+  "residents": 20,
+  "buildings": [
+    {
+      "building": "market",
+      "people": "shared",
+      "role": "plaza",
+      "job": null,
+      "residents": 0,
+      "turns": 0,
+      "x": -11,
+      "z": -11,
+      "top": 0,
+      "size": [
+        23,
+        12,
+        23
+      ],
+      "spots": [
+        {
+          "kind": "sit",
+          "pos": [
+            -1,
+            1,
+            -2
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            0,
+            1,
+            -2
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            1,
+            1,
+            -2
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -2,
+            1,
+            -1
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            2,
+            1,
+            -1
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -2,
+            1,
+            0
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -2,
+            1,
+            1
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -1,
+            1,
+            2
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            -6,
+            1,
+            -6
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            -6,
+            1,
+            6
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            6,
+            1,
+            -6
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            6,
+            1,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "building": "archive",
+      "people": "shulkin",
+      "role": "work",
+      "job": "archivist",
+      "residents": 0,
+      "turns": 1,
+      "x": -29,
+      "z": -4,
+      "top": 0,
+      "size": [
+        13,
+        26,
+        13
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            -23,
+            1,
+            0
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -24,
+            1,
+            2
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -22,
+            1,
+            1
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            -23,
+            10,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "building": "lamp_tower",
+      "people": "shulkin",
+      "role": "work",
+      "job": "lamplighter",
+      "residents": 0,
+      "turns": 1,
+      "x": -24,
+      "z": -16,
+      "top": 4,
+      "size": [
+        7,
+        34,
+        7
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            -20,
+            29,
+            -13
+          ]
+        }
+      ]
+    },
+    {
+      "building": "spire_home_tall",
+      "people": "shulkin",
+      "role": "home",
+      "job": null,
+      "residents": 3,
+      "turns": 2,
+      "x": -11,
+      "z": -28,
+      "top": 2,
+      "size": [
+        11,
+        30,
+        11
+      ],
+      "spots": [
+        {
+          "kind": "sleep",
+          "pos": [
+            -3,
+            3,
+            -24
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -7,
+            3,
+            -23
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -5,
+            9,
+            -26
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -4,
+            19,
+            -24
+          ]
+        }
+      ]
+    },
+    {
+      "building": "spire_home",
+      "people": "shulkin",
+      "role": "home",
+      "job": null,
+      "residents": 2,
+      "turns": 2,
+      "x": 5,
+      "z": -27,
+      "top": 2,
+      "size": [
+        11,
+        24,
+        11
+      ],
+      "spots": [
+        {
+          "kind": "sleep",
+          "pos": [
+            13,
+            3,
+            -23
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            9,
+            3,
+            -22
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            13,
+            9,
+            -21
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            11,
+            14,
+            -25
+          ]
+        }
+      ]
+    },
+    {
+      "building": "spire_home",
+      "people": "shulkin",
+      "role": "home",
+      "job": null,
+      "residents": 2,
+      "turns": 3,
+      "x": 24,
+      "z": -23,
+      "top": 2,
+      "size": [
+        11,
+        24,
+        11
+      ],
+      "spots": [
+        {
+          "kind": "sleep",
+          "pos": [
+            30,
+            3,
+            -15
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            29,
+            3,
+            -19
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            28,
+            9,
+            -15
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            32,
+            14,
+            -17
+          ]
+        }
+      ]
+    },
+    {
+      "building": "crossing_hall",
+      "people": "shared",
+      "role": "civic",
+      "job": "keeper",
+      "residents": 2,
+      "turns": 3,
+      "x": 37,
+      "z": -7,
+      "top": 1,
+      "size": [
+        19,
+        18,
+        21
+      ],
+      "spots": [
+        {
+          "kind": "sit",
+          "pos": [
+            48,
+            2,
+            11
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            50,
+            2,
+            11
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            48,
+            2,
+            10
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            50,
+            2,
+            10
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            48,
+            2,
+            9
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            50,
+            2,
+            9
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            48,
+            2,
+            8
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            50,
+            2,
+            8
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            48,
+            2,
+            7
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            50,
+            2,
+            7
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            48,
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            50,
+            2,
+            6
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            48,
+            2,
+            0
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            50,
+            2,
+            0
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            48,
+            2,
+            -1
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            50,
+            2,
+            -1
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            48,
+            2,
+            -2
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            50,
+            2,
+            -2
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            48,
+            2,
+            -3
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            50,
+            2,
+            -3
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            48,
+            2,
+            -4
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            50,
+            2,
+            -4
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            48,
+            2,
+            -5
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            50,
+            2,
+            -5
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            52,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            53,
+            2,
+            -4
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            53,
+            2,
+            9
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            52,
+            2,
+            11
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            41,
+            2,
+            8
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            42,
+            2,
+            11
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            44,
+            1,
+            -5
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            41,
+            1,
+            -2
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            45,
+            1,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "building": "trade_stall",
+      "people": "shared",
+      "role": "work",
+      "job": "trader",
+      "residents": 0,
+      "turns": 3,
+      "x": 17,
+      "z": -5,
+      "top": 0,
+      "size": [
+        5,
+        6,
+        7
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            19,
+            1,
+            -2
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            17,
+            1,
+            -2
+          ]
+        }
+      ]
+    },
+    {
+      "building": "trade_stall_awning",
+      "people": "shared",
+      "role": "work",
+      "job": "trader",
+      "residents": 0,
+      "turns": 3,
+      "x": 19,
+      "z": 9,
+      "top": 1,
+      "size": [
+        5,
+        7,
+        7
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            21,
+            2,
+            12
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            19,
+            2,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "building": "popping_kiln",
+      "people": "chorrin",
+      "role": "work",
+      "job": "kiln_keeper",
+      "residents": 0,
+      "turns": 0,
+      "x": 5,
+      "z": 22,
+      "top": 0,
+      "size": [
+        11,
+        15,
+        12
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            10,
+            1,
+            31
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            7,
+            1,
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "building": "cooks_hearth",
+      "people": "chorrin",
+      "role": "civic",
+      "job": "cook",
+      "residents": 0,
+      "turns": 0,
+      "x": 23,
+      "z": 24,
+      "top": 0,
+      "size": [
+        13,
+        14,
+        13
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            29,
+            1,
+            28
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            24,
+            1,
+            29
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            26,
+            1,
+            29
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            24,
+            1,
+            31
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            26,
+            1,
+            31
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            32,
+            1,
+            29
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            34,
+            1,
+            29
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            32,
+            1,
+            31
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            34,
+            1,
+            31
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            28,
+            1,
+            33
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            28,
+            1,
+            35
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            30,
+            1,
+            33
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            30,
+            1,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "building": "dome_home_large",
+      "people": "chorrin",
+      "role": "home",
+      "job": null,
+      "residents": 4,
+      "turns": 0,
+      "x": -20,
+      "z": 18,
+      "top": 1,
+      "size": [
+        16,
+        14,
+        14
+      ],
+      "spots": [
+        {
+          "kind": "sit",
+          "pos": [
+            -18,
+            0,
+            23
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -17,
+            0,
+            22
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -17,
+            0,
+            24
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -17,
+            0,
+            27
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -14,
+            0,
+            28
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -7,
+            0,
+            26
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -7,
+            0,
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "building": "dome_home",
+      "people": "chorrin",
+      "role": "home",
+      "job": null,
+      "residents": 2,
+      "turns": 0,
+      "x": -12,
+      "z": 38,
+      "top": 0,
+      "size": [
+        11,
+        12,
+        12
+      ],
+      "spots": [
+        {
+          "kind": "sleep",
+          "pos": [
+            -9,
+            -1,
+            47
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -5,
+            -1,
+            47
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -10,
+            -1,
+            43
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -10,
+            -1,
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "building": "dome_pair",
+      "people": "chorrin",
+      "role": "home",
+      "job": null,
+      "residents": 5,
+      "turns": 1,
+      "x": -40,
+      "z": 21,
+      "top": 0,
+      "size": [
+        13,
+        12,
+        21
+      ],
+      "spots": [
+        {
+          "kind": "sleep",
+          "pos": [
+            -33,
+            -1,
+            25
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -35,
+            -1,
+            23
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -37,
+            -1,
+            25
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -37,
+            -1,
+            37
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -35,
+            -1,
+            39
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -33,
+            -1,
+            36
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -33,
+            -1,
+            37
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -34,
+            -1,
+            38
+          ]
+        }
+      ]
+    }
+  ],
+  "roster": [
+    {
+      "type": "shulkin_child",
+      "job": "",
+      "home": [
+        -4,
+        19,
+        -24
+      ],
+      "work": [
+        -6,
+        1,
+        -6
+      ]
+    },
+    {
+      "type": "shulkin_child",
+      "job": "",
+      "home": [
+        32,
+        14,
+        -17
+      ],
+      "work": [
+        -6,
+        1,
+        -6
+      ]
+    },
+    {
+      "type": "chorrin_child",
+      "job": "",
+      "home": [
+        -7,
+        0,
+        29
+      ],
+      "work": [
+        -6,
+        1,
+        -6
+      ]
+    },
+    {
+      "type": "chorrin_child",
+      "job": "",
+      "home": [
+        -37,
+        -1,
+        37
+      ],
+      "work": [
+        -6,
+        1,
+        -6
+      ]
+    },
+    {
+      "type": "chorrin_child",
+      "job": "",
+      "home": [
+        -35,
+        -1,
+        39
+      ],
+      "work": [
+        -6,
+        1,
+        -6
+      ]
+    },
+    {
+      "type": "shulkin",
+      "job": "hallkeeper",
+      "home": [
+        42,
+        2,
+        11
+      ],
+      "work": [
+        52,
+        2,
+        3
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "hallkeeper",
+      "home": [
+        44,
+        1,
+        -5
+      ],
+      "work": [
+        52,
+        2,
+        3
+      ]
+    },
+    {
+      "type": "shulkin",
+      "job": "archivist",
+      "home": [
+        11,
+        14,
+        -25
+      ],
+      "work": [
+        -23,
+        1,
+        0
+      ]
+    },
+    {
+      "type": "shulkin",
+      "job": "lamplighter",
+      "home": [
+        13,
+        3,
+        -23
+      ],
+      "work": [
+        -20,
+        29,
+        -13
+      ]
+    },
+    {
+      "type": "shulkin",
+      "job": "trader",
+      "home": [
+        -3,
+        3,
+        -24
+      ],
+      "work": [
+        19,
+        1,
+        -2
+      ]
+    },
+    {
+      "type": "shulkin",
+      "job": "keeper",
+      "home": [
+        -5,
+        9,
+        -26
+      ],
+      "work": [
+        -6,
+        1,
+        -6
+      ]
+    },
+    {
+      "type": "shulkin",
+      "job": "keeper",
+      "home": [
+        30,
+        3,
+        -15
+      ],
+      "work": [
+        -6,
+        1,
+        -6
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "trader",
+      "home": [
+        -5,
+        -1,
+        47
+      ],
+      "work": [
+        21,
+        2,
+        12
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "kiln_keeper",
+      "home": [
+        -14,
+        0,
+        28
+      ],
+      "work": [
+        10,
+        1,
+        31
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "cook",
+      "home": [
+        -17,
+        0,
+        27
+      ],
+      "work": [
+        29,
+        1,
+        28
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "gatherer",
+      "home": [
+        -35,
+        -1,
+        23
+      ],
+      "work": [
+        -6,
+        1,
+        -6
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "gatherer",
+      "home": [
+        -9,
+        -1,
+        47
+      ],
+      "work": [
+        -6,
+        1,
+        -6
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "gatherer",
+      "home": [
+        -33,
+        -1,
+        25
+      ],
+      "work": [
+        -6,
+        1,
+        -6
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "gatherer",
+      "home": [
+        -37,
+        -1,
+        25
+      ],
+      "work": [
+        -6,
+        1,
+        -6
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "gatherer",
+      "home": [
+        -7,
+        0,
+        26
+      ],
+      "work": [
+        -6,
+        1,
+        -6
+      ]
+    }
+  ]
+}

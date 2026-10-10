@@ -1,0 +1,475 @@
+{
+  "bank": "chorrin_child",
+  "topics": {
+    "first_meeting": {
+      "0": [
+        "*blinks right in front of you by accident* WHOA. Sorry! Are you the Dragon one? You ARE! I'm {name}! I'm a sprout! You're really tall!",
+        "Elder {neighbour} said you beat the Dragon with your BARE HANDS. Can I see your hands? Five fingers? That's two more than me! No wonder you won!",
+        "Hello! Hello! I'm {name}! Are you from the Overworld? Is it really GREEN? Is it... *blinks behind you* ...oops, sorry, I do that.",
+        "*peeks out from behind a barrel, sprout first* Are you the Dragon-silencer? You don't look like a story. You look like a person. I'm {name}. Hi.",
+        "You're the stranger everybody's humming about! I'm {name} of {village}! Do you want to see my sprout? It's got TWO leaves now.",
+        "*stares with enormous eyes* ...Did it roar at you? Was it loud? Louder than the kiln? Nothing's louder than the kiln. I'm {name}."
+      ]
+    },
+    "greeting": {
+      "0": [
+        "It's the Dragon one! Hi! HI!",
+        "{player}! Did you bring anything from the Overworld? A rock? A green rock?",
+        "*waves both long arms* Over here! Over HERE!",
+        "Hello, tall stranger! I've got nineteen questions. Twenty. I just thought of another one."
+      ],
+      "3": [
+        "{player}'s back! *blinks a block closer* Oops. Hi!",
+        "I KNEW it was you. You walk funny. Not bad funny. Overworld funny.",
+        "Did you miss me? I missed you. I counted. It was a lot of nest-times.",
+        "Hello! My sprout grew while you were gone, look! No, look closer! See?"
+      ],
+      "6": [
+        "{player}! *runs straight into you* Sorry. Not sorry. HI.",
+        "You came back! I told {neighbour} you would. I bet them my best pebble.",
+        "Best friend! I mean. Hello. Best friend, though.",
+        "*sprout perks right up* There you are! I saved you a seat at the Hearth. I sat on it so nobody'd take it."
+      ],
+      "9": [
+        "*hugs your leg with both long arms* You're HOME!",
+        "{player}, {player}, {player}! I hummed your name all the way here. Did you hear?",
+        "I drew you on the kiln wall! You're the big one with the sword, and the sky's got no Dragon in it.",
+        "You're my favourite grown-up. Don't tell Elder {neighbour}. Actually you can tell them. They know."
+      ]
+    },
+    "night": {
+      "0": [
+        "*blinks out of the nest, then back in* Is it morning? Is it a Dragon? Is it you? It's you. Why?",
+        "Shhh! If the elders hear you they'll say it's my fault. It's always my fault.",
+        "*very sleepy* Mmm... tell me about the sun... no, wait, I'm asleep..."
+      ],
+      "3": [
+        "Are you scared of the dark too? It's all right. The froglights stay on. That's what they're for.",
+        "Can't sleep? Me neither! Want to count Grovebacks? I've got up to six.",
+        "*yawns a long hum* You're the only grown-up who's ever up as late as me."
+      ],
+      "6": [
+        "Tell me a story about the Overworld. With a cow in it. Please? Then I'll sleep. Probably.",
+        "I had a bad dream about the void. Then you came. Now it's a good dream. I think. Am I awake?",
+        "*holds out a corner of the nest* You can sit on this bit. It's the comfy bit. I'm being nice."
+      ],
+      "9": [
+        "Stay till I'm asleep? You don't have to hum. I'll do the humming. *hmm... hmm...*",
+        "I always sleep better when you're in {village}. Elder says it's because the Dragon's scared of you. It's dead, though.",
+        "Night night, {player}. Don't let the void-wind tickle your toes."
+      ]
+    },
+    "hurt": {
+      "0": [
+        "OW! *blinks behind a barrel* That's not a game! That's not a game at ALL!",
+        "*sprout trembles* Why did you do that? I'm only small!",
+        "I'm telling! I'm telling EVERYONE!"
+      ],
+      "3": [
+        "That hurt! I thought we were friends! Were we not friends?",
+        "*a sniffly hum* You're meant to be the Dragon-silencer, not the sprout-whacker!",
+        "If that was a game, I don't like it. I'm making the rules now. Rule one: no hitting."
+      ],
+      "6": [
+        "*rubs a stony elbow* That was mean. You're not mean. So why?",
+        "I'm not crying. Chorrin don't cry. *a wobbly hum* I'm humming.",
+        "I'll forgive you if you say sorry. And give me a piggyback. Mostly the piggyback."
+      ],
+      "9": [
+        "*looks up with huge eyes* Did I do something bad? You can tell me. I'll stop.",
+        "That's not you. You're the nicest one. Are you poorly? Do you need soup?",
+        "I'm still your friend. But you've got to be careful with sprouts. We're only small stone."
+      ]
+    },
+    "chat": {
+      "0": [
+        "Is it true the Overworld has a big hot light that never goes out? Except when it does? How does it know when?",
+        "I can blink! Watch! *blinks two blocks left by accident* That wasn't where I was aiming.",
+        "My sprout's got two leaves. When I'm grown it'll be a whole crown, the biggest in {village}. Bigger than yours. Oh. You haven't got one.",
+        "Have you got a Groveback? What's it called? You haven't GOT one? What do you ride, then?",
+        "The kiln goes BANG, BANG, BANG all day. I can do it too. BANG! *hmm* That one was quieter.",
+        "Elder {neighbour} says I ask too many questions. Is that true? How many is too many? Is this one too many?",
+        "What's your favourite colour? Mine's purple. Everything's purple. That's why it's my favourite.",
+        "How do you hum with that hole in your face? Oh, you don't hum. You TALK. With the hole. That's so weird!",
+        "Do you know any games? I know Tall Quiet Says. You stand still and don't look at anybody. I always lose.",
+        "I'm not allowed near the edge. Or the kiln. Or the brews. Or the Grovebacks' back legs. There's lots I'm not allowed near.",
+        "I found a shiny stone! It's mine. You can look at it. Don't breathe on it.",
+        "How old are you? Are you older than the kiln? The kiln's VERY old."
+      ],
+      "3": [
+        "How many legs do cows have? Only four?! What do they do with the other two spaces?",
+        "I blinked into a barrel of popped chorus yesterday. I came out smelling like the kiln. The cook was SO cross.",
+        "Can you teach me to make faces like you? *scrunches up the whole brow* Is this right? Is this a happy one?",
+        "Elder {neighbour} snores so loud the nest shakes. I put chorus fluff on their crown once. They didn't even wake up!",
+        "When I'm grown I'm going to be a blinker. Or a herder. Or a Dragon-silencer. Is that a job?",
+        "The Grovebacks like me best. The little one lets me sit in its grove. Don't tell the herder.",
+        "Do Overworld sprouts have sprouts? On their heads? What have they got, then? HAIR? Like yours?",
+        "I asked a Shulkin if they had legs under the robe. They shut their lid at me. Is that a yes?",
+        "I'm practising my hum. *a wobbly, high hum* It's meant to be low. It's not low yet.",
+        "If you blink when you sneeze, does that count as blinking? Asking for me.",
+        "{neighbour} says the Dragon was as big as an island. Was it? Was it as big as two?",
+        "I counted all the stones in the Hum Circle. Eight! Then I counted again. Still eight. They never move."
+      ],
+      "6": [
+        "Can I tell you a secret? I'm scared of the Tall Quiet. Even though they never do anything. They just stand there being tall.",
+        "My sprout grew a bud! Look! When it opens, you get to see first. You promised. Well. You're promising now.",
+        "When the elders hum at the Circle I hum too, but quiet, so they can't hear I'm doing it wrong.",
+        "Is the Overworld far? Further than the far bridge? Further than THAT?",
+        "I made you a crown out of dry chorus. It's a bit squashed. I sat on it. It's still a crown.",
+        "I want to go to the Overworld when I'm big. Will you show me where the door is? I won't tell anyone.",
+        "Elder said in the Long Watch nobody was allowed to be loud. I'd have been SO bad at the Long Watch.",
+        "Are you ever scared? You don't look scared. You look like rocks. Nice rocks.",
+        "I tried to blink to the next island. I got halfway. Well, a bit of halfway. Well, one block.",
+        "When you go away, I stand on the tallest stone and look for you. I'm not allowed. I do it anyway.",
+        "I named a pebble after you. It lives in my pouch. It's the bravest pebble.",
+        "Everyone says I'll get a proper crown soon. What if it's ugly? Will you still like me if it's ugly?"
+      ],
+      "9": [
+        "When my crown flowers the first time, I want you there. Elders say it could be any day. Don't go far!",
+        "You're the best grown-up in the whole End. I asked everyone. Well, I told everyone. Same thing.",
+        "When I grow up I'm going to be just like you. But with a crown. And three fingers. And better humming.",
+        "If the Court ever comes, I'll blink in front of you and protect you. I'm practising. I'm up to two blocks.",
+        "I don't have bad dreams any more. Elder says it's because you're here. I say it's because I'm brave. It's both.",
+        "Can I come with you next time? I'll be good. I'll carry things. Small things. I'll carry your pebble.",
+        "I told the new sprout in {village} all about you. They didn't believe me. I'll make them believe.",
+        "*leans on you* You're warm. Overworld people are warm. Did you know? I didn't know.",
+        "I made a hum just for you. Want to hear? *a short, proud hum* That's you. That's your hum now.",
+        "When you're old, I'll be big, and I'll make you soup. That's how it works. Elder said.",
+        "You smell like the outside of everywhere. I like it.",
+        "Will you be here for ever? Say yes. Even if it's a fib. Just say it."
+      ]
+    },
+    "dragon": {
+      "0": [
+        "Did the Dragon breathe fire? Purple fire? Did it get on you? Show me the burns!",
+        "The elders used to say if you're loud the Dragon will hear. Now I can be SO loud. *a very loud hum*",
+        "Was it scary? Were you scared? I'd have blinked away. Then blinked back! Then hit it!"
+      ],
+      "3": [
+        "How did you get to the top of the towers? Did you climb? Did it try to eat you? Did it have bad breath?",
+        "I play Dragon with the other sprouts. I'm always the Dragon. I'm the best at roaring. Sort of roaring.",
+        "Elder {neighbour} said the Court sent the Dragon. Why would anyone do that? That's so mean."
+      ],
+      "6": [
+        "I used to have bad dreams about wings. Now I dream about you with a sword. Much better dream.",
+        "Is the Dragon really, really dead? For ever? Promise?",
+        "If another Dragon comes, will you come back and do it again? You have to say yes."
+      ],
+      "9": [
+        "I told the whole Circle how you did it. I made some bits up. The bits with me in.",
+        "You're braver than a hundred Grovebacks. That's the bravest thing I know.",
+        "Thank you for beating it. Elder says I'm supposed to say that. I mean it, though. Extra."
+      ]
+    },
+    "village": {
+      "0": [
+        "This is {village}! It's the best one. I haven't seen any others, but it's still the best.",
+        "That's my dome! The round one! They're all round. The one with the barrel!",
+        "Elder {neighbour} lives over there. They're grumpy, but they give good stew."
+      ],
+      "3": [
+        "The best hiding spot in {village} is behind the kiln. Don't tell. It's warm and nobody looks.",
+        "There's a crack in a Hum Circle stone shaped like a Groveback. I found it. Nobody believes me.",
+        "Everybody in {village} knows your name now. Even the Grovebacks. Well, maybe not the Grovebacks."
+      ],
+      "6": [
+        "When I'm grown I'll build my own dome right next to the pen, so I can hear the Grovebacks breathing.",
+        "I love {village}. Except at dust-shake time. Everybody has to shake the kiln dust off. I HATE the dust-shake.",
+        "{neighbour} gave me a chorus sweet for helping. I helped by not touching anything."
+      ],
+      "9": [
+        "You belong to {village} now. I decided. And Elder agreed. So it's true.",
+        "If you ever get a dome here, I'll help build it. I'm good at carrying the tiny stones.",
+        "{village} is home. And you're home. So you're in the home. Wait. It makes sense in my head."
+      ]
+    },
+    "other": {
+      "0": [
+        "Shulkin are SO tall. And their heads open! Like a box! Can I open one? No? Why not?",
+        "A Shulkin told me to 'please lower my voice'. So I lowered it. Then I raised it again.",
+        "Shulkin kids have shells! We've got sprouts! We should swap. Just for one day."
+      ],
+      "3": [
+        "I met a Shulkin kid at the market and their lid popped open every time I said boo. BOO! See? You didn't even pop.",
+        "Shulkin write everything down. I told one my Groveback's called Squish. Now it's in a book. FOR EVER.",
+        "Elder says the Shulkin built their towers out of our chorus. So really they're our towers. I'm going to tell them."
+      ],
+      "6": [
+        "My best friend's a Shulkin. Their shell's still soft, and my stone's still smooth. We're soft together.",
+        "Do Shulkin hum? I tried to teach one. They just went 'tink'. That's not humming.",
+        "The Shulkin lamps are SO pretty. I asked for one and they said I had to wait till I was 'of appropriate age'."
+      ],
+      "9": [
+        "When I grow up I'm going to be friends with a Shulkin and a Chorrin and you. All at once. In one Hall.",
+        "A Shulkin archivist let me hold an old shell tablet. I didn't drop it! I nearly dropped it.",
+        "I think the Shulkin are nice underneath. Under the lid. Under the robe. Under all the fussing."
+      ]
+    },
+    "court": {
+      "0": [
+        "A Tall Quiet came near the pen once. We all looked at our feet. I peeked. Just a bit. Don't tell.",
+        "Elders say don't talk about the Court. So I won't. ...What IS the Court?",
+        "The Tall Quiet are SO tall. Taller than Shulkin! Do they ever sit down?"
+      ],
+      "3": [
+        "{neighbour} said if I'm naughty the Court will take me. I asked why they'd want me. They didn't know.",
+        "Do the Tall Quiet have sprouts? Elders said no. Then where do Tall Quiet come from? Nobody will SAY.",
+        "I dreamed about black towers with eyes in the walls. I woke up very fast and very far from the nest."
+      ],
+      "6": [
+        "A Tall Quiet looked at me once. Not in the eye. Just near. It looked sad. Can a Tall Quiet be sad?",
+        "If the Court comes I'm going to blink SO far. Then come back for you. Then blink again.",
+        "The Court sent the Dragon at the old cities. Elder says that's why we never, ever trust them. Never ever."
+      ],
+      "9": [
+        "I'm not scared of the Court when you're here. A bit scared. Less scared.",
+        "If I ever see the Court's eyes, I'll shut mine tight and think about you.",
+        "Maybe one day a Tall Quiet can come to the Hearth and just have supper. That'd be nice. Don't tell the elders I said."
+      ]
+    },
+    "overworld": {
+      "0": [
+        "Water falls DOWN? From UP? Does it land on your head? Does it hurt? Do you get wet?!",
+        "Grass is green and it's EVERYWHERE? And you walk on it? Doesn't it mind?",
+        "A cow! What's a cow? Does it hum? Can I have one? Can I have two?",
+        "The sun is a big light that moves? By itself? Where does it go? Does it get tired?"
+      ],
+      "3": [
+        "Trees are like chorus but big and brown and green? And BIRDS live in them? What's a bird? A flying Groveback?",
+        "Snow is cold rain you can throw? I want to throw rain! At {neighbour}!",
+        "Chickens lay EGGS? And the eggs have chickens in? Is there a chicken in every egg? How do you know?",
+        "Sheep are fluffy and they just let you have the fluff? Do they mind? I'd mind."
+      ],
+      "6": [
+        "If I went to the Overworld I'd roll in the grass. Then roll in the rain. Then roll in the grass again.",
+        "Can you bring me some rain? In a bottle? I'll keep it under the nest.",
+        "Do Overworld sprouts play in rivers? What's a river? Can it catch you?",
+        "I drew the sun on the kiln wall. It's purple because I only had purple."
+      ],
+      "9": [
+        "When I'm big, will you take me to see a cow? Just one cow. Then I'll come home and tell everyone.",
+        "I think about the Overworld every nest-time. Then I dream it. In the dream I've got grass on my head instead of a sprout.",
+        "Promise you'll show me rain one day. Pinky promise. Well. We haven't got pinkies. Three-finger promise.",
+        "Elder says rain is just wet. I think it's more than that. I think it's magic. You'd tell me if it was magic."
+      ]
+    },
+    "void": {
+      "0": [
+        "Don't point at the void! It thinks you're picking it! Put your arm DOWN.",
+        "If you drop something over the edge you've got to hum it goodbye. I dropped a pebble once and hummed for AGES.",
+        "I'm not allowed near the edge. Not even a little bit near. Not even for a look."
+      ],
+      "3": [
+        "{neighbour} says the void is where the stars live, upside down. Is that true? Are the stars scared of falling?",
+        "You've got to hum when you cross a bridge. I hum the WHOLE way. Really loud. So it knows I'm not scared.",
+        "If you look at the void too long, it looks back. I tried. I blinked. By accident. Into the pen."
+      ],
+      "6": [
+        "I dreamed I fell in the void and it was soft. Elder said never dream that again. I can't choose my dreams!",
+        "My cousin blinked near the edge and landed on the other side of {village}. Everyone shouted. It was SO exciting.",
+        "Is there a bottom? There must be a bottom. Everything has a bottom. Doesn't it?"
+      ],
+      "9": [
+        "If I ever start falling, I'll blink back up. I've been practising. You'll catch me if I don't, won't you?",
+        "I'm not scared of the void when I hold your hand. Can I hold your hand? Just till the bridge is done.",
+        "Elders hum names at the edge so the void can't forget them. I hum yours too. So you never get lost."
+      ]
+    },
+    "shulker_box": {
+      "0": [
+        "That's a shulker! Is that a Shulkin's great-great-great-elder? Did you ASK it?",
+        "Ooh, is there a shulker in there? Or is the shulker the box? Which one's which?"
+      ],
+      "3": [
+        "Don't let the Shulkin see that box! They'll go SNAP with their lids. Like this. *claps three fingers shut*",
+        "Can I knock on it? Hello? Anyone home? ...They're shy."
+      ],
+      "6": [
+        "Shulkin say that's somebody's elder. Do you say goodnight to it? You should. It's polite.",
+        "I won't tell the Shulkin you've got it. I'm very good at secrets. Mostly."
+      ],
+      "9": [
+        "If it's an elder in there, tell them I said hello and I'm being good.",
+        "Can I put my pebble in it? So the elder's got a friend?"
+      ]
+    },
+    "eyes": {
+      "0": [
+        "*blinks behind a barrel* Those are COURT eyes! Put them away! They're looking at me!",
+        "Elder says Court eyes see everything! Even in your pack! Even THROUGH your pack!"
+      ],
+      "3": [
+        "Are they dead eyes? They look alive. I don't like how they look alive.",
+        "*hides behind your leg* Don't open the box. Please don't open the box."
+      ],
+      "6": [
+        "Are you going to the black towers? Don't go. Or go fast. And come back faster.",
+        "I'll be brave. I'm being brave right now. My sprout isn't. Look at it shaking."
+      ],
+      "9": [
+        "If you have to go to the Court, take my pebble. It's lucky. It's the bravest pebble, remember?",
+        "Come back with ALL your eyes. Your own ones. Not those ones."
+      ]
+    },
+    "level_up": {
+      "0": [
+        "You're my friend now! I decided! No take-backs!",
+        "*sprout wiggles* I think I like you more today. Is that allowed?"
+      ],
+      "1": [
+        "You can know my secret hiding place now. Not yet. Soon. Next time.",
+        "I'm going to tell everyone you're my friend. Everyone. Even the Grovebacks."
+      ],
+      "3": [
+        "You're my second-best friend now! The first is a Groveback. Sorry. It's a really good Groveback.",
+        "*hums a happy hum* You're allowed to call me {name}. You already do. Keep doing it."
+      ],
+      "5": [
+        "My sprout got a new leaf and it's because of you. Elder says that's not how it works. It is.",
+        "You're my best grown-up friend now. That's a big deal. Bigger than a Groveback."
+      ],
+      "7": [
+        "Best friends! Real best friends! I'm telling the whole Hum Circle. *blinks away, then blinks back* Forgot to say bye.",
+        "I'll share my sweets with you now. Half. Well, some. A sweet."
+      ],
+      "10": [
+        "You're family now. Elder said only family get hummed at nest-time, and I hum you EVERY nest-time.",
+        "When my crown grows, the first flower's yours. That's the biggest promise a sprout can make. I made it."
+      ]
+    },
+    "gift_loved": {
+      "0": [
+        "FOR ME?! *blinks in a circle round you* Sorry! Happy blinks! Thank you!",
+        "WHOA. This is the best thing anyone ever gave me. Ever ever.",
+        "*sprout stands straight up* I love it! I'm going to show EVERYBODY!"
+      ],
+      "3": [
+        "You remembered I like these! I'm keeping it under my nest. For ever!",
+        "This is going in my treasure pile. On top! The very top!",
+        "{neighbour}'s going to be SO jealous. *hums very smugly*"
+      ],
+      "6": [
+        "A best-friend present! I'll never ever lose it. I might lose it. But I won't mean to!",
+        "*hugs it, then hugs you* Thank you, thank you, THANK you.",
+        "Is this from the Overworld? It smells like the Overworld. I think. What does the Overworld smell like?"
+      ],
+      "9": [
+        "You always know what I like. HOW? Are you magic? You're a bit magic.",
+        "*very quiet, for once* ...Thank you. I'm keeping it till I'm old. Older than the kiln.",
+        "When I've got a crown, I'll wear this in it. Promise."
+      ]
+    },
+    "gift_liked": {
+      "0": [
+        "Ooh! Thank you! What does it do?",
+        "For me? Thanks! I'll put it with my pebbles."
+      ],
+      "3": [
+        "That's nice! Not the best. But nice! Thank you!",
+        "*turns it round and round* I like it. I'll find something to do with it."
+      ],
+      "6": [
+        "Thank you! Can I give it to Elder {neighbour}? No, I'll keep it. Thank you!",
+        "Yay! You're good at presents. Almost the best at presents."
+      ],
+      "9": [
+        "Thanks, {player}! You're the best present-bringer in {village}.",
+        "Ooh, I'll use this for a game. You can play too."
+      ]
+    },
+    "gift_neutral": {
+      "0": [
+        "Um. What is it? Is it a toy? It's not a toy.",
+        "Thanks? *sniffs it* It doesn't smell of anything."
+      ],
+      "3": [
+        "Hmm. I'll give it to an elder. Elders like boring things.",
+        "I don't know what this is, but I'll keep it in case it's secretly amazing."
+      ],
+      "6": [
+        "This is a grown-up thing, isn't it? It's got a grown-up look.",
+        "I'll swap it with {neighbour} for something better. Thanks!"
+      ],
+      "9": [
+        "It's a bit boring. But it's from you, so it's not THAT boring.",
+        "I'm going to pretend it's a magic thing. Now it's a magic thing. Thanks!"
+      ]
+    },
+    "gift_disliked": {
+      "0": [
+        "EWW. *blinks two blocks away* Get it away! Get it AWAY!",
+        "Yuck! Is this a trick? Is this an Overworld trick?"
+      ],
+      "3": [
+        "That's gross. Elder says I should say thank you. Thank you. It's gross.",
+        "*holds it at the very end of a long arm* I'll put it... somewhere. Far."
+      ],
+      "6": [
+        "Why would you give me THAT? Is it a joke? It's a bad joke.",
+        "I'm going to bury it behind the kiln. Sorry. Not sorry."
+      ],
+      "9": [
+        "I still like you. I don't like this. Both!",
+        "You're my best friend and this is my worst thing. That's very confusing."
+      ]
+    },
+    "gift_limit": {
+      "0": [
+        "My pouch is full! I can't carry any more. Tomorrow!",
+        "No more! Elder says too many presents makes a sprout spoiled. I'm a bit spoiled already."
+      ],
+      "3": [
+        "That's enough presents! I'm going to burst! Give me more tomorrow!",
+        "*arms full* I've only got two hands! Come back tomorrow!"
+      ],
+      "6": [
+        "Save it for tomorrow! Then I've got something to look forward to!",
+        "If I get one more thing, Elder will make me share. Keep it till tomorrow!"
+      ],
+      "9": [
+        "Tomorrow! Today let's just play instead. Playing's better than presents. Nearly.",
+        "I don't need any more today. I've got you. That's the best present. That was soppy. Sorry."
+      ]
+    },
+    "play": {
+      "0": [
+        "YES! Let's play Hide-and-Blink! You count, I hide. No peeking! No blinking! Well, I can blink. You can't.",
+        "Let's play Tall Quiet Says! Stand still and don't look at me. Ha, you looked! You're out!",
+        "Race you to the Hum Circle! *blinks halfway* That's not cheating! That's just how I run!",
+        "Let's play Kiln Pop! I hide behind the barrel and jump out and go BANG, and you have to jump. Ready?"
+      ],
+      "3": [
+        "Let's play Grovebacks! I'm the Groveback and you pick fruit off me. I'm the slowest Groveback ever.",
+        "You be the Dragon and I'll be you! Roar! Roar louder! Now fall over! Good!",
+        "Stone stack! We stack pebbles. Whoever's stack falls first has to hum the silly hum.",
+        "Let's play Blinkers! I'm the courier and you're the island. Stand very still. I'm delivering a message! It says HI!"
+      ],
+      "6": [
+        "Let's play the Overworld game! You tell me a thing and I act it out. I'm being a cow. Mooo. Is it right?",
+        "Tag! You're it! *blinks across the path* Oh no, I blinked onto the bridge. Elder's going to shout. Keep playing!",
+        "Let's play Long Watch. Everyone hides and the last one found is the bravest. I always get found first. I giggle-hum.",
+        "Let's build a dome out of cushions at the Hearth! The cook won't mind. The cook will mind. Quick, before they see!"
+      ],
+      "9": [
+        "Can we play the one where you lift me up and I'm the tallest Chorrin in {village}? Higher! HIGHER!",
+        "You're the best at playing. Grown-ups usually play badly on purpose. You play badly by accident. It's better.",
+        "Let's play for ever. Or till supper. Supper's nearly for ever.",
+        "Do the Dragon story again! And this time I'm there too, and I help. That's the right way."
+      ]
+    }
+  },
+  "gifts": {
+    "loved": [
+      "minecraft:cookie", "minecraft:snowball", "minecraft:feather", "minecraft:sweet_berries",
+      "minecraft:dandelion", "minecraft:pink_petals"
+    ],
+    "liked": [
+      "minecraft:apple", "minecraft:melon_slice", "minecraft:honey_bottle", "minecraft:string",
+      "minecraft:clay_ball", "minecraft:wheat_seeds", "minecraft:poppy", "minecraft:egg"
+    ],
+    "disliked": [
+      "minecraft:beetroot", "minecraft:spider_eye", "minecraft:rotten_flesh", "minecraft:obsidian",
+      "minecraft:ender_pearl", "minecraft:poisonous_potato"
+    ]
+  }
+}

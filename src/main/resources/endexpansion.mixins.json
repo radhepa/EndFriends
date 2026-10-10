@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "dev.endexpansion.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"ChunkGeneratorDecorationMixin",
+		"EndShipEyesMixin",
+		"VillageFeatureMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

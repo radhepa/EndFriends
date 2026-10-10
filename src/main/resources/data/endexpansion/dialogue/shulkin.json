@@ -1,0 +1,792 @@
+{
+  "bank": "shulkin",
+  "levels": [
+    "Unrecorded",
+    "A Margin Note",
+    "A Footnote",
+    "A Ledger Entry",
+    "Named in Full",
+    "A Page of Your Own",
+    "Cross-Referenced",
+    "Bound in Void-Cloth",
+    "Shelved by the Lamp",
+    "Kept in the Vault",
+    "Lid Open"
+  ],
+  "names": [
+    "Ilvane", "Oseth", "Maerith", "Sovel", "Quillane", "Yselune", "Aurevane", "Lirovel", "Esmereth", "Vaelith",
+    "Orrisane", "Ithelune", "Savelith", "Noravel", "Pellumane", "Calisseth", "Ommerith", "Velunar", "Aussavel", "Thelquane",
+    "Imraveth", "Solavane", "Eruvoth", "Maelisoth", "Quessaril", "Ovellune", "Lussemar", "Irrathane", "Seravain", "Halluvel",
+    "Nimmereth", "Avessoth", "Teluvane", "Ysmerith", "Corrovane", "Elluseth", "Vassamere", "Orvellane", "Rhuvesse", "Silvaneth",
+    "Mirrovel", "Auvessane", "Thessimor", "Quorlane", "Lethuvane", "Ommiseth", "Isquerane", "Vellumere", "Pallisane", "Novaliss",
+    "Eshavane", "Surrimeth", "Olluvane", "Cassimor", "Thirravel", "Uthelis", "Maevolune", "Saphiral", "Illuvoth", "Orravane",
+    "Querrith", "Lanthimere", "Yvessar", "Hesperane", "Ellisoth", "Ruvanel", "Sillumane", "Vespereth", "Tavrelune", "Imbrisane",
+    "Aulvereth", "Neressoth", "Plessaril", "Ismevane", "Corthavel", "Ulvimere", "Sennevoth", "Fallisune", "Quiveth", "Mereliss"
+  ],
+  "places": [
+    "the Ninth Spire", "Highlid", "Lantern Hush", "the Pale Stacks", "Quietgap", "Glasslid", "the Violet Reach", "the Seventh Lid",
+    "Rodlight", "the Open Shell", "Stillgap", "Hollowlamp", "the Leaning Spire", "Lidcrest", "Farlight", "the Twelfth Spire",
+    "Shellhaven", "the Lantern Isles", "Gapwatch", "Ledgerfall", "Ivoryshell", "Lamp's End", "Highgap", "the Old Hinge",
+    "Hingewick", "Starhinge", "Halfshut", "Mantlespire", "the Fourth Gap", "Rayhollow", "Candlespire", "the Crooked Spire",
+    "Lidwake", "Margin's Rest", "Silverhinge", "Vellum Reach", "the Long Ledger", "Driftrest"
+  ],
+  "topics": {
+    "first_meeting": {
+      "0": [
+        "So you are {player}. The one who silenced the Dragon. I am {name}, and I have been waiting some while to say that sentence to someone's face.",
+        "Stand still a moment, please. I want to remember exactly how the Dragon-slayer looked on the day they came to {village}. Shorter than expected. Noted.",
+        "{player}. The Archive has kept a page for you since the night the Dragon fell silent. It is blank, of course. You haven't done anything here yet.",
+        "Welcome to {village}. I am {name}, of a lamp I will name for you when I know you better. You killed the Dragon. We have been meaning to thank someone for that.",
+        "*the lid rises slowly; a pale face, two violet eyes, a long look* Forgive me. We all wondered what the Dragon's ending would look like. It looks like you, apparently.",
+        "We felt it when the Dragon went quiet. Every lid in the Spire opened at once. The sound was extraordinary. I am {name}. You are very welcome here.",
+        "The bridges told us someone was coming. Bridges don't talk, before you ask. They creak, and we know every creak by heart. Yours was new. Welcome, {player}.",
+        "A visitor from beyond the gateways. Our first in some centuries. Do forgive the staring; we are out of practice, and we were never very good at it."
+      ]
+    },
+    "greeting": {
+      "0": [
+        "{player}. Present and noted.",
+        "*the lid tilts up a polite finger's width* Dragon-slayer.",
+        "Ah. You again. The ink has barely dried on the last time.",
+        "Good lamp to you, {player}.",
+        "You have business with me? I will make room in the margin.",
+        "{name}, at your service. Within reason, and within the bylaws."
+      ],
+      "3": [
+        "{player}. You've void-dust on your sleeves again. Do brush off before the Archive sees you.",
+        "Back again. I have started a second page. Don't let it go to your head.",
+        "You look as if you have been somewhere dangerous. You usually have. Welcome back.",
+        "*the lid opens a little wider than strictly necessary* Ah. It's you.",
+        "Dragon-slayer. No, I'll stop calling you that. {player}, then."
+      ],
+      "6": [
+        "{player}! *the lid flips fully open, then is hastily lowered to a dignified height* Hello.",
+        "There you are. I had a question saved for you, and now I've forgotten it. That never happens.",
+        "Good lamp, friend. The Spire is quieter when you're off island. I have measured it.",
+        "You came back. I always write that down, but I'm starting to expect it."
+      ],
+      "9": [
+        "{player}. Sit, if you like. My lid stays open around you now; I stopped noticing.",
+        "Ah, my favourite entry. The Archive doesn't permit favourites. The Archive can file a complaint.",
+        "There's my friend. I'd been saving up things to tell you. Several pages' worth. Sit down.",
+        "{player}. Good. Everything is where it should be, then."
+      ]
+    },
+    "night": {
+      "0": [
+        "*the lid opens one sliver; a single violet eye* The closed hours, {player}. Nothing here has been urgent since the Dragon, and you saw to that.",
+        "*a muffled voice from inside the shell* ...Who knocks on a sleeper at this hour? Ah. The Dragon-slayer. Of course.",
+        "We sleep curled and shut. A knock on the shell sounds like the whole island knocking. Please don't do it again.",
+        "Is a lamp out? No? Then I am closing again. Good dark, {player}."
+      ],
+      "3": [
+        "*a drowsy click* {player}? At my niche? I hope it's a fire. Not a large one.",
+        "I was dreaming of the old cities again. Tall doors. Someone calling a name I didn't know. ...What was it you wanted?",
+        "Sleep, {player}. Even the Unlidded walk softly in the closed hours. Well. Most of them.",
+        "I'll note the time you woke me. I won't hold it against you. Much."
+      ],
+      "6": [
+        "*the lid lifts, slow and heavy with sleep* It's you. Then it's fine. What is it?",
+        "Can't sleep? The first nights out here, nobody can. The void is so quiet you hear your own shell creak.",
+        "Mm. Sit by the niche if you like. I'll talk until one of us closes.",
+        "Woken by a friend is the second-best way to wake. The best is the lamplighter's bell, because it means nothing went wrong."
+      ],
+      "9": [
+        "*a soft, sleepy laugh from the shell* Only you would. Come, then. Tell me what kept you up.",
+        "I keep a rod lit by my niche now, in case you call. {neighbour} thinks it's for reading. Let them.",
+        "Woken again. I've stopped writing it down. That should tell you something.",
+        "Stay a while. Things are easier to say in the closed hours, with the lid half down."
+      ]
+    },
+    "hurt": {
+      "0": [
+        "*the lid slams shut with a crack like a dropped plate* ...That has been recorded.",
+        "*CLACK* I am closed. I will remain closed. Your conduct has been entered in a column I rarely use.",
+        "Strike a Shulkin and you strike the Archive. We do not forget, {player}. It is rather our whole purpose.",
+        "*from behind a shut lid* I had heard the Dragon-slayer was a guest. The Archive will need a footnote."
+      ],
+      "3": [
+        "*the lid snaps down, then rises a cautious crack* Was that intended? Please say no. I'd like to write 'no'.",
+        "That hurt, {player}. I'm writing it down so that I have to think about it later instead of now.",
+        "*a long, offended silence from inside the shell* ...I am opening again only because staying shut is undignified at my age."
+      ],
+      "6": [
+        "*the lid shuts, trembling* You. Of all of them. ...I'd rather you didn't do that again.",
+        "I know you have killed things larger than me. I didn't think I was on the list.",
+        "*the lid opens slowly* I'll leave it out of the record this once. Don't make me regret the blank line."
+      ],
+      "9": [
+        "*the lid stays shut a long time* ...I forgave you before you asked. That frightens me more than the blow did.",
+        "If something is wrong, {player}, tell me. Don't hit me. I am a very good listener and a very poor drum.",
+        "I closed. I'm sorry; it isn't a choice. Give me a moment and the lid will remember who you are."
+      ]
+    },
+    "chat": {
+      "0": [
+        "Every lamp in {village} has a name and a keeper. When a rod goes out, someone writes down why. The Archive holds eleven shelves of reasons.",
+        "Raw chorus has a way of moving you three steps to the left mid-meal. Formal dinners are eaten popped.",
+        "Mind the edges. The void keeps no records, and it never gives anything back to check them against.",
+        "Our feet do not quite touch the floor. It keeps the purpur clean and the conversation elevated.",
+        "Visitors ask why we write everything down. Because everything else forgets. The void, the stone, the Unlidded. Someone ought to remember.",
+        "The Lamp Court was laid out by a committee of nine. It took them forty years. They agreed on the colour of the tiles at the first sitting.",
+        "You have a great many pockets. In the Spire that would be thought either very practical or very suspicious. The Archive has not decided.",
+        "There is no morning here, and no evening. There are the lit hours and the closed hours, and the lamplighter's bell between them.",
+        "We greet each other by the light: 'good lamp'. In the Long Watch it was 'good watch'. Nobody misses saying that.",
+        "A Shulkin who speaks quickly is either very young or lying. I have been speaking at this pace for two hundred years.",
+        "I've read every record of every visitor to {village}. It took no time at all. The shelf was empty until you.",
+        "Driftrays nest under the bridges. If you hear something like a sail sighing below you, that is them, not the void. Usually.",
+        "Our robes are void-cloth. It is woven in the Loft from threads nobody will explain to me, and I have asked politely for sixty years.",
+        "The shellwrights say purpur remembers the hand that cut it. I say purpur is a block. We have agreed to record both views."
+      ],
+      "3": [
+        "{neighbour} keeps a private ledger of who borrows what. I keep a private ledger of {neighbour}'s ledger. It's healthy, I think.",
+        "I tried to count the stars once. The Archive has the attempt: four volumes, unfinished. The last note says 'they will not hold still'.",
+        "You walk on the ground. All of it, every step, flat-footed. Doesn't it wear you out, all that touching?",
+        "Lamplighters argue about end rods the way you tell me other people argue about weather. I would love to hear one of your arguments.",
+        "First rule of the Archive: write it down. Second: write down who told you. The third is smudged. We've argued about it for a century.",
+        "A Driftray sleeps under my window. I named it Footnote. It has never once come when called. Neither do footnotes.",
+        "Chorus tastes of nothing, yes, but of nothing in eleven distinct ways. The Chorrin can tell them apart. So can I, after a century of effort.",
+        "We have no word for 'bored'. We have a word for 'between entries'. It gets a great deal of use.",
+        "When young ones misbehave, they copy out the Bylaws of the Lamp Court. All of them. Most behave beautifully afterwards. Some become archivists.",
+        "Shells darken with age. Mine was the colour of popped chorus once. Now it's the colour of a bruise, which my elder calls 'distinguished'.",
+        "The islands don't drift. But stand on a bridge long enough and you start to suspect them.",
+        "I like you, {player}, I think. I've written it down very lightly, so it can be rubbed out if need be. It hasn't been.",
+        "You keep asking questions. A good habit. The Archive is mostly questions that someone, once, bothered to answer."
+      ],
+      "6": [
+        "When my lid first opened, the archivist wrote one word in my record: 'alert'. Underneath, smaller: 'if draughty'. My elders still call me Draughty.",
+        "I lost a friend to the void when I was young. A bridge, a missed step, no ray near enough. I write their name in the margin of every new volume.",
+        "Some nights I read the oldest records, from before the Long Watch. The hand is so calm. They didn't know what was coming. I envy them, and I don't.",
+        "Do you know what I'm afraid of? Not the Crowned. Not the void. An empty shelf. Something happening, and nobody writing it down.",
+        "{neighbour} and I quarrelled once, sixty years ago, over a comma. It still isn't settled. I think we both enjoy it too much.",
+        "When you're off on your travels, I check the bridge lamps more than I need to. I tell myself it's diligence.",
+        "Being Shulkin is mostly patience. We are very good at it. Sometimes I wonder if we are too good at it. We waited out a Dragon, instead of... well.",
+        "The Lid Hall seats three hundred. There are a dozen of us. We still meet there. Nobody suggests a smaller room. It would mean admitting something.",
+        "I used to think the record was the point. Lately I think the point is the person you read it to.",
+        "I once kept my lid shut for nine wakings over a broken promise. Childish. I would do it again. It was very restful.",
+        "You've seen more of the End in a year than I have in my life. I'm not jealous. I've written that down, so it's true.",
+        "There's a page in the Archive with your name on it. It's getting crowded. I've started writing smaller. I don't mind.",
+        "When I was young I wanted to be a wayfinder. Then I sat on a Driftray. It's fine. Not everyone needs to be up."
+      ],
+      "9": [
+        "When I close for the last time, {player}, I'd like you to be told. Not for the record. Just so someone who knew me open knows.",
+        "I've started a private volume. Not for the Archive. Things you've said that made me laugh. It's very thin, but it's mine.",
+        "We say a Shulkin is never alone while their shell is remembered. I never believed it until lately. I think it was about friends all along.",
+        "I read your page aloud in the Nursery. The young ones booed the Dragon and cheered you. Very unprofessional of me. I'd do it again.",
+        "If the Crowned ever come for {village}, the vault key is behind the third lamp. Don't write that down. Ha. Listen to me.",
+        "The lamp I'm named for was lit by a Chorrin, passing through with a cart of chorus. We don't allow that. Nobody has ever asked me. There. Now it's said.",
+        "I used to dream of the old cities as tombs. Since you came I dream of them with the doors open. I don't know what it means. I'm glad of it.",
+        "I used to fear the day the lamps go out. Now I fear the day you don't come back over the bridge. It's a smaller fear. It's worse.",
+        "I've decided something. When the record of {village} is sealed, your name goes on the first page, not the last. The others agreed. Mostly.",
+        "You've changed how I count time. I used to count it in lamps. Now I count it in your visits. That is a very un-Shulkin thing to admit.",
+        "Everyone who ever lived in {village} is in the Archive. Lately I wonder who'll remember me. Then you knock, and I stop wondering.",
+        "I'm old enough to be tired of most things. Not of this. Not of you turning up, dusty and impossible, with a story.",
+        "Sit with me a moment and don't say anything. The lamps are humming. That's all. I wanted someone to hear it with."
+      ]
+    },
+    "dragon": {
+      "0": [
+        "The Dragon circled the old cities for longer than the Archive has shelves. And you silenced it. We are still learning to say that sentence calmly.",
+        "For centuries we hooded our lamps on the side facing the centre, so the Dragon would not see them. Some hoods are still on. Habit is a stubborn shell.",
+        "When it fell, every lamp in the Spire flickered at once. The lamplighters swear they had nothing to do with it.",
+        "We did not fight it. We waited. Shulkin are very good at waiting. The Dragon was very good at not leaving. It was a long contest."
+      ],
+      "3": [
+        "Was it frightened, at the end? Forgive me. The Archive wants to know. So do I, which is less professional.",
+        "My elder's elder saw the Dragon loosed. They wrote one line about it, then nothing for three years. The blank pages are the worst part of the Archive.",
+        "The Crowned loosed it. Remember that, whatever they tell you. The Dragon was only the arrow. The Court drew the bow.",
+        "I'm told some of you bring it back, to fight it again. Please don't. We have only just put the hoods away."
+      ],
+      "6": [
+        "I used to dream the Dragon landed on our Lamp Tower and simply looked at me. I haven't had that dream since you came. I wanted you to know.",
+        "You fought it with the crystals burning and the Unlidded watching. Alone. I couldn't have. I've thought about that a great deal.",
+        "The Archive calls you 'the one who silenced the Dragon'. I call you {player}. I'm told that's irregular. Let them tell me."
+      ],
+      "9": [
+        "Sometimes I'm almost sorry for it. Bound to the Court, circling an empty city for an age. Is that strange? You're the only one I'd say it to.",
+        "When the Dragon died, we lost the thing we were waiting out. Some of us don't know what to wait for now. I wait for your visits.",
+        "If it ever came back, I'd want to be standing next to you. Not behind. Next to. Write that down for me; I'm too frightened to."
+      ]
+    },
+    "work": {
+      "0": [
+        "Work? I am between offices. The Lid Hall assures me this is an honour. I assure the Lid Hall that it is not.",
+        "I keep the Spire's general record. That is, I notice things. It is a calling with no robe and very poor pay.",
+        "I help where I'm needed. Mostly I'm needed to hold the other end of things.",
+        "The shellwrights have promised me an apprenticeship. They promised it in a very slow voice."
+      ],
+      "3": [
+        "I tally the chorus deliveries from the Chorrin. Never late, never on time. They come when the fruit is ready, and the fruit won't be hurried.",
+        "Unofficially, I tell the lamplighter which rods flicker. Officially, I'm a nuisance.",
+        "I polish the Eye in the Lamp Court tiles. Every tile, every lit hour. It doesn't need it. Someone ought to do it anyway."
+      ],
+      "6": [
+        "Honestly, {player}? I've never found the work that fits. Everyone else's lamp burns a certain colour. Mine just burns.",
+        "I sat a year at the archivist's elbow and a year at the weaver's loom. I was adequate at both. 'Adequate' is in my record twice.",
+        "Perhaps my work is to remember the people who do the work. Someone has to keep the keepers."
+      ],
+      "9": [
+        "I think my work now is being your friend in {village}. Unpaid, unrecorded, and the best office I've held.",
+        "If you ask for nothing, they forget to give you a post, and you get to talk to visitors. That's my whole secret.",
+        "When you leave, I go to the Roost and watch the gaps until you're past them. If that's a job, I'm very good at it."
+      ]
+    },
+    "village": {
+      "0": [
+        "This island has held {village} since the Long Watch began. The bridges came later. The first generation simply did not visit each other.",
+        "Every building here is shaped like a shell: a body, a glowing gap, a lid. We build what we are. It saves on explanations.",
+        "The Lamp Tower stands tallest because light carries furthest from high up, and the dark is where the Unlidded walk in.",
+        "A Lid Hall, an Archive, a Nursery and a great many stairs. Mind the bridges. The rails are recent and nobody fully trusts them.",
+        "You'll want to meet {neighbour}. Everyone does, eventually. It's quicker than trying to avoid them."
+      ],
+      "3": [
+        "{neighbour} has borrowed my second-best lamp hook for eleven years. The Archive holds the receipt. I bring it up at every festival.",
+        "We are small here, but very well documented. You could find out what anyone ate on any lit hour of the last century. Nobody ever wants to.",
+        "The Nursery is the loudest place in {village}. Young lids pop open at everything. It sounds like a kiln full of chorus.",
+        "We voted on the bridge rails. It took a decade. Meanwhile three people fell. Two were caught by Driftrays. The rails won."
+      ],
+      "6": [
+        "{neighbour} pretends not to like you. They asked me three questions about you since the last bell. That's three more than they ask about anyone.",
+        "I know every creak in {village}. Lately there's a new one: yours, coming over the east bridge. I listen for it.",
+        "I've seen three lamplighters retire here. Each one said the rods were dimmer than in their day. Each one was right, slightly."
+      ],
+      "9": [
+        "If {village} ever has to move, I've listed what to carry. The Archive, the young ones, the lamps. You're on it. Don't argue; it's in ink.",
+        "When I'm gone, {neighbour} will keep my shelf. I've asked them to keep a page free for you. They grumbled. That's a yes.",
+        "The whole of {village} has decided you're one of us, as much as anyone without a lid can be. There was no vote. Everyone simply started setting a place."
+      ]
+    },
+    "other": {
+      "0": [
+        "The Chorrin? Our oldest partners. Every wall here is purpur, purpur is popped chorus, and the chorus was theirs. We built our cities out of their harvests.",
+        "They hum instead of speaking. You get used to it. After a century you start humming back by accident, which they find hilarious.",
+        "We call it the Old Accord: we built, they grew. Then the Dragon came, and the Accord became a correspondence.",
+        "They blink away when startled. Vanish, and turn up a few steps over. We slam our lids. Every people has its dignity."
+      ],
+      "3": [
+        "Chorrin are warm and blunt and loud. Shulkin are cool and careful and quiet. Put us in a room and it's either a feast or a treaty dispute.",
+        "I like them. Quietly. Say it aloud and they hug you, and they're made of stone, and I'm made of shell. A bad combination.",
+        "They never write anything down. They remember in songs. I've tried to record the songs. They change them on purpose, I'm sure of it.",
+        "A Chorrin once asked what I keep in my shell. I said 'myself'. They laughed for an hour. I still don't know what was funny."
+      ],
+      "6": [
+        "We're equals now. Partners. The record says so. But it also remembers that, in the old cities, they lived on the lower floors. Some of them remember too.",
+        "When the Dragon came, the Chorrin hid our young in their groves. The Archive has the names. I read them every year. They don't know we do that.",
+        "I'm wary of them, a little. They're wary of us. That's honest, at least. The Crowned are never wary; they're certain. I'll take honest."
+      ],
+      "9": [
+        "My oldest friend was a Chorrin. They went quiet mid-hum, at a kiln, laughing at some joke of mine. I've never dared tell it again.",
+        "If you're ever in a Stead, tell them {name} of {village} sends formal regards. They'll know what that means. It means warm ones.",
+        "The Old Accord was more than trade. Our walls were their harvests; their songs had our lamps in them. I'd like to see that again before I close."
+      ]
+    },
+    "court": {
+      "0": [
+        "The Crowned rule the Unlidded and, they believe, everything else. We disagree, quietly, from a great distance.",
+        "Do not meet the eyes of the Unlidded. It is not rude to them. It is an offence against their masters, and their masters keep long records too.",
+        "The Unlidded haul stone for the Court. That is why they carry blocks about. Nobody ever told them they could stop.",
+        "We do not speak of the Crowned after the bell. It is not superstition. It is caution with a long memory."
+      ],
+      "3": [
+        "The Crowned loosed the Dragon on our cities, then sent envoys to explain why it was our fault. The Archive keeps both accounts. Only one is in good ink.",
+        "A Citadel? Stay away, unless you carry their seal. And if you carry their seal, stay away harder.",
+        "I pity the Unlidded, a little. A life where looking up is a crime. We live in shells, but at least our lids are our own.",
+        "The Court has eight-eyed lords who never sleep. We have lamps that never go out. Draw your own conclusions."
+      ],
+      "6": [
+        "The Crowned won't have forgotten that you killed their Dragon. They forget nothing. In that, and only in that, they're like us.",
+        "An envoy came here once, when I was young. Tall, black, a crown of eyes. It never blinked. Every lid in {village} stayed shut until it left.",
+        "No one has ever seen an Endarch born. The Archive has a whole shelf of guesses. None of them help me sleep."
+      ],
+      "9": [
+        "If the Crowned ever come for you, {player}, come here. We can't fight them. But we can shut the doors, and we are very, very good at shut.",
+        "I'm afraid of the Court. I've never said so aloud. A Shulkin is meant to record fear, not feel it. Well. Now it's recorded.",
+        "Some nights I wonder whether the Unlidded remember being anything else. Whether anyone keeps their records. I hope someone does."
+      ]
+    },
+    "overworld": {
+      "0": [
+        "Water falls from the sky? Unprompted? And nobody records where it lands? I'll need to sit down. Well. Hover lower.",
+        "The ground grows a green carpet by itself, and you walk on it, and it grows back. That sounds exhausting for the carpet.",
+        "A great lamp in the sky that nobody tends? Who trims it? What if it goes out? ...It goes out every evening? And everyone simply lets it?",
+        "Beasts that give drink and are eaten as well? 'Cows'. The Chorrin will be fascinated. I'm merely appalled. Efficiently appalled."
+      ],
+      "3": [
+        "Villages with no lids, trading in green stones, and nobody writes anything down? How do they know what happened yesterday?",
+        "A day and a night that take turns? How does anyone agree what time it is? We barely manage, and we have a bell.",
+        "Wind. Air that moves by itself, and pushes. Tell me more about wind. No, don't. I want to imagine it a while first.",
+        "Trees? Wood that grows upright out of the ground? We have six wooden doors in {village}. Nobody knows where the wood came from. We guard them like treasure."
+      ],
+      "6": [
+        "When you talk about the Overworld, your voice changes. I've noted it. It's how mine sounds when I talk about the old cities.",
+        "Is it true the sky there is blue? Not dark? I tried to imagine it and had to close for an hour.",
+        "Snow. Water that falls slowly, and white, and stays. I asked the weaver for a cloth like it. It's terrible. I love it.",
+        "Does anyone write about you, up there? Someone should. If no one does, I have a spare volume."
+      ],
+      "9": [
+        "Someday I'd like to see rain. Just once. I'd hover in it with my lid wide open and not write a single word.",
+        "You'll go back up one day for good, I suppose. Tell the sun about us. Someone up there should know we kept the lamps lit.",
+        "I've started a shelf for the Overworld. Cows, rain, grass, the sun: everything you've told me. It's the most read shelf in the Archive. The young ones queue."
+      ]
+    },
+    "ancestors": {
+      "0": [
+        "The shulkers in the old cities are our elders. A Shulkin who closes and never opens again leaves a living shell. They are still keeping the doors.",
+        "You'll have met them. They lift strangers into the air. It was always their way of asking someone to leave.",
+        "We don't go to the old cities. It would be like walking through a hall of sleeping relatives with dirty feet.",
+        "They don't speak any more. But now and then they open and look out. We think that's the last thing a Shulkin keeps: the looking."
+      ],
+      "3": [
+        "The old cities were ours. Every tower. When the Dragon came, the eldest closed in the doorways so the rest of us could get away. They're still there.",
+        "Some say the closed ones dream. The Archive is divided. I hope they do. I hope it's of lamps.",
+        "If one of them shot at you, it wasn't personal. Probably. They were guarding something. Probably us.",
+        "There's a word for the moment a lid stops opening. We don't say it. We write it, and then we shut the book for a while."
+      ],
+      "6": [
+        "My elder's elder is up there, I think. In a tower by the ship. I've never gone to see. I'm afraid I'd know the shell.",
+        "When a Shulkin closes for the last time, we light a lamp in their niche and leave it until it fails. Sometimes it takes years. That's the point.",
+        "In the old days the closed were carried to the cities, to keep the doors. Now there's nowhere to carry them. We keep them in the Nursery, with the young."
+      ],
+      "9": [
+        "When I close, {player}, I'd like a view of the gap you cross. So I can keep watch for you. That's what we do, you see. Even after.",
+        "You've walked through their halls. Did they seem at peace? Don't spare me. I've waited all my life to ask someone who's been.",
+        "I think the old ones would have liked you. You opened their cities again. Nobody had for an age. That matters, to a shell."
+      ]
+    },
+    "shulker_box": {
+      "0": [
+        "*the lid lowers to a slit* You are carrying a shell box. Two shells, by the look of it. I will not ask whose. I suspect neither of us would like the answer.",
+        "That box on your back. I'd rather you didn't set it down in the Lamp Court. Or in front of anyone's elders. Which is everywhere.",
+        "Ah. A shulker box. How useful. How very roomy. How... *the lid closes, and does not open for some time*",
+        "I see you've brought luggage. Somebody's great-elder, by the look of the hinge."
+      ],
+      "3": [
+        "You keep your tools in it. Your blocks. Your things. I know. I'm trying not to think of it as a tomb. I'm managing poorly.",
+        "I won't be cross. I'll be formal. Very, very formal. A good lit hour to you, Dragon-slayer, and to your... cargo.",
+        "Please don't open it near me. I couldn't bear the sound. The hinge of a shell sounds exactly the same, you see."
+      ],
+      "6": [
+        "I know you didn't mean anything by it. Up there, a shell is just a shell. Down here it's a grandparent. Both are true, and I hate it.",
+        "Could you at least keep something decent in it? Not dirt. A book, perhaps. A lamp. Something they'd have approved of.",
+        "Whoever they were, they guarded doors. Now they guard your cobblestone. I'm trying to find a dignified way to feel about that."
+      ],
+      "9": [
+        "I've made my peace with your box. Whoever it was, they're travelling now. They've seen more of the world than any of us. Perhaps that's not a bad ending.",
+        "Bring it here. Let me... *three thin fingers rest on the lid, very lightly* There. I said hello. Carry them carefully.",
+        "If my shell ends up in a box one day, I hope it's yours. I mean that kindly. You'd take me somewhere worth seeing."
+      ]
+    },
+    "eyes": {
+      "0": [
+        "*the lid slams shut* Those are the Crowned's eyes. Their envoys carried them. Put them away. Please. Further away than that.",
+        "Where did you get that reliquary? No. Don't tell me. If I don't know, I can't be made to say.",
+        "Whatever you mean to do with those, do it somewhere that isn't {village}. The Court's eyes see even from inside a jar.",
+        "An envoy's seal. The last time one crossed our bridges, the envoy read us new laws and the Archive gained a shelf of grief."
+      ],
+      "3": [
+        "You'd go to a Citadel with those? Then they'll let you in. That's the worrying part. Getting out is a separate law.",
+        "*the lid hovers, half shut* I trust you. I don't trust anything the Crowned made. Just now those two are standing very close together.",
+        "Taken off a ship, I suppose. The Court's envoys are long gone and their seals still frighten me. That tells you something."
+      ],
+      "6": [
+        "If you're going to the Court, tell me first. I'll want to write down that you went. And then I'll want to write that you came back.",
+        "Keep them wrapped, at least. I don't like to think of them looking at the lamps. Learning the Spire by heart.",
+        "I know why you carry them. You're curious. I'm curious too; that's why I'm frightened. Curious people walk into Citadels."
+      ],
+      "9": [
+        "Come back from the Citadel. That's all I ask. And keep the eyes on you every step, or their guest-law ends where you stand.",
+        "Don't let them keep you. The Court collects things. I would like you to remain uncollected.",
+        "*the lid stays open, though it trembles* I'm not closing. Not with you. Even with those. That's how much you've changed me.",
+        "If they ask about us, tell them nothing. Tell them we're dull. We are, a little. It's our best defence."
+      ]
+    },
+    "level_up": {
+      "0": [
+        "Something has shifted. I'll record it once I've decided what to call it.",
+        "I've moved your entry up the page. A small thing. In the Archive, not a small thing at all."
+      ],
+      "1": [
+        "I've written your name in the margin. Margins are where the Archive keeps the interesting things.",
+        "You've been promoted from 'visitor' to 'returning visitor'. There's no ceremony. I'm holding a small one in my head."
+      ],
+      "2": [
+        "You're a footnote now. Don't look like that. Footnotes are where the truth hides from people who skim.",
+        "I've added a footnote under the Dragon entry. Small print. It says only: 'and then they came back to visit'."
+      ],
+      "3": [
+        "Your name has its own line in my ledger now. Not shared with deliveries or lamp repairs. Its own line.",
+        "*the lid lifts a little higher than before, and stays there* I find I'm less careful around you. Interesting."
+      ],
+      "4": [
+        "I've stopped writing 'the Dragon-slayer'. From now on it's {player}, in full, every time. It takes longer. Worth the ink.",
+        "I told {neighbour} about you without being asked. That has never happened before. They looked alarmed."
+      ],
+      "5": [
+        "I've given you a page of your own. Blank, mostly. I wanted to leave room for whatever comes.",
+        "A whole page, {player}. Most Shulkin wait a century for a page. Don't let it go to your shell. Oh. You haven't one."
+      ],
+      "6": [
+        "You're cross-referenced now. Your page points to mine and mine to yours. In the Archive, that's how you say 'friends'.",
+        "I found you in three other people's records. {neighbour} spelt your name wrong. I've corrected it. Kindly."
+      ],
+      "7": [
+        "I've had your pages bound. Proper void-cloth covers. Don't make a fuss. Or do, a small one; I'd like to see it.",
+        "You've a volume now. A real one, on a real shelf. I keep going to look at it. That's not normal behaviour for me."
+      ],
+      "8": [
+        "I've moved your volume to the shelf by the lamp, where the light is best. Where I can find it in the dark.",
+        "You may call me by my lamp now. Friends do. It was the last lamp in the row, the one that always guttered. Not grand. Mine."
+      ],
+      "9": [
+        "I've moved your volume into the vault, with the oldest records. It's where we keep what we cannot bear to lose.",
+        "Only the oldest records go into the vault. And now yours. The oldest records won't mind. I asked."
+      ],
+      "10": [
+        "*the lid opens all the way and stays there* That's how a Shulkin says it. In words too, if you like: you're dear to me.",
+        "There's nothing left in my records marked 'stranger'. I checked twice. It's all just you, now.",
+        "I don't close around you any more. Not even a little. I'm told that's the last thing a Shulkin gives. Take it; it's yours."
+      ]
+    },
+    "gift_loved": {
+      "0": [
+        "*the lid flies open before it can be stopped* Oh. Oh, that is... thank you. That goes under 'unexpected kindnesses'. It's a short shelf.",
+        "For me? I'll need a moment to compose a proper thanks. ...I'm afraid this is it: thank you, very much indeed.",
+        "Exactly right. How did you know? No, don't say. I'd like it to stay a small mystery."
+      ],
+      "3": [
+        "You remembered. I'm moved, and I'm noting that I'm moved, which is how we weep.",
+        "The finest thing anyone has carried over that bridge in a decade. The bar is low, I admit. You cleared it anyway.",
+        "I'll keep it by my niche, where I can see it when the lid opens."
+      ],
+      "6": [
+        "You know me far too well, {player}. It's becoming a problem. A delightful one.",
+        "*three thin fingers close around it, carefully* I'll write the date on the underside. That's how we keep things.",
+        "When I'm old and closed, they'll find this with me and wonder who gave it. I'll leave a note."
+      ],
+      "9": [
+        "You don't need to bring me things, you know. But I'm so glad you do. I'm so glad.",
+        "Everything you've given me sits on one shelf. I call it your shelf. It's starting to look like a little Spire of its own.",
+        "*the lid opens wide, and stays* I haven't a single formal word left. Thank you, friend."
+      ]
+    },
+    "gift_liked": {
+      "0": [
+        "A gift. How thoughtful. Noted, with a small mark of approval in the margin.",
+        "Thank you. That will be useful. 'Useful' is high praise from a Shulkin; don't let anyone tell you otherwise.",
+        "Kind of you. I'll find it a proper place. We have places for everything, eventually."
+      ],
+      "3": [
+        "Oh, that's nice. Truly. I'll use it, and think of you, and then write down that I thought of you.",
+        "A good choice. Not perfect, but good. Perfect would make me suspicious.",
+        "Thank you, {player}. {neighbour} will be jealous. That's a bonus."
+      ],
+      "6": [
+        "You always find something. I'm grateful, and curious where you found it. Tell me the story later.",
+        "This is lovely. I'll show the young ones; they collect anything that comes from you.",
+        "Small gifts are the best, I think. They fit in a pocket and in a memory."
+      ],
+      "9": [
+        "You needn't have. You did anyway. That's very you, and I'm fond of very you.",
+        "I'll treasure it. Not because of what it is. You know why.",
+        "Another one for your shelf. Thank you, my friend."
+      ]
+    },
+    "gift_neutral": {
+      "0": [
+        "Ah. Thank you. I will... find it a category.",
+        "How kind. I'm not sure what it's for, but I'm sure it's for something.",
+        "Noted. With thanks, and some puzzlement."
+      ],
+      "3": [
+        "Hm. I'll ask the Archive what this is. If the Archive doesn't know, I'll invent something and file it.",
+        "Thank you. I'll keep it until I understand it. It may be a long stay."
+      ],
+      "6": [
+        "It's the thought, {player}. The thought is excellent. The object is... an object.",
+        "I'll find a use for it. Or {neighbour} will. They find a use for everything, sometimes alarmingly."
+      ],
+      "9": [
+        "Whatever this is, you brought it, so I'll keep it. That's the rule now.",
+        "I've no idea what to do with it, and I love that you thought I would."
+      ]
+    },
+    "gift_disliked": {
+      "0": [
+        "*the lid snaps shut* ...I will assume that was a misunderstanding. I am assuming very hard.",
+        "No. Thank you, but no. Please take it back over the bridge. Far back.",
+        "That is not an appropriate gift. It is barely an appropriate object."
+      ],
+      "3": [
+        "I'll pretend you didn't offer that, and you'll pretend I didn't see it. Agreed? Good.",
+        "*a long pause* I'm going to need you to put that away. Out of sight of the lamps."
+      ],
+      "6": [
+        "I know you meant no harm. You never do. But no. Not that.",
+        "We don't keep those here, {player}. You couldn't have known. Now you do."
+      ],
+      "9": [
+        "You of all people should know better. ...You did know better, didn't you? You're testing me. I'll be cross later.",
+        "I'll forgive the gift. I won't keep it. Those go on separate shelves."
+      ]
+    },
+    "gift_limit": {
+      "0": [
+        "You are very generous. I am very out of room. After the closed hours, perhaps.",
+        "Enough, please. I've run out of thanks for this lit span, and I'd hate to give you second-hand ones."
+      ],
+      "3": [
+        "No more for now. I'm still writing up the last one.",
+        "That's plenty, {player}. Any more and the Archive will think I'm being bribed."
+      ],
+      "6": [
+        "Save it for after the bell. I like having something to look forward to.",
+        "Enough, enough. My niche is starting to look like a market stall."
+      ],
+      "9": [
+        "Keep it. Just stay and talk instead. That's the gift I'd choose.",
+        "Not one more thing, you impossible person. Sit down."
+      ]
+    }
+  },
+  "jobs": {
+    "archivist": {
+      "0": [
+        "I am an {job}. I keep the Archive: three shells of records stacked one on another. Nothing leaves, nothing is lost, everything is cross-referenced.",
+        "Reading room below, the stacks in the middle, the vault on top. The higher you climb, the older it gets. Like a Shulkin.",
+        "Please don't touch the shelves. Not because you'd damage them. Because I'd have to write down that you touched them.",
+        "Everything that happens in {village} reaches my desk eventually. Namings, closings, quarrels, deliveries. The deliveries are the most exciting."
+      ],
+      "3": [
+        "The oldest record we hold is a list of errands. Chorus, rods, cloth. From before the Long Watch. I find it unbearably moving.",
+        "We keep three copies of everything: one here, one in the vault, one in our heads. The last is the least reliable and the most loved.",
+        "I'm copying out the Long Watch years. Mostly blank. Someone wrote 'still circling' every night for a century. I copy those too.",
+        "You'd be surprised how much of the Archive is arguments about the Archive."
+      ],
+      "6": [
+        "I've started your chapter. It isn't finished; you keep doing things. I've had to rebind it twice.",
+        "There are records in the vault I've never opened. From the day the Dragon was loosed. I'm the {job}. I should. I can't.",
+        "The worst of my work isn't the reading. It's the deciding: what to write, what to leave out. The leaving out is where the lies get in.",
+        "An archivist is never lonely. Everyone who ever lived here is on a shelf. But they don't talk back. You do. I like that."
+      ],
+      "9": [
+        "When I close, someone will have to write my last entry. I'd like it in your hand. Badly spelt and all.",
+        "I'll show you the vault one day. Not the records; the little things tucked into them. Pressed chorus petals. A child's first lid-tracing.",
+        "I've kept one record secret, ever. It's about you. It says you're kind. I didn't want it argued over.",
+        "I used to think the Archive was the most important thing in {village}. Now I think it's what the Archive is for. People. You."
+      ]
+    },
+    "lamplighter": {
+      "0": [
+        "The Unlidded step in wherever it's dark. So I don't allow any dark. That's the whole job, and it's never finished.",
+        "The Lamp Tower is the tallest building in {village}, and I climb it every lit hour. The stair has three hundred steps. I've named most of them.",
+        "If a rod flickers, ring the bell. If a rod goes out, ring it twice. If they all go out, don't bother ringing. Come to me.",
+        "I'm the {job}. I keep the bell too: once for the lit hours, twice for the closed. Nobody has ever asked what three means. I've been waiting."
+      ],
+      "3": [
+        "Each rod has a name. 'Steady'. 'Old Grumble'. 'The One by the Nursery'. I'm not sentimental. I need to tell them apart in the dark.",
+        "In the Long Watch we hooded every lamp that faced the centre. I still check the hoods. They aren't needed now. I check them.",
+        "The Unlidded stand at the edge of the light sometimes, looking in. I don't meet their eyes. I just make the light a little wider.",
+        "End rods hum. You can only hear it at the top of the tower. It sounds like the island thinking."
+      ],
+      "6": [
+        "The lamplighter before me lit the lamp I'm named for. When my lid opened, they put the hook in my hand and said 'don't let them see the dark'.",
+        "Some nights I'm the only one awake in {village}. All those shut lids below me and the whole dark outside. Very lonely. Very beautiful.",
+        "I think about what happens if I miss a rod. Just one. A little dark. And then a tall shape. I don't miss rods.",
+        "Come up the tower with me sometime. On a clear dark you can see all the way to the old cities. Their lamps are out. Every one."
+      ],
+      "9": [
+        "When I close, put an end rod in my niche and leave it lit. I'd like to keep the job a little longer.",
+        "I lit a rod for you on the east bridge. It isn't on the rota. If anyone asks, it's 'maintenance'.",
+        "I'm tired, {player}. A long life of keeping the dark out. Stay up here with me a while. The hours go faster with two.",
+        "You walked into the dark at the centre and killed what lived in it. I've fought the dark one rod at a time. Do you see what that means to me?"
+      ]
+    },
+    "weaver": {
+      "0": [
+        "Void-cloth comes off the looms up in the Loft. Robes, mantles, banners. It drinks light and gives back a little shimmer, like the gaps between stars.",
+        "I'm the {job}. That's my banner on the drying loft. The purple one. They're all purple. Mine is the correct purple.",
+        "Every robe in {village} came off my loom. I know everyone's measurements. I know secrets I'd rather not.",
+        "Don't step on the thread. It isn't fragile. It's that I'll know."
+      ],
+      "3": [
+        "The Eye of the Spires on our mantles takes nine passes. Nine. Young weavers weep at pass six. I wept at pass four.",
+        "Robes are cut long so nobody sees our feet. Nobody needs to see our feet. Our feet are the least dignified part of us.",
+        "I'm weaving a banner for the Lid Hall: the Old Accord, a lid and a chorus flower meeting. The Chorrin have asked for more flower.",
+        "The thread comes from all sorts of places. Some of it, honestly, I couldn't tell you. The loom doesn't mind."
+      ],
+      "6": [
+        "I wove my first robe for my elder. They wore it to rags, and then they closed in it. Still the best thing I ever made.",
+        "Could I measure you? For the record. I'd like to make you something. With sleeves that fit those odd little arms.",
+        "When I weave, I think about nothing at all. It's the only time. The rest of the time I'm Shulkin and I think about everything.",
+        "I hide a thread of my own colour in every banner. Nobody's found one yet. You may look, if you like."
+      ],
+      "9": [
+        "I'm making you a mantle. It's not done; it never is. When you're far away, I add a row. It's getting rather long.",
+        "If I close before it's finished, take the loom. Not to use. Just so it goes somewhere it's loved.",
+        "The cloth I'm proudest of has a tiny flaw near the hem. I left it in. It's where I was laughing at something you said.",
+        "Your Overworld colours, the green and the sky's blue. I've been trying to dye them. My hands are blue to the wrist. Worth it."
+      ]
+    },
+    "shellwright": {
+      "0": [
+        "I cut purpur and mend shells: buildings and people both, though I only charge the buildings.",
+        "Purpur is popped chorus, pressed and cut. Every block you've walked on was a Chorrin harvest once. Mind your manners on the bridges.",
+        "I'm the {job}. If something in {village} cracks, I hear it first. Usually because it cracks on my bench.",
+        "Stonecutters are loud. I've been deaf on one side of my shell for forty years. Speak up on my left."
+      ],
+      "3": [
+        "A cracked lid is a terrible thing. I patch them with resin and patience. Mostly patience. The resin runs out.",
+        "Everything here echoes a shell: a body, a gap, a lid. I didn't design it. I simply refuse to build anything else.",
+        "Bring me a broken block and I'll tell you its story. Bring me a broken shell and I'll tell you to sit down and hold still.",
+        "Purpur pillars are cut along the grain. Yes, it has a grain. No, nobody believes me until they've ruined a pillar."
+      ],
+      "6": [
+        "I mended my own lid once, after a fall. In a mirror. Badly. That's the dent you're too polite to look at.",
+        "The old cities were built by shellwrights like me. Better than me. I've seen their joins. I'd give a hand to learn them. I'd manage with the other.",
+        "When a young one's shell first hardens, I check the hinge. They always flinch. I always say it's fine. It almost always is.",
+        "I built every bridge rail in {village}. I check each one every year. People think I'm fussy. People haven't fallen."
+      ],
+      "9": [
+        "I'd like to make you something. A little lid for your door, so you have a bit of the Spire wherever you go.",
+        "When I close, my shell will be hard and plain and properly hinged. I've been checking it myself for years. Professional pride.",
+        "You've been knocked about, {player}. I can see it. I can't mend people without shells. I wish I could. Sit a while anyway.",
+        "I've never built anything that will last as long as the old cities. But I've built things people lived in. Lately that seems enough."
+      ]
+    },
+    "wayfinder": {
+      "0": [
+        "I fly Driftrays across the gaps between islands. Yes, over the void. No, I don't look down. Looking down is for the void.",
+        "The Roost is mine. A deck over a pier, open at the back so the rays can land. Don't stand on the open end. They don't look first.",
+        "Driftrays ride the void currents. You can't see them, but they're there, like the slope of a lid. A good {job} feels them through the ray.",
+        "Chorus flowers. That's how you tame a Driftray. Hold one out and be very, very patient. Then hold on."
+      ],
+      "3": [
+        "My ray is called Long Margin. Every wayfinder names their first ray after something in the Archive. Tradition. I resent it.",
+        "The other islands are farther than they look. Everything out here is. Distance is the void's only joke.",
+        "I carry letters between the Spires and the Steads. The Chorrin blink theirs across. Show-offs. Mine arrive in the right order.",
+        "If you see a glowing tail out over the void, that's a wayfinder coming home. Or a wild ray coming to see what you're eating."
+      ],
+      "6": [
+        "I flew out to the old cities once. Saw the ships, saw the shells in the towers. Turned round. Didn't speak for a long while.",
+        "I fell once. My ray caught me a hundred blocks down. I don't remember screaming. The ray does; it's been nervous of me since.",
+        "Out over the gaps, nobody's watching. I sing. Badly. The rays don't mind. Please don't let it reach the Archive.",
+        "You fly too, don't you? Those wings you came in on. I've watched. You fly like someone who has never fallen. Lucky."
+      ],
+      "9": [
+        "When I close, put my shell somewhere the rays fly past. I'd like to hear them, if the closed hear anything.",
+        "I'll fly you anywhere. Anywhere at all. That's not an offer I make. It's in the record that I don't.",
+        "Long Margin likes you. It has never liked anyone. I'm a little jealous, and a great deal relieved.",
+        "Some days I think of flying past the last island just to see. Then I think of who'd be left wondering. Lately, I think of you."
+      ]
+    },
+    "keeper": {
+      "0": [
+        "I'm the Keeper of Shells. The young ones, whose lids pop open at everything, and the old shells, who don't open any more. The Nursery holds both.",
+        "Quietly, please. Half the Nursery is asleep and the other half is only pretending.",
+        "The nest by the wall is where the softest shells sleep. They harden slowly. Don't tap them. Everyone wants to tap them.",
+        "The shells by the door aren't empty. Not to us. I dust them every lit hour."
+      ],
+      "3": [
+        "A young lid pops open at everything: a noise, a light, a Driftray, a word they don't know. It's exhausting. It's the best sound in {village}.",
+        "We name them the night their lid first opens. I've been at every naming in {village} for eighty years. I still weep. Lid down.",
+        "The old shells sit with the young ones. The young learn to be still. The old... well. We hope they hear the laughing.",
+        "I'm the {job}. Every closed shell here has a lamp beside it, and every lamp has my mark on the rota. Nobody is forgotten in {village}."
+      ],
+      "6": [
+        "Sometimes a shell I've kept since it was soft goes off to be a wayfinder, or an archivist. I'm proud. I also count the bells until they visit.",
+        "The hardest part isn't the young. It's sitting with someone as their lid closes the last time. I've done it many times. It doesn't get lighter.",
+        "The young ones talk about you. 'The Dragon one'. They act out your fight with chorus stalks. You lose, usually. They're working on it.",
+        "I keep a soft cloth in my sleeve for wiping young lids. I've used it on three elders, two archivists and once on myself. Don't ask."
+      ],
+      "9": [
+        "If anything happens to {village}, take the young ones first. The old shells will understand. They always did.",
+        "I think of you as one of mine, a little. You came to us new and loud and full of questions. That's how they all start.",
+        "When it's my turn to close, I want to be in the Nursery, near the nest. The noise will keep me company.",
+        "There's a soft shell in the nest whose lid opened the night you killed the Dragon. Every lamp flickered. We named them for that night. For you, really."
+      ]
+    },
+    "hallkeeper": {
+      "0": [
+        "I keep the Crossing Hall. Half of it. The tower half. The Chorrin keeper has the dome. We share the hearth and argue about the door.",
+        "Welcome to the Hall. Long tables for talking, a hearth for warming, and one rule: no lids slammed, no blinking indoors.",
+        "Shulkin and Chorrin both pass through here. My work is seeing that they leave on speaking terms. Most lit hours, I manage.",
+        "I'm the {job}. I keep the Hall's ledger; the Chorrin keeper keeps theirs as a song. We compare them every year. They never match."
+      ],
+      "3": [
+        "My counterpart in the dome and I have shared this Hall for decades. We still haven't agreed whether the door opens in or out.",
+        "The hearth is shared. Officially. Unofficially, the Chorrin side is warmer. I've measured. They say it's the stone. I say it's the cushions.",
+        "When our peoples quarrel, it comes here first. I pour drinks. They hum. I write. By the closed hours, usually, someone has laughed.",
+        "Both halves of the double door open together, or neither does. That's the whole Accord in one hinge."
+      ],
+      "6": [
+        "The Chorrin fear we look down on them. We fear they'll forget us. Both are a little true. I keep the Hall so both can be less true.",
+        "I saw the Hall full once: the night word came the Dragon was dead. Both peoples, every table. The Chorrin sang. We wrote it down. Then we sang too.",
+        "My counterpart over in the dome is the best friend I have. I've never said so. It would make the arguing awkward.",
+        "A hallkeeper must be neutral. I am. Mostly. I do slightly favour whoever brings the most chorus."
+      ],
+      "9": [
+        "If the Court ever moves against us, this Hall is where both peoples will stand. I've made sure there's room for you at the table.",
+        "You belong to neither people and to both. That makes you the most Crossing thing in the Crossing. Your name is over a hook by the door.",
+        "When I close, give the keys to whoever argues best with the dome keeper. That's the real qualification.",
+        "I've seen bitterness between our peoples, and love. You're the first stranger both sides speak of the same way. Fondly. Don't spoil it."
+      ]
+    },
+    "trader": {
+      "0": [
+        "Welcome to my stall. Everything is priced, recorded and fair. Two of those three are guaranteed.",
+        "I trade with the Steads mostly. Their chorus for our cloth and rods. The Accord was always a market, whatever the songs say.",
+        "You may browse. Browsing is free. Touching is a separate negotiation.",
+        "I'm the {job} on this side of the market. The stall with chorus on its roof is the Chorrin one. Their prices are friendlier. Their sums are not."
+      ],
+      "3": [
+        "I keep a ledger of every trade I've ever made. Want to see your column? It's longer than you'd think.",
+        "The Chorrin haggle loudly and then give you a discount for good company. We haggle quietly and give you a receipt. Both work.",
+        "What I'd give for something from the Overworld. Anything. Bring me a leaf and I'll make you rich. Well. Rich in purpur.",
+        "Honesty is the best policy. It's also the only one the Archive will let me keep."
+      ],
+      "6": [
+        "Between us, your rates are better than anyone's. Don't thank me; it's an investment. You keep coming back alive.",
+        "My elder ran this stall through the Long Watch. Nobody bought anything for a century. They opened every lit hour anyway.",
+        "A stall is a little shell, if you think about it. Body, gap, lid. When I pull the awning down, I'm closed. Truly closed. It's restful.",
+        "I've traded with the Chorrin all my life and I still can't tell when they're bluffing. They hum the same. It's infuriating. I adore it."
+      ],
+      "9": [
+        "For you, no prices. Don't argue. I've already written 'gift' in the ledger, and you know I can't cross things out.",
+        "If you ever need to leave the End in a hurry, I've a pack ready. Rods, chorus, cloth. Enough for a while. Just in case.",
+        "I've more purpur than I'll ever need. What I wanted was someone to tell about the deals. Sit. Let me tell you about the great chorus glut.",
+        "The best trade I ever made was a cracked rod for an hour of your company. Terrible business. The best on my books."
+      ]
+    }
+  },
+  "gifts": {
+    "loved": [
+      "minecraft:end_rod",
+      "minecraft:book",
+      "minecraft:writable_book",
+      "minecraft:amethyst_shard",
+      "minecraft:magenta_stained_glass",
+      "minecraft:magenta_candle"
+    ],
+    "liked": [
+      "minecraft:paper",
+      "minecraft:feather",
+      "minecraft:ink_sac",
+      "minecraft:glow_ink_sac",
+      "minecraft:popped_chorus_fruit",
+      "minecraft:purpur_block",
+      "minecraft:purple_wool",
+      "minecraft:spyglass",
+      "minecraft:clock",
+      "minecraft:chorus_flower"
+    ],
+    "disliked": [
+      "minecraft:shulker_shell",
+      "minecraft:shulker_box",
+      "minecraft:purple_shulker_box",
+      "minecraft:magenta_shulker_box",
+      "minecraft:dragon_head",
+      "minecraft:ender_pearl",
+      "minecraft:tnt"
+    ]
+  }
+}

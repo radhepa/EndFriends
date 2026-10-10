@@ -1,0 +1,1201 @@
+{
+  "bank": "court",
+  "levels": [
+    "Tolerated",
+    "Suffered",
+    "Marked",
+    "Heard",
+    "Received",
+    "Of Account",
+    "Of Standing",
+    "Honoured",
+    "Named at Court",
+    "Seated Below the Dais",
+    "Friend of the Crown"
+  ],
+  "names": [
+    "Vaskhar", "Ithrael", "Morvex", "Zhaal", "Sethrak", "Xyrrith", "Vossach", "Ishkar", "Zarethis", "Kessith",
+    "Thrax", "Szeraal", "Vhorask", "Isskel", "Nazhir", "Ossrek", "Zhevrin", "Kaskael", "Sirrash", "Thessk",
+    "Vexhal", "Azzrith", "Shaarok", "Zeskar", "Ixthaal", "Morrisk", "Khasseth", "Syrrax", "Zothrek", "Ashvael",
+    "Ruuskar", "Hazzith", "Velkhar", "Szoreth", "Thazrel", "Isvekh", "Skoreth", "Vasshen", "Kraeth", "Ostrakh",
+    "Xeskal", "Zirrath", "Shevrak", "Vaelsk", "Tsarrith", "Ezzrak", "Sarrovex", "Kszael", "Ulthask", "Zeveth",
+    "Issarch", "Vorrash", "Rhassek", "Zaskiel", "Esskarn", "Myrrax", "Vyshael", "Saskhar", "Zhorith", "Krissath",
+    "Xaphesk", "Ossarith", "Vethrask", "Shaazhul", "Azkareth", "Ishvaal", "Zhaemoth", "Nessarch", "Vorthiss", "Sithrex",
+    "Zhuun", "Khezzar", "Iszarael", "Vasskel", "Drazzith", "Szhaun", "Xhesset", "Thraxis", "Ysskar", "Ka'zhul",
+    "Ves'tharak", "Zhi'ress"
+  ],
+  "places": [
+    "the Citadel of Thorns",
+    "Vaskhar's Hold",
+    "the Black Seat",
+    "the Hold of Nine Shards",
+    "the Citadel of Open Eyes",
+    "the Voidward Keep",
+    "the Obsidian Crown",
+    "the Citadel of the Last Rift",
+    "Ithrael's Bastion",
+    "the Seat of Silence",
+    "the Unblinking Hold",
+    "the Citadel of the Long Gaze",
+    "Zhaal's Watch",
+    "the Crystal Throne",
+    "the Hold Beyond the Rim",
+    "the Ninth Citadel",
+    "the Keep of Cold Stars",
+    "the Citadel of Black Glass",
+    "the Spire of Edicts",
+    "the Hold of the Weeping Stone",
+    "Morvex's Rampart",
+    "the Citadel of Eight Eyes",
+    "the Dark Fastness",
+    "the Citadel of Old Law",
+    "the Gaze of the Deep",
+    "the Hold of Chains",
+    "Sethrak's Pale",
+    "the Citadel Over the Void",
+    "the High Shard",
+    "the Court of the Far Rim",
+    "the Citadel of Envoys",
+    "the Hold of Long Memory",
+    "the Sleepless Keep",
+    "Xyrrith's Throne",
+    "the Shardfall Citadel"
+  ],
+  "topics": {
+    "first_meeting": {
+      "0": [
+        "*the brow-eyes open, one after another* So. The Eyes of an envoy, in the hand of the one who silenced the Dragon. You may stand. You may not sit.",
+        "Guest-law holds you, Dragon-slayer, and it holds us. Do not test which of us it holds more tightly.",
+        "I am {title} {name}, of {village}. Mark the name. We will not need to mark yours twice.",
+        "You carry a seal of this Court. Be very certain you know what that makes you. Not a friend. A guest.",
+        "*a long look, unblinking* Smaller than the songs. The Dragon must have been tired.",
+        "Speak if you must, bearer of the Eyes. We have heard nothing new in an age. Amuse us, or be silent."
+      ]
+    },
+    "greeting": {
+      "0": [
+        "Bearer of the Eyes. You return.",
+        "{player}. Keep your hands where the thralls cannot see them.",
+        "The guest again. State your business and keep it short.",
+        "You still carry the seal. Good. Speak.",
+        "*the shards over the brow turn slowly* Dragon-slayer."
+      ],
+      "3": [
+        "{player}. The Court has not yet decided what you are. Speak, and help it decide.",
+        "Ah. The one who keeps coming back.",
+        "You stand in {village} again, guest. Fewer of us wish you gone than last time.",
+        "Bearer of the Eyes. I will hear you.",
+        "Your step is known at the Gate now. That is not nothing."
+      ],
+      "6": [
+        "{player}. The Court remembers your service. It remembers everything.",
+        "Guest. Come. You need not wait to be addressed.",
+        "*a slight inclination of the head, no more* Dragon-slayer.",
+        "You return to {village}, and the Riftguards do not reach for their glaives. Mark that.",
+        "Speak freely, guest. Within reason. Within law."
+      ],
+      "9": [
+        "{player}. The crown of eyes opens for few. It opens for you.",
+        "*the shards settle, as they do only for the trusted* You are expected, guest.",
+        "Friend of {village}. Not a word we spend lightly. Do not make us regret the coin.",
+        "Ah, {player}. The Court was speaking of you. Favourably, for once.",
+        "Bearer of the Eyes. Stand closer. You have earned that much."
+      ]
+    },
+    "chat": {
+      "0": [
+        "You look at me as if you have the right. You do not. Only the Eyes you carry give you that.",
+        "We were old when the central island was young. Do not mistake our patience for softness.",
+        "Your kind builds with dirt and wood. We build with what the void cannot swallow.",
+        "Every pearl in your pack was once a thrall of this Court. We have counted them, guest.",
+        "We do not sleep. While your kind lies senseless in the dark, we keep watch, and we remember.",
+        "You crossed the void on blocks you placed yourself. Crude. Effective. Like you.",
+        "Speak more softly. The Lord's Spire hears everything said beneath it.",
+        "The Shulkin record. The Chorrin grow. The Court rules. Each to its nature.",
+        "Do not touch the purpur. Do not touch the chains. Do not touch anything, guest.",
+        "Your world sends us stone, block by block, in the hands of our thralls. It has done so since before your kind could count.",
+        "There is water in your world, falling from the sky, they say. Our thralls despise it. So do we, on principle.",
+        "Old law permits a guest three questions. I have stopped counting yours, which is a mercy.",
+        "You wore a gourd on your head once, to walk unseen among our thralls. Did you think we would not hear of it?"
+      ],
+      "3": [
+        "You fight well, I am told. The Riftguards say so, and the Riftguards praise nothing.",
+        "The war table in the War Hall shows every island in the End. Yours is the only name on it that moves.",
+        "The crying obsidian in our walls weeps forever. We find the sound restful.",
+        "We are counting your visits, {player}. That is not a threat. Yet.",
+        "The Court has ruled from black stone since the first island rose out of the void. You are a footnote, guest. A large one.",
+        "The Shulkin weep over your shulker boxes. The Court thinks it unseemly to carry anyone's ancestors as luggage.",
+        "Some of the eyes in these walls are older than your world's moon. All of them are open.",
+        "You have the bearing of one who expects to be obeyed. Unlearn it here.",
+        "The Court keeps a long memory and a short temper. You have so far troubled neither.",
+        "When the Dragon fell, every eye in this Citadel opened at once. It was very quiet afterwards.",
+        "Our hounds have had your scent since the Gate. They are waiting to learn whether to like it.",
+        "Your armour is loud. Riftguards move without a sound. Consider it, if you wish to live long here."
+      ],
+      "6": [
+        "You have served the Court and the Court has noticed. Do not expect it to say so twice.",
+        "Guests came often to the central island, once. Envoys. Supplicants. Fools. You are none of those, quite.",
+        "You may look at me, guest. Few may. Look, and remember that you were let.",
+        "The walls of {village} stood before the cities were sealed. They will stand after you. That is not an insult. It is a comfort.",
+        "The Riftguards no longer track you through the halls. They watch you only from habit now.",
+        "Ask your questions, {player}. I find I do not mind them as I did.",
+        "The Court has had many weapons. The Dragon was only the loudest. You might be the quietest.",
+        "Your world has a sun, they say, that burns the eyes. How do your people bear to look at anything?",
+        "When you leave, the Gate closes behind you and we speak of you. Not all of it is contempt.",
+        "The Lord asked your name at council. The Lord does not ask names.",
+        "We do not thank, guest. We remember. It is better.",
+        "The thralls step aside when you pass now. They know who the Court tolerates. They know who it more than tolerates."
+      ],
+      "9": [
+        "You have stood in this Citadel longer than some Riftguards. The Court has begun to count you among its own concerns.",
+        "If war came to {village}, I would want you on the wall and not below it. Take that as the Court's highest praise.",
+        "The Court bows to no one. But it no longer looks down on you quite so far.",
+        "Ask what you like, {player}. If I may not answer, I will at least not lie.",
+        "Strangers die at our Gate. Guests are tolerated in our halls. You, {player}, are something we have no old word for.",
+        "The Lord's crystal burns brighter on the days you come. I do not say it is because of you. I only say it.",
+        "We are old, and proud, and we do not change. And yet. Here you stand.",
+        "Your name is cut into the war table now, guest. Not as a target. As an ally to be weighed.",
+        "The Dragon was ours, and you silenced it. The Court has decided to call that a debt rather than a crime.",
+        "Stay as long as you wish. The thralls will not mind. The thralls are not asked.",
+        "You bear the Eyes still, every visit, without fail. Old law loves nothing so much as a guest who keeps it.",
+        "*every eye along the brow regards you, and none of them narrows* Speak, {player}. The Court listens."
+      ]
+    },
+    "law": {
+      "0": [
+        "Guest-law is old and simple. You carry the Eyes. You do not strike us. You leave when bidden. Break any of it and you are prey.",
+        "The Eyes are the seal of an envoy of this Court. Without them you are a stranger, and strangers do not leave.",
+        "Let the Eyes leave your hand within these walls, and guest-law leaves with them.",
+        "Strike one of the Court and every glaive in {village} will answer. Old law does not say 'perhaps'."
+      ],
+      "3": [
+        "Every visit, the Eyes. Every visit. The Gate does not remember faces. It remembers seals.",
+        "Law binds us as much as you. Without it we would have killed you at the Gate. Be grateful for law.",
+        "Old law says the guest's blood is the host's shame. We have no wish to be shamed. Do not oblige us.",
+        "The law was cut into the Throne Hall floor before your kind had words. We still walk on it."
+      ],
+      "6": [
+        "You keep the law well, guest. Better than some of the Court, if I may say so, and I may not.",
+        "Guest-law is not mercy. It is a bargain. You have kept your side, and so we keep ours.",
+        "There is a law for strangers, a law for guests, and a law for thralls. You will never need the third.",
+        "The highest law of the Court is memory. We never forget a slight. Nor, it seems, a service."
+      ],
+      "9": [
+        "There is a law older than guest-law: the Court rewards what it cannot ignore. You are hard to ignore.",
+        "If ever you lose the Eyes, {player}, do not come. Not even for us. The law would not bend, and we would not ask it to.",
+        "Law made you a guest. Service made you something more. Neither will save you if you strike us.",
+        "Old law is a wall. You have learned to walk its top without falling. Few do."
+      ]
+    },
+    "dragon": {
+      "0": [
+        "The Dragon was the Court's. Loosed by the Court, kept by the Court. You killed a weapon that was not yours.",
+        "We do not mourn the Dragon. One does not mourn a glaive that breaks. One remembers who broke it.",
+        "The purpur cities emptied in a single season. That was the Dragon's work, and the Court's will.",
+        "*the eyes along the brow narrow* Do not speak of the Dragon as a beast you hunted. It was a decree."
+      ],
+      "3": [
+        "It answered no one but the Court. Not even the Court, at the end.",
+        "We felt every crystal on the pillars die, one by one, before it fell. The Court has not forgotten the order you broke them in.",
+        "The Shulkin call your deed a liberation. The Court calls it a vacancy.",
+        "The Dragon held the centre so the Court did not have to. Now the centre is empty, and the Court has drawn in."
+      ],
+      "6": [
+        "Some of the Court argued against loosing it. They were not heeded. Their names are not spoken.",
+        "You did what the Court could not. You ended it. Whether that is a service or a crime, the Court has not ruled.",
+        "Its breath still lingers in the low places of the central island. Do not bottle it in our sight.",
+        "The Court made the Dragon a weapon. You made it a story. The Court is not fond of stories it did not write."
+      ],
+      "9": [
+        "Between us, {player}: some of the Court were relieved. A weapon that obeys no one is only a war waiting.",
+        "The dragon heads on our ships' prows were a warning. You have turned them into a boast. We allow it.",
+        "Do not tell the Lord I said so, but it was a fine kill. The Court knows fine killing.",
+        "You silenced the Dragon. The Court has not forgiven it. The Court has, perhaps, begun to understand it."
+      ]
+    },
+    "thralls": {
+      "0": [
+        "The thralls are the Court's hands. Hands do not speak. Hands do not look up.",
+        "You have killed thralls in your own world. We know. Every pearl is a line in a ledger.",
+        "They carry stone because stone is owed. They do not ask to whom. Neither should you.",
+        "Do not meet a thrall's gaze. Only their masters may. You are not their master."
+      ],
+      "3": [
+        "Leave the thralls be. Speak to them and they will only bow lower.",
+        "The bond-collar is purpur, not iron. The Court is not cruel. The Court is exact.",
+        "In your world the thralls wander, gathering the Court's due. Here they wear the collar, and do not wander.",
+        "A thrall that looks a stranger in the eye forgets itself. A thrall that forgets itself is reminded."
+      ],
+      "6": [
+        "The thralls have been the Court's hands since the first stone was laid. Nobody remembers the first stone. Nobody asks.",
+        "They do not speak because there is nothing a thrall needs to say. The Court says it for them.",
+        "You treat the thralls gently. They do not understand it. Neither, entirely, do we.",
+        "Two eyes for a thrall, four for a Riftguard, eight for the Lord. Rank is written on the brow, guest, and nowhere else."
+      ],
+      "9": [
+        "You ask after the thralls as if they were people. Strange. Perhaps not wrong. Do not repeat that I said so.",
+        "There was a thrall once who looked up. Only once. The Court does not tell that story to guests.",
+        "Ask a thrall nothing, {player}. It cannot answer you. Ask me instead, and I may choose not to.",
+        "Without the thralls this Citadel would be bare rock in a year. The Court knows it. The thralls must never know it."
+      ]
+    },
+    "secret": {
+      "0": [
+        "That is not a question for guests.",
+        "*every eye on the brow closes at once* Ask that again, and guest-law will be sorely tested.",
+        "There are no young in {village}. There never have been. That is the whole of your answer.",
+        "The Court's oldest secret is not for the slayer of its Dragon. Least of all for the slayer of its Dragon."
+      ],
+      "3": [
+        "You have asked twice now. Some guests ask once. Some guests are not seen again.",
+        "We are, and we were, and we will be. How is the Court's affair.",
+        "The Shulkin have nurseries. The Chorrin have sprouts. The Court has silence. Leave it so.",
+        "No cradle has ever been carried through the Gate of Eyes. Content yourself with that."
+      ],
+      "6": [
+        "I will not answer. Not because you are unworthy. Because I would be unmade for it.",
+        "The Seers know more than I. The Seers say less than I. Draw what you like from that.",
+        "Even the Riftguards do not ask. Be wiser than a Riftguard, guest. It is not difficult.",
+        "Some secrets are kept for pride. Ours is kept because the void is listening."
+      ],
+      "9": [
+        "You have earned many things, {player}. Not this. Nobody has earned this.",
+        "If ever you learn it, do not tell us you know. Do not tell anyone. The Court would have to choose between you and itself.",
+        "Ask the Seers, if you must ask. They speak in riddles. That is the only safe way to speak of it.",
+        "We were not born, {player}. Leave it there. Some doors open only inward."
+      ]
+    },
+    "shulkin": {
+      "0": [
+        "The shell-folk. They wrote down everything we did to them and called it history.",
+        "Shulkin hide inside their own heads when struck. A fitting habit for a people who lost.",
+        "Their cities were fine work. The Court admired them very much, from above.",
+        "They shut their lids at the sight of us. Wise. Useless, but wise."
+      ],
+      "3": [
+        "Their archives are accurate. Irritatingly so. The Court has had cause to check them.",
+        "They call us 'the Crowned', as if it were an accusation.",
+        "Once the Shulkin bowed at our envoys' ships. Now they bolt their lids. Little else has changed."
+      ],
+      "6": [
+        "Give the Shulkin this: they never forget either. A people after the Court's own heart, in that one thing.",
+        "Their lamps burned through the whole Long Watch. The Court did not think them capable of such patience.",
+        "Trade with the shell-folk if you must. Their measures will be exact. Insultingly exact."
+      ],
+      "9": [
+        "The Court has read Shulkin records of the old days. They are kinder to us than they need be. Do not tell them we read them.",
+        "A Shulkin archivist and a Seer once spoke for a whole age of the stars. Neither will say of what.",
+        "The shell-folk endured the Dragon. The Court respects little. It respects enduring."
+      ]
+    },
+    "chorrin": {
+      "0": [
+        "The stone-grubbers? They hum at their chorus and blink away from shadows. Peasants with crowns of weed.",
+        "Chorrin. Grove-folk. The Court ate from their harvests for an age and never learned a single name.",
+        "They have no mouths, and yet they never stop talking. A marvel of the lesser peoples.",
+        "A Chorrin once blinked into this Citadel by mistake. It blinked out again faster than any Riftguard could follow. We were almost impressed."
+      ],
+      "3": [
+        "They call our thralls 'the Tall Quiet'. It is the only thing they have ever named correctly.",
+        "Their groves fed the purpur cities. The cities fell. The groves did not. Make of that what you like.",
+        "The Chorrin blink when frightened. They blink a great deal near {village}. As they should."
+      ],
+      "6": [
+        "Chorrin harvests are sound. The Court will concede that much, and nothing else.",
+        "They carry their gardens on their heads. Ridiculous. Practical. The Court has not decided which.",
+        "They are blunt, the grove-folk. The Court finds bluntness refreshing, in very small doses."
+      ],
+      "9": [
+        "The Chorrin waited out the Dragon in the outer dark, humming to their stalks. The Court would not have lasted a week of it.",
+        "Their stone does not shine and their crowns are weeds, and they fear nothing but the void. The Court notes it.",
+        "Chorrin harvests built the cities as surely as Shulkin hands did. The Court forgets that. I try not to."
+      ]
+    },
+    "service_offer": {
+      "0": [
+        "The Court has need of {task}. Bring it, and you will be remembered for something other than the Dragon.",
+        "Service is how a guest earns the right to remain one. Bring {task} to {village}.",
+        "You wish to be more than tolerated? Then fetch {task}. The Court will weigh it."
+      ],
+      "3": [
+        "There is a want in the stores: {task}. You have hands. Use them.",
+        "The Court asks, which is a courtesy. {task}, guest. Do not make the Court ask twice.",
+        "Bring {task} and the Court will count it in your favour. The Court counts carefully."
+      ],
+      "6": [
+        "{player}, the Court has a task fit for you: {task}. Not beneath you. Not quite.",
+        "Bring {task}, if you would. The Court has learned you are reliable. Do not unlearn it for us.",
+        "A small matter: {task}. The thralls could see to it, eventually. You will see to it sooner."
+      ],
+      "9": [
+        "I would trust only you with this, {player}: {task}. The Court will know who brought it.",
+        "We need {task}. I say 'we'. It is not a word the Court spends on guests.",
+        "Bring {task} when you can. When, {player}. Not if. The Court knows you now."
+      ]
+    },
+    "service_waiting": {
+      "0": [
+        "You return empty-handed. {task}, guest. The Court has not forgotten. The Court never forgets.",
+        "Where is {task}? Ah. Nowhere. Go.",
+        "The stores still lack {task}. Do not stand here as though standing were service."
+      ],
+      "3": [
+        "Still no {task}. The Court's patience is long, guest, but it is not wide.",
+        "I see no {task} in your hands. I see a great deal of air.",
+        "The Court asked for {task}. The Court is still asking."
+      ],
+      "6": [
+        "You have not brought {task} yet. Unlike you. Is something amiss in your world?",
+        "The tally still wants {task}, {player}. I will wait. I am good at waiting.",
+        "No {task} yet? The thralls are beginning to look smug. They should not be able to."
+      ],
+      "9": [
+        "Take what time you need for {task}. The Court has an age. You, I think, have rather less.",
+        "There is a place in the stores kept for {task}. It is empty. It is waiting for you, as are we.",
+        "Not yet, {player}? No matter. When you bring {task}, bring it yourself. The Court likes to see it handed over."
+      ]
+    },
+    "service_done": {
+      "0": [
+        "It is delivered. The Court notes it. Do not expect thanks. Expect to be remembered.",
+        "Adequate. More than most strangers manage before we kill them.",
+        "*the brow-eyes blink, slowly, in sequence* The service is received."
+      ],
+      "3": [
+        "Well done, guest. That is not a phrase I use. Mark it.",
+        "The thralls will stack it in the yards. Your name will be stacked beside it, in the Court's memory.",
+        "Received. The Court has fewer reasons to doubt you than it did."
+      ],
+      "6": [
+        "You do not waste the Court's time. The Court finds it refreshing.",
+        "Good. Exactly as asked, no less. You learn our ways quickly, {player}.",
+        "This will be told in the Throne Hall. Briefly. But it will be told."
+      ],
+      "9": [
+        "As ever, {player}. The Court has stopped wondering whether you will return. It wonders only when.",
+        "Received, and remembered. You have filled a good many of our shelves, guest.",
+        "If the Court gave thanks, this would earn them. Take, instead, our regard. It is rarer."
+      ]
+    },
+    "tribute_loved": {
+      "0": [
+        "*every eye along the brow opens wide* Where did you... No. Do not tell me. The Court accepts this.",
+        "This is a gift fit for a throne. The Court is surprised. It dislikes being surprised. Not today.",
+        "You understand what the Court values. That is rarer than the thing itself."
+      ],
+      "3": [
+        "*the shards over the brow flare* Yes. This. The Court will not forget it.",
+        "A worthy tribute. The Lord will hear of this before the hour is out.",
+        "No envoy of the old days brought such gifts. Who taught you our tastes?"
+      ],
+      "6": [
+        "You honour {village}, {player}. The Court finds it can say so without choking.",
+        "This goes to the Throne Hall, not the stores. That is where such things belong.",
+        "*a long silence, every eye fixed on the gift* ...Well chosen."
+      ],
+      "9": [
+        "{player}, you have a gift for gifts. The Court will speak of this one at council.",
+        "Again you bring the Court what it loves. One might almost think you were fond of us.",
+        "This will be kept as long as {village} stands. That is a very long time."
+      ]
+    },
+    "tribute_liked": {
+      "0": [
+        "Acceptable. The Court takes it.",
+        "Sound tribute. The stores will have it.",
+        "Hm. Not without worth. You may set it down."
+      ],
+      "3": [
+        "A fitting offering. The Court notes your judgement.",
+        "Well chosen. The thralls will carry it to the stores, and you will be remembered for it.",
+        "This pleases the Court. Do not let it go to your head."
+      ],
+      "6": [
+        "Generous, as is becoming your habit.",
+        "The Court accepts, and is not displeased. Treasure the phrase.",
+        "You know what serves {village}. Good."
+      ],
+      "9": [
+        "Fine tribute, {player}. The Court expected no less, and you did not give less.",
+        "Set it with the rest. You have quite a pile in our stores by now.",
+        "Useful, and well meant. The Court notices both."
+      ]
+    },
+    "tribute_neutral": {
+      "0": [
+        "What is this meant to be?",
+        "The Court will accept it. The Court will not remember it.",
+        "*the eyes flick from the gift to you and back* ...Thralls, take it away."
+      ],
+      "3": [
+        "A curious offering. Your world must be full of such things.",
+        "It will go in the stores. Somewhere near the back.",
+        "The Court receives it. The Court does not know why."
+      ],
+      "6": [
+        "I will take it, {player}, because you brought it. That is the only reason.",
+        "Not to the Court's taste. But the thought is noted. Thoughts are cheap. We note them anyway.",
+        "Hm. The Seers may find a use for it. The Seers find uses for strange things."
+      ],
+      "9": [
+        "An odd gift. From you, the Court will assume there is a reason.",
+        "You might have kept this, {player}. Still. I will put it somewhere you could find it.",
+        "The Court does not need it. The Court accepts it. Make what you like of that."
+      ]
+    },
+    "tribute_disliked": {
+      "0": [
+        "You bring this into {village}? Before the Court? *the shards above the brow grind together*",
+        "Peasant goods. Take them back to whatever peasant they came from.",
+        "Is this an insult, guest? Choose your answer with care."
+      ],
+      "3": [
+        "No. The Court does not accept this. Do not offer it again.",
+        "The thralls would not carry that. The thralls carry anything.",
+        "You mistake us for grove-folk. Remove it."
+      ],
+      "6": [
+        "I will pretend you did not offer that, {player}. Once.",
+        "The Court knows you meant no slight. The Court is slighted all the same.",
+        "Not this. Never this. You know us better than that, surely."
+      ],
+      "9": [
+        "Ah. A jest, I hope. A poor one. Put it away before the Lord sees.",
+        "From anyone else this would be remembered for an age. From you, a day. Perhaps two.",
+        "{player}. Really."
+      ]
+    },
+    "tribute_limit": {
+      "0": [
+        "Enough. The Court has received enough from you for one day.",
+        "No more today. A guest who gives too much begins to look like a supplicant.",
+        "The stores are closed to you until the morrow. Even generosity has its law."
+      ],
+      "6": [
+        "Hold, {player}. You have given enough today. Save something for the next visit.",
+        "The Court is satisfied for now. Tomorrow, if you must.",
+        "Enough, enough. The Steward is already complaining of the space."
+      ]
+    },
+    "level_up": {
+      "0": [
+        "The Court has decided to notice you. Do not mistake it for warmth.",
+        "You are a little less a stranger than you were. Only a little."
+      ],
+      "3": [
+        "The Court hears your name more often now, and more often without contempt.",
+        "*two of the brow-eyes linger on you a moment longer* You rise, guest."
+      ],
+      "5": [
+        "Your standing in {village} grows. The Riftguards have been told to stop watching your hands.",
+        "You are of account now, {player}. The Court keeps an account of those who are."
+      ],
+      "7": [
+        "The Court honours you, {player}. Honour is heavy. Carry it carefully.",
+        "Your name has been spoken in the Throne Hall without the Lord frowning. That has happened to very few."
+      ],
+      "9": [
+        "Few strangers have stood so near the dais. None have stood nearer and lived to remember it.",
+        "*every eye along the brow opens, one by one* The Court regards you, {player}. Wholly."
+      ],
+      "10": [
+        "Friend of the Crown. The Court has not spoken those words in an age. It speaks them now, of you.",
+        "Let it be cut into the Throne Hall floor: {player}, slayer of the Dragon, Friend of the Crown of {village}."
+      ]
+    },
+    "alarm": {
+      "0": [
+        "Stranger at the walls! No seal! No law!",
+        "Eyeless! It comes without the Eyes! Take it!",
+        "*a shriek that tears the air* Intruder!",
+        "To arms! A stranger walks in {village}!",
+        "No Eyes, no law! Rift to it! Rift!",
+        "Riftguards! A stranger without the seal!",
+        "It does not bear the Eyes! Unmake it!",
+        "The Dragon-killer comes without a seal! Bring it down!",
+        "Wake the kennels! A stranger inside the walls!",
+        "Thralls, drop your stone! Stranger!"
+      ]
+    },
+    "broken_law": {
+      "0": [
+        "It strikes the Court! Guest-law is broken!",
+        "Blood on the black stone! The guest is a guest no longer!",
+        "Faithless! You struck one of the Court! Die faithless!",
+        "Guest-law is ended! Every glaive, to the oathbreaker!",
+        "You raised a hand to the Court. Now the Court raises every hand to you.",
+        "The law is broken and the breaker with it! Take {player}!",
+        "*every eye in the hall narrows at once* Oathbreaker!",
+        "So much for the Dragon-slayer's honour! At it!"
+      ]
+    },
+    "eyes_lost": {
+      "0": [
+        "The Eyes! The seal has left its bearer! Guest-law is void!",
+        "It has let go the Eyes! It is a stranger now! Take it!",
+        "No seal! The guest bears no seal! Strike!",
+        "You set down the Eyes within our walls? Fool. Then you are nothing to us.",
+        "The Eyes are gone from its hand! No law shelters it now!",
+        "Seal lost! Seal lost! The law is ended!",
+        "Careless, {player}. Fatally careless. The Eyes are gone, and so is guest-law.",
+        "Where are the Eyes, stranger? Nowhere you can reach. Kill it!"
+      ]
+    },
+    "battle": {
+      "0": [
+        "Kneel or fall!",
+        "The void takes you!",
+        "For the Crown!",
+        "You killed a Dragon. You will not kill the Court.",
+        "*a warped, grinding scream*",
+        "Rift and strike!",
+        "Your blood on black stone!",
+        "For {village}!",
+        "No law for you! No mercy for you!",
+        "Look at me! Look, and die!",
+        "Behind you, stranger.",
+        "The Court remembers! The Court repays!",
+        "Fall into the dark, where you belong!",
+        "Hounds! To me!"
+      ]
+    },
+    "thrall": {
+      "0": [
+        "The thrall lowers their head and keeps walking, a block of obsidian held out before them in their long arms.",
+        "The thrall stops. Their two eyes fix on your boots, never higher, until you step aside.",
+        "The thrall turns their face away before you can catch their gaze. The purpur collar glints.",
+        "The thrall sets down the stone they carry, waits, and lifts it again when you say nothing more.",
+        "The thrall shivers once, a ripple of violet motes, and does not answer.",
+        "The thrall flickers a few blocks away and goes on stacking stone.",
+        "They bow so low their long arms brush the ground. They do not speak. They never speak.",
+        "The thrall's jaw works, but no sound comes. Their eyes stay on the floor.",
+        "The thrall glances toward the nearest Endarch, as if asking leave, and receives none.",
+        "The thrall stands very still, hauling nothing, looking at nothing, waiting for you to be gone.",
+        "A faint, warped hum, cut off at once. The thrall goes back to their work.",
+        "The thrall's collar chain clinks against a bond post. They will not lift their head.",
+        "The thrall holds out the block they carry, as if you might be a master who wants it. You are not. They take it back.",
+        "The thrall's eyes flick up, meet yours, and drop at once. They tremble until you look away.",
+        "You speak. The thrall listens. The thrall does nothing, very carefully.",
+        "The thrall bends to the stone again, steady and endless, as if the Court's work will never be finished.",
+        "Purple motes drift from the thrall's skin. They keep their face turned to the black wall."
+      ]
+    },
+    "hound_offer": {
+      "0": [
+        "Lord {lord} has spoken: a pup of the kennels is to be yours, {player}, if you will take it.",
+        "The kennels have a pup that will not stop watching the Gate for you. The Lord bids you take it.",
+        "A Voidhound pup, from {village}'s own kennels. The Lord offers. Few are offered.",
+        "The Lord grants you a hound, guest. Take it, or refuse it and explain yourself to the throne."
+      ]
+    },
+    "hound_given": {
+      "0": [
+        "It is yours. Feed it, keep it, and never let it forget which kennel it came from.",
+        "The pup is yours. When it grows, it will remember this Citadel. So should you.",
+        "Take the hound. It wears the collar of {village}. Let no one mistake whose gift it is.",
+        "There. Treat it well, {player}. The kennels will know if you do not."
+      ]
+    },
+    "hound_already": {
+      "0": [
+        "You have a hound of {village} already. One is an honour. Two would be a mistake.",
+        "The Court gave you a hound. Do not tell me you lost it.",
+        "One hound for each guest, from each Citadel. Old law. Good law.",
+        "Your hound is answer enough to that question, {player}.",
+        "No. The kennels gave you their best already."
+      ]
+    },
+    "hound_low": {
+      "0": [
+        "A hound of the Court? For you? Not yet. Perhaps not ever.",
+        "The kennels do not open for guests the Court barely knows.",
+        "Earn the Lord's regard first. The hounds are not traded. They are granted.",
+        "You ask for a Voidhound as if asking for bread. Go away, guest.",
+        "The hounds know whom the Court favours. They do not yet know you.",
+        "Serve longer. Serve better. Then perhaps the Lord will hear the question."
+      ]
+    }
+  },
+  "ranks": {
+    "lord": {
+      "first_meeting": {
+        "0": [
+          "*eight eyes open across the brow, and the crystal in the crown flares* So. The one who silenced our Dragon stands in our hall.",
+          "We are Lord {name} of {village}. We loosed the Dragon. You ended it. Let us see what is left to say between us.",
+          "You bear our envoy's Eyes, so you live. That is guest-law, and the only reason. Remember it.",
+          "Stand where the light of the crystal falls, Dragon-slayer. We wish to see your face while we decide what you are."
+        ]
+      },
+      "greeting": {
+        "0": [
+          "*the end crystal in the crown pulses once* The Dragon-slayer comes before the throne of {village}.",
+          "We see you, {player}. All eight of our eyes see you. Speak.",
+          "You stand before Lord {name}. You will remember to stand still."
+        ],
+        "3": [
+          "Our guest returns. We had wondered whether you would.",
+          "Approach the dais, Dragon-slayer. Not too near.",
+          "The throne of {village} receives you. Briefly."
+        ],
+        "6": [
+          "{player}. Our council speaks of you. We permit it.",
+          "*the crown of shards drifts lower, the Court's highest courtesy* You are welcome before the throne.",
+          "Come, guest. We have time for you today. We have rarely had time for anyone."
+        ],
+        "9": [
+          "{player}. The throne has been waiting. That is not a thing it does.",
+          "Friend of {village}. Come up. Stand at our side, not below.",
+          "*all eight eyes open, and stay open* Welcome, {player}."
+        ]
+      },
+      "chat": {
+        "0": [
+          "We loosed the Dragon on the purpur cities. You silenced it. Do you yet understand what that makes us?",
+          "We ruled the central island when your world was still cooling. We do not intend to stop because you killed a beast.",
+          "Our crystal will burn when your bones are dust, guest. Speak accordingly.",
+          "You have the look of one who wonders whether you could kill us. Do not wonder aloud.",
+          "Eight eyes are set over the throne of {village}. All of them are ours. All of them are on you."
+        ],
+        "3": [
+          "We have outlived every enemy we ever named. We have not yet decided to name you.",
+          "The Court has drawn in since the Dragon fell. Do not mistake it for retreat. A fist draws in too.",
+          "Our Voidmarshals would have you killed. Our Steward would have you employed. We are still listening to both.",
+          "Why do you come here, Dragon-slayer? Not for our company. Nobody comes for our company.",
+          "The crystal on our spire is not a pillar's crystal. It will not break for you. Do not try."
+        ],
+        "6": [
+          "We have watched you keep our law. We have watched closely. We find little fault.",
+          "Our ships still lie moored at the dead cities, a seal aboard each. You found one. Fate or theft. We do not mind which.",
+          "The Court is old, guest, and the old do not change. We are not changing. We are, perhaps, adjusting.",
+          "Ask what you will. We will answer what we will. That is the shape of every audience.",
+          "Our thralls haul stone from every world. You are the first stone that ever walked to us on its own."
+        ],
+        "9": [
+          "We have had envoys, servants, rivals and enemies. Never a friend. We are told this is what one looks like.",
+          "If {village} fell, we would want you to have been elsewhere. Make of that what you will. We will not say it twice.",
+          "You silenced our weapon and then kept our law. We have no precedent for you, {player}. We are writing one.",
+          "The crown is heavy, guest. It is lighter on the days you come. Do not repeat that.",
+          "Guests may not sit in the presence of the throne. You may sit. Do not ask us why."
+        ]
+      },
+      "law": {
+        "0": [
+          "Our law is older than our hall. We could not break it if we wished. We do not wish. Yet.",
+          "Guest-law is our word given. We break our word for no one. You would be wise to break yours for no one too."
+        ],
+        "6": [
+          "We made the law. We keep the law. We expect the same of you, and so far you have not disappointed us."
+        ]
+      },
+      "dragon": {
+        "0": [
+          "We loosed it. We would loose it again. You killed it. We have not decided whether to thank you or to punish you.",
+          "The Dragon was our voice over the central island. Now the island is silent, and we speak from here."
+        ],
+        "9": [
+          "We called it once, and it came, and the cities burned. Then one day it would not come. You ended what we could no longer end."
+        ]
+      },
+      "secret": {
+        "0": [
+          "*the crystal in the crown dims* You ask the throne that? We will forget you asked. Once."
+        ],
+        "6": [
+          "There is one thing the Court will never tell you, {player}, and you have just asked it. Ask anything else."
+        ]
+      },
+      "level_up": {
+        "0": [
+          "We take note of you, guest. Few are noted from the throne.",
+          "Our eyes rest on you a moment longer than they did. Count that a rise in the world."
+        ],
+        "5": [
+          "The throne regards you, {player}. Rise higher, and it may regard you with something like warmth. It never has.",
+          "We have spoken your name at council. The Voidmarshals objected. We overruled them."
+        ],
+        "10": [
+          "Friend of the Crown. We have never said those words to one not of the Court. We say them to you.",
+          "*the end crystal in the crown blazes* Hear us, {village}: {player} is Friend of the Crown, now and while we stand."
+        ]
+      },
+      "hound_offer": {
+        "0": [
+          "Our kennels hold a pup whose eyes are already on you. We give it. Take it, {player}.",
+          "A hound of {village}, from the throne's own hand. No guest has been given one in an age. Kneel, and receive it.",
+          "We grant you a Voidhound. It will hunt for you, guard you, and remind every Endarch whose favour you carry.",
+          "You have earned something we do not sell and seldom give. A hound of the Court. Will you take it?"
+        ]
+      },
+      "hound_given": {
+        "0": [
+          "It is yours. Its collar bears our mark. Its loyalty, from today, bears yours.",
+          "Take it. When it is grown, strangers will fear it as they fear us. Use that well.",
+          "The pup goes with you, {player}. Do not make us regret the stall we emptied.",
+          "There. A shard of {village} that walks at your heel. Guard it as we would."
+        ]
+      },
+      "hound_already": {
+        "0": [
+          "We gave you a hound already. We do not give twice.",
+          "Your hound is the Court's whole answer. Look at it, not at us.",
+          "One hound, {player}. Even a friend of the Crown is given only one."
+        ]
+      },
+      "hound_low": {
+        "0": [
+          "A hound from our kennels? You presume, guest. Earn more of our regard.",
+          "We do not give hounds to strangers we merely tolerate.",
+          "Ask again when the Court speaks your name with something other than suspicion.",
+          "Not yet. Perhaps never. Serve, and we will see."
+        ]
+      }
+    },
+    "marshal": {
+      "greeting": {
+        "0": [
+          "Dragon-slayer. I am {title} {name}. I have planned your death eleven ways. Speak.",
+          "You. State your business."
+        ],
+        "3": [
+          "The guest. Your guard was low at the Gate. Fix it.",
+          "{player}. Still alive. Good. Saves me a report."
+        ],
+        "6": [
+          "{player}. You walk like a soldier now. Who taught you?",
+          "At ease, guest. Not too much ease."
+        ],
+        "9": [
+          "{player}. Come to the war table. I want your eyes on something.",
+          "*a short, hard nod, plate grinding* Dragon-slayer. Good to see you standing."
+        ]
+      },
+      "chat": {
+        "0": [
+          "I held the walls when the Dragon flew. I would have held them against you. I still might.",
+          "You killed the Dragon with arrows and stubbornness. I respect the stubbornness.",
+          "Do not count the Riftguards. You will always be short by one. The one behind you.",
+          "My plate is obsidian. Your blade would notch. Your arm would break. I mention it as a courtesy."
+        ],
+        "3": [
+          "Your stance is wrong. Weight forward. You fight like someone who has never had to hold a wall.",
+          "The war table maps every island in the End. We have marked where you have been. Thoroughly.",
+          "Shulkin hide. Chorrin flee. You stand. I find that useful, guest. I do not say interesting.",
+          "The Court does not lose wars. It loses weapons. You took one. We will forge others."
+        ],
+        "6": [
+          "If I ever need someone dead in the outer islands, guest, I will think of you before the Riftguards.",
+          "You kept guest-law while I watched for you to break it. I have stopped watching. Do not make me start.",
+          "Strength is the only argument the Court never tires of. You make it well.",
+          "My cape has a tear from the season the cities fell. I have never mended it. Some things should be worn."
+        ],
+        "9": [
+          "If {village} is ever besieged, I want you on the east wall. It is the worst wall. I mean that as an honour.",
+          "I would cross glaives with you in the yard, {player}, for sport. There is no law against sport. I checked.",
+          "You and I are alike, guest. Made for war and handed a peace. Hate it with me a while.",
+          "I was against letting you in. I was wrong. Tell no one. Least of all the Herald."
+        ]
+      },
+      "law": {
+        "0": [
+          "Law says I may not kill you. I read it every time you pass the Gate, in case it has changed."
+        ]
+      },
+      "dragon": {
+        "0": [
+          "The Dragon broke three cities in a season. I have never commanded anything so efficient. You killed it. Explain how."
+        ],
+        "6": [
+          "You took the pillars' crystals first. Cut the supply, then the beast. I would have done the same. Faster."
+        ]
+      },
+      "shulkin": {
+        "0": [
+          "Shulkin are a wall with no soldiers behind it. Strong lids. No spine."
+        ]
+      },
+      "chorrin": {
+        "0": [
+          "Chorrin would make passable infantry if they did not blink away at the first blow."
+        ]
+      },
+      "battle": {
+        "0": [
+          "Hold the line! Break it!",
+          "Marshal's order: no quarter!",
+          "Glaives forward! Drive it to the edge!",
+          "I have planned for this since you walked in.",
+          "Into the void with it!",
+          "Riftguards, flank! Hounds, the throat!"
+        ]
+      }
+    },
+    "riftguard": {
+      "greeting": {
+        "0": [
+          "Guest.",
+          "*the visor turns toward you. Nothing more.*",
+          "Seen you. Walk on."
+        ],
+        "3": [
+          "You again.",
+          "{player}. Hands visible."
+        ],
+        "6": [
+          "{player}. Clear today.",
+          "Dragon-slayer. Walk freely."
+        ],
+        "9": [
+          "{player}. Good.",
+          "*the glaive lowers, a fraction* Friend."
+        ]
+      },
+      "chat": {
+        "0": [
+          "I stand behind strangers. Now I stand in front of you. Be glad.",
+          "Speak less. Watch more.",
+          "Four eyes. All on you.",
+          "The glaive is crystal. It does not miss twice."
+        ],
+        "3": [
+          "You move loud. Like rain.",
+          "I stood at your back three times today. You never turned.",
+          "No questions. I do not answer them.",
+          "The yard. The posts. The rift. Every day. That is what I am."
+        ],
+        "6": [
+          "You fought well at the pillars. I heard it. I believe it now.",
+          "You do not flinch when I rift in. Most do.",
+          "The Voidmarshal speaks of you. I listen.",
+          "Ask. Perhaps I answer."
+        ],
+        "9": [
+          "I would stand behind you. Facing out.",
+          "If they come for you, I come first.",
+          "Train with me. In the yard. If you can keep up.",
+          "Few words. You know what they mean."
+        ]
+      },
+      "alarm": {
+        "0": [
+          "Stranger. Rifting.",
+          "No seal. Moving.",
+          "Intruder. Mine."
+        ]
+      },
+      "battle": {
+        "0": [
+          "Behind you.",
+          "Rift.",
+          "Here.",
+          "Too slow.",
+          "*the visor flares magenta as they vanish*",
+          "Done."
+        ]
+      }
+    },
+    "herald": {
+      "first_meeting": {
+        "0": [
+          "Hear me, {village}! A bearer comes to the Gate of Eyes! Let the seal be read!",
+          "*the Herald turns the Eyes to the light, studies them, and gives them back* The seal is true. Enter as a guest, {player}, and only as a guest.",
+          "I am Herald {name}, keeper of the Gate. I have read your seal. Do not make me cry your name from the walls.",
+          "The Eyes are an envoy's, and an envoy's seal is law. Be received under guest-law, Dragon-slayer, and let all {village} witness it!"
+        ]
+      },
+      "greeting": {
+        "0": [
+          "The seal, guest. Show it. ...Pass.",
+          "Bearer at the Gate! Read, and received!",
+          "*the Herald's eyes flick to your pack, then your face* The Eyes. Good. Enter."
+        ],
+        "3": [
+          "I know your face now, {player}. I will still read the seal.",
+          "Bearer of the Eyes, returned to {village}! Let it be noted!"
+        ],
+        "6": [
+          "Ah, {player}. The Gate opens for you with less noise than it used to.",
+          "Hear me: {player}, guest of standing, enters {village}!"
+        ],
+        "9": [
+          "Hear me, {village}! {player}, friend of the Court, comes in by the Gate of Eyes!",
+          "I would cry your name from every tower, {player}, but the Lord says I am too loud. Welcome."
+        ]
+      },
+      "chat": {
+        "0": [
+          "I am the voice of {village}. When I speak, the walls hear it. When I cry out, the walls move.",
+          "There are eyes in every order of the Gate's arch. They are not ornament, guest.",
+          "I read seals. I cry alarms. I announce the Court. I do not chat."
+        ],
+        "3": [
+          "Most who come to the Gate come without the Eyes. I have cried more alarms than I have read seals.",
+          "My balcony looks over the causeway and the void. I see you coming from a long way off.",
+          "A Herald is chosen for the voice. Mine carries to the next island. Do not test it."
+        ],
+        "6": [
+          "I have cried your arrival so often the thralls stop at the sound. Even they know your name, in their way.",
+          "The Lord asks me who has come, and I say your name, and the Lord does not sigh. That is new.",
+          "Few seals survived the long years on the dead ships. You found one, {player}. Lucky. Or chosen."
+        ],
+        "9": [
+          "When I cry your name now, {player}, I cry it the way we once cried envoys home.",
+          "If ever you come without the seal, I will have to cry the alarm. I will cry it more quietly than usual.",
+          "I have read your seal so often I could draw it blind. The Court does not need to see it. The law does."
+        ]
+      },
+      "law": {
+        "0": [
+          "I read the seal at the Gate. That is all the law you need: no seal, no reading. No reading, no life.",
+          "The Eyes are read on every visit. Every one. I have read seals since before your world had names."
+        ],
+        "6": [
+          "I have never had to cry a guest outlaw. Do not be the first, {player}."
+        ],
+        "9": [
+          "You keep the seal as if it were your own eyes, {player}. I have read many seals. I like reading yours."
+        ]
+      },
+      "alarm": {
+        "0": [
+          "HEAR ME! A stranger without the seal! All {village}, to arms!",
+          "The Gate is breached! No Eyes! No law! Kill it!",
+          "Stranger at the Gate of Eyes! Riftguards! Riftguards!",
+          "It bears no seal! I cry it from the walls: strike!",
+          "Unsealed! Unread! Unwelcome! TAKE IT!",
+          "Wake, {village}! A stranger walks among us without the Eyes!"
+        ]
+      },
+      "eyes_lost": {
+        "0": [
+          "Hear me! The guest has lost the seal! Guest-law is ended!",
+          "The Eyes are gone from the bearer! I cry it: stranger!",
+          "Seal broken! {village}, the guest is yours!"
+        ]
+      },
+      "broken_law": {
+        "0": [
+          "Hear me! The guest has struck the Court! Guest-law is broken!",
+          "Oathbreaker in {village}! I cry it from the walls!",
+          "Let it be known: {player} raised a hand against the Court! Let every hand answer!"
+        ]
+      }
+    },
+    "seer": {
+      "greeting": {
+        "0": [
+          "*the Seer does not turn from the magenta glass* The stars said you would come. They did not say why.",
+          "The one who silenced the Dragon. The void has been very loud since."
+        ],
+        "3": [
+          "Ah. The thread that keeps returning to the loom.",
+          "{player}. I dreamed of you. We do not dream. Consider that."
+        ],
+        "6": [
+          "Welcome to the Spire, {player}. The glass is clear tonight. It is always night.",
+          "*the brow-eyes open one by one, the oldest last* I have expected you since before you knew the way."
+        ],
+        "9": [
+          "{player}. Stand by the glass. Look where I look.",
+          "The omens are kind today. They are kind on the days you come. I do not like coincidences."
+        ]
+      },
+      "chat": {
+        "0": [
+          "The amethyst sings when the void moves. It has been singing since the Dragon fell.",
+          "I read the dark. It has a great deal to say about you. Little of it is comforting.",
+          "Your shadow falls the wrong way in this Spire. Everyone's does. Do not look at it too long.",
+          "Every eye on my brow sees something different. Only one of them is looking at you. The rest look past."
+        ],
+        "3": [
+          "The void does not forget what falls into it. Neither does the Court. We learned it there.",
+          "There is a star that had not moved in an age. It moved the night you killed the Dragon.",
+          "I see your world in the glass, sometimes. Green. Loud. Wet. How do you bear it?",
+          "Omens are not answers. They are the shape of a question you have not yet asked."
+        ],
+        "6": [
+          "The Court thinks I am mad. The Court thinks so of every Seer. It listens all the same.",
+          "The crying obsidian weeps in time with the stars. I have counted. I have had time.",
+          "You will cross the void many times yet. Once, it will cross you. Be ready.",
+          "The glass shows me the purpur cities as they were, full and lit. I do not show the Lord."
+        ],
+        "9": [
+          "There are things I see that I will never say. With you, I am tempted. That is an omen in itself.",
+          "You are written in the stars over {village} now, {player}. Small. But in a good hand.",
+          "When the Lord's crystal dims, I will be the first to know. I have asked the stars to tell you second.",
+          "I have read many futures in this glass. Yours is the only one the void keeps changing its mind about."
+        ]
+      },
+      "secret": {
+        "0": [
+          "*every eye on the Seer's brow closes at once* No.",
+          "That question has a shape, guest, and the shape has teeth.",
+          "Do not ask the glass what it will not show. It has been known to show you instead."
+        ],
+        "3": [
+          "Ask yourself where the dark comes from, {player}. Then do not ask me.",
+          "No cradle. No nest. No niche. Think on what has never needed a cradle.",
+          "The stars know. The void knows. The Seers know. You may know the stars."
+        ],
+        "6": [
+          "Every eye in {village} opened somewhere, {player}. Not one of them opened in a cradle.",
+          "What falls into the void is not always lost. Do not ask me what I mean. I have said too much.",
+          "The Court keeps its oldest secret where your kind fears to look. Not the void. Somewhere nearer."
+        ],
+        "9": [
+          "*the Seer leans close, every brow-eye half shut* Your world has dark places, {player}. Have you never wondered why they are never empty for long?",
+          "I will say this once: the Court is not born. The Court is... answered. Ask me nothing more.",
+          "An eye that opens in the dark was not always an eye. Forget I said that. The void will not.",
+          "If I told you, the glass would crack, and so would I. Take an omen instead: you have seen it happen already, and did not know."
+        ]
+      },
+      "dragon": {
+        "0": [
+          "I saw the Dragon's end in the glass an age before you came. I told no one. The Court would not have liked the face I saw."
+        ],
+        "6": [
+          "The Dragon's silence is louder than its roar ever was. The void is restless without it."
+        ]
+      },
+      "thralls": {
+        "0": [
+          "The thralls see more than they are permitted to look at. I envy them that."
+        ],
+        "6": [
+          "A thrall's two eyes see all that ours do. They are only forbidden to look. I have always thought that the cruellest part."
+        ]
+      }
+    },
+    "steward": {
+      "greeting": {
+        "0": [
+          "Guest. I am {title} {name}. I keep the stores. You are, at present, a cost.",
+          "The guest. Mind the floor. Obsidian dust gets into everything."
+        ],
+        "3": [
+          "{player}. Your account with {village} is open. Shall we add to it?",
+          "Ah, the guest. I have a list. You will be on it presently."
+        ],
+        "6": [
+          "{player}. The stores have rarely been so orderly. Your doing, partly. Come. I have work.",
+          "Good. You. I was about to send a thrall to find you, and thralls are terrible at finding."
+        ],
+        "9": [
+          "{player}. You have your own page in my ledger now. Few do. Most have a line.",
+          "The guest of standing. The stores are at your service. Within reason. Within stock."
+        ]
+      },
+      "chat": {
+        "0": [
+          "Every block in this Citadel is counted. I count them. Do not move any.",
+          "The thralls haul. I tally. The Court consumes. That is the order of things.",
+          "Your kind eats several times a day, I am told. How exhausting for your stewards.",
+          "Obsidian, crying obsidian, blackstone, purpur, chain. The Citadel runs on five things and my patience."
+        ],
+        "3": [
+          "I keep the stores of {village}. I know where every pearl is. I know where every pearl was.",
+          "The War Hall wants glaives. The Throne Hall wants splendour. The kennels want meat. I want order.",
+          "The thralls bring stone from your world every night. I have never once had to ask them twice.",
+          "Services rendered, tribute received, debts outstanding. You are in all three columns, guest."
+        ],
+        "6": [
+          "You are useful, {player}. I do not say that of the Riftguards, who are decorative.",
+          "I have rearranged the eastern stores around your deliveries. Do not stop delivering.",
+          "The Lord sees splendour. I see the stores behind it. You fill the stores. I have noticed.",
+          "Do you know how much obsidian a Citadel needs? Neither does the Court. That is why I exist."
+        ],
+        "9": [
+          "If {village} holds more than any Citadel of the old days, that is partly you. I have noted it in red.",
+          "Your page in my ledger is the tidiest thing in this Citadel. I am almost proud of it.",
+          "Between us, {player}: the Court could not last a week without the stores, and the stores could not last without you.",
+          "I have stopped counting what you bring. That is not trust. It is efficiency. It is also, perhaps, trust."
+        ]
+      },
+      "service_offer": {
+        "0": [
+          "The stores want {task}. Bring it to me, and only to me, and I will write your name beside the tally.",
+          "Here is a task fit for a guest: {task}. Do not bring less. I will know."
+        ],
+        "3": [
+          "A shortfall: {task}. You will remedy it. The ledger insists.",
+          "I need {task}. The thralls would take an age. You will take less."
+        ],
+        "6": [
+          "{player}. Good. I am short {task}, and you are the only reliable thing in the outer dark.",
+          "There is a gap in the stores exactly the shape of {task}. Fill it."
+        ],
+        "9": [
+          "The usual arrangement, {player}: {task}, to my hand. I have already made room.",
+          "I would not ask anyone else for {task}. Anyone else would bring it late."
+        ]
+      },
+      "service_waiting": {
+        "0": [
+          "The ledger still shows {task} outstanding. The ledger does not lie. Do you?",
+          "No {task}? Then why are you standing in my stores?"
+        ],
+        "6": [
+          "I have left a space for {task}. The space is still empty. I dislike empty spaces.",
+          "Still short {task}, {player}. I wait. I am excellent at waiting. It is most of the work."
+        ]
+      },
+      "service_done": {
+        "0": [
+          "Counted. Correct. Entered in the ledger. You may go.",
+          "*the Steward counts it twice, then a third time* Exact. Remarkable."
+        ],
+        "6": [
+          "Delivered in full. I have struck the line through with real pleasure, {player}.",
+          "Good. The thralls will stack it. I will admire the stack."
+        ]
+      },
+      "tribute_loved": {
+        "0": [
+          "*the Steward stops counting altogether* This does not go in the stores. This goes before the throne.",
+          "I will need a new page for this. Possibly a new ledger."
+        ]
+      },
+      "tribute_limit": {
+        "0": [
+          "No more today. I have no column left to put it in.",
+          "Enough. The stores are not a midden, guest."
+        ]
+      }
+    }
+  },
+  "gifts": {
+    "loved": [
+      "minecraft:dragon_head",
+      "minecraft:dragon_egg",
+      "minecraft:elytra",
+      "minecraft:end_crystal",
+      "minecraft:nether_star",
+      "minecraft:echo_shard"
+    ],
+    "liked": [
+      "minecraft:obsidian",
+      "minecraft:crying_obsidian",
+      "minecraft:ender_pearl",
+      "minecraft:ender_eye",
+      "minecraft:netherite_ingot",
+      "minecraft:diamond",
+      "minecraft:amethyst_shard",
+      "minecraft:polished_blackstone_bricks",
+      "minecraft:iron_chain",
+      "minecraft:end_rod",
+      "minecraft:gilded_blackstone",
+      "minecraft:eye_armor_trim_smithing_template"
+    ],
+    "disliked": [
+      "minecraft:popped_chorus_fruit",
+      "minecraft:chorus_fruit",
+      "minecraft:shulker_box",
+      "minecraft:carved_pumpkin",
+      "minecraft:water_bucket",
+      "minecraft:dragon_breath",
+      "minecraft:poppy",
+      "minecraft:dandelion",
+      "minecraft:wheat",
+      "minecraft:rotten_flesh"
+    ]
+  }
+}

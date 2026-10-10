@@ -1,0 +1,850 @@
+{
+  "layout": "stead_a",
+  "residents": 13,
+  "buildings": [
+    {
+      "building": "hum_circle",
+      "people": "chorrin",
+      "role": "plaza",
+      "job": null,
+      "residents": 0,
+      "turns": 0,
+      "x": -8,
+      "z": -8,
+      "top": 0,
+      "size": [
+        17,
+        17,
+        17
+      ],
+      "spots": [
+        {
+          "kind": "sit",
+          "pos": [
+            3,
+            0,
+            -5
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            5,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            5,
+            0,
+            3
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            3,
+            0,
+            5
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -3,
+            0,
+            5
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -5,
+            0,
+            3
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -5,
+            0,
+            -3
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -3,
+            0,
+            -5
+          ]
+        }
+      ]
+    },
+    {
+      "building": "popping_kiln",
+      "people": "chorrin",
+      "role": "work",
+      "job": "kiln_keeper",
+      "residents": 0,
+      "turns": 1,
+      "x": -24,
+      "z": -10,
+      "top": 0,
+      "size": [
+        12,
+        15,
+        11
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            -22,
+            1,
+            -5
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -13,
+            1,
+            -8
+          ]
+        }
+      ]
+    },
+    {
+      "building": "cooks_hearth",
+      "people": "chorrin",
+      "role": "civic",
+      "job": "cook",
+      "residents": 0,
+      "turns": 2,
+      "x": 0,
+      "z": -25,
+      "top": 0,
+      "size": [
+        13,
+        14,
+        13
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            6,
+            1,
+            -17
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            11,
+            1,
+            -18
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            9,
+            1,
+            -18
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            11,
+            1,
+            -20
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            9,
+            1,
+            -20
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            3,
+            1,
+            -18
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            1,
+            1,
+            -18
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            3,
+            1,
+            -20
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            1,
+            1,
+            -20
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            7,
+            1,
+            -22
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            7,
+            1,
+            -24
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            5,
+            1,
+            -22
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            5,
+            1,
+            -24
+          ]
+        }
+      ]
+    },
+    {
+      "building": "grove_terraces",
+      "people": "chorrin",
+      "role": "work",
+      "job": "grove_tender",
+      "residents": 0,
+      "turns": 3,
+      "x": 18,
+      "z": -21,
+      "top": 0,
+      "size": [
+        13,
+        11,
+        15
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            19,
+            1,
+            -13
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            29,
+            4,
+            -12
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            29,
+            4,
+            -16
+          ]
+        }
+      ]
+    },
+    {
+      "building": "brewhouse",
+      "people": "chorrin",
+      "role": "work",
+      "job": "brewer",
+      "residents": 0,
+      "turns": 2,
+      "x": 8,
+      "z": -43,
+      "top": 1,
+      "size": [
+        11,
+        13,
+        12
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            14,
+            1,
+            -38
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            12,
+            1,
+            -38
+          ]
+        }
+      ]
+    },
+    {
+      "building": "groveback_pen",
+      "people": "chorrin",
+      "role": "work",
+      "job": null,
+      "residents": 0,
+      "turns": 3,
+      "x": 15,
+      "z": 0,
+      "top": 0,
+      "size": [
+        13,
+        7,
+        15
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            21,
+            1,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "building": "blinkers_post",
+      "people": "chorrin",
+      "role": "work",
+      "job": "blinker",
+      "residents": 0,
+      "turns": 0,
+      "x": 3,
+      "z": 21,
+      "top": 0,
+      "size": [
+        9,
+        17,
+        10
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            7,
+            1,
+            28
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            9,
+            1,
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "building": "dome_home_large",
+      "people": "chorrin",
+      "role": "home",
+      "job": null,
+      "residents": 4,
+      "turns": 0,
+      "x": -19,
+      "z": 22,
+      "top": 0,
+      "size": [
+        16,
+        14,
+        14
+      ],
+      "spots": [
+        {
+          "kind": "sit",
+          "pos": [
+            -17,
+            -1,
+            27
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -16,
+            -1,
+            26
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -16,
+            -1,
+            28
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -16,
+            -1,
+            31
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -13,
+            -1,
+            32
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -6,
+            -1,
+            30
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -6,
+            -1,
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "building": "dome_pair",
+      "people": "chorrin",
+      "role": "home",
+      "job": null,
+      "residents": 5,
+      "turns": 1,
+      "x": -37,
+      "z": 10,
+      "top": 1,
+      "size": [
+        13,
+        12,
+        21
+      ],
+      "spots": [
+        {
+          "kind": "sleep",
+          "pos": [
+            -30,
+            0,
+            14
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -32,
+            0,
+            12
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -34,
+            0,
+            14
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -34,
+            0,
+            26
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -32,
+            0,
+            28
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -30,
+            0,
+            25
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -30,
+            0,
+            26
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -31,
+            0,
+            27
+          ]
+        }
+      ]
+    },
+    {
+      "building": "dome_home",
+      "people": "chorrin",
+      "role": "home",
+      "job": null,
+      "residents": 2,
+      "turns": 1,
+      "x": -40,
+      "z": -6,
+      "top": 0,
+      "size": [
+        12,
+        12,
+        11
+      ],
+      "spots": [
+        {
+          "kind": "sleep",
+          "pos": [
+            -38,
+            -1,
+            -3
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -38,
+            -1,
+            1
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -34,
+            -1,
+            -4
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -36,
+            -1,
+            -4
+          ]
+        }
+      ]
+    },
+    {
+      "building": "dome_home",
+      "people": "chorrin",
+      "role": "home",
+      "job": null,
+      "residents": 2,
+      "turns": 1,
+      "x": -28,
+      "z": -26,
+      "top": 0,
+      "size": [
+        12,
+        12,
+        11
+      ],
+      "spots": [
+        {
+          "kind": "sleep",
+          "pos": [
+            -26,
+            -1,
+            -23
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -26,
+            -1,
+            -19
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -22,
+            -1,
+            -24
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -24,
+            -1,
+            -24
+          ]
+        }
+      ]
+    }
+  ],
+  "roster": [
+    {
+      "type": "chorrin_child",
+      "job": "",
+      "home": [
+        -6,
+        -1,
+        33
+      ],
+      "work": [
+        3,
+        0,
+        -5
+      ]
+    },
+    {
+      "type": "chorrin_child",
+      "job": "",
+      "home": [
+        -34,
+        0,
+        26
+      ],
+      "work": [
+        3,
+        0,
+        -5
+      ]
+    },
+    {
+      "type": "chorrin_child",
+      "job": "",
+      "home": [
+        -32,
+        0,
+        28
+      ],
+      "work": [
+        3,
+        0,
+        -5
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "kiln_keeper",
+      "home": [
+        -38,
+        -1,
+        -3
+      ],
+      "work": [
+        -22,
+        1,
+        -5
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "cook",
+      "home": [
+        -13,
+        -1,
+        32
+      ],
+      "work": [
+        6,
+        1,
+        -17
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "grove_tender",
+      "home": [
+        -38,
+        -1,
+        1
+      ],
+      "work": [
+        19,
+        1,
+        -13
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "brewer",
+      "home": [
+        -26,
+        -1,
+        -23
+      ],
+      "work": [
+        14,
+        1,
+        -38
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "herder",
+      "home": [
+        -16,
+        -1,
+        31
+      ],
+      "work": [
+        21,
+        1,
+        4
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "blinker",
+      "home": [
+        -32,
+        0,
+        12
+      ],
+      "work": [
+        7,
+        1,
+        28
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "gatherer",
+      "home": [
+        -6,
+        -1,
+        30
+      ],
+      "work": [
+        3,
+        0,
+        -5
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "gatherer",
+      "home": [
+        -26,
+        -1,
+        -19
+      ],
+      "work": [
+        3,
+        0,
+        -5
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "gatherer",
+      "home": [
+        -30,
+        0,
+        14
+      ],
+      "work": [
+        3,
+        0,
+        -5
+      ]
+    },
+    {
+      "type": "chorrin",
+      "job": "gatherer",
+      "home": [
+        -34,
+        0,
+        14
+      ],
+      "work": [
+        3,
+        0,
+        -5
+      ]
+    },
+    {
+      "type": "groveback",
+      "job": "",
+      "home": [
+        21,
+        1,
+        4
+      ],
+      "work": null
+    },
+    {
+      "type": "groveback",
+      "job": "",
+      "home": [
+        21,
+        1,
+        4
+      ],
+      "work": null
+    },
+    {
+      "type": "groveback",
+      "job": "",
+      "home": [
+        21,
+        1,
+        4
+      ],
+      "work": null
+    }
+  ]
+}

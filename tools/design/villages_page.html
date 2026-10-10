@@ -1,0 +1,386 @@
+<title>End Villages</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a field guide on the void. The hero is a whole village you can turn; then one plate of
+   buildings per people, an inspector with a cutaway, photographs from the game, and the build notes.
+   Single dark look on purpose (the End), shared with the people page. */
+:root {
+  color-scheme: dark;
+  --void: #0e0a15;
+  --void-2: #171120;
+  --void-3: #211829;
+  --line: #3a2d45;
+  --ink: #ece4ef;
+  --muted: #a596ad;
+  --purpur: #a97ea9;
+  --purpur-hi: #d6b6d7;
+  --stone: #dcdd9f;
+  --pearl: #46b8a8;
+  --court: #d659f5;
+  --display: "Pixelify Sans", "Lucida Console", monospace;
+  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+body { background: var(--void); color: var(--ink); font: 16px/1.6 var(--body); padding-inline: 16px; padding-block: 0 64px; margin: 0; }
+.wrap { max-width: 1120px; margin-inline: auto; display: grid; gap: 56px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; line-height: 1.15; margin: 0; }
+h1 { font-size: clamp(2rem, 5vw, 3.4rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); }
+h3 { font-size: 1.15rem; }
+p { margin: 0; max-width: 68ch; }
+.eyebrow { font: 500 .72rem/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--purpur-hi); }
+.muted { color: var(--muted); }
+code { font: .88em var(--mono); color: var(--purpur-hi); background: var(--void-3); padding: 1px 5px; border-radius: 3px; overflow-wrap: anywhere; }
+section { display: grid; gap: 18px; min-width: 0; }
+
+/* masthead + village stage */
+.masthead { display: grid; gap: 14px; padding-top: 40px; }
+.masthead .lede { color: var(--muted); font-size: 1.08rem; }
+.stage { position: relative; border: 1px solid var(--line); border-radius: 6px; overflow: hidden;
+  background: radial-gradient(120% 90% at 50% 15%, #2a1d36 0%, var(--void-2) 55%, var(--void) 100%); }
+.stage canvas { display: block; width: 100%; height: clamp(360px, 58vw, 600px); cursor: grab; touch-action: pan-y; }
+.stage canvas:active { cursor: grabbing; }
+.stage .hint { position: absolute; right: 12px; top: 10px; font: .7rem var(--mono); color: var(--muted); pointer-events: none; }
+.stage .legend { position: absolute; left: 14px; bottom: 12px; display: grid; gap: 2px; pointer-events: none; max-width: calc(100% - 28px); }
+.stage .legend b { font: 600 1.25rem/1.2 var(--display); }
+.stage .legend span { font: .78rem/1.4 var(--mono); color: var(--muted); }
+.kinds { display: flex; flex-wrap: wrap; gap: 8px; }
+.btn { font: 600 .9rem var(--display); background: var(--void-3); color: var(--ink); border: 1px solid var(--line); padding: 6px 14px; border-radius: 4px; cursor: pointer; }
+.btn[aria-pressed="true"] { background: var(--purpur); color: #1d1323; border-color: var(--purpur-hi); }
+.btn:focus-visible, .card:focus-visible, input:focus-visible { outline: 2px solid var(--pearl); outline-offset: 2px; }
+
+/* how they sit in the world */
+.rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px; }
+.rule { border-top: 3px solid var(--purpur); padding-top: 10px; display: grid; gap: 6px; align-content: start; min-width: 0; }
+.rule p { color: var(--muted); font-size: .95rem; }
+.mix { display: flex; height: 34px; border-radius: 4px; overflow: hidden; border: 1px solid var(--line); font: 600 .8rem/34px var(--mono); }
+.mix div { padding-inline: 10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mix .s { background: #5d3f63; flex: 40; }
+.mix .c { background: #6c6a3f; flex: 40; }
+.mix .x { background: linear-gradient(90deg, #5d3f63, #6c6a3f); flex: 20; }
+.mix-note { font: .8rem var(--mono); color: var(--muted); }
+
+/* building plates */
+.peoples { display: flex; flex-wrap: wrap; gap: 8px; }
+.plate { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); gap: 20px; align-items: start; }
+.inspect { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); background: var(--void-2); border: 1px solid var(--line); border-radius: 6px; overflow: hidden; display: grid; }
+.inspect canvas { display: block; width: 100%; height: clamp(300px, 44vw, 460px); cursor: grab; touch-action: pan-y;
+  background: radial-gradient(70% 80% at 50% 40%, #2b2036, var(--void-2)); }
+.inspect .about { padding: 14px 16px 16px; display: grid; gap: 8px; border-top: 1px solid var(--line); }
+.inspect .about header { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; }
+.facts { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: .76rem var(--mono); padding: 1px 8px; border: 1px solid var(--line); border-radius: 3px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.cut { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: center; font: .78rem var(--mono); color: var(--muted); }
+.cut input { width: 100%; accent-color: var(--purpur); }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); gap: 10px; }
+.card { display: grid; gap: 4px; text-align: left; background: var(--void-2); border: 1px solid var(--line); border-radius: 5px; padding: 6px 6px 8px; color: var(--ink); cursor: pointer; font: inherit; min-width: 0; }
+.card img, .card .ph { width: 100%; aspect-ratio: 4 / 3; display: block; border-radius: 3px; background: radial-gradient(70% 80% at 50% 40%, #2b2036, var(--void-3)); object-fit: cover; }
+.card b { font: 600 .9rem/1.25 var(--display); padding-inline: 2px; }
+.card span { font: .7rem/1.3 var(--mono); color: var(--muted); padding-inline: 2px; }
+.card[aria-pressed="true"] { border-color: var(--purpur-hi); background: var(--void-3); }
+.card.stead[aria-pressed="true"] { border-color: var(--stone); }
+.card.court[aria-pressed="true"] { border-color: var(--court); }
+
+/* photographs from the game */
+.shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 14px; }
+.shots figure { margin: 0; display: grid; gap: 6px; min-width: 0; }
+.shots img { width: 100%; height: auto; display: block; border-radius: 4px; border: 1px solid var(--line); }
+.shots figcaption { font: .78rem/1.4 var(--mono); color: var(--muted); }
+
+/* notes */
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 20px; }
+.notes ul, .notes ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; color: var(--muted); }
+.notes li b { color: var(--ink); font-weight: 700; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; }
+table { border-collapse: collapse; width: 100%; font-size: .9rem; min-width: 560px; }
+th, td { text-align: left; padding: 7px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 500 .7rem var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: var(--void-2); }
+td.num { font-variant-numeric: tabular-nums; font-family: var(--mono); }
+tr:last-child td { border-bottom: 0; }
+
+@media (max-width: 820px) {
+  .plate { grid-template-columns: minmax(0, 1fr); }
+  .inspect { position: static; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
+</style>
+
+<div class="wrap">
+  <header class="masthead">
+    <p class="eyebrow">End Expansion · villages, design and build</p>
+    <h1>The villages of the outer End</h1>
+    <p class="lede">Four kinds of settlement for three peoples, each one built on floating islets it brings with it, so a village can sit on an island's rim and reach out over the void. Every building below is the real structure the mod places in the world.</p>
+    <div class="kinds" role="group" aria-label="Village kind" id="kinds"></div>
+    <div class="stage">
+      <canvas id="village" aria-label="A whole village, drag to turn"></canvas>
+      <span class="hint">drag to turn</span>
+      <div class="legend"><b id="v-name"></b><span id="v-info"></span></div>
+    </div>
+  </header>
+
+  <section aria-labelledby="h-world">
+    <p class="eyebrow">How a village sits in the End</p>
+    <h2 id="h-world">Islets, bridges and lamps</h2>
+    <div class="rules">
+      <div class="rule"><h3>On the outer islands</h3><p>A village needs land at its centre and keeps more than 1,000 blocks from the Dragon's island. It sits at the height of the ground around its centre.</p></div>
+      <div class="rule"><h3>Its own islets</h3><p>Every building stands on an end-stone islet with a rough, tapering underside. Over land the islet merges into the island; past the rim it floats.</p></div>
+      <div class="rule"><h3>Paths become bridges</h3><p>Paths run from each door to the centre. Over the void they turn into railed bridges with lamps on the rails, and they climb in steps between islets of different heights.</p></div>
+      <div class="rule"><h3>No beds, always lit</h3><p>Beds explode in the End, so Shulkin sleep in lidded niches and Chorrin in fibre nests. Every walkable space is lit, because Endermen spawn in the dark. Wild chorus never grows across a path.</p></div>
+    </div>
+    <div class="mix" aria-label="Village mix: Spire 40%, Stead 40%, Crossing 20%">
+      <div class="s">Spire 40%</div><div class="c">Stead 40%</div><div class="x">Crossing 20%</div>
+    </div>
+    <p class="mix-note">Citadels are placed apart from this mix: rare, far between, never mixed with other peoples.</p>
+  </section>
+
+  <section aria-labelledby="h-buildings">
+    <p class="eyebrow">The buildings</p>
+    <h2 id="h-buildings">Every building, inside and out</h2>
+    <p class="muted">Pick a building to turn it and cut it open. The cutaway slider removes layers from the top down so you can see the rooms.</p>
+    <div class="peoples" role="group" aria-label="People" id="peoples"></div>
+    <div class="plate">
+      <div class="inspect">
+        <canvas id="inspect" aria-label="The chosen building, drag to turn"></canvas>
+        <div class="about">
+          <header><h3 id="b-name"></h3><span class="chip" id="b-role"></span></header>
+          <p class="muted" id="b-about"></p>
+          <div class="facts" id="b-facts"></div>
+          <label class="cut" for="cut"><span>cutaway</span><input id="cut" type="range" min="0" max="10" value="10"><span id="cut-v"></span></label>
+        </div>
+      </div>
+      <div class="cards" id="cards"></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-game" id="game-section">
+    <p class="eyebrow">In the game</p>
+    <h2 id="h-game">Found in a fresh world</h2>
+    <p class="muted" id="game-note">These villages generated naturally in a new world's outer End during the automated game test (spectator view, night vision on).</p>
+    <div class="shots" id="shots"></div>
+  </section>
+
+  <section aria-labelledby="h-layouts">
+    <p class="eyebrow">Layouts</p>
+    <h2 id="h-layouts">Every planned layout</h2>
+    <p class="muted">Each kind has a few fixed layouts. The game picks one and turns it to a random side, so the same plan rarely looks the same twice.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Layout</th><th>Kind</th><th>Size (blocks)</th><th>Buildings</th><th>Residents</th></tr></thead>
+      <tbody id="layouts"></tbody>
+    </table></div>
+  </section>
+
+  <section aria-labelledby="h-notes">
+    <p class="eyebrow">Build notes</p>
+    <h2 id="h-notes">How it is made</h2>
+    <div class="notes">
+      <ul>
+        <li><b>Buildings</b> are small Python programs drawing into a voxel canvas, checked as they are built: doors need clear space on both sides, chorus needs end stone under it, and no beds are allowed.</li>
+        <li><b>Villages</b> are planned from those buildings: the centre first, then each building on a ray from it with its door turned inward, its islet, and a path routed to the centre that prefers land and straight runs.</li>
+        <li><b>In the game</b> a village is one structure: a ground piece that clears old terrain and lays the islets, then the planned tiles (32 by 32 blocks each) placed on top.</li>
+      </ul>
+      <ul>
+        <li><b>Find one:</b> <code>/locate structure endexpansion:spire_village</code>, <code>stead_village</code>, <code>crossing</code> or <code>citadel</code>, from the outer End.</li>
+        <li><b>Not yet:</b> the residents. Every home records where its people will sleep and work, ready for when the Shulkin, Chorrin and the Court are added as mobs.</li>
+        <li><b>Citadels</b> are walled. Without Enderman Eyes the Court will attack on sight, once the Court exists in the game.</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>/*__VIEWER__*/</script>
+<script>
+const DATA = /*__DATA__*/null;
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function decode(v) {
+  const bin = atob(v.blocks), bytes = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  return { size: v.size, palette: v.palette, blocks: new Int16Array(bytes.buffer) };
+}
+function cutData(d, top) {
+  if (top >= d.size[1]) return d;
+  const out = [];
+  for (let i = 0; i < d.blocks.length; i += 4) if (d.blocks[i + 1] <= top) out.push(d.blocks[i], d.blocks[i + 1], d.blocks[i + 2], d.blocks[i + 3]);
+  return { size: d.size, palette: d.palette, blocks: out };
+}
+
+// ---- one orbit viewer per canvas, a shared render loop, paused off screen ----
+const viewers = [];
+function Orbit(canvas, opts) {
+  const v = { canvas, yaw: opts.yaw || -0.6, pitch: opts.pitch || 0.5, spin: REDUCED ? 0 : (opts.spin ?? 0.12), visible: true, drag: null, dist: 60, target: new THREE.Vector3() };
+  v.renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  v.renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
+  v.scene = new THREE.Scene();
+  v.camera = new THREE.PerspectiveCamera(32, 1, 0.5, 5000);
+  v.set = (group, size, center, pitch) => {
+    if (v.group) { v.scene.remove(v.group); v.group.traverse(o => { if (o.geometry) o.geometry.dispose(); }); }
+    v.group = group; v.scene.add(group);
+    const [sx, sy, sz] = size;
+    group.position.set(-center[0], -center[1], -center[2]);
+    v.target.set(0, opts.lift ? sy * opts.lift : 0, 0);
+    v.radius = 0.5 * Math.sqrt(sx * sx + sz * sz + (opts.lift ? sy * sy : sy * sy * 0.25));
+    if (pitch !== undefined) v.pitch = pitch;
+    v.resize();
+  };
+  v.resize = () => {
+    const w = canvas.clientWidth, h = canvas.clientHeight;
+    if (!w || !h) return;
+    v.renderer.setSize(w, h, false); v.camera.aspect = w / h; v.camera.updateProjectionMatrix();
+    // fit the bounding sphere into the narrower of the two fields of view
+    const half = THREE.MathUtils.degToRad(v.camera.fov / 2);
+    const fit = Math.min(half, Math.atan(Math.tan(half) * w / h));
+    v.dist = (v.radius || 30) / Math.sin(fit) * (opts.zoom || 1);
+  };
+  new ResizeObserver(v.resize).observe(canvas);
+  canvas.addEventListener('pointerdown', e => { v.drag = { x: e.clientX, y: e.clientY, yaw: v.yaw, pitch: v.pitch }; canvas.setPointerCapture(e.pointerId); });
+  canvas.addEventListener('pointermove', e => {
+    if (!v.drag) return;
+    v.yaw = v.drag.yaw + (e.clientX - v.drag.x) * 0.01;
+    v.pitch = Math.max(-0.5, Math.min(1.35, v.drag.pitch + (e.clientY - v.drag.y) * 0.006));
+  });
+  const end = () => { v.drag = null; };
+  canvas.addEventListener('pointerup', end); canvas.addEventListener('pointercancel', end);
+  new IntersectionObserver(es => es.forEach(en => v.visible = en.isIntersecting)).observe(canvas);
+  viewers.push(v);
+  return v;
+}
+let last = performance.now();
+function loop(now) {
+  const dt = Math.min(0.05, (now - last) / 1000); last = now;
+  for (const v of viewers) {
+    if (!v.visible || !v.group) continue;
+    if (!v.drag) v.yaw += v.spin * dt;
+    const c = Math.cos(v.pitch);
+    v.camera.position.set(v.target.x + Math.sin(v.yaw) * c * v.dist, v.target.y + Math.sin(v.pitch) * v.dist, v.target.z - Math.cos(v.yaw) * c * v.dist);
+    v.camera.lookAt(v.target);
+    v.renderer.render(v.scene, v.camera);
+  }
+  requestAnimationFrame(loop);
+}
+
+// ---- the village stage ----
+const KIND_NAMES = { spire: 'Shulkin Spire', stead: 'Chorrin Stead', crossing: 'Crossing', citadel: 'Citadel' };
+const villageView = Orbit(document.getElementById('village'), { yaw: -0.7, pitch: 0.55, spin: 0.08, zoom: 0.66 });
+const villageCache = {};
+function showVillage(kind) {
+  const v = DATA.villages[kind];
+  if (!villageCache[kind]) villageCache[kind] = voxelGroup(decode(v.vox));
+  villageView.set(villageCache[kind], v.vox.size, v.center);
+  document.getElementById('v-name').textContent = KIND_NAMES[kind] + ' (' + v.name + ')';
+  document.getElementById('v-info').textContent = v.buildings + ' buildings · ' + v.residents + ' residents · ' + v.vox.size[0] + ' × ' + v.vox.size[2] + ' blocks';
+  for (const b of document.querySelectorAll('#kinds .btn')) b.setAttribute('aria-pressed', b.dataset.kind === kind);
+}
+const kinds = document.getElementById('kinds');
+for (const k of Object.keys(DATA.villages)) {
+  const b = document.createElement('button');
+  b.className = 'btn'; b.dataset.kind = k; b.textContent = KIND_NAMES[k];
+  b.addEventListener('click', () => showVillage(k));
+  kinds.appendChild(b);
+}
+
+// ---- buildings ----
+const PEOPLE_NAMES = { shulkin: 'Shulkin', chorrin: 'Chorrin', shared: 'Crossing', court: 'Court', decor: 'Street decor' };
+const inspectView = Orbit(document.getElementById('inspect'), { yaw: -0.6, pitch: 0.42, spin: 0.25, lift: 0.5, zoom: 0.95 });
+const cut = document.getElementById('cut');
+let current = null, currentData = null;
+function group(b) { return b.people === 'decor' ? 'decor' : b.people; }
+function showBuilding(b) {
+  current = b; currentData = decode(b.vox);
+  cut.max = b.size[1]; cut.value = b.size[1];
+  drawBuilding();
+  document.getElementById('b-name').textContent = b.title;
+  document.getElementById('b-role').textContent = b.job ? b.role + ' · ' + b.job.replace(/_/g, ' ') : b.role;
+  document.getElementById('b-about').textContent = b.about;
+  const facts = [b.size.join(' × ') + ' blocks', b.blocks + ' blocks placed'];
+  if (b.residents) facts.push(b.residents + (b.residents === 1 ? ' resident' : ' residents'));
+  if (b.ground) facts.push('sunk ' + b.ground + ' into its islet');
+  document.getElementById('b-facts').innerHTML = facts.map(f => '<span class="chip">' + f + '</span>').join('');
+  for (const c of document.querySelectorAll('.card')) c.setAttribute('aria-pressed', c.dataset.name === b.name);
+}
+function drawBuilding() {
+  const top = +cut.value;
+  document.getElementById('cut-v').textContent = top >= current.size[1] ? 'whole' : 'layer ' + top;
+  const d = cutData(currentData, top);
+  inspectView.set(voxelGroup(d), current.size, [current.size[0] / 2, 0, current.size[2] / 2]);
+}
+cut.addEventListener('input', drawBuilding);
+
+// thumbnails: one offscreen renderer, drawn a few at a time
+const thumbRenderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true });
+thumbRenderer.setSize(320, 240, false);
+const thumbQueue = [];
+function thumb(b, img) { thumbQueue.push([b, img]); }
+function drainThumbs() {
+  const t0 = performance.now();
+  while (thumbQueue.length && performance.now() - t0 < 30) {
+    const [b, img] = thumbQueue.shift();
+    const scene = new THREE.Scene(), g = voxelGroup(decode(b.vox));
+    g.position.set(-b.size[0] / 2, 0, -b.size[2] / 2); scene.add(g);
+    const r = 0.5 * Math.hypot(b.size[0], b.size[1], b.size[2]);
+    const cam = new THREE.PerspectiveCamera(30, 4 / 3, 0.1, 2000);
+    const dist = r / Math.sin(THREE.MathUtils.degToRad(15)) * 0.92;
+    const e = 0.42;
+    cam.position.set(-Math.sin(0.6) * Math.cos(e) * dist, b.size[1] * 0.5 + Math.sin(e) * dist, -Math.cos(0.6) * Math.cos(e) * dist);
+    cam.lookAt(0, b.size[1] * 0.5, 0);
+    thumbRenderer.render(scene, cam);
+    img.src = thumbRenderer.domElement.toDataURL('image/png');
+    g.traverse(o => { if (o.geometry) o.geometry.dispose(); });
+  }
+  if (thumbQueue.length) setTimeout(drainThumbs, 16);
+}
+const cards = document.getElementById('cards');
+function showPeople(p) {
+  cards.innerHTML = '';
+  const list = DATA.buildings.filter(b => group(b) === p);
+  for (const b of list) {
+    const c = document.createElement('button');
+    c.className = 'card ' + (p === 'chorrin' ? 'stead' : p); c.dataset.name = b.name; c.type = 'button';
+    const img = document.createElement('img'); img.alt = ''; img.width = 320; img.height = 240;
+    c.appendChild(img);
+    c.insertAdjacentHTML('beforeend', '<b>' + b.title + '</b><span>' + b.size.join('×') + (b.residents ? ' · ' + b.residents + ' live here' : '') + '</span>');
+    c.addEventListener('click', () => showBuilding(b));
+    cards.appendChild(c);
+    thumb(b, img);
+  }
+  drainThumbs();
+  for (const btn of document.querySelectorAll('#peoples .btn')) btn.setAttribute('aria-pressed', btn.dataset.people === p);
+  if (list.length) showBuilding(list[0]);
+}
+const peoples = document.getElementById('peoples');
+for (const p of ['shulkin', 'chorrin', 'shared', 'court', 'decor']) {
+  if (!DATA.buildings.some(b => group(b) === p)) continue;
+  const b = document.createElement('button');
+  b.className = 'btn'; b.dataset.people = p; b.textContent = PEOPLE_NAMES[p];
+  b.addEventListener('click', () => showPeople(p));
+  peoples.appendChild(b);
+}
+
+// ---- photographs and the layout table ----
+const shots = document.getElementById('shots');
+if (DATA.shots.length) {
+  for (const s of DATA.shots) {
+    const f = document.createElement('figure');
+    f.innerHTML = '<img loading="lazy" alt=""><figcaption></figcaption>';
+    f.querySelector('img').src = s.src; f.querySelector('img').alt = s.caption;
+    f.querySelector('figcaption').textContent = s.caption;
+    shots.appendChild(f);
+  }
+} else {
+  document.getElementById('game-note').textContent = 'Photographs from the game test will appear here.';
+}
+const rows = document.getElementById('layouts');
+for (const l of DATA.layouts) {
+  const tr = document.createElement('tr');
+  tr.innerHTML = '<td><code></code></td><td></td><td class="num"></td><td class="num"></td><td class="num"></td>';
+  tr.children[0].firstChild.textContent = l.name; tr.children[1].textContent = KIND_NAMES[l.kind];
+  tr.children[2].textContent = l.size; tr.children[3].textContent = l.buildings; tr.children[4].textContent = l.residents;
+  rows.appendChild(tr);
+}
+
+showVillage(Object.keys(DATA.villages)[0]);
+showPeople(peoples.firstChild.dataset.people);
+requestAnimationFrame(loop);
+</script>

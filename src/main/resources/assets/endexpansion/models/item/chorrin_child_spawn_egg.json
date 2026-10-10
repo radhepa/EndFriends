@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "endexpansion:item/chorrin_child_spawn_egg"
+  }
+}

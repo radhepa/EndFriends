@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "endexpansion:citadel",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 64,
+    "separation": 24,
+    "salt": 1302880551,
+    "exclusion_zone": {
+      "other_set": "endexpansion:villages",
+      "chunk_count": 6
+    }
+  }
+}

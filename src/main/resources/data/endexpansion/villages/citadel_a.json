@@ -1,0 +1,1406 @@
+{
+  "layout": "citadel_a",
+  "residents": 0,
+  "buildings": [
+    {
+      "building": "citadel_court",
+      "people": "court",
+      "role": "plaza",
+      "job": null,
+      "residents": 0,
+      "turns": 0,
+      "x": -10,
+      "z": -27,
+      "top": 0,
+      "size": [
+        21,
+        8,
+        21
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_tower",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 0,
+      "x": -42,
+      "z": -42,
+      "top": 0,
+      "size": [
+        11,
+        34,
+        11
+      ],
+      "spots": [
+        {
+          "kind": "stand",
+          "pos": [
+            -35,
+            11,
+            -35
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            -34,
+            1,
+            -35
+          ]
+        }
+      ]
+    },
+    {
+      "building": "citadel_tower",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 1,
+      "x": 32,
+      "z": -42,
+      "top": 0,
+      "size": [
+        11,
+        34,
+        11
+      ],
+      "spots": [
+        {
+          "kind": "stand",
+          "pos": [
+            35,
+            11,
+            -35
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            35,
+            1,
+            -34
+          ]
+        }
+      ]
+    },
+    {
+      "building": "citadel_tower",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 2,
+      "x": 32,
+      "z": 32,
+      "top": 0,
+      "size": [
+        11,
+        34,
+        11
+      ],
+      "spots": [
+        {
+          "kind": "stand",
+          "pos": [
+            35,
+            11,
+            35
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            34,
+            1,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "building": "citadel_tower",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 3,
+      "x": -42,
+      "z": 32,
+      "top": 0,
+      "size": [
+        11,
+        34,
+        11
+      ],
+      "spots": [
+        {
+          "kind": "stand",
+          "pos": [
+            -35,
+            11,
+            35
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            -35,
+            1,
+            34
+          ]
+        }
+      ]
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 0,
+      "x": -31,
+      "z": -39,
+      "top": 0,
+      "size": [
+        9,
+        15,
+        5
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 2,
+      "x": -31,
+      "z": 35,
+      "top": 0,
+      "size": [
+        9,
+        15,
+        5
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 3,
+      "x": -39,
+      "z": -31,
+      "top": 0,
+      "size": [
+        5,
+        15,
+        9
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 1,
+      "x": 35,
+      "z": -31,
+      "top": 0,
+      "size": [
+        5,
+        15,
+        9
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 0,
+      "x": -22,
+      "z": -39,
+      "top": 0,
+      "size": [
+        9,
+        15,
+        5
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 2,
+      "x": -22,
+      "z": 35,
+      "top": 0,
+      "size": [
+        9,
+        15,
+        5
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 3,
+      "x": -39,
+      "z": -22,
+      "top": 0,
+      "size": [
+        5,
+        15,
+        9
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 1,
+      "x": 35,
+      "z": -22,
+      "top": 0,
+      "size": [
+        5,
+        15,
+        9
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 2,
+      "x": -13,
+      "z": 35,
+      "top": 0,
+      "size": [
+        9,
+        15,
+        5
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 3,
+      "x": -39,
+      "z": -13,
+      "top": 0,
+      "size": [
+        5,
+        15,
+        9
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 1,
+      "x": 35,
+      "z": -13,
+      "top": 0,
+      "size": [
+        5,
+        15,
+        9
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 2,
+      "x": -4,
+      "z": 35,
+      "top": 0,
+      "size": [
+        9,
+        15,
+        5
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 3,
+      "x": -39,
+      "z": -4,
+      "top": 0,
+      "size": [
+        5,
+        15,
+        9
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 1,
+      "x": 35,
+      "z": -4,
+      "top": 0,
+      "size": [
+        5,
+        15,
+        9
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 2,
+      "x": 5,
+      "z": 35,
+      "top": 0,
+      "size": [
+        9,
+        15,
+        5
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 3,
+      "x": -39,
+      "z": 5,
+      "top": 0,
+      "size": [
+        5,
+        15,
+        9
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 1,
+      "x": 35,
+      "z": 5,
+      "top": 0,
+      "size": [
+        5,
+        15,
+        9
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 0,
+      "x": 14,
+      "z": -39,
+      "top": 0,
+      "size": [
+        9,
+        15,
+        5
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 2,
+      "x": 14,
+      "z": 35,
+      "top": 0,
+      "size": [
+        9,
+        15,
+        5
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 3,
+      "x": -39,
+      "z": 14,
+      "top": 0,
+      "size": [
+        5,
+        15,
+        9
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 1,
+      "x": 35,
+      "z": 14,
+      "top": 0,
+      "size": [
+        5,
+        15,
+        9
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 0,
+      "x": 23,
+      "z": -39,
+      "top": 0,
+      "size": [
+        9,
+        15,
+        5
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 2,
+      "x": 23,
+      "z": 35,
+      "top": 0,
+      "size": [
+        9,
+        15,
+        5
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 3,
+      "x": -39,
+      "z": 23,
+      "top": 0,
+      "size": [
+        5,
+        15,
+        9
+      ],
+      "spots": []
+    },
+    {
+      "building": "citadel_wall",
+      "people": "court",
+      "role": "wall",
+      "job": null,
+      "residents": 0,
+      "turns": 1,
+      "x": 35,
+      "z": 23,
+      "top": 0,
+      "size": [
+        5,
+        15,
+        9
+      ],
+      "spots": []
+    },
+    {
+      "building": "gate_of_eyes",
+      "people": "court",
+      "role": "gate",
+      "job": null,
+      "residents": 0,
+      "turns": 0,
+      "x": -13,
+      "z": -42,
+      "top": 0,
+      "size": [
+        27,
+        32,
+        11
+      ],
+      "spots": [
+        {
+          "kind": "stand",
+          "pos": [
+            0,
+            11,
+            -41
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            -4,
+            1,
+            -42
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            4,
+            1,
+            -42
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            -3,
+            1,
+            -32
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            3,
+            1,
+            -32
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            0,
+            11,
+            -35
+          ]
+        }
+      ]
+    },
+    {
+      "building": "throne_hall",
+      "people": "court",
+      "role": "civic",
+      "job": null,
+      "residents": 0,
+      "turns": 0,
+      "x": -13,
+      "z": 0,
+      "top": 0,
+      "size": [
+        27,
+        31,
+        31
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            0,
+            5,
+            26
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            -2,
+            4,
+            24
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            2,
+            4,
+            24
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            -3,
+            1,
+            20
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            -3,
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            3,
+            1,
+            20
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            3,
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            -3,
+            1,
+            9
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            3,
+            1,
+            9
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            -3,
+            1,
+            13
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            3,
+            1,
+            13
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            -3,
+            1,
+            17
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            3,
+            1,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "building": "lords_spire",
+      "people": "court",
+      "role": "civic",
+      "job": null,
+      "residents": 0,
+      "turns": 3,
+      "x": 19,
+      "z": 20,
+      "top": 0,
+      "size": [
+        11,
+        46,
+        11
+      ],
+      "spots": [
+        {
+          "kind": "stand",
+          "pos": [
+            22,
+            1,
+            25
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            24,
+            34,
+            25
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            26,
+            21,
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "building": "seers_spire",
+      "people": "court",
+      "role": "work",
+      "job": "seer",
+      "residents": 0,
+      "turns": 1,
+      "x": -29,
+      "z": 20,
+      "top": 0,
+      "size": [
+        11,
+        39,
+        11
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            -23,
+            23,
+            23
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            -21,
+            1,
+            25
+          ]
+        }
+      ]
+    },
+    {
+      "building": "riftguard_barracks",
+      "people": "court",
+      "role": "work",
+      "job": "riftguard",
+      "residents": 0,
+      "turns": 3,
+      "x": 21,
+      "z": -26,
+      "top": 0,
+      "size": [
+        13,
+        14,
+        17
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            23,
+            1,
+            -13
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            23,
+            1,
+            -23
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            25,
+            1,
+            -13
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            25,
+            1,
+            -23
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            24,
+            1,
+            -18
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            31,
+            1,
+            -18
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            22,
+            1,
+            -18
+          ]
+        }
+      ]
+    },
+    {
+      "building": "thrall_yards",
+      "people": "court",
+      "role": "work",
+      "job": null,
+      "residents": 0,
+      "turns": 3,
+      "x": 17,
+      "z": -6,
+      "top": 0,
+      "size": [
+        17,
+        9,
+        21
+      ],
+      "spots": [
+        {
+          "kind": "stand",
+          "pos": [
+            24,
+            2,
+            4
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            21,
+            1,
+            6
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            20,
+            1,
+            1
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            25,
+            1,
+            0
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            28,
+            1,
+            4
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            30,
+            1,
+            10
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            30,
+            1,
+            -2
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            18,
+            1,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "building": "war_hall",
+      "people": "court",
+      "role": "work",
+      "job": "voidmarshal",
+      "residents": 0,
+      "turns": 1,
+      "x": -33,
+      "z": -27,
+      "top": 0,
+      "size": [
+        15,
+        17,
+        19
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            -22,
+            1,
+            -18
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            -30,
+            1,
+            -18
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            -26,
+            1,
+            -23
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            -26,
+            1,
+            -13
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            -21,
+            1,
+            -18
+          ]
+        }
+      ]
+    },
+    {
+      "building": "voidhound_kennels",
+      "people": "court",
+      "role": "work",
+      "job": null,
+      "residents": 0,
+      "turns": 1,
+      "x": -31,
+      "z": -4,
+      "top": 0,
+      "size": [
+        11,
+        9,
+        13
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            -27,
+            1,
+            2
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            -22,
+            1,
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "roster": [
+    {
+      "type": "endarch_marshal",
+      "job": "herald",
+      "home": [
+        0,
+        11,
+        -35
+      ],
+      "work": [
+        0,
+        11,
+        -35
+      ]
+    },
+    {
+      "type": "endarch_riftguard",
+      "job": "riftguard",
+      "home": [
+        0,
+        11,
+        -41
+      ],
+      "work": [
+        0,
+        11,
+        -41
+      ]
+    },
+    {
+      "type": "endarch_riftguard",
+      "job": "riftguard",
+      "home": [
+        -4,
+        1,
+        -42
+      ],
+      "work": [
+        -4,
+        1,
+        -42
+      ]
+    },
+    {
+      "type": "endarch_lord",
+      "job": "lord",
+      "home": [
+        0,
+        5,
+        26
+      ],
+      "work": [
+        0,
+        5,
+        26
+      ]
+    },
+    {
+      "type": "endarch_marshal",
+      "job": "steward",
+      "home": [
+        -2,
+        4,
+        24
+      ],
+      "work": [
+        -2,
+        4,
+        24
+      ]
+    },
+    {
+      "type": "endarch_riftguard",
+      "job": "riftguard",
+      "home": [
+        2,
+        4,
+        24
+      ],
+      "work": [
+        2,
+        4,
+        24
+      ]
+    },
+    {
+      "type": "endarch_riftguard",
+      "job": "riftguard",
+      "home": [
+        -3,
+        1,
+        20
+      ],
+      "work": [
+        -3,
+        1,
+        20
+      ]
+    },
+    {
+      "type": "endarch_riftguard",
+      "job": "riftguard",
+      "home": [
+        22,
+        1,
+        25
+      ],
+      "work": [
+        22,
+        1,
+        25
+      ]
+    },
+    {
+      "type": "endarch_marshal",
+      "job": "seer",
+      "home": [
+        -23,
+        23,
+        23
+      ],
+      "work": [
+        -23,
+        23,
+        23
+      ]
+    },
+    {
+      "type": "endarch_riftguard",
+      "job": "riftguard",
+      "home": [
+        23,
+        1,
+        -13
+      ],
+      "work": [
+        23,
+        1,
+        -13
+      ]
+    },
+    {
+      "type": "endarch_riftguard",
+      "job": "riftguard",
+      "home": [
+        23,
+        1,
+        -23
+      ],
+      "work": [
+        23,
+        1,
+        -23
+      ]
+    },
+    {
+      "type": "endarch_riftguard",
+      "job": "riftguard",
+      "home": [
+        25,
+        1,
+        -13
+      ],
+      "work": [
+        25,
+        1,
+        -13
+      ]
+    },
+    {
+      "type": "enderman_thrall",
+      "job": "thrall",
+      "home": [
+        21,
+        1,
+        6
+      ],
+      "work": [
+        21,
+        1,
+        6
+      ]
+    },
+    {
+      "type": "enderman_thrall",
+      "job": "thrall",
+      "home": [
+        20,
+        1,
+        1
+      ],
+      "work": [
+        20,
+        1,
+        1
+      ]
+    },
+    {
+      "type": "enderman_thrall",
+      "job": "thrall",
+      "home": [
+        25,
+        1,
+        0
+      ],
+      "work": [
+        25,
+        1,
+        0
+      ]
+    },
+    {
+      "type": "enderman_thrall",
+      "job": "thrall",
+      "home": [
+        28,
+        1,
+        4
+      ],
+      "work": [
+        28,
+        1,
+        4
+      ]
+    },
+    {
+      "type": "enderman_thrall",
+      "job": "thrall",
+      "home": [
+        30,
+        1,
+        10
+      ],
+      "work": [
+        30,
+        1,
+        10
+      ]
+    },
+    {
+      "type": "endarch_marshal",
+      "job": "marshal",
+      "home": [
+        -22,
+        1,
+        -18
+      ],
+      "work": [
+        -22,
+        1,
+        -18
+      ]
+    },
+    {
+      "type": "endarch_marshal",
+      "job": "marshal",
+      "home": [
+        -30,
+        1,
+        -18
+      ],
+      "work": [
+        -30,
+        1,
+        -18
+      ]
+    },
+    {
+      "type": "voidhound",
+      "job": "",
+      "home": [
+        -27,
+        1,
+        2
+      ],
+      "work": [
+        -27,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "voidhound",
+      "job": "",
+      "home": [
+        -22,
+        1,
+        2
+      ],
+      "work": [
+        -22,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "voidhound",
+      "job": "",
+      "home": [
+        -27,
+        1,
+        2
+      ],
+      "work": [
+        -27,
+        1,
+        2
+      ]
+    }
+  ]
+}

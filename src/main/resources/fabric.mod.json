@@ -1,0 +1,23 @@
+{
+	"schemaVersion": 1,
+	"id": "endexpansion",
+	"version": "${version}",
+	"name": "End Expansion",
+	"description": "Peoples and villages for the outer End: the Shulkin of the purpur Spires, the Chorrin of the end-stone Steads, the Crossings they share, and the Citadels of the Endarch Court. Talk to them, earn their friendship or the Court's Favor, and meet their Grovebacks, Driftrays and Voidhounds.",
+	"authors": ["minal"],
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["dev.endexpansion.EndExpansion"],
+		"client": ["dev.endexpansion.client.EndExpansionClient"]
+	},
+	"mixins": [
+		"endexpansion.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

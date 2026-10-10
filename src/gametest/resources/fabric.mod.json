@@ -1,0 +1,13 @@
+{
+	"schemaVersion": 1,
+	"id": "endexpansion-gametest",
+	"version": "1.0.0",
+	"name": "End Expansion game tests",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-client-gametest": ["dev.endexpansion.test.VillagesClientTest", "dev.endexpansion.test.PeopleClientTest"]
+	},
+	"depends": {
+		"endexpansion": "*"
+	}
+}

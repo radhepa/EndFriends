@@ -1,0 +1,946 @@
+{
+  "layout": "spire_c",
+  "residents": 10,
+  "buildings": [
+    {
+      "building": "lamp_court",
+      "people": "shulkin",
+      "role": "plaza",
+      "job": null,
+      "residents": 0,
+      "turns": 0,
+      "x": -8,
+      "z": -8,
+      "top": 0,
+      "size": [
+        17,
+        17,
+        17
+      ],
+      "spots": [
+        {
+          "kind": "sit",
+          "pos": [
+            -4,
+            1,
+            -5
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -3,
+            1,
+            -5
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -5,
+            1,
+            -4
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -5,
+            1,
+            -3
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -4,
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -3,
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -5,
+            1,
+            4
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -5,
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            4,
+            1,
+            -5
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            3,
+            1,
+            -5
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            5,
+            1,
+            -4
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            5,
+            1,
+            -3
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            4,
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            3,
+            1,
+            5
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            5,
+            1,
+            4
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            5,
+            1,
+            3
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            0,
+            1,
+            -3
+          ]
+        }
+      ]
+    },
+    {
+      "building": "lid_hall",
+      "people": "shulkin",
+      "role": "civic",
+      "job": null,
+      "residents": 0,
+      "turns": 2,
+      "x": -19,
+      "z": -37,
+      "top": 4,
+      "size": [
+        21,
+        18,
+        17
+      ],
+      "spots": [
+        {
+          "kind": "sit",
+          "pos": [
+            -3,
+            5,
+            -22
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -4,
+            5,
+            -22
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -14,
+            5,
+            -22
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -15,
+            5,
+            -22
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            -9,
+            6,
+            -34
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -7,
+            6,
+            -34
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -11,
+            6,
+            -34
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -3,
+            5,
+            -27
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -4,
+            5,
+            -27
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -5,
+            5,
+            -27
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -6,
+            5,
+            -27
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -7,
+            5,
+            -27
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -11,
+            5,
+            -27
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -12,
+            5,
+            -27
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -13,
+            5,
+            -27
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -14,
+            5,
+            -27
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -15,
+            5,
+            -27
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -3,
+            5,
+            -29
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -4,
+            5,
+            -29
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -5,
+            5,
+            -29
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -6,
+            5,
+            -29
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -7,
+            5,
+            -29
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -11,
+            5,
+            -29
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -12,
+            5,
+            -29
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -13,
+            5,
+            -29
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -14,
+            5,
+            -29
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -15,
+            5,
+            -29
+          ]
+        }
+      ]
+    },
+    {
+      "building": "lamp_tower",
+      "people": "shulkin",
+      "role": "work",
+      "job": "lamplighter",
+      "residents": 0,
+      "turns": 3,
+      "x": 23,
+      "z": -17,
+      "top": 8,
+      "size": [
+        7,
+        34,
+        7
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            25,
+            33,
+            -14
+          ]
+        }
+      ]
+    },
+    {
+      "building": "shell_nursery",
+      "people": "shulkin",
+      "role": "civic",
+      "job": null,
+      "residents": 0,
+      "turns": 3,
+      "x": 30,
+      "z": 4,
+      "top": 8,
+      "size": [
+        15,
+        12,
+        17
+      ],
+      "spots": [
+        {
+          "kind": "stand",
+          "pos": [
+            40,
+            9,
+            12
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            33,
+            9,
+            14
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            33,
+            9,
+            10
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            37,
+            9,
+            15
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            37,
+            9,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "building": "weavers_loft",
+      "people": "shulkin",
+      "role": "work",
+      "job": "weaver",
+      "residents": 0,
+      "turns": 0,
+      "x": 22,
+      "z": 31,
+      "top": 4,
+      "size": [
+        11,
+        17,
+        11
+      ],
+      "spots": [
+        {
+          "kind": "work",
+          "pos": [
+            25,
+            5,
+            35
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            28,
+            5,
+            37
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            26,
+            10,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "building": "driftray_roost",
+      "people": "shulkin",
+      "role": "work",
+      "job": "wayfinder",
+      "residents": 0,
+      "turns": 0,
+      "x": -5,
+      "z": 23,
+      "top": 4,
+      "size": [
+        13,
+        13,
+        13
+      ],
+      "spots": [
+        {
+          "kind": "stand",
+          "pos": [
+            1,
+            9,
+            33
+          ]
+        },
+        {
+          "kind": "stand",
+          "pos": [
+            3,
+            9,
+            34
+          ]
+        },
+        {
+          "kind": "work",
+          "pos": [
+            -3,
+            9,
+            28
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -3,
+            9,
+            27
+          ]
+        }
+      ]
+    },
+    {
+      "building": "spire_twin",
+      "people": "shulkin",
+      "role": "home",
+      "job": null,
+      "residents": 4,
+      "turns": 1,
+      "x": -32,
+      "z": 10,
+      "top": 0,
+      "size": [
+        11,
+        28,
+        25
+      ],
+      "spots": [
+        {
+          "kind": "sit",
+          "pos": [
+            -29,
+            1,
+            21
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -29,
+            1,
+            23
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -26,
+            1,
+            13
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -28,
+            6,
+            12
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -26,
+            16,
+            12
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -28,
+            6,
+            32
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -26,
+            11,
+            32
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -30,
+            11,
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "building": "spire_twin",
+      "people": "shulkin",
+      "role": "home",
+      "job": null,
+      "residents": 4,
+      "turns": 1,
+      "x": -53,
+      "z": -4,
+      "top": 0,
+      "size": [
+        11,
+        28,
+        25
+      ],
+      "spots": [
+        {
+          "kind": "sit",
+          "pos": [
+            -50,
+            1,
+            7
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -50,
+            1,
+            9
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -47,
+            1,
+            -1
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -49,
+            6,
+            -2
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -47,
+            16,
+            -2
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -49,
+            6,
+            18
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -47,
+            11,
+            18
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -51,
+            11,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "building": "spire_home",
+      "people": "shulkin",
+      "role": "home",
+      "job": null,
+      "residents": 2,
+      "turns": 1,
+      "x": -41,
+      "z": -25,
+      "top": 8,
+      "size": [
+        11,
+        24,
+        11
+      ],
+      "spots": [
+        {
+          "kind": "sleep",
+          "pos": [
+            -37,
+            9,
+            -23
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -36,
+            9,
+            -19
+          ]
+        },
+        {
+          "kind": "sit",
+          "pos": [
+            -35,
+            15,
+            -23
+          ]
+        },
+        {
+          "kind": "sleep",
+          "pos": [
+            -39,
+            20,
+            -21
+          ]
+        }
+      ]
+    }
+  ],
+  "roster": [
+    {
+      "type": "shulkin_child",
+      "job": "",
+      "home": [
+        -26,
+        11,
+        32
+      ],
+      "work": [
+        0,
+        1,
+        -3
+      ]
+    },
+    {
+      "type": "shulkin_child",
+      "job": "",
+      "home": [
+        -47,
+        11,
+        18
+      ],
+      "work": [
+        0,
+        1,
+        -3
+      ]
+    },
+    {
+      "type": "shulkin",
+      "job": "lamplighter",
+      "home": [
+        -28,
+        6,
+        12
+      ],
+      "work": [
+        25,
+        33,
+        -14
+      ]
+    },
+    {
+      "type": "shulkin",
+      "job": "keeper",
+      "home": [
+        -39,
+        20,
+        -21
+      ],
+      "work": [
+        40,
+        9,
+        12
+      ]
+    },
+    {
+      "type": "shulkin",
+      "job": "weaver",
+      "home": [
+        -47,
+        16,
+        -2
+      ],
+      "work": [
+        25,
+        5,
+        35
+      ]
+    },
+    {
+      "type": "shulkin",
+      "job": "wayfinder",
+      "home": [
+        -37,
+        9,
+        -23
+      ],
+      "work": [
+        -3,
+        9,
+        28
+      ]
+    },
+    {
+      "type": "shulkin",
+      "job": "keeper",
+      "home": [
+        -28,
+        6,
+        32
+      ],
+      "work": [
+        0,
+        1,
+        -3
+      ]
+    },
+    {
+      "type": "shulkin",
+      "job": "keeper",
+      "home": [
+        -26,
+        16,
+        12
+      ],
+      "work": [
+        0,
+        1,
+        -3
+      ]
+    },
+    {
+      "type": "shulkin",
+      "job": "keeper",
+      "home": [
+        -49,
+        6,
+        -2
+      ],
+      "work": [
+        0,
+        1,
+        -3
+      ]
+    },
+    {
+      "type": "shulkin",
+      "job": "keeper",
+      "home": [
+        -49,
+        6,
+        18
+      ],
+      "work": [
+        0,
+        1,
+        -3
+      ]
+    },
+    {
+      "type": "driftray",
+      "job": "",
+      "home": [
+        1,
+        9,
+        33
+      ],
+      "work": null
+    },
+    {
+      "type": "driftray",
+      "job": "",
+      "home": [
+        3,
+        9,
+        34
+      ],
+      "work": null
+    }
+  ]
+}

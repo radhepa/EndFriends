@@ -1,0 +1,1012 @@
+<title>Shulkin, Chorrin and Endarchs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one column of "plates" on the void, each a self-contained study sheet; the lineup is the hero. */
+:root {
+  color-scheme: dark;
+  --void: #0e0a15;
+  --void-2: #171120;
+  --void-3: #211829;
+  --line: #3a2d45;
+  --ink: #ece4ef;
+  --muted: #a596ad;
+  --purpur: #a97ea9;
+  --purpur-hi: #d6b6d7;
+  --stone: #dcdd9f;
+  --pearl: #46b8a8;
+  --court: #d659f5;
+  --danger: #ff6b8b;
+  --display: "Pixelify Sans", "Lucida Console", monospace;
+  --body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  /* conversation screen (purpur re-colour of the Village Friends palette) */
+  --ui-paper: #f6eef7;
+  --ui-shade: #e6d6e8;
+  --ui-edge: #4a2c52;
+  --ui-edge-light: #b48fb6;
+  --ui-ink: #3b2544;
+  --ui-muted: #8a7393;
+  --ui-status: #2f8f84;
+  --ui-blossom: #c98fdc;
+  --ui-blossom-hi: #f3dcfa;
+  --ui-blossom-empty: #e3d6e6;
+}
+* { box-sizing: border-box; }
+body { background: var(--void); color: var(--ink); font: 16px/1.6 var(--body); padding-inline: 16px; padding-block: 0 64px; }
+.wrap { max-width: 1080px; margin-inline: auto; display: grid; gap: 56px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; line-height: 1.15; margin: 0; }
+h1 { font-size: clamp(2rem, 5vw, 3.4rem); letter-spacing: .01em; }
+h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); }
+h3 { font-size: 1.25rem; }
+p { margin: 0; max-width: 68ch; }
+.eyebrow { font: 500 .72rem/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--purpur-hi); }
+.muted { color: var(--muted); }
+a { color: var(--purpur-hi); }
+
+/* masthead + lineup */
+.masthead { display: grid; gap: 14px; padding-top: 40px; }
+.masthead .lede { color: var(--muted); font-size: 1.08rem; }
+.stage { position: relative; border: 1px solid var(--line); background: radial-gradient(120% 90% at 50% 10%, #2a1d36 0%, var(--void-2) 55%, var(--void) 100%); border-radius: 6px; overflow: hidden; }
+.stage canvas { display: block; width: 100%; height: clamp(340px, 52vw, 520px); cursor: grab; touch-action: pan-y; }
+.stage canvas:active { cursor: grabbing; }
+.tag { position: absolute; transform: translate(-50%, -100%); text-align: center; pointer-events: none; white-space: nowrap; }
+.tag b { display: block; font: 600 .95rem/1.2 var(--display); }
+.tag span { font: .72rem/1.3 var(--mono); color: var(--muted); }
+.hint { position: absolute; right: 12px; top: 10px; font: .7rem var(--mono); color: var(--muted); }
+
+/* species sheets */
+.sheets { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 20px; }
+.sheet { background: var(--void-2); border: 1px solid var(--line); border-radius: 6px; padding: 20px; display: grid; gap: 14px; align-content: start; min-width: 0; }
+.sheet header { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.sheet header .say { font: .8rem var(--mono); color: var(--muted); }
+.sheet .view { width: 100%; height: 300px; display: block; background: radial-gradient(70% 80% at 50% 40%, #2b2036, var(--void-2)); border-radius: 4px; cursor: grab; touch-action: pan-y; }
+.facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 14px; margin: 0; font-size: .95rem; }
+.facts dt { font: 500 .72rem/1.9 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.facts dd { margin: 0; min-width: 0; }
+.quote { border-left: 3px solid var(--purpur); padding: 4px 0 4px 14px; font-style: italic; color: var(--purpur-hi); }
+.chorrin .quote { border-color: var(--stone); color: var(--stone); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: .78rem var(--mono); padding: 2px 8px; border: 1px solid var(--line); border-radius: 3px; color: var(--muted); }
+
+/* villages */
+.villages { display: grid; gap: 18px; }
+.mix { display: flex; height: 34px; border-radius: 4px; overflow: hidden; border: 1px solid var(--line); font: 600 .8rem/34px var(--mono); }
+.mix div { padding-inline: 10px; white-space: nowrap; overflow: hidden; }
+.mix .s { background: #5d3f63; flex: 40; }
+.mix .c { background: #6c6a3f; flex: 40; }
+.mix .x { background: linear-gradient(90deg, #5d3f63, #6c6a3f); flex: 20; }
+.vgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+.village { border-top: 3px solid var(--purpur); padding-top: 12px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.village.stead { border-color: var(--stone); }
+.village.cross { border-image: linear-gradient(90deg, var(--purpur), var(--stone)) 1; }
+.village .who { font: .78rem var(--mono); color: var(--muted); }
+.village ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: .93rem; }
+
+/* history */
+.history { display: grid; gap: 18px; }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 16px; counter-reset: step; }
+.steps li { counter-increment: step; background: var(--void-2); border: 1px solid var(--line); border-radius: 6px; padding: 16px; display: grid; gap: 6px; align-content: start; }
+.steps li::before { content: "Age " counter(step); font: 500 .7rem var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--purpur-hi); }
+.steps li:last-child { border-color: var(--pearl); }
+.steps li:last-child::before { content: "Now"; color: var(--pearl); }
+.steps p { color: var(--muted); font-size: .93rem; }
+
+/* conversation screen mock-up */
+.ui { display: grid; gap: 16px; }
+.ui .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.btn { font: 600 .9rem var(--display); background: var(--void-3); color: var(--ink); border: 1px solid var(--line); padding: 6px 14px; border-radius: 4px; cursor: pointer; }
+.btn[aria-pressed="true"] { background: var(--purpur); color: #1d1323; border-color: var(--purpur-hi); }
+.btn:focus-visible, .reply:focus-visible, .dock button:focus-visible { outline: 2px solid var(--pearl); outline-offset: 2px; }
+.screen { position: relative; border-radius: 6px; overflow: hidden; border: 1px solid var(--line); min-height: 540px;
+  background: radial-gradient(90% 70% at 50% 30%, #2c1f38 0%, #160f1f 60%, #0c0812 100%); font-family: var(--display); }
+.screen .world { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.screen .shadeover { position: absolute; inset: 50% 0 0 0; background: linear-gradient(180deg, transparent, rgba(13, 9, 6, .45)); pointer-events: none; }
+.card { position: absolute; left: 12px; top: 12px; width: min(250px, 46%); background: var(--ui-paper); color: var(--ui-ink); border: 2px solid var(--ui-edge); border-radius: 4px; padding: 8px 10px; box-shadow: 0 3px 0 rgba(0,0,0,.35); display: grid; gap: 4px; }
+.card .row { display: flex; align-items: center; gap: 8px; }
+.badge { background: #8f6aa8; color: #fff; padding: 0 7px; border-radius: 3px; font-size: .85rem; text-shadow: 1px 1px 0 rgba(0,0,0,.3); }
+.blossoms { display: grid; grid-template-columns: repeat(10, minmax(0, 14px)); gap: 3px; }
+.blossoms svg { width: 100%; height: auto; aspect-ratio: 7 / 6; }
+.card .goal { color: var(--ui-muted); font-size: .8rem; }
+.replies { position: absolute; right: 12px; bottom: 186px; display: grid; gap: 6px; width: min(280px, 60%); }
+.reply { display: flex; align-items: center; gap: 8px; text-align: left; background: #fff6fb; color: var(--ui-ink); border: 2px solid var(--ui-edge); border-radius: 4px; padding: 3px 8px 3px 3px; font: 400 .92rem var(--display); cursor: pointer; box-shadow: 0 2px 0 rgba(0,0,0,.3); }
+.reply:hover { background: #fff; transform: translateX(-2px); }
+.reply .n { background: var(--ui-edge-light); color: #fff; min-width: 20px; text-align: center; border-radius: 2px; }
+.reply:hover .n { background: #c96fae; }
+.reply[disabled] { opacity: .55; cursor: default; transform: none; }
+.box { position: absolute; left: 50%; transform: translateX(-50%); bottom: 46px; width: min(640px, calc(100% - 24px)); min-height: 112px; background: var(--ui-paper); color: var(--ui-ink); border: 2px solid var(--ui-edge); border-radius: 4px; box-shadow: 0 3px 0 rgba(0,0,0,.35); display: grid; grid-template-columns: 104px 1fr; gap: 14px; padding: 10px 12px 8px 10px; }
+.portrait { position: relative; margin-top: -44px; width: 104px; height: 150px; border: 2px solid var(--ui-edge); background: linear-gradient(180deg, #d9c6e6, #f4ecd8); box-shadow: inset 0 0 0 2px var(--ui-edge-light), 0 3px 0 rgba(0,0,0,.35); }
+.portrait canvas { width: 100%; height: 100%; display: block; }
+.ribbon { position: absolute; left: 128px; top: -24px; display: flex; align-items: baseline; gap: 8px; }
+.ribbon b { background: #b08acf; color: #fff; padding: 1px 10px 2px; font-weight: 600; border-bottom: 3px solid #7e5f99; text-shadow: 1px 1px 0 rgba(0,0,0,.35); }
+.ribbon span { color: #f4e9f6; font-size: .82rem; text-shadow: 1px 1px 0 rgba(0,0,0,.6); }
+.text { min-width: 0; display: grid; grid-template-rows: 1fr auto; gap: 6px; padding-top: 6px; }
+.line { font-size: 1rem; line-height: 1.35; min-height: 4em; }
+.line i { color: var(--ui-muted); }
+.status { border-top: 1px solid var(--ui-shade); padding-top: 3px; color: var(--ui-status); font-size: .85rem; display: flex; justify-content: space-between; }
+.status .hostile { color: #c0284f; font-weight: 600; }
+.status .more { color: var(--ui-edge-light); animation: bob 1s infinite alternate; }
+@keyframes bob { to { transform: translateY(2px); } }
+.dock { position: absolute; left: 0; right: 0; bottom: 8px; display: flex; justify-content: center; gap: 3px; flex-wrap: nowrap; padding-inline: 8px; }
+.dock button { display: flex; align-items: center; gap: 4px; height: 28px; padding: 0 7px; background: #f6eaf6; color: var(--ui-ink); border: 2px solid var(--ui-edge); border-radius: 6px; font: 400 .8rem var(--display); cursor: pointer; position: relative; box-shadow: 0 2px 0 rgba(0,0,0,.3); }
+.dock button.sel { background: #f5d9ff; border-color: #9a5cb8; }
+.dock .gap { width: 8px; flex: none; }
+.dock svg { width: 14px; height: 14px; flex: none; }
+.dock .count { position: absolute; right: -4px; top: -7px; background: #c96fae; color: #fff; font-size: .65rem; padding: 0 3px; line-height: 1.3; }
+.palette { display: flex; flex-wrap: wrap; gap: 8px; }
+.sw { display: grid; grid-template-columns: 22px auto; gap: 8px; align-items: center; font: .78rem var(--mono); color: var(--muted); }
+.sw i { width: 22px; height: 22px; border-radius: 3px; border: 1px solid var(--line); }
+@media (max-width: 640px) {
+  .screen { min-height: 640px; }
+  .replies { bottom: 218px; width: calc(100% - 24px); }
+  .box { grid-template-columns: 72px 1fr; bottom: 50px; }
+  .portrait { width: 72px; height: 104px; margin-top: -30px; }
+  .ribbon { left: 92px; }
+  .ribbon span { display: none; }
+  .dock { flex-wrap: wrap; bottom: 6px; }
+  .dock .lbl { display: none; }
+  .dock .gap { width: 4px; }
+  .dock { gap: 2px; }
+  .dock button { padding: 0 5px; }
+}
+
+/* the court */
+.court { display: grid; gap: 18px; }
+.court .stage { border-color: #4a2a5a; background: radial-gradient(110% 90% at 50% 0%, #3a1748 0%, #1a0f22 55%, var(--void) 100%); }
+.court .stage canvas { height: clamp(360px, 50vw, 540px); }
+.sheet.wide { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 20px; border-color: #4a2a5a; }
+.sheet.wide .col { display: grid; gap: 14px; align-content: start; min-width: 0; }
+.sheet.wide .view { height: 420px; }
+.ranks { display: flex; flex-wrap: wrap; gap: 6px; }
+.ranks .btn { font-size: .82rem; padding: 4px 10px; }
+.endarch .quote { border-color: var(--court); color: #f0b8ff; }
+@media (max-width: 760px) { .sheet.wide { grid-template-columns: 1fr; } .sheet.wide .view { height: 340px; } }
+.gate { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+.rule { border: 1px solid var(--line); border-radius: 6px; padding: 16px; display: grid; gap: 8px; align-content: start; background: var(--void-2); min-width: 0; }
+.rule.no { border-color: #6b2438; background: linear-gradient(180deg, #2a0f18, var(--void-2)); }
+.rule.yes { border-color: #2f6b64; background: linear-gradient(180deg, #0f2423, var(--void-2)); }
+.rule .verdict { font: 600 .75rem var(--mono); letter-spacing: .12em; text-transform: uppercase; }
+.rule.no .verdict { color: var(--danger); }
+.rule.yes .verdict { color: var(--pearl); }
+.rule ol { margin: 0; padding-left: 20px; color: var(--muted); font-size: .93rem; display: grid; gap: 4px; }
+.relic { display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; border: 1px solid #4a2a5a; border-radius: 6px; padding: 16px; background: var(--void-2); }
+.relic .slot { width: 88px; height: 88px; background: #8b8b8b; border: 3px solid; border-color: #373737 #ffffff #ffffff #373737; display: grid; place-items: center; }
+.relic .slot img { width: 64px; height: 64px; image-rendering: pixelated; }
+.relic > div { display: grid; gap: 6px; min-width: 0; }
+.relic .tip { font: .85rem var(--display); background: #100010; color: #fff; border: 2px solid #2b0a5e; padding: 4px 8px; justify-self: start; }
+.relic .tip em { color: #c792ea; font-style: normal; display: block; }
+.village.citadel { border-color: var(--court); }
+.citadel ul { columns: 2 220px; }
+.toggle { display: inline-flex; align-items: center; gap: 8px; font: .85rem var(--display); color: var(--ink); cursor: pointer; }
+.toggle input { width: 16px; height: 16px; accent-color: var(--court); }
+.toggle[hidden] { display: none; }
+
+/* creatures */
+.creatures { display: grid; gap: 18px; }
+.cgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+.creature { background: var(--void-2); border: 1px solid var(--line); border-radius: 6px; padding: 16px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.creature .who { font: .78rem var(--mono); color: var(--muted); }
+.creature dl { margin: 0; }
+.creature.chorrin-kin { border-top: 3px solid var(--stone); }
+.creature.shulkin-kin { border-top: 3px solid var(--purpur); }
+.creature.court-kin { border-top: 3px solid var(--court); }
+
+/* questions */
+.next { display: grid; gap: 14px; }
+.next ol { margin: 0; padding-left: 22px; display: grid; gap: 8px; max-width: 70ch; }
+.next li::marker { color: var(--purpur-hi); font-family: var(--mono); }
+@media (prefers-reduced-motion: reduce) { .status .more { animation: none; } }
+</style>
+
+<div class="wrap">
+  <header class="masthead">
+    <span class="eyebrow">End Expansion · design draft 2 · the people</span>
+    <h1>Three peoples of the outer islands</h1>
+    <p class="lede">Past the gateways, after the Dragon falls, the player finds the End isn't empty. The Shulkin keep the purpur spires, the Chorrin farm the chorus groves, and in their far Citadels the Endarchs rule over the Endermen. These are first-pass box models, built with the same kit as Not-So-Vanilla Mobs, so what you see is how they would look in game.</p>
+  </header>
+
+  <section class="stage" aria-label="Height lineup">
+    <canvas id="lineup"></canvas>
+    <div class="tag" id="tag-shulkin"><b>Shulkin</b><span>2.6 blocks</span></div>
+    <div class="tag" id="tag-you"><b>You</b><span>1.8 blocks</span></div>
+    <div class="tag" id="tag-chorrin"><b>Chorrin</b><span>1.6 · 2.1 with crown</span></div>
+    <div class="tag" id="tag-endarch"><b>Endarch Lord</b><span>3.8 · 4.7 with crown</span></div>
+    <span class="hint">drag to turn</span>
+  </section>
+
+  <section class="sheets">
+    <article class="sheet shulkin">
+      <header><h2>Shulkin</h2><span class="say">SHUL-kin · shell-folk of the spires</span></header>
+      <canvas class="view" data-mob="shulkin" data-child="shulkin_child" aria-label="Shulkin adult and child, drag to turn"></canvas>
+      <dl class="facts">
+        <dt>Body</dt><dd>Tall and slender, very long arms, three thin fingers. They glide a pixel above the ground on pointed feet.</dd>
+        <dt>Head</dt><dd>A living shell: a lid over a collar. The pale face looks out through the gap. The lid lifts when they talk and slams shut when they're hurt or scared, so a frightened Shulkin is hard to damage.</dd>
+        <dt>Dress</dt><dd>Void-cloth robes, purpur shell pauldrons and breastplate, a mantle embroidered with the Eye of the Spires.</dd>
+        <dt>Manner</dt><dd>Formal, precise, ceremonial. Long memories and very dry humour. They record everything.</dd>
+        <dt>Names</dt><dd>Named for the lamp lit when their lid first opened: Ilvane of the Third Lamp, Oseth of the Ninth Lamp.</dd>
+        <dt>Belief</dt><dd>A Shulkin who closes for good leaves a living shell behind, so the shulkers in the old cities are their ancestors. Your shulker boxes are an awkward subject.</dd>
+        <dt>Children</dt><dd>Born with a soft, pale shell that darkens and hardens over the years, on a body half the size. A child is named the night its lid first opens. Young lids pop open at everything.</dd>
+      </dl>
+      <div class="chips"><span class="chip">Archivist</span><span class="chip">Shellwright</span><span class="chip">Lamplighter</span><span class="chip">Weaver</span><span class="chip">Wayfinder</span><span class="chip">Keeper of shells</span></div>
+      <p class="quote">"Your arrival was recorded at the third lamp. Please do not be alarmed. We record everything."</p>
+    </article>
+    <article class="sheet chorrin">
+      <header><h2>Chorrin</h2><span class="say">KOR-in · grove-folk of the outer islands</span></header>
+      <canvas class="view" data-mob="chorrin" data-child="chorrin_child" aria-label="Chorrin adult and child, drag to turn"></canvas>
+      <dl class="facts">
+        <dt>Body</dt><dd>Short, broad and heavy, skin like end stone. Long arms that nearly reach the ground, big three-fingered hands.</dd>
+        <dt>Head</dt><dd>A heavy brow over deep-set violet eyes, and no mouth: they talk in a low hum. A crown of living chorus grows on top, different on every Chorrin, flowering with age and mood.</dd>
+        <dt>Gift</dt><dd>When startled they blink a few blocks away, the way chorus fruit moves you.</dd>
+        <dt>Dress</dt><dd>Chorus-fiber sash and wraps, a braided cord belt with a buckle of traded shulker shell, a hip pouch.</dd>
+        <dt>Manner</dt><dd>Warm, blunt, funny, communal. Endlessly curious about the Overworld and a little superstitious about the void.</dd>
+        <dt>Names</dt><dd>Short and hummable, plus their grove: Mott of Low Grove, Orra of the Kilns.</dd>
+        <dt>Children</dt><dd>Called sprouts: round, stubby, big-eyed, with smoother stone and a single chorus sprout that branches into a crown as they grow. Startled sprouts blink too, usually onto something they shouldn't be on.</dd>
+      </dl>
+      <div class="chips"><span class="chip">Grove-tender</span><span class="chip">Kiln-keeper</span><span class="chip">Stonecutter</span><span class="chip">Cook</span><span class="chip">Blinker (courier)</span><span class="chip">Brewer</span></div>
+      <p class="quote">"Hm-mm. You're the sky-walker. Is it true it rains up there? Water, just falling? On purpose?"</p>
+    </article>
+  </section>
+
+  <section class="villages">
+    <span class="eyebrow">Settlements</span>
+    <h2>Their own villages, and shared ones</h2>
+    <p class="muted">Most islands belong to one people. Where the bridges and gateways meet, they build Crossings together. The split below is a starting point and would be a config value.</p>
+    <div class="mix" role="img" aria-label="Village mix: 40 percent Spires, 40 percent Steads, 20 percent Crossings"><div class="s">Spire 40%</div><div class="c">Stead 40%</div><div class="x">Crossing 20%</div></div>
+    <div class="vgrid">
+      <div class="village"><h3>Spire</h3><span class="who">Shulkin only · 6-14 residents</span><p>Tall purpur towers on the high islands, joined by sky bridges. End-rod lamps, magenta glass, very few doors at ground level.</p><ul><li>Lid Hall (council)</li><li>Archive</li><li>Lamp Tower</li><li>Shell Nursery (shulker pens)</li></ul></div>
+      <div class="village stead"><h3>Stead</h3><span class="who">Chorrin only · 8-16 residents</span><p>Low end-stone domes half sunk into the island, with round doors, terraced chorus groves and popping kilns.</p><ul><li>Hum-circle (stone ring where they gather)</li><li>Popping kilns</li><li>Grove terraces</li><li>Blinkers' post</li></ul></div>
+      <div class="village cross"><h3>Crossing</h3><span class="who">Both peoples · 14-24 residents</span><p>Bigger market towns on bridge islands and gateway rims: a spire quarter and a stead quarter around one shared market.</p><ul><li>Shared market and trade</li><li>Friendships and rivalries across the two peoples</li><li>The only place both kinds of job meet</li></ul></div>
+    </div>
+  </section>
+
+  <section class="court" id="court">
+    <span class="eyebrow">The Court</span>
+    <h2>Endarchs, rulers of the Endermen</h2>
+    <p class="muted">The third people don't live on the bridges and groves. Far out past the other villages stand the Citadels, where a Lord, the Voidmarshals and the Riftguards rule, and Endermen do the work.</p>
+    <div class="stage" aria-label="The Court in order of rank">
+      <canvas id="ladder"></canvas>
+      <div class="tag" id="tag-thrall"><b>Enderman</b><span>thrall · 2 eyes</span></div>
+      <div class="tag" id="tag-riftguard"><b>Riftguard</b><span>high warrior · 4 eyes</span></div>
+      <div class="tag" id="tag-marshal"><b>Voidmarshal</b><span>general · 6 eyes</span></div>
+      <div class="tag" id="tag-lord"><b>Lord</b><span>of the Citadel · 8 eyes</span></div>
+      <span class="hint">drag to turn</span>
+    </div>
+
+    <article class="sheet wide endarch">
+      <div class="col">
+        <header><h2>Endarch</h2><span class="say">EN-dark · the Court</span></header>
+        <canvas class="view" id="endarch-view" aria-label="Endarch model, drag to turn"></canvas>
+        <div class="ranks" role="group" aria-label="Show rank">
+          <button class="btn" type="button" data-rank="endarch_lord" aria-pressed="true">Lord</button>
+          <button class="btn" type="button" data-rank="endarch_marshal" aria-pressed="false">Voidmarshal</button>
+          <button class="btn" type="button" data-rank="endarch_riftguard" aria-pressed="false">Riftguard</button>
+          <button class="btn" type="button" data-rank="enderman_thrall" aria-pressed="false">Enderman thrall</button>
+        </div>
+      </div>
+      <div class="col">
+        <dl class="facts">
+          <dt>Body</dt><dd>An Enderman's void-black skin, but taller and broader: about 3.4 blocks, the Lord 3.8. Very long arms with three claws.</dd>
+          <dt>Eyes</dt><dd>The Enderman's two slits, plus a crown of smaller eyes along the brow. More eyes means higher birth: a Lord has eight, a Voidmarshal six, a Riftguard four, an Enderman two.</dd>
+          <dt>Crowns</dt><dd>Obsidian shards float over the heads of the highborn. The Lord's crown holds an end crystal.</dd>
+          <dt>Ranks</dt><dd>The Lord of the Citadel. Voidmarshals, the generals, in heavy obsidian plate and torn war capes. Riftguards, the high warriors, in visored helms and floating rift armour, with crystal glaives; they teleport behind you. At court: Heralds, Seers, Stewards.</dd>
+          <dt>Endermen</dt><dd>The Court's thralls and peasants, "the Court's hands". That's why Endermen carry blocks (they haul stone for the Court) and why they can't stand being looked in the eye: only their masters may do that. In a Citadel they wear a purpur bond-collar.</dd>
+          <dt>Manner</dt><dd>Imperious, archaic, proud, bound by old law. They never forget a slight.</dd>
+          <dt>Names</dt><dd>Harsh and sibilant, always with a title: Lord Vaskhar, Voidmarshal Ithrael, Riftguard Morvex, Herald Zhaal.</dd>
+          <dt>Children</dt><dd>None. Endarchs and Endermen are never born as babies, and there are no children anywhere in a Citadel. Where new ones come from is the Court's oldest secret.</dd>
+        </dl>
+        <p class="quote">"Hands do not ask why they carry stone, Bearer. Neither should you."</p>
+      </div>
+    </article>
+
+    <div class="relic">
+      <span class="slot"><img id="eyes-img" alt="Enderman Eyes item"></span>
+      <div>
+        <h3>Enderman Eyes</h3>
+        <span class="tip">Enderman Eyes<em>Seal of an Endarch envoy</em></span>
+        <p class="muted">A pair of preserved royal eyes in an obsidian reliquary. The Court's envoys carried them on the ships they moored at the purpur cities, so they turn up as rare loot on End ships: one ship in five. They are the only thing that gets you through a Citadel's gate alive, and you need them with you every time.</p>
+      </div>
+    </div>
+
+    <div class="gate">
+      <div class="rule no">
+        <span class="verdict">Without the Eyes</span>
+        <h3>Attacked on sight</h3>
+        <ol>
+          <li>You cross the Citadel's boundary without the Eyes in your inventory, even if you've visited before.</li>
+          <li>The Herald cries out and every Riftguard rift-steps to you.</li>
+          <li>The whole Citadel attacks, Endermen included. Nobody will talk to you.</li>
+        </ol>
+      </div>
+      <div class="rule yes">
+        <span class="verdict">With the Eyes</span>
+        <h3>Received as a guest</h3>
+        <ol>
+          <li>The Herald reads the seal at the Gate of Eyes, on every visit.</li>
+          <li>You can speak with the Court and earn Favor through service. Your Favor is kept between visits.</li>
+          <li>Keep the Eyes in your inventory the whole time. Drop them, store them or die inside, and guest-law ends: the Citadel attacks.</li>
+          <li>Attack anyone and guest-law breaks the same way.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="village citadel">
+      <h3>Citadel</h3>
+      <span class="who">Endarchs and their Enderman thralls · rare, far out · never mixed</span>
+      <p>A black fortress of obsidian and purpur, its spires ringed with floating fragments and the Lord's end crystal burning on the highest one. Unlike every other village in the End, it has no children in it.</p>
+      <ul><li>Gate of Eyes (the Herald checks your seal)</li><li>Throne Hall (the Lord)</li><li>War Hall (Voidmarshals)</li><li>Riftguard barracks</li><li>Seers' spire</li><li>Thrall yards (Endermen hauling stone)</li></ul>
+    </div>
+  </section>
+
+  <section class="creatures" id="creatures">
+    <span class="eyebrow">Creatures</span>
+    <h2>One beast for each people</h2>
+    <p class="muted">The few new species, each tied to one of the peoples so they show up around the right villages and give the player something to do there.</p>
+    <div class="stage" aria-label="The three creatures with a player for scale">
+      <canvas id="beasts"></canvas>
+      <div class="tag" id="tag-groveback"><b>Groveback</b><span>1.4 blocks · 2 long</span></div>
+      <div class="tag" id="tag-you2"><b>You</b><span>1.8 blocks</span></div>
+      <div class="tag" id="tag-driftray"><b>Driftray</b><span>3-block wingspan</span></div>
+      <div class="tag" id="tag-voidhound"><b>Voidhound</b><span>1.25 blocks</span></div>
+      <div class="tag" id="tag-pup"><b>Pup</b><span>a Favor reward</span></div>
+      <span class="hint">drag to turn</span>
+    </div>
+    <div class="cgrid">
+      <div class="creature chorrin-kin">
+        <h3>Groveback</h3>
+        <span class="who">kept by the Chorrin · passive herd beast</span>
+        <dl class="facts">
+          <dt>Look</dt><dd>A slow, broad, six-legged grazer with an end-stone hide and a small chorus grove growing on its back, the same living chorus as a Chorrin's crown.</dd>
+          <dt>Use</dt><dd>Pick chorus fruit off its back; it grows back. Feed it popped chorus to breed it.</dd>
+          <dt>Where</dt><dd>Herded around Steads and Crossings; wild herds wander the outer islands.</dd>
+        </dl>
+      </div>
+      <div class="creature shulkin-kin">
+        <h3>Driftray</h3>
+        <span class="who">ridden by Shulkin Wayfinders · wild, tameable</span>
+        <dl class="facts">
+          <dt>Look</dt><dd>A manta that glides on the void currents. Deep violet above, spotted like a night sky, pale underneath, with a whip tail and a glowing tip.</dd>
+          <dt>Use</dt><dd>Tame one with chorus flowers and ride it across the gaps between islands: a slow, gliding flying mount.</dd>
+          <dt>Where</dt><dd>Drifts in slow flocks around the Spires.</dd>
+        </dl>
+      </div>
+      <div class="creature court-kin">
+        <h3>Voidhound</h3>
+        <span class="who">the Court's hounds · a pup for high Favor</span>
+        <dl class="facts">
+          <dt>Look</dt><dd>A Minecraft wolf, about a third bigger, with an Enderman's void-black coat, two magenta eye slits, an obsidian collar studded in magenta and three obsidian shards floating over its back.</dd>
+          <dt>Use</dt><dd>Runs with the Riftguards and teleports in short hops. If you don't carry the Eyes, the hounds reach you first.</dd>
+          <dt>Pup</dt><dd>Earn high Favor with a Citadel's Lord and the Court gives you a Voidhound pup of your own: purpur collar, bone tag, a bigger head for its size like a baby wolf. It grows into a full hound and follows you like a tamed wolf.</dd>
+          <dt>Where</dt><dd>Citadels only, apart from yours.</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="history">
+    <span class="eyebrow">How they get along</span>
+    <h2>The Accord, the Dragon and the Court</h2>
+    <ol class="steps">
+      <li><h3>The Old Accord</h3><p>The Shulkin built the purpur cities and the Chorrin grew the chorus that fed them. Purpur is made from popped chorus fruit, so the cities were built from Chorrin harvests. The Court ruled the central island with its Endermen.</p></li>
+      <li><h3>The Dragon is loosed</h3><p>The Court set the Dragon on the cities. They emptied and were sealed, and the Accord broke. Court envoy ships moored at the cities, dragon heads on their prows and Enderman Eyes aboard as their seal.</p></li>
+      <li><h3>The Long Watch</h3><p>The Shulkin and Chorrin scatter to the outer islands and wait the Dragon out while the Court rules the centre. Shulkin call Endermen the Unlidded and the Endarchs the Crowned; Chorrin call Endermen the Tall Quiet.</p></li>
+      <li><h3>You arrive</h3><p>The Dragon is dead. The Court has pulled back to its Citadels and attacks any stranger without the Eyes. The Shulkin and Chorrin trade as equals, stay a little wary of each other (Shulkin find the Chorrin loud; Chorrin say the Shulkin hoard memories like food), and both fear the Court.</p></li>
+    </ol>
+  </section>
+
+  <section class="ui">
+    <span class="eyebrow">Conversation screen</span>
+    <h2>The Village Friends screen, in purpur</h2>
+    <p class="muted">Same layout as Village Friends: friendship card, dialogue box with portrait and name ribbon, numbered replies, the dock. Hearts become chorus blossoms, and eyes for the Court's Favor. The dialogue here is sample writing for the new voices. Click a reply or press 1 to 4.</p>
+    <div class="controls">
+      <button class="btn" id="pick-shulkin" aria-pressed="true">Talk to a Shulkin</button>
+      <button class="btn" id="pick-chorrin" aria-pressed="false">Talk to a Chorrin</button>
+      <button class="btn" id="pick-endarch" aria-pressed="false">Talk to an Endarch</button>
+      <label class="toggle" id="eyes-toggle" hidden><input type="checkbox" id="has-eyes" checked> Carrying Enderman Eyes</label>
+      <button class="btn" id="sound" aria-pressed="false">Voice blips: off</button>
+    </div>
+    <div class="screen" id="screen">
+      <canvas class="world" id="world" aria-hidden="true"></canvas>
+      <div class="shadeover"></div>
+      <div class="card">
+        <div class="row"><span class="badge" id="lv">Lv. 1</span><span id="lvname">Sky-walker</span></div>
+        <div class="blossoms" id="blossoms"></div>
+        <span class="goal" id="goal">Next: share a meal of popped chorus</span>
+      </div>
+      <div class="replies" id="replies"></div>
+      <div class="box">
+        <div class="portrait"><canvas id="portrait" aria-hidden="true"></canvas></div>
+        <div class="ribbon"><b id="who">Ilvane of the Third Lamp</b><span id="sub">Archivist · Meticulous · Spire of Vael</span></div>
+        <div class="text">
+          <div class="line" id="line" aria-live="polite"></div>
+          <div class="status"><span id="status">They are studying you.</span><span class="more" id="more" hidden>&#9660;</span></div>
+        </div>
+      </div>
+      <nav class="dock" id="dock" aria-label="Conversation dock"></nav>
+    </div>
+    <div class="palette" aria-label="Screen palette">
+      <span class="sw"><i style="background:#f6eef7"></i>paper</span>
+      <span class="sw"><i style="background:#e6d6e8"></i>paper shade</span>
+      <span class="sw"><i style="background:#4a2c52"></i>edge</span>
+      <span class="sw"><i style="background:#b48fb6"></i>light edge</span>
+      <span class="sw"><i style="background:#3b2544"></i>ink</span>
+      <span class="sw"><i style="background:#2f8f84"></i>status (ender pearl)</span>
+      <span class="sw"><i style="background:#c98fdc"></i>blossom</span>
+    </div>
+  </section>
+
+  <section class="next">
+    <span class="eyebrow">Decided</span>
+    <h2>What's settled</h2>
+    <ol>
+      <li>The names <b>Shulkin</b>, <b>Chorrin</b> and <b>Endarch</b> are final.</li>
+      <li>The Shulkin believe shulkers are their ancestors, so shulker boxes stay a touchy subject.</li>
+      <li>No genders for any of the three peoples: every resident is "they", with one name pool per people.</li>
+      <li>Villages split 40% Spires, 40% Steads, 20% Crossings. Citadels are separate and rare.</li>
+      <li>Enderman Eyes must be carried on every Citadel visit, and they turn up on one End ship in five.</li>
+      <li>Three creatures: Groveback, Driftray and Voidhound. The Voidhound is built like a Minecraft wolf, and the Court gives you a pup for high Favor.</li>
+      <li>Shulkin and Chorrin have children. Endarchs and Endermen don't.</li>
+    </ol>
+    <p class="muted">Next: village buildings, then the dialogue bank and the screen itself.</p>
+  </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const DATA = /*__DATA__*/null;
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// ---- model building: a port of ModelPart.Cube (box UV), parts as nested groups ---------------------
+const texCache = {};
+function tex(uri) {
+  if (!texCache[uri]) {
+    const t = new THREE.TextureLoader().load(uri);
+    t.magFilter = THREE.NearestFilter; t.minFilter = THREE.NearestFilter;
+    texCache[uri] = t;
+  }
+  return texCache[uri];
+}
+function cubeGeometry(c, tw, th) {
+  let [minX, minY, minZ] = c.from; const [w, h, d] = c.size; const g = c.inflate || 0;
+  let maxX = minX + w, maxY = minY + h, maxZ = minZ + d;
+  const [xo, yo] = c.uv;
+  minX -= g; minY -= g; minZ -= g; maxX += g; maxY += g; maxZ += g;
+  if (c.mirror) { const t = maxX; maxX = minX; minX = t; }
+  const W = Math.ceil(w), H = Math.ceil(h), D = Math.ceil(d);
+  const t0 = [minX, minY, minZ], t1 = [maxX, minY, minZ], t2 = [maxX, maxY, minZ], t3 = [minX, maxY, minZ];
+  const l0 = [minX, minY, maxZ], l1 = [maxX, minY, maxZ], l2 = [maxX, maxY, maxZ], l3 = [minX, maxY, maxZ];
+  const u0 = xo, u1 = xo + D, u2 = xo + D + W, u22 = xo + D + W + W, u3 = xo + D + W + D, u4 = xo + D + W + D + W;
+  const v0 = yo, v1 = yo + D, v2 = yo + D + H;
+  const polys = [
+    [[l1, l0, t0, t1], u1, v0, u2, v1], [[t2, t3, l3, l2], u2, v1, u22, v0],
+    [[t0, l0, l3, t3], u0, v1, u1, v2], [[t1, t0, t3, t2], u1, v1, u2, v2],
+    [[l1, t1, t2, l2], u2, v1, u3, v2], [[l0, l1, l2, l3], u3, v1, u4, v2],
+  ];
+  const pos = [], uv = [];
+  for (const [vs, a, b, cc, dd] of polys) {
+    const uvs = [[cc, b], [a, b], [a, dd], [cc, dd]];
+    for (const i of [0, 1, 2, 0, 2, 3]) { pos.push(...vs[i]); uv.push(uvs[i][0] / tw, 1 - uvs[i][1] / th); }
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  geo.setAttribute('uv', new THREE.Float32BufferAttribute(uv, 2));
+  geo.computeVertexNormals();
+  return geo;
+}
+function buildMob(id) {
+  const m = DATA[id];
+  const [tw, th] = m.geo.texture;
+  const base = new THREE.MeshLambertMaterial({ map: tex(m.tex), transparent: true, alphaTest: 0.1, side: THREE.DoubleSide });
+  const glow = m.glow ? new THREE.MeshBasicMaterial({ map: tex(m.glow), transparent: true, blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide }) : null;
+  const root = new THREE.Group(), parts = { '': root };
+  const pose = m.geo.preview || {};
+  for (const p of m.geo.parts) {
+    const g = new THREE.Group();
+    g.position.set(...p.pivot);
+    const r = pose[p.name] || p.rotation;
+    g.rotation.set(r[0], r[1], r[2], 'ZYX');
+    g.userData.base = { pos: g.position.clone(), rot: g.rotation.clone() };
+    for (const c of p.cubes) {
+      const geo = cubeGeometry(c, tw, th);
+      g.add(new THREE.Mesh(geo, base));
+      if (glow) g.add(new THREE.Mesh(geo, glow));
+    }
+    parts[p.parent].add(g); parts[p.name] = g;
+  }
+  // LivingEntityRenderer: flip, then lift so model y=24 is the ground (y=0); some models are scaled up
+  const sc = m.geo.scale || 1;
+  const flip = new THREE.Group(); flip.scale.set(-sc, -sc, sc);
+  root.position.y = -24; flip.add(root);
+  const holder = new THREE.Group(); holder.add(flip);
+  holder.userData.parts = parts; holder.userData.id = id;
+  holder.updateMatrixWorld(true);
+  holder.userData.top = new THREE.Box3().setFromObject(holder).max.y;
+  holder.userData.neck = parts.head ? parts.head.getWorldPosition(new THREE.Vector3()).y : holder.userData.top * 0.8;
+  return holder;
+}
+function mannequin() {
+  // the player for scale: Steve's boxes in one flat colour
+  const mat = new THREE.MeshLambertMaterial({ color: 0x6a6175, transparent: true, opacity: 0.9 });
+  const g = new THREE.Group();
+  const box = (w, h, d, x, y, z) => { const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat); m.position.set(x, y + h / 2, z); g.add(m); };
+  box(4, 12, 4, -2, 0, 0); box(4, 12, 4, 2, 0, 0); box(8, 12, 4, 0, 12, 0);
+  box(4, 12, 4, -6, 12, 0); box(4, 12, 4, 6, 12, 0); box(8, 8, 8, 0, 24, 0);
+  return g;
+}
+function endStoneTexture() {
+  const c = document.createElement('canvas'); c.width = c.height = 16;
+  const x = c.getContext('2d');
+  const pal = ['#dcdd9f', '#d6d898', '#e0e2a6', '#d3d594'];
+  let s = 7; const rnd = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+  for (let i = 0; i < 16; i++) for (let j = 0; j < 16; j++) { x.fillStyle = pal[Math.floor(rnd() * 4)]; x.fillRect(i, j, 1, 1); }
+  for (let k = 0; k < 12; k++) { const i = Math.floor(rnd() * 15), j = Math.floor(rnd() * 15); x.fillStyle = '#a6a76d'; x.fillRect(i, j, 1, 1); x.fillStyle = '#ecedbd'; x.fillRect(i, j + 1, 1, 1); }
+  const t = new THREE.CanvasTexture(c); t.magFilter = THREE.NearestFilter; t.minFilter = THREE.NearestFilter;
+  t.wrapS = t.wrapT = THREE.RepeatWrapping; return t;
+}
+function island(w, d) {
+  const g = new THREE.Group(), t = endStoneTexture();
+  const mat = new THREE.MeshLambertMaterial({ map: t });
+  for (let x = -w / 2; x < w / 2; x += 16) for (let z = -d / 2; z < d / 2; z += 16) {
+    const depth = 16 + (Math.abs(x) + Math.abs(z) < w / 3 ? 16 : 0);
+    const m = new THREE.Mesh(new THREE.BoxGeometry(16, depth, 16), mat);
+    m.position.set(x + 8, -depth / 2, z + 8); g.add(m);
+  }
+  return g;
+}
+function obsidianTexture() {
+  const c = document.createElement('canvas'); c.width = c.height = 16;
+  const x = c.getContext('2d');
+  const pal = ['#170f23', '#1c1229', '#140d1f', '#21162f'];
+  let s = 11; const rnd = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+  for (let i = 0; i < 16; i++) for (let j = 0; j < 16; j++) { x.fillStyle = pal[Math.floor(rnd() * 4)]; x.fillRect(i, j, 1, 1); }
+  for (let k = 0; k < 10; k++) { x.fillStyle = rnd() < .5 ? '#3d2a5c' : '#6b4a9a'; x.fillRect(Math.floor(rnd() * 16), Math.floor(rnd() * 16), 1, 1); }
+  const t = new THREE.CanvasTexture(c); t.magFilter = THREE.NearestFilter; t.minFilter = THREE.NearestFilter; return t;
+}
+function step(w, h, d) {
+  const g = new THREE.Group(), mat = new THREE.MeshLambertMaterial({ map: obsidianTexture() });
+  for (let x = -w / 2; x < w / 2; x += 16) for (let y = 0; y < h; y += 16) for (let z = -d / 2; z < d / 2; z += 16) {
+    const bh = Math.min(16, h - y);
+    const m = new THREE.Mesh(new THREE.BoxGeometry(16, bh, 16), mat); m.position.set(x + 8, -y - bh / 2, z + 8); g.add(m);
+  }
+  return g;
+}
+/** Point the camera at a box of the scene (world units) so it fits the canvas. */
+function fit(v, w, h, x0, x1, y0, y1, lift = 0.25) {
+  const t = Math.tan(THREE.MathUtils.degToRad(v.camera.fov / 2));
+  const dist = Math.max((y1 - y0) / 2 / t, (x1 - x0) / 2 / (t * w / h)) * 1.08;
+  const cy = (y0 + y1) / 2;
+  v.camera.position.set((x0 + x1) / 2, cy + dist * lift, -dist); v.camera.lookAt((x0 + x1) / 2, cy, 0);
+}
+function tagFollow(v, canvas, anchors, tags) {
+  const w = canvas.clientWidth, h = canvas.clientHeight, p = new THREE.Vector3();
+  for (const k in anchors) {
+    anchors[k].getWorldPosition(p); p.project(v.camera);
+    const half = tags[k].offsetWidth / 2 + 6;   // keep the label inside the stage
+    tags[k].style.left = Math.min(w - half, Math.max(half, (p.x + 1) / 2 * w)) + 'px';
+    tags[k].style.top = ((1 - p.y) / 2 * h - 4) + 'px';
+  }
+}
+function anchorOver(obj, top) { const a = new THREE.Object3D(); a.position.set(0, top + 3, 0); obj.add(a); return a; }
+function lights(scene) {
+  scene.add(new THREE.AmbientLight(0xf1e6ff, 0.62));
+  const a = new THREE.DirectionalLight(0xffffff, 0.5); a.position.set(-0.4, 1, -0.9); scene.add(a);
+  const b = new THREE.DirectionalLight(0xd6b6ff, 0.22); b.position.set(0.6, 0.3, 0.8); scene.add(b);
+}
+
+// ---- viewers: one render loop, drag to turn, paused when off screen --------------------------------
+const viewers = [];
+function Viewer(canvas, setup) {
+  const v = { canvas, visible: true, yaw: setup.yaw || 0, spin: setup.spin ?? (REDUCED ? 0 : 0.15), drag: null, update: setup.update };
+  v.renderer = new THREE.WebGLRenderer({ canvas, antialias: false, alpha: true });
+  v.renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
+  v.scene = new THREE.Scene(); lights(v.scene);
+  v.turn = new THREE.Group(); v.scene.add(v.turn);
+  v.camera = new THREE.PerspectiveCamera(setup.fov || 28, 1, 1, 2000);
+  setup.build(v);
+  v.resize = () => {
+    const w = canvas.clientWidth, h = canvas.clientHeight;
+    if (!w || !h) return;
+    v.renderer.setSize(w, h, false); v.camera.aspect = w / h; v.camera.updateProjectionMatrix();
+    if (setup.frame) setup.frame(v, w, h);
+  };
+  new ResizeObserver(v.resize).observe(canvas); v.resize();
+  if (setup.draggable !== false) {
+    canvas.addEventListener('pointerdown', e => { v.drag = { x: e.clientX, yaw: v.yaw }; canvas.setPointerCapture(e.pointerId); });
+    canvas.addEventListener('pointermove', e => { if (v.drag) v.yaw = v.drag.yaw + (e.clientX - v.drag.x) * 0.012; });
+    const end = () => { v.drag = null; };
+    canvas.addEventListener('pointerup', end); canvas.addEventListener('pointercancel', end);
+  }
+  new IntersectionObserver(es => es.forEach(en => v.visible = en.isIntersecting)).observe(canvas);
+  viewers.push(v); return v;
+}
+let last = performance.now();
+function loop(now) {
+  const dt = Math.min(0.05, (now - last) / 1000); last = now;
+  for (const v of viewers) {
+    if (!v.visible) continue;
+    if (!v.drag) v.yaw += v.spin * dt;
+    v.turn.rotation.y = v.yaw;
+    if (v.update) v.update(v, now / 1000, dt);
+    v.renderer.render(v.scene, v.camera);
+  }
+  requestAnimationFrame(loop);
+}
+
+// ---- the lineup -------------------------------------------------------------------------------------
+function lineup() {
+  const canvas = document.getElementById('lineup');
+  const tags = {};
+  for (const k of ['shulkin', 'you', 'chorrin', 'endarch']) tags[k] = document.getElementById('tag-' + k);
+  const anchors = {};
+  Viewer(canvas, {
+    yaw: -0.35, spin: 0, fov: 24,
+    build(v) {
+      v.turn.add(island(176, 48));
+      const s = buildMob('shulkin'); s.position.set(56, 0, 0); v.turn.add(s);
+      const p = mannequin(); p.position.set(20, 0, 0); v.turn.add(p);
+      const c = buildMob('chorrin'); c.position.set(-16, 0, 0); v.turn.add(c);
+      const e = buildMob('endarch_lord'); e.position.set(-58, 0, 0); v.turn.add(e);
+      const sk = buildMob('shulkin_child'); sk.position.set(74, 0, -12); sk.rotation.y = -0.3; v.turn.add(sk);
+      const ck = buildMob('chorrin_child'); ck.position.set(-33, 0, -12); ck.rotation.y = 0.3; v.turn.add(ck);
+      anchors.shulkin = anchorOver(s, s.userData.top); anchors.you = anchorOver(p, 32);
+      anchors.chorrin = anchorOver(c, c.userData.top); anchors.endarch = anchorOver(e, e.userData.top);
+      // a slow drift of end motes
+      const n = 60, pos = new Float32Array(n * 3);
+      for (let i = 0; i < n; i++) { pos[i * 3] = (Math.random() - .5) * 180; pos[i * 3 + 1] = Math.random() * 70 - 10; pos[i * 3 + 2] = (Math.random() - .5) * 90; }
+      const geo = new THREE.BufferGeometry(); geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+      v.motes = new THREE.Points(geo, new THREE.PointsMaterial({ color: 0xc58cf0, size: 1.6, transparent: true, opacity: .75 }));
+      v.scene.add(v.motes);
+    },
+    frame(v, w, h) { fit(v, w, h, -96, 96, -20, 96, 0.18); },
+    update(v, t) {
+      if (!v.drag && !REDUCED) v.yaw = -0.35 + Math.sin(t * 0.25) * 0.45;
+      if (!REDUCED) {
+        const a = v.motes.geometry.attributes.position;
+        for (let i = 0; i < a.count; i++) { let y = a.getY(i) + 0.05; if (y > 70) y = -10; a.setY(i, y); }
+        a.needsUpdate = true;
+      }
+      tagFollow(v, canvas, anchors, tags);
+    },
+  });
+}
+
+// ---- the Court in order of rank, on obsidian steps -------------------------------------------------------
+function ladder() {
+  const canvas = document.getElementById('ladder');
+  const ranks = [['thrall', 'enderman_thrall', 60, 0], ['riftguard', 'endarch_riftguard', 20, 8], ['marshal', 'endarch_marshal', -20, 16], ['lord', 'endarch_lord', -60, 24]];
+  const tags = {}, anchors = {};
+  Viewer(canvas, {
+    yaw: 0.3, spin: 0, fov: 24,
+    build(v) {
+      for (const [k, id, x, y] of ranks) {
+        const st = step(32, y + 16, 48); st.position.set(x, y, 0); v.turn.add(st);
+        const m = buildMob(id); m.position.set(x, y, 0); v.turn.add(m);
+        tags[k] = document.getElementById('tag-' + k); anchors[k] = anchorOver(m, m.userData.top);
+      }
+    },
+    frame(v, w, h) { fit(v, w, h, -90, 90, -20, 124, 0.16); },
+    update(v, t) {
+      if (!v.drag && !REDUCED) v.yaw = 0.3 + Math.sin(t * 0.22) * 0.4;
+      tagFollow(v, canvas, anchors, tags);
+    },
+  });
+}
+
+// ---- the creatures, with the player for scale ---------------------------------------------------------
+function beasts() {
+  const canvas = document.getElementById('beasts');
+  const tags = {}, anchors = {};
+  Viewer(canvas, {
+    yaw: -0.4, spin: 0, fov: 24,
+    build(v) {
+      v.turn.add(island(176, 64));
+      const g = buildMob('groveback'); g.position.set(54, 0, 0); v.turn.add(g);
+      const p = mannequin(); p.position.set(22, 0, 0); v.turn.add(p);
+      const d = buildMob('driftray'); d.position.set(-14, 26, 6); v.turn.add(d);
+      const h = buildMob('voidhound'); h.position.set(-48, 0, 2); h.rotation.y = 0.6; v.turn.add(h);
+      const u = buildMob('voidhound_pup'); u.position.set(-74, 0, -8); u.rotation.y = 0.9; v.turn.add(u);
+      v.ray = d;
+      for (const k of ['groveback', 'you2', 'driftray', 'voidhound', 'pup']) tags[k] = document.getElementById('tag-' + k);
+      anchors.groveback = anchorOver(g, g.userData.top); anchors.you2 = anchorOver(p, 32);
+      anchors.driftray = anchorOver(d, d.userData.top + 2); anchors.voidhound = anchorOver(h, h.userData.top); anchors.pup = anchorOver(u, u.userData.top);
+    },
+    frame(v, w, h) { fit(v, w, h, -96, 96, -20, 76, 0.2); },
+    update(v, t) {
+      if (!v.drag && !REDUCED) {
+        v.yaw = -0.4 + Math.sin(t * 0.22) * 0.4;
+        v.ray.position.y = 26 + Math.sin(t * 1.3) * 2;   // the ray rides the void currents
+        v.ray.rotation.z = Math.sin(t * 0.9) * 0.06;
+      }
+      tagFollow(v, canvas, anchors, tags);
+    },
+  });
+}
+
+// ---- per-species turntables -------------------------------------------------------------------------
+function turntables() {
+  document.querySelectorAll('canvas.view[data-mob]').forEach(canvas => {
+    const id = canvas.dataset.mob;
+    Viewer(canvas, {
+      yaw: -0.6, fov: 26,
+      build(v) {
+        v.mob = buildMob(id); v.mob.position.x = -9; v.turn.add(v.mob);
+        const kid = canvas.dataset.child;
+        if (kid) { const k = buildMob(kid); k.position.set(13, 0, -4); k.rotation.y = -0.4; v.turn.add(k); }
+        v.turn.add(island(48, 32));
+      },
+      frame(v, w, h) { fit(v, w, h, -30, 30, -16, v.mob.userData.top + 3, 0.25); },
+    });
+  });
+  // the Endarch sheet: one stand, four ranks
+  const canvas = document.getElementById('endarch-view');
+  const view = Viewer(canvas, {
+    yaw: -0.5, fov: 26,
+    build(v) { v.turn.add(step(32, 16, 32)); v.mob = buildMob('endarch_lord'); v.turn.add(v.mob); },
+    frame(v, w, h) { fit(v, w, h, -26, 26, -16, v.mob.userData.top + 3, 0.22); },
+  });
+  document.querySelectorAll('.ranks .btn').forEach(b => b.addEventListener('click', () => {
+    view.turn.remove(view.mob); view.mob = buildMob(b.dataset.rank); view.turn.add(view.mob); view.resize();
+    document.querySelectorAll('.ranks .btn').forEach(o => o.setAttribute('aria-pressed', o === b));
+  }));
+}
+
+// ---- conversation screen ----------------------------------------------------------------------------
+const PEOPLE = {
+  shulkin: {
+    who: 'Ilvane of the Third Lamp', sub: 'Archivist · Meticulous · Spire of Vael', ribbon: '#b08acf', ribbonEdge: '#7e5f99',
+    lv: 1, lvname: 'Sky-walker', blossoms: 1.4, goal: 'Next: bring them a written book', voice: 'shulkin',
+    open: { line: 'Your arrival was recorded at the third lamp. Please do not be alarmed. We record everything.', status: 'They are studying you.' },
+    replies: [
+      ['Record what, exactly?', 'Your height. Your pace. That you speak before you are spoken to. Also that you smell faintly of dragon. That part, we underlined.', 'Ilvane wrote something down.'],
+      ['I come in peace.', 'Noted. Peace is written in a smaller hand than war, but it stays on the page longer.', 'Friendship +5'],
+      ['What are you?', 'Shulkin. Before the Dragon, we built the cities you have been emptying. That was not an accusation. Yet.', 'They seem to be waiting for something.'],
+      ['About my shulker boxes...', 'We know about the shells in your pack. Three of them. We will speak of it later. Calmly. *The lid lowers, very slightly.*', 'They did not like that.'],
+    ],
+  },
+  chorrin: {
+    who: 'Mott of Low Grove', sub: 'Grove-tender · Warmhearted · Low Grove', ribbon: '#a39a4e', ribbonEdge: '#6f6a2f',
+    lv: 2, lvname: 'Familiar face', blossoms: 2.6, goal: 'Next: share a meal of popped chorus', voice: 'chorrin',
+    open: { line: '*hums low* Hm-mm. You are the sky-walker. The whole grove has been humming about you since the Dragon went quiet.', status: 'Mott hums a welcome.' },
+    replies: [
+      ['Why don’t you have a mouth?', '*a rumbling hum, almost a laugh* Why do YOU have one? You eat with it and talk with it? The same hole? Messy.', 'Mott is amused.'],
+      ['What do you grow here?', 'Chorus, mostly. We pop it in the kilns, and the tall purple ones build their whole spires out of it. They never say thank you. They write it down, though.', 'Friendship +5'],
+      ['What’s life like out here?', 'Quiet. No wind. Once a year the void sings and everyone stays inside. Tell me about rain. Is it really just water, falling? On purpose?', 'Mott leans in.'],
+      ['Can I see you blink?', '*hums nervously* Not on purpose. It happens when I am startled. Last time I ended up on the kiln roof. Took a whole day to live it down.', 'Mott shuffles their feet.'],
+    ],
+  },
+  endarch: {
+    model: 'endarch_lord', meter: 'eye', who: 'Lord Vaskhar', sub: 'Lord of the Citadel · Proud · Citadel of Ketheris', ribbon: '#7a2a8e', ribbonEdge: '#4e1a5c',
+    lv: 1, lvname: 'Bearer of the Eyes', blossoms: 0.6, goal: 'Next: serve the Voidmarshal once', voice: 'endarch',
+    open: { line: '*The hall falls silent.* A Bearer of the Eyes. Four hundred cycles since that seal last crossed my threshold. Speak, and be brief.', status: 'The Herald has seen your seal. Keep it close.' },
+    replies: [
+      ['Where are these eyes from?', 'From my first envoy, who sailed to the purpur cities and never returned. You found the ship. You did not find the envoy. Do not look.', 'Lord Vaskhar watches you closely.'],
+      ['Why do the Endermen serve you?', 'They are the Court\u2019s hands. We are its eyes. Hands do not ask why they carry stone, Bearer. Neither should you.', 'Favor unchanged.'],
+      ['I killed your Dragon.', '*Every eye in the hall turns to you.* We know. Guest-law is all that stands between you and a hundred blades. Guest-law, and my patience. Only one of those is endless.', 'The Riftguards shift their grip.'],
+      ['How do I earn your favor?', 'Favor is not given in this Court. It is taken, in service. Go to the War Hall at first dark. The Voidmarshal has a use for you.', 'Favor +5'],
+    ],
+  },
+  endarch_hostile: {
+    model: 'endarch_riftguard', meter: 'eye', hostile: true, who: 'Riftguard Morvex', sub: 'Riftguard · Citadel of Ketheris', ribbon: '#8e1f3c', ribbonEdge: '#5c1427',
+    lv: 0, lvname: 'Intruder', blossoms: 0, goal: 'Bring Enderman Eyes, or leave', voice: 'endarch',
+    open: { line: '*The visor flares white.* NO SEAL. NO PASSAGE.', status: 'Hostile: the whole Citadel attacks.' },
+    replies: [['I come in peace!'], ['Wait, let me explain...'], ['Who rules here?'], ['Run.']],
+  },
+};
+const DOCK = [
+  ['Talk', 'talk'], ['Story', 'book'], ['Time', 'fruit'], ['Travel', 'wing'], ['Journal', 'journal'], null,
+  ['Gift', 'gift'], ['Trade', 'shell'], ['Settlement', 'pillar'], null, ['Farewell', 'door'],
+];
+const ICONS = {
+  talk: [[2,3,10,6,'#fff'],[3,9,2,2,'#fff'],[1,2,12,1,'#4a2c52'],[1,9,1,0,'#4a2c52'],[4,5,2,1,'#b48fb6'],[7,5,2,1,'#b48fb6']],
+  book: [[2,2,10,10,'#7e4f8e'],[3,3,8,8,'#a873b8'],[3,11,8,1,'#f4ecd8'],[6,4,2,4,'#f3dcfa']],
+  fruit: [[4,4,6,6,'#8e5aa0'],[5,3,4,1,'#8e5aa0'],[5,5,2,2,'#c9a0d6'],[6,1,2,2,'#5f3f62']],
+  wing: [[2,3,4,9,'#8c8fa8'],[8,3,4,9,'#8c8fa8'],[3,4,2,6,'#b7a6d4'],[9,4,2,6,'#b7a6d4']],
+  journal: [[3,2,8,10,'#5f3f62'],[4,3,7,8,'#f4ecd8'],[5,5,5,1,'#8a7393'],[5,7,5,1,'#8a7393']],
+  gift: [[4,6,6,6,'#cdb2d6'],[5,4,4,3,'#ede0f1'],[6,9,2,4,'#5f3f62']],
+  shell: [[2,6,10,6,'#a57ba6'],[2,3,10,3,'#c39dc3'],[2,6,10,1,'#22152a']],
+  pillar: [[4,1,6,12,'#a97ea9'],[3,1,8,2,'#c39dc3'],[3,11,8,2,'#c39dc3'],[6,3,2,8,'#8b5f8c']],
+  door: [[3,1,8,12,'#5a395b'],[4,2,6,10,'#7f567f'],[8,7,1,1,'#f3dcfa']],
+};
+function icon(name) {
+  return '<svg viewBox="0 0 14 14" shape-rendering="crispEdges" aria-hidden="true">' +
+    ICONS[name].map(([x, y, w, h, c]) => `<rect x="${x}" y="${y}" width="${w || 1}" height="${h || 1}" fill="${c}"/>`).join('') + '</svg>';
+}
+function eye(fill) {
+  // the Court's Favor: an eye, filled from the left
+  const px = ['..###..', '.#####.', '#######', '.#####.', '..###..'];
+  const cols = Math.round(Math.max(0, Math.min(1, fill)) * 7);
+  let out = '';
+  px.forEach((row, y) => [...row].forEach((ch, x) => {
+    if (ch !== '#') return;
+    const col = x < cols ? (y <= 1 && x < 4 ? '#f3c9ff' : '#b04fd0') : 'var(--ui-blossom-empty)';
+    out += `<rect x="${x}" y="${y}" width="1" height="1" fill="${col}"/>`;
+  }));
+  return `<svg viewBox="0 -0.5 7 6" shape-rendering="crispEdges" aria-hidden="true">${out}<rect x="3" y="2" width="1" height="1" fill="#1b0f24"/></svg>`;
+}
+function blossom(fill) {
+  // a five-petal chorus blossom, filled from the left like Village Friends' hearts
+  const px = ['.##.##.', '#######', '.#####.', '#######', '.##.##.', '...#...'];
+  const cols = Math.round(Math.max(0, Math.min(1, fill)) * 7);
+  let out = '';
+  px.forEach((row, y) => [...row].forEach((ch, x) => {
+    if (ch !== '#') return;
+    const col = x < cols ? (y <= 1 && x < 3 ? 'var(--ui-blossom-hi)' : 'var(--ui-blossom)') : 'var(--ui-blossom-empty)';
+    out += `<rect x="${x}" y="${y}" width="1" height="1" fill="${col}"/>`;
+  }));
+  return `<svg viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true">${out}<rect x="3" y="2" width="1" height="1" fill="#8e5aa0"/></svg>`;
+}
+
+let audio = null, soundOn = false;
+function blip(voice, ch) {
+  if (!soundOn) return;
+  audio = audio || new (window.AudioContext || window.webkitAudioContext)();
+  const o = audio.createOscillator(), g = audio.createGain(), t = audio.currentTime;
+  const step = 0.85 + (ch.toLowerCase().charCodeAt(0) % 11) * 0.045;
+  if (voice === 'shulkin') { o.type = 'sine'; o.frequency.value = 880 * step; }
+  else if (voice === 'endarch') { o.type = 'sawtooth'; o.frequency.setValueAtTime(120 * step, t); o.frequency.exponentialRampToValueAtTime(70 * step, t + 0.1); }
+  else { o.type = 'triangle'; o.frequency.value = 150 * step; }
+  g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(voice === 'shulkin' ? 0.06 : 0.12, t + 0.008);
+  g.gain.exponentialRampToValueAtTime(0.0001, t + (voice === 'shulkin' ? 0.07 : 0.11));
+  o.connect(g).connect(audio.destination); o.start(t); o.stop(t + 0.13);
+}
+
+const conv = { who: 'shulkin', text: '', shown: 0, pause: 0, budget: 0, since: 0, used: new Set() };
+function typing() { return conv.shown < conv.text.length; }
+function renderLine() {
+  // *narration* in muted italics, the rest as speech
+  const s = conv.text.slice(0, conv.shown);
+  document.getElementById('line').innerHTML = s.replace(/[&<>]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]))
+    .replace(/\*([^*]*)\*?/g, (m, inner) => `<i>${inner}</i>`);
+  document.getElementById('more').hidden = typing();
+}
+function say(line, status) {
+  conv.text = line; conv.shown = REDUCED ? line.length : 0; conv.budget = 0; conv.pause = 0;
+  document.getElementById('status').textContent = status;
+  renderLine();
+}
+function setPerson(pick) {
+  const id = pick === 'endarch' && !document.getElementById('has-eyes').checked ? 'endarch_hostile' : pick;
+  conv.who = id; conv.used = new Set();
+  const p = PEOPLE[id];
+  document.getElementById('eyes-toggle').hidden = pick !== 'endarch';
+  document.getElementById('status').classList.toggle('hostile', !!p.hostile);
+  document.getElementById('who').textContent = p.who;
+  document.getElementById('who').style.background = p.ribbon;
+  document.getElementById('who').style.borderBottomColor = p.ribbonEdge;
+  document.getElementById('sub').textContent = p.sub;
+  document.getElementById('lv').textContent = 'Lv. ' + p.lv;
+  document.getElementById('lvname').textContent = p.lvname;
+  document.getElementById('goal').textContent = p.goal;
+  document.getElementById('blossoms').innerHTML = Array.from({ length: 10 }, (_, i) => (p.meter === 'eye' ? eye : blossom)(p.blossoms - i)).join('');
+  for (const k of ['shulkin', 'chorrin', 'endarch']) document.getElementById('pick-' + k).setAttribute('aria-pressed', k === pick);
+  for (const v of [conv.world, conv.portrait]) {
+    v.turn.remove(v.mob); v.mob = buildMob(p.model || id); v.turn.add(v.mob);
+    if (v.reframe) v.reframe();
+  }
+  renderReplies();
+  say(p.open.line, p.open.status);
+}
+function renderReplies() {
+  const box = document.getElementById('replies'); box.innerHTML = '';
+  PEOPLE[conv.who].replies.forEach(([label, line, status], i) => {
+    const b = document.createElement('button');
+    b.className = 'reply'; b.type = 'button';
+    b.innerHTML = `<span class="n">${i + 1}</span><span></span>`;
+    b.lastChild.textContent = label;
+    b.disabled = conv.used.has(i) || !!PEOPLE[conv.who].hostile;
+    b.addEventListener('click', () => choose(i));
+    box.appendChild(b);
+  });
+}
+function choose(i) {
+  const r = PEOPLE[conv.who].replies[i];
+  if (!r || conv.used.has(i) || PEOPLE[conv.who].hostile) return;
+  conv.used.add(i); renderReplies();
+  say(r[1], r[2]);
+}
+function advance(dt) {
+  if (!typing()) return;
+  conv.budget += dt;
+  const cost = 1 / 36;
+  while (conv.budget > 0 && typing()) {
+    if (conv.pause > 0) { const u = Math.min(conv.pause, conv.budget); conv.pause -= u; conv.budget -= u; continue; }
+    if (conv.budget < cost) break;
+    conv.budget -= cost;
+    const c = conv.text[conv.shown++];
+    if (c.trim() && c !== '*' && ++conv.since >= 2) { conv.since = 0; blip(PEOPLE[conv.who].voice, c); }
+    if ('.!?'.includes(c)) conv.pause = 0.18; else if (',;:'.includes(c)) conv.pause = 0.08;
+  }
+  renderLine();
+}
+function speakingPose(v, t) {
+  // while the line types out: a Shulkin's lid lifts and bobs, a Chorrin hums (a faint shiver)
+  const parts = v.mob.userData.parts, talking = typing() && !REDUCED;
+  if (v.mob.userData.id === 'shulkin') {
+    const lid = parts.lid, base = lid.userData.base.pos.y;
+    const target = talking ? base - 1.2 - Math.abs(Math.sin(t * 9)) * 1.3 : base;
+    lid.position.y += (target - lid.position.y) * 0.3;
+  } else if (v.mob.userData.id.startsWith('endarch')) {
+    // the Court speaks with its crown: the floating shards rise and settle
+    const crown = parts.crown || parts.circlet, b = crown ? crown.userData.base.pos.y : 0;
+    if (crown) crown.position.y = b - (talking ? 0.8 + Math.sin(t * 5) * 0.8 : Math.sin(t * 1.5) * 0.4);
+    parts.head.rotation.z = talking ? Math.sin(t * 3) * 0.03 : 0;
+  } else {
+    const head = parts.head, b = head.userData.base.pos;
+    head.position.x = b.x + (talking ? Math.sin(t * 60) * 0.12 : 0);
+    parts.crown.rotation.z = talking ? Math.sin(t * 7) * 0.05 : 0;
+  }
+}
+function screen() {
+  const pointer = { x: 0, y: 0 };
+  document.getElementById('screen').addEventListener('pointermove', e => {
+    const r = e.currentTarget.getBoundingClientRect();
+    pointer.x = (e.clientX - r.left) / r.width * 2 - 1; pointer.y = (e.clientY - r.top) / r.height * 2 - 1;
+  });
+  conv.world = Viewer(document.getElementById('world'), {
+    yaw: 0, spin: 0, fov: 30, draggable: false,
+    build(v) { v.mob = buildMob('shulkin'); v.turn.add(v.mob); v.ground = island(160, 96); v.scene.add(v.ground); },
+    frame(v, w, h) {
+      v.reframe = () => {
+        const top = v.mob.userData.top;
+        v.camera.position.set(0, top * 1.2, -top * 3.6); v.camera.lookAt(0, top * 0.7, 0);
+      };
+      v.reframe();
+      const x = w < 640 ? 0 : 12; v.turn.position.set(x, 0, 0); v.ground.position.set(x, 0, 0);
+    },
+    update(v, t, dt) {
+      advance(dt);
+      v.turn.rotation.y = pointer.x * -0.35;
+      speakingPose(v, t);
+    },
+  });
+  conv.portrait = Viewer(document.getElementById('portrait'), {
+    yaw: 0, spin: 0, fov: 22, draggable: false,
+    build(v) {
+      v.mob = buildMob('shulkin'); v.turn.add(v.mob);
+      v.reframe = () => {
+        // head and shoulders: from a little below the neck to the top of the crown or shell
+        const top = v.mob.userData.top, neck = v.mob.userData.neck, vis = top - neck + 18;
+        const dist = vis / 2 / Math.tan(THREE.MathUtils.degToRad(v.camera.fov / 2));
+        const cy = neck + (top - neck) / 2 - 4;
+        v.camera.position.set(0, cy + 4, -dist); v.camera.lookAt(0, cy, 0);
+      };
+      v.reframe();
+    },
+    update(v, t) {
+      // like Village Friends' portrait: the resident turns to follow the mouse
+      v.turn.rotation.y = pointer.x * -0.6;
+      const head = v.mob.userData.parts.head;
+      head.rotation.x = head.userData.base.rot.x + pointer.y * 0.25;
+      speakingPose(v, t);
+    },
+  });
+  const dock = document.getElementById('dock');
+  dock.innerHTML = DOCK.map(d => d ? `<button type="button" class="${d[1] === 'talk' ? 'sel' : ''}">${icon(d[1])}<span class="lbl">${d[0]}</span>${d[1] === 'gift' ? '<span class="count">3</span>' : ''}</button>` : '<span class="gap"></span>').join('');
+  dock.querySelectorAll('button').forEach(b => b.addEventListener('click', () => document.getElementById('status').textContent = 'The dock is a mock-up: only the replies work here.'));
+  document.getElementById('pick-shulkin').addEventListener('click', () => setPerson('shulkin'));
+  document.getElementById('pick-chorrin').addEventListener('click', () => setPerson('chorrin'));
+  document.getElementById('pick-endarch').addEventListener('click', () => setPerson('endarch'));
+  document.getElementById('has-eyes').addEventListener('change', () => setPerson('endarch'));
+  document.getElementById('sound').addEventListener('click', e => {
+    soundOn = !soundOn; e.currentTarget.setAttribute('aria-pressed', soundOn);
+    e.currentTarget.textContent = 'Voice blips: ' + (soundOn ? 'on' : 'off');
+  });
+  document.getElementById('screen').addEventListener('click', e => {
+    if (e.target.closest('.box') && typing()) { conv.shown = conv.text.length; renderLine(); }
+  });
+  addEventListener('keydown', e => {
+    if (!document.getElementById('screen').matches(':hover') && !document.activeElement.closest?.('.ui')) return;
+    const n = parseInt(e.key, 10);
+    if (n >= 1 && n <= 4) { choose(n - 1); e.preventDefault(); }
+    if (e.key === ' ' && typing() && document.activeElement === document.body) { conv.shown = conv.text.length; renderLine(); e.preventDefault(); }
+  });
+  setPerson('shulkin');
+}
+
+document.getElementById('eyes-img').src = DATA.items.enderman_eyes;
+lineup();
+ladder();
+beasts();
+turntables();
+screen();
+requestAnimationFrame(loop);
+</script>

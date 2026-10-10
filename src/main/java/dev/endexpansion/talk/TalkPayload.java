@@ -1,0 +1,78 @@
+package dev.endexpansion.talk;
+
+import dev.endexpansion.EndExpansion;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+
+/**
+ * One conversation screen's worth of state, server to client. {@code voice} is the bank that spoke
+ * (shulkin, chorrin, shulkin_child, chorrin_child or court: the typing sound and colours follow it);
+ * {@code meter} is "blossom" (friendship) or "eye" (Court Favor), at {@code level} 0-10 with
+ * {@code points} between {@code levelFloor} and {@code nextThreshold}.
+ */
+public record TalkPayload(int entityId, UUID id, String name, String title, String home, String voice, String meter,
+                          int level, String levelName, int points, int levelFloor, int nextThreshold,
+                          String dialogue, String status, List<Choice> choices, int giftsLeft, String giftLabel,
+                          boolean levelUp, boolean opening) implements CustomPacketPayload {
+    public static final int MAX_CHOICES = 8;
+
+    /** A reply the player can pick; {@code hint} explains a locked one. */
+    public record Choice(String id, String label, boolean enabled, String hint) {}
+
+    public static final Type<TalkPayload> TYPE = new Type<>(EndExpansion.id("talk"));
+    public static final StreamCodec<FriendlyByteBuf, TalkPayload> CODEC = StreamCodec.of(
+        (buf, v) -> {
+            buf.writeVarInt(v.entityId);
+            buf.writeUUID(v.id);
+            buf.writeUtf(v.name, 128);
+            buf.writeUtf(v.title, 64);
+            buf.writeUtf(v.home, 128);
+            buf.writeUtf(v.voice, 32);
+            buf.writeUtf(v.meter, 16);
+            buf.writeVarInt(v.level);
+            buf.writeUtf(v.levelName, 64);
+            buf.writeVarInt(v.points);
+            buf.writeVarInt(v.levelFloor);
+            buf.writeVarInt(v.nextThreshold);
+            buf.writeUtf(v.dialogue, 2048);
+            buf.writeUtf(v.status, 256);
+            buf.writeVarInt(v.choices.size());
+            for (Choice c : v.choices) {
+                buf.writeUtf(c.id, 32);
+                buf.writeUtf(c.label, 64);
+                buf.writeBoolean(c.enabled);
+                buf.writeUtf(c.hint, 128);
+            }
+            buf.writeVarInt(v.giftsLeft);
+            buf.writeUtf(v.giftLabel, 32);
+            buf.writeBoolean(v.levelUp);
+            buf.writeBoolean(v.opening);
+        },
+        buf -> {
+            int entityId = buf.readVarInt();
+            UUID id = buf.readUUID();
+            String name = buf.readUtf(128), title = buf.readUtf(64), home = buf.readUtf(128), voice = buf.readUtf(32), meter = buf.readUtf(16);
+            int level = buf.readVarInt();
+            String levelName = buf.readUtf(64);
+            int points = buf.readVarInt(), floor = buf.readVarInt(), next = buf.readVarInt();
+            String dialogue = buf.readUtf(2048), status = buf.readUtf(256);
+            int count = buf.readVarInt();
+            if (count < 0 || count > MAX_CHOICES) throw new IllegalArgumentException("Invalid choice count " + count);
+            List<Choice> choices = new ArrayList<>();
+            for (int i = 0; i < count; i++) choices.add(new Choice(buf.readUtf(32), buf.readUtf(64), buf.readBoolean(), buf.readUtf(128)));
+            int gifts = buf.readVarInt();
+            String giftLabel = buf.readUtf(32);
+            boolean levelUp = buf.readBoolean(), opening = buf.readBoolean();
+            return new TalkPayload(entityId, id, name, title, home, voice, meter, level, levelName, points, floor, next,
+                    dialogue, status, List.copyOf(choices), gifts, giftLabel, levelUp, opening);
+        });
+
+    @Override
+    public Type<? extends CustomPacketPayload> type() {
+        return TYPE;
+    }
+}
