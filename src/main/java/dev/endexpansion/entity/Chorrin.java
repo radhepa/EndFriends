@@ -1,6 +1,8 @@
 package dev.endexpansion.entity;
 
+import dev.endexpansion.talk.Manner;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.RandomSource;
@@ -11,14 +13,15 @@ import org.jspecify.annotations.Nullable;
 
 /**
  * Grove-folk of the outer islands: heavy, stone-skinned, chorus-crowned and mouthless (they hum).
- * Startled, a Chorrin blinks a few blocks away as if it had eaten chorus fruit; sprouts do too. Each
- * is named for their grove: "Mott of Low Grove".
+ * Startled, a Chorrin blinks a few blocks away as if it had eaten chorus fruit; sprouts do too, and
+ * a flighty one blinks a short hop now and then even mid-conversation, and one who turns away from
+ * you because they're upset with you blinks away. Each is named for their grove: "Mott of Low Grove".
  */
 public class Chorrin extends Resident {
     private static final int BLINK_COOLDOWN = 60, BLINK_RANGE = 8;
 
     private final boolean child;
-    private int blinkCooldown;
+    private int blinkCooldown, hopTimer = 100;
 
     public Chorrin(EntityType<? extends Chorrin> type, Level level, boolean child) {
         super(type, level);
@@ -64,15 +67,42 @@ public class Chorrin extends Resident {
             double x = getX() + (random.nextDouble() - 0.5) * 2 * BLINK_RANGE;
             double y = getY() + random.nextInt(5) - 1;
             double z = getZ() + (random.nextDouble() - 0.5) * 2 * BLINK_RANGE;
-            double fromX = getX(), fromY = getY(), fromZ = getZ();
-            if (randomTeleport(x, y, z, true, s -> false)) {
-                level().playSound(null, fromX, fromY, fromZ, SoundEvents.CHORUS_FRUIT_TELEPORT, getSoundSource(), 1.0F, child ? 1.4F : 1.0F);
-                playSound(SoundEvents.CHORUS_FRUIT_TELEPORT, 1.0F, child ? 1.4F : 1.0F);
-                blinkCooldown = BLINK_COOLDOWN;
-                return true;
-            }
+            if (blinkTo(x, y, z)) return true;
         }
         return false;
+    }
+
+    private boolean blinkTo(double x, double y, double z) {
+        double fromX = getX(), fromY = getY(), fromZ = getZ();
+        if (!randomTeleport(x, y, z, true, s -> false)) return false;
+        getNavigation().stop();
+        level().playSound(null, fromX, fromY, fromZ, SoundEvents.CHORUS_FRUIT_TELEPORT, getSoundSource(), 1.0F, child ? 1.4F : 1.0F);
+        playSound(SoundEvents.CHORUS_FRUIT_TELEPORT, 1.0F, child ? 1.4F : 1.0F);
+        blinkCooldown = BLINK_COOLDOWN;
+        return true;
+    }
+
+    /** Flighty: now and then a short hop to somewhere else near the player, and on with the conversation. */
+    @Override
+    protected void talkStep(ServerPlayer partner) {
+        if (manner() != Manner.FLIGHTY) {
+            super.talkStep(partner);
+            return;
+        }
+        if (!getNavigation().isDone()) getNavigation().stop();
+        if (--hopTimer > 0) return;
+        hopTimer = 160 + random.nextInt(200);
+        for (int i = 0; i < 12; i++) {
+            double x = getX() + (random.nextDouble() - 0.5) * 6, z = getZ() + (random.nextDouble() - 0.5) * 6;
+            double d = partner.distanceToSqr(x, getY(), z);
+            if (d >= 4 && d <= 25 && blinkTo(x, getY() + random.nextInt(3) - 1, z)) return;
+        }
+    }
+
+    @Override
+    protected void leaveWith(ServerPlayer partner, String reason) {
+        if (reason.equals("dislike")) blink();
+        super.leaveWith(partner, reason);
     }
 
     @Override

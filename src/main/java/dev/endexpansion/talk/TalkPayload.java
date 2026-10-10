@@ -12,12 +12,14 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
  * One conversation screen's worth of state, server to client. {@code voice} is the bank that spoke
  * (shulkin, chorrin, shulkin_child, chorrin_child or court: the typing sound and colours follow it);
  * {@code meter} is "blossom" (friendship) or "eye" (Court Favor), at {@code level} 0-10 with
- * {@code points} between {@code levelFloor} and {@code nextThreshold}.
+ * {@code points} between {@code levelFloor} and {@code nextThreshold}. {@code tab} is talk, story or
+ * journal; {@code left} means they have cut the conversation short (only the Journal still answers);
+ * {@code storyAlert} marks the Story tab when there is something to do there.
  */
 public record TalkPayload(int entityId, UUID id, String name, String title, String home, String voice, String meter,
                           int level, String levelName, int points, int levelFloor, int nextThreshold,
                           String dialogue, String status, List<Choice> choices, int giftsLeft, String giftLabel,
-                          boolean levelUp, boolean opening) implements CustomPacketPayload {
+                          boolean levelUp, boolean opening, String tab, boolean left, boolean storyAlert) implements CustomPacketPayload {
     public static final int MAX_CHOICES = 8;
 
     /** A reply the player can pick; {@code hint} explains a locked one. */
@@ -38,7 +40,7 @@ public record TalkPayload(int entityId, UUID id, String name, String title, Stri
             buf.writeVarInt(v.points);
             buf.writeVarInt(v.levelFloor);
             buf.writeVarInt(v.nextThreshold);
-            buf.writeUtf(v.dialogue, 2048);
+            buf.writeUtf(v.dialogue, 8192);
             buf.writeUtf(v.status, 256);
             buf.writeVarInt(v.choices.size());
             for (Choice c : v.choices) {
@@ -51,6 +53,9 @@ public record TalkPayload(int entityId, UUID id, String name, String title, Stri
             buf.writeUtf(v.giftLabel, 32);
             buf.writeBoolean(v.levelUp);
             buf.writeBoolean(v.opening);
+            buf.writeUtf(v.tab, 16);
+            buf.writeBoolean(v.left);
+            buf.writeBoolean(v.storyAlert);
         },
         buf -> {
             int entityId = buf.readVarInt();
@@ -59,7 +64,7 @@ public record TalkPayload(int entityId, UUID id, String name, String title, Stri
             int level = buf.readVarInt();
             String levelName = buf.readUtf(64);
             int points = buf.readVarInt(), floor = buf.readVarInt(), next = buf.readVarInt();
-            String dialogue = buf.readUtf(2048), status = buf.readUtf(256);
+            String dialogue = buf.readUtf(8192), status = buf.readUtf(256);
             int count = buf.readVarInt();
             if (count < 0 || count > MAX_CHOICES) throw new IllegalArgumentException("Invalid choice count " + count);
             List<Choice> choices = new ArrayList<>();
@@ -67,8 +72,10 @@ public record TalkPayload(int entityId, UUID id, String name, String title, Stri
             int gifts = buf.readVarInt();
             String giftLabel = buf.readUtf(32);
             boolean levelUp = buf.readBoolean(), opening = buf.readBoolean();
+            String tab = buf.readUtf(16);
+            boolean left = buf.readBoolean(), storyAlert = buf.readBoolean();
             return new TalkPayload(entityId, id, name, title, home, voice, meter, level, levelName, points, floor, next,
-                    dialogue, status, List.copyOf(choices), gifts, giftLabel, levelUp, opening);
+                    dialogue, status, List.copyOf(choices), gifts, giftLabel, levelUp, opening, tab, left, storyAlert);
         });
 
     @Override

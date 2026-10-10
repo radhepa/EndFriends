@@ -1,0 +1,101 @@
+{
+  "bank": "chorrin_child",
+  "locked": [
+    "A story? MY story? *sprout wiggles* Not yet! You have to be my friend first. That's the rule. I just made it.",
+    "*peeks out from behind a barrel* I've got a secret, but it's a SECRET. Maybe when I know you better. Maybe tomorrow!",
+    "Elder says don't tell strangers things. You're a stranger. A famous one. Still a stranger! Come back and be less strange!",
+    "I'll tell you after you've played with me. That's how it works. Everybody knows that."
+  ],
+  "personalities": [
+    {"id": "wiggly", "label": "Wiggly", "manner": "restless", "weight": 4, "jobs": [],
+     "about": "Can't keep still; hops from foot to foot and wanders a step or two while talking, but stays to hear it all."},
+    {"id": "blinky", "label": "Blinky", "manner": "flighty", "weight": 2, "jobs": [],
+     "about": "Startles at everything; blinks a hop away mid-sentence and keeps right on chattering from there."},
+    {"id": "off_to_play", "label": "Off-to-play", "manner": "busy", "weight": 2, "jobs": [],
+     "about": "Chats happily for a while, then remembers a game and runs off to play it, unless you're best friends."},
+    {"id": "peeker", "label": "Peeker", "manner": "shy", "weight": 1, "jobs": [],
+     "about": "Talks from behind a barrel or an elder's leg; backs off if you come too close, but always peeks back out."}
+  ],
+  "stories": [
+    {
+      "id": "calf_name", "title": "A Name for the Calf",
+      "intro": "The newest Groveback calf hasn't got a name! The herder says I can pick, if I pick a GOOD one. I want an Overworld name. Something from the green place. But I don't know any green-place things. *sprout droops* Not one.",
+      "requests": [
+        {"id": "dandelion", "title": "A naming flower", "item": "minecraft:dandelion", "count": 1,
+         "prompt": "Bring me one little green-place thing, and whatever it's called, that's the calf's name! A flower, maybe? A yellow one? Yellow's a good name colour.",
+         "thanks": "*holds it up* What's it called? DANDELION? *gasps* That's the best name in the whole End! Dandelion the Groveback! Come and see it! It's eating the fence!"}
+      ],
+      "gift": {"item": "minecraft:chorus_fruit", "count": 4}
+    },
+    {
+      "id": "wrong_blink", "title": "The Floury Blink",
+      "intro": "*whispers* I blinked by accident in the kiln yard and landed in the cook's flour barrel and knocked over the WHOLE thing. Nobody knows it was me yet. But I'm all white. They'll know. I want to say sorry with a present before they find out.",
+      "requests": [
+        {"id": "wheat", "title": "New flour", "item": "minecraft:wheat", "count": 4,
+         "prompt": "Elder says Overworld flour comes from a grass called wheat. If I bring the cook some, they can make MORE flour and it'll be like I never blinked. Four bundles? Please?",
+         "thanks": "*clutches the wheat* Now I'll go and tell them. Right now. After I count to a hundred. *hums very fast* ...a hundred! Going! *comes back* The cook laughed! And gave me cookies! Have them."}
+      ],
+      "gift": {"item": "minecraft:cookie", "count": 3}
+    },
+    {
+      "id": "see_snow", "title": "Rain You Can Throw",
+      "intro": "Elder says in the Overworld there's rain that gets COLD and goes soft and white and you can THROW it. Nobody believes it. I don't believe it. *sprout trembles with hope* I want to believe it.",
+      "requests": [
+        {"id": "snowballs", "title": "Proof", "item": "minecraft:snowball", "count": 4,
+         "prompt": "If it's real, bring me some! Four throwing-rains! Then I'll believe everything you ever say. Even the cow stuff.",
+         "thanks": "*squeezes one; it squeaks* It's COLD! It's REAL! *throws it at the nearest dome* Did you see? I threw rain! I THREW RAIN! Here, I found this glowy bottle on the rim. It's yours."}
+      ],
+      "gift": {"item": "minecraft:experience_bottle", "count": 2}
+    },
+    {
+      "id": "shulkin_friend", "title": "A Lid-Day Present",
+      "intro": "My best friend's a Shulkin. A little one. Their lid pops open when they're happy. Tomorrow's the night their lid first opened, ages ago, so it's like a birthday. A lid-day! I want to give them something that'll make their lid pop SO wide.",
+      "requests": [
+        {"id": "feathers", "title": "Something to write with", "item": "minecraft:feather", "count": 3,
+         "prompt": "Shulkin write EVERYTHING down. So I want to give them something to write with. Elder says Overworld folk write with feathers off birds. Three feathers? Birds won't mind. Will they?",
+         "thanks": "*tickles your nose with one* For writing! Their lid's going to pop right off! They gave me some of their lamp sticks last lid-day. You can have them. Shh."}
+      ],
+      "gift": {"item": "minecraft:end_rod", "count": 2}
+    },
+    {
+      "id": "first_bud", "title": "My First Bud",
+      "intro": "*points at the sprout on top of the head* Look! LOOK! There's a bump! Elder says it's my first bud, and it'll open soon. And the bud needs to see something pretty first, so it knows what to be. I've only got purple things. Everything's purple.",
+      "requests": [
+        {"id": "allium", "title": "Something to copy", "item": "minecraft:allium", "count": 1,
+         "prompt": "Bring me a real flower so my bud can copy it! A purple one, so it isn't scared. Overworld purple. One's enough. Buds are small.",
+         "thanks": "*holds it right next to the sprout* See, bud? That's a flower. Be like that. *whispers* It wiggled! I saw it wiggle! Elder gave me this for being good. You have it. You were gooder."}
+      ],
+      "gift": {"item": "minecraft:chorus_flower", "count": 1}
+    },
+    {
+      "id": "big_dark", "title": "The Dark Is Too Big",
+      "intro": "I'm not scared of the dark. I'm NOT. But the elders moved the froglight from my nest to the Hearth, and now the dark is very... *spreads both long arms as wide as they go* ...big.",
+      "requests": [
+        {"id": "torches", "title": "Little suns", "item": "minecraft:torch", "count": 4,
+         "prompt": "Elder says Overworld folk have little lights that burn on sticks. If I had some, the dark would be the right size again. Four? One for each side of the nest?",
+         "thanks": "*holds one up and stares* It's a tiny sun on a stick! The dark's backing off. Look, it's scared of ME now. Here, have my nest string. I don't need it to hold on any more."}
+      ],
+      "gift": {"item": "minecraft:string", "count": 4}
+    },
+    {
+      "id": "pebble_pile", "title": "The Sad Collection",
+      "intro": "I collect shiny things. I've got a purple pebble and a white pebble and a pebble that's just a pebble. But I haven't got ONE thing from the Overworld. My collection is very sad about it. *a mournful little hum* Listen. That's the collection being sad.",
+      "requests": [
+        {"id": "amethyst", "title": "Overworld shiny", "item": "minecraft:amethyst_shard", "count": 2,
+         "prompt": "Elder says there are purple shiny stones that grow in caves under the Overworld. GROW! Like chorus! Bring me two for my collection? Please please please?",
+         "thanks": "*gasps so hard the sprout stands straight up* It's PURPLE and SHINY and it GREW! It's the best of my whole collection! You can have my pebble that's just a pebble. It's very brave."}
+      ],
+      "gift": {"item": "minecraft:flint", "count": 1}
+    },
+    {
+      "id": "cow_proof", "title": "Are Cows Real?",
+      "intro": "Elder {neighbour} says cows go moo. I don't believe it. Nothing goes moo. *crosses both long arms* And four legs? Only four? That's made up. Everybody knows legs come in sixes.",
+      "requests": [
+        {"id": "milk", "title": "Cow proof", "item": "minecraft:milk_bucket", "count": 1,
+         "prompt": "If cows are real, prove it! Bring me something that came out of a cow! Something you can't fake! One something!",
+         "thanks": "*peers into the bucket* White water. From a COW. *takes a sip and blinks backwards* It's sweet! Cows are real and they make sweet water! I'm telling EVERYONE. Here, have my snack."}
+      ],
+      "gift": {"item": "minecraft:popped_chorus_fruit", "count": 3}
+    }
+  ]
+}

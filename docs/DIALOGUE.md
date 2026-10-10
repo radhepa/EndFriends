@@ -1,8 +1,9 @@
 # Talking to the End peoples
 
 Right-click a Shulkin, a Chorrin, one of their children or (as a guest) a member of the Court to
-open the conversation screen. This document covers the dialogue bank, how closeness grows, and the
-Court's own rules. The peoples themselves are in `PEOPLE.md`, their villages in `VILLAGES.md`.
+open the conversation screen. This document covers the dialogue bank, how closeness grows, personal
+stories and the Journal, how people behave while you talk, and the Court's own rules. The peoples
+themselves are in `PEOPLE.md`, their villages in `VILLAGES.md`.
 
 ## The conversation screen
 
@@ -11,9 +12,11 @@ The Village Friends layout in purpur (`client/screen/ConversationScreen.java`):
 - **The dialogue box**: a portrait of the speaker, their name on a ribbon with their job and village,
   and the line typing out in their voice: glassy chimes for the Shulkin (higher for children), a low
   hum for the Chorrin (no mouths), a warped bass for the Court. Space or a click finishes the line.
+- **Tabs** on the top edge of the box: **Talk**, **Story** and **Journal** (Tab cycles them). The
+  Story tab is marked with a blossom (an eye, at Court) when there is something to do there.
 - **Replies**: numbered bubbles on the right (press 1-8 or click).
-- **The dock**: Talk (say hello again), Gift (the Court: Tribute, for what you hold in your main
-  hand; two a day) and Farewell (Esc).
+- **The dock**: Greet (the Court: Bow; say hello again), Gift (the Court: Tribute, for what you hold
+  in your main hand; two a day) and Farewell (Esc).
 - **The card**: how close you are, as ten chorus blossoms (friendship) or ten eyes (Court Favor),
   the level's name, and how far to the next one. A banner drops in when you reach a new level.
 
@@ -47,6 +50,67 @@ Full Bloom, the Court from Tolerated to Friend of the Crown). What they say grow
 
 Friendship is kept by each resident. Favor is kept by a whole Citadel's Court, for good.
 
+## Stories
+
+Everyone but a thrall has a story of their own: something on their mind that they will share once
+they know you. It is chosen from their people's story book, preferring stories tied to their job
+(every Court story belongs to a role: Lord, Voidmarshal, Riftguard, Herald, Seer or Steward).
+
+| Step (grown-ups) | Friendship / Favor |
+|---|---|
+| 1. They bring it up (from level 1) and you offer to help | +3 / +1 |
+| 2. They ask for something; bring it and give it | +15 / +4 |
+| 3. They take their time: talk on **3 different days** and reach **level 3**, and they tell you the rest | +10 / +3 |
+| 4. Their two other requests, any time after the first | +10 / +3 each |
+| 5. Talk on **5 days**, reach **level 5**, do both requests: answer them one of two ways, and they give you something | +25 / +6 |
+
+Children's stories are short: one request, then a small gift. The items asked for are taken from
+anywhere in your inventory. Before you reach level 1 the Story tab gets a polite (or, at Court, a
+cold) "not yet".
+
+There are 55 stories: 12 Shulkin, 14 Chorrin, 7 for Shulkin children, 8 for sprouts and 14 for the
+Court (two or three per role).
+
+## The Journal
+
+Your own notes on each person (the Journal still opens after they have cut a conversation short):
+
+- **Memories**: dated entries, newest first: meeting them, gifts they loved, liked or didn't, growing
+  closer, each step of their story and how it ended, service to the Court, the Lord's hound, a blow
+  struck, a sorry said, a time they turned away from you.
+- **About**: their name, people, job and village, their personality, your friendship or Favor, how
+  many days you've talked, and the gifts you've found they love, like or don't.
+- **Story notes**: their story's steps, done or still to do, with what each one needs.
+
+## While you talk
+
+People stand still and face you for as long as you like, unless that isn't who they are. Each has a
+personality from their people's story book, and its **manner** decides:
+
+| Manner | While you talk | Who |
+|---|---|---|
+| steady | stands still | most grown-ups; the Herald |
+| shy | keeps a step of distance, backs off if you crowd them | some Shulkin, some children, the odd Seer |
+| restless | paces a step or two, but stays | children; Riftguards on watch |
+| flighty | blinks a short hop now and then, and carries on | some Chorrin and sprouts |
+| busy | after half a minute or so excuses themselves and goes back to what they were doing (close friends, level 6+, get two or three minutes; the Court stays for Favor 6+) | some of everyone; most Voidmarshals and Stewards |
+| proud | ends the audience after a while unless your Favor is 4 or more | most Lords |
+
+And whatever their manner:
+
+- **If they're upset with you** (you struck them) they are cool with you and turn away a few seconds
+  into the conversation, ending it (a Chorrin blinks away). Each blow is a grudge that fades a step a day; a
+  sorry (**Say you're sorry**, once a day, first in the replies) or a gift they love takes one away.
+  Struck once and sorry at once, they forgive you and stay.
+- **Woken at night** they talk a little, then go back to sleep (unless you are very dear to them,
+  level 8).
+
+When someone cuts a conversation short, they say so, the replies close (the Journal still opens), the
+busy and the Court step back to what they were doing, and they won't talk to you again for a little
+while (ten seconds when upset, half a minute when woken, otherwise most of
+a minute). A conversation nobody touches for five minutes ends by itself. Someone you're talking to
+can't be shoved about by passers-by.
+
 ## The Court and the Eyes
 
 - **Without Enderman Eyes** a Citadel is closed: cross its boundary and the Herald cries out, and the
@@ -64,10 +128,25 @@ Friendship is kept by each resident. Favor is kept by a whole Citadel's Court, f
 - **Where the Eyes are**: one End ship in five was a Court envoy's, and its left-hand chest (beside the
   elytra) holds a pair (`mixin/EndShipEyesMixin`, loot table `chests/envoy_ship`).
 
+## The story books
+
+`src/main/resources/data/endexpansion/stories/`: one book per bank (`shulkin.json`,
+`chorrin.json`, `shulkin_child.json`, `chorrin_child.json`, `court.json`), each with its people's
+personalities (label, a line for the Journal, manner, weight, and for the Court the roles), a few
+"not yet" lines, and the stories. Check them with
+
+    python tools/stories/check.py
+
+whose docstring is the schema. Same rules as the dialogue: no gendered words, single quotes,
+placeholders from the same list (no `{task}`), plus length limits, real item ids, and no creative-only
+or overpowered requests or gifts. The game reads them with `talk/StoryBook.java`; the Story and
+Journal tabs are `talk/Storyteller.java`, and each person's progress and memories with each player are
+a `talk/Tale.java`.
+
 ## The dialogue bank
 
 `src/main/resources/data/endexpansion/dialogue/`: `shulkin.json`, `chorrin.json`,
-`shulkin_child.json`, `chorrin_child.json` and `court.json`, about 2,000 lines in all. Check it with
+`shulkin_child.json`, `chorrin_child.json` and `court.json`, about 2,250 lines in all. Check it with
 
     python tools/dialogue/check.py
 
@@ -78,6 +157,10 @@ characters, no duplicates, and no gendered words: every End person is "they". Ad
 the level names, the people's name pool and their village names; folk banks hold job lines (used for
 "Ask about their work"), the Court bank holds per-rank overrides (lord, marshal, riftguard, herald,
 seer, steward). Gift tastes are lists of item ids.
+
+Besides the topics in the Replies table, folk banks have `walk_off` (leaving when upset with you),
+`busy_off` (leaving when busy; children run off to play), `apology_accepted` and `apology_wary`, and
+the Court has `dismissed` (with Lord, Voidmarshal and Steward versions).
 
 The game reads the banks with `talk/DialogueBank.java`; `talk/Conversation.java` picks the topic and
 fills the placeholders.

@@ -1,0 +1,411 @@
+{
+  "bank": "court",
+  "locked": [
+    "You ask the Court to open itself to a tolerated guest? The Court has nothing to open. Go.",
+    "*the brow-eyes narrow, one after another* Some matters are not spoken before strangers. You are a stranger.",
+    "Earn the Court's regard first. Then, perhaps, you will hear something that is not cut into the floor.",
+    "What is mine is not yours to ask for. Serve {village}, and we will see what is permitted.",
+    "A guest may ask for the law, the way in and the way out. Nothing more. Remember your station.",
+    "There are things in {village} older than your world. You will not hear them today, nor soon."
+  ],
+  "personalities": [
+    {"id": "imperious", "label": "Imperious", "manner": "proud", "weight": 7, "jobs": ["lord"],
+     "about": "Grants audiences by the breath; unless the Court holds you in some regard, they end the audience themselves."},
+    {"id": "ageless", "label": "Ageless", "manner": "steady", "weight": 2, "jobs": ["lord"],
+     "about": "Has outlived so many ages that a guest's questions cost them nothing; they will hear you out."},
+    {"id": "campaigner", "label": "Campaigner", "manner": "busy", "weight": 5, "jobs": ["marshal"],
+     "about": "Always mid-campaign; the war table calls them away unless you stand close to the Court."},
+    {"id": "disdainful", "label": "Disdainful", "manner": "proud", "weight": 2, "jobs": ["marshal", "riftguard", "steward"],
+     "about": "Thinks most guests a waste of the Court's time, and ends the audience unless you have earned some regard."},
+    {"id": "vigilant", "label": "Vigilant", "manner": "restless", "weight": 6, "jobs": ["riftguard"],
+     "about": "Never stops their rounds; they pace and turn while you talk, watching every shadow but yours."},
+    {"id": "exacting", "label": "Exacting", "manner": "busy", "weight": 5, "jobs": ["steward"],
+     "about": "Counts while they talk and leaves when the count calls; only a guest of real standing is worth a broken tally."},
+    {"id": "declaiming", "label": "Declaiming", "manner": "steady", "weight": 5, "jobs": ["herald"],
+     "about": "Speaking is their office; they will stand and hold forth for as long as you care to listen."},
+    {"id": "glass_gazer", "label": "Glass-Gazer", "manner": "steady", "weight": 4, "jobs": ["seer"],
+     "about": "Half their eyes never leave the glass; they will talk as long as you like, though not always to you."},
+    {"id": "withdrawn", "label": "Withdrawn", "manner": "shy", "weight": 2, "jobs": ["seer"],
+     "about": "Keeps a pace of distance from every living thing; crowd them and they step back into the dark."}
+  ],
+  "stories": [
+    {
+      "id": "word_that_loosed_it", "title": "The Word That Loosed It", "jobs": ["lord"],
+      "intro": "*the crystal in the crown burns low* There is a word, guest. One word in the old tongue, and the Dragon rose from the central island to do as it was told. We spoke it. Not a predecessor. Not a council. We. The cities emptied in a season. And now you stand here, and the word means nothing at all.",
+      "requests": [
+        {"id": "breath", "title": "What Lingers", "item": "minecraft:dragon_breath", "count": 3,
+         "prompt": "Its breath still pools in the low places of the central island. The Court finds it obscene. Bottle three of it and bring them to us. Do not let the Voidmarshals see.",
+         "thanks": "*the Lord holds a bottle to the crystal's light for a long time* So little. It burned three cities, and it fits in a bottle. Leave us now."},
+        {"id": "weeping_wall", "title": "A Weeping Wall", "item": "minecraft:crying_obsidian", "count": 16,
+         "prompt": "Sixteen of crying obsidian. We wish a wall of it set behind the throne, where the word was spoken. Let something in this hall weep, since the Court may not.",
+         "thanks": "Set it there. Yes. Listen. It weeps so that we need not. A convenient arrangement, guest. Do not call it anything else."},
+        {"id": "clean_page", "title": "A Clean Page", "item": "minecraft:writable_book", "count": 1,
+         "prompt": "Bring us one of your world's books that can be written in. The Court cuts its law in stone. What we mean to write, we will not cut in stone. Not yet.",
+         "thanks": "Blank. Good. It will not stay so. Do not ask what we write in it, guest. We do not yet know ourselves."}
+      ],
+      "waiting": "We have not finished deciding whether you may hear the rest. A Lord decides slowly. Return, and be the kind of guest who returns.",
+      "ready": "*all eight eyes turn to you* Stand closer. Lower. We will say it once, and the Herald is not to hear it.",
+      "confide": "We tell the Court we would loose it again. A lie. Near the end it no longer came when called. We called anyway, every night, and every night it did not come, and every night we were glad. Glad, guest. Three cities, and we were glad it would not listen. When you killed it we felt nothing break. We felt a door close. Tell us what that is. You have killed things.",
+      "endings": [
+        {"id": "crime", "label": "It was a crime. Say so.",
+         "text": "*the crystal flares, and for a breath the hall is very bright* A crime. No Lord of the Court has spoken that word of the Court. We will write it in your book first. Then, perhaps, in the floor. Not today. But you will have been the first to hear it.",
+         "memory": "You told Lord {name} that loosing the Dragon was a crime, and they wrote it down."},
+        {"id": "war", "label": "It was war. Let it rest.",
+         "text": "War. Yes. The Court has always called it so, and you are kind to call it so too. Kinder than we have earned. We will seal the breath in the weeping wall and speak no more of it. But we will remember who let us stop.",
+         "memory": "You told Lord {name} it was only war, and they sealed the Dragon's breath in the wall."}
+      ],
+      "gift": {"item": "minecraft:end_crystal", "count": 2}
+    },
+    {
+      "id": "rival_crown", "title": "A Rival Crown", "jobs": ["lord"],
+      "intro": "There is a Citadel beyond the rim whose Lord once called us 'butcher' before the whole assembled Court. That was an age ago. We remember every syllable, and the pitch of each. Their spire stands nine shards high. Ours stands eight. You will help us mend that.",
+      "requests": [
+        {"id": "higher", "title": "One Shard Higher", "item": "minecraft:obsidian", "count": 64,
+         "prompt": "A full stack of obsidian, guest. The thralls will raise our spire with it, one shard higher than theirs. They will see it from their balcony. That is the point.",
+         "thanks": "Good stone. Black, cold, sufficient. Let them count our shards from across the void and find one more than they would like."},
+        {"id": "needle", "title": "The Needle", "item": "minecraft:lodestone", "count": 1,
+         "prompt": "Your world makes a stone that holds a needle to one place forever. Bring us one. The war table's needle will point at their Citadel, so that we need never turn to find it.",
+         "thanks": "*the Lord sets it on the war table and watches a needle swing toward the rim* There. Now it points where we have always looked."},
+        {"id": "small_eyes", "title": "Lesser Eyes", "item": "minecraft:ender_eye", "count": 2,
+         "prompt": "Two of your world's Eyes of Ender. Do not ask what they are for. Bring them.",
+         "thanks": "Small eyes. Green. Not royal. They will serve for what we have in mind, or they will not. We have not decided which we hope."}
+      ],
+      "waiting": "Do not mistake us. We do not miss them. We are measuring a spire. Come back when the Court knows you better.",
+      "ready": "*the needle on the war table trembles toward the rim* You have been patient. So have we, for an age. Hear why.",
+      "confide": "When the Court voted to loose the Dragon, one voice spoke against it. Theirs. They called it butchery and us a butcher, walked out of the hall, and took a third of the Court with them to the rim to raise a throne of their own. We opened our first eyes in the same hour, they and we, side by side, in the same dark. We were right. We are almost certain we were right. Their spire is still higher.",
+      "endings": [
+        {"id": "send_word", "label": "Send them word.",
+         "text": "Word. After an age. *a long silence* Very well. The Herald will ride for the rim with a seal, these two small green eyes, and one line from us: that the needle points at them still. They will understand. Or they will laugh. Either is an answer.",
+         "memory": "You urged Lord {name} to send word to the rival Citadel, and an envoy rode for the rim."},
+        {"id": "outbuild", "label": "Build higher. Say nothing.",
+         "text": "*a sound low in the throat that, in anyone else, would be laughter* Yes. Higher, and silent. Let them look up from the rim and wonder. The Court does not forgive, guest. But it can be very patient about not forgiving.",
+         "memory": "You told Lord {name} to build higher and say nothing, and their spire grew a ninth shard."}
+      ],
+      "gift": {"item": "minecraft:diamond", "count": 6}
+    },
+    {
+      "id": "dimming_crystal", "title": "The Dimming Crystal", "jobs": ["lord"],
+      "intro": "You have stood in this hall often enough to notice. Look at the crystal in our crown. Look honestly. It burned white when the purpur cities still lit their lamps. It burns violet now. The Seers have stopped telling us it is only the light.",
+      "requests": [
+        {"id": "second_light", "title": "A Second Light", "item": "minecraft:end_crystal", "count": 1,
+         "prompt": "An end crystal, made by your own hand. Your kind has learned to make them; some have set them on the pillars to wake the Dragon again. Do not look surprised. We felt every one.",
+         "thanks": "*the Lord holds it beside the crown, and the two lights do not match* No. It does not answer. We did not think it would. Still. Keep it near us."},
+        {"id": "vigil", "title": "The Old Vigil", "item": "minecraft:black_candle", "count": 8,
+         "prompt": "Eight black candles. In the old days, when a crown began to dim, the Seers sat vigil in their Spire by black flame. We wish to know whether they still remember how.",
+         "thanks": "They remembered. They did not ask why we sent for candles. The Seers never ask. It is the worst thing about them."},
+        {"id": "counting", "title": "Counting Days", "item": "minecraft:clock", "count": 1,
+         "prompt": "Your world has a device that counts the passing of its sun. The End has no sun, and the Court has never needed to count. We find we wish to. Bring us one.",
+         "thanks": "*the hands spin and spin, finding nothing* It cannot count here. Of course it cannot. Leave it by the throne all the same. We like that it tries."}
+      ],
+      "waiting": "We are not dying, guest. Lords do not die. Come back another day, and we will tell you what Lords do instead.",
+      "ready": "*the crystal gutters, then steadies* Sit. Yes, sit. We permit it. This is not a thing to hear standing.",
+      "confide": "When a crown goes dark, the Lord walks down the stair beneath the Throne Hall, and the Seers shut the door. Some while after, the door opens, and a Lord walks up. We walked up those steps once, with eight new eyes and no memory of walking down. Whether we were the one who went down, or something else entirely, we do not know. We have never let ourselves ask. Now the stair is waiting for us.",
+      "endings": [
+        {"id": "tell_court", "label": "Tell the Court.",
+         "text": "The whole Court? *eight eyes close, then open* Yes. A Lord who hides the dimming is a Lord who fears it, and the Court must never see us fear. We will tell them ourselves, at council, before the Seers can. Stand at the back. Someone should hear it who does not need it.",
+         "memory": "You urged Lord {name} to tell the Court their crown was dimming, and they named the day."},
+        {"id": "keep_it", "label": "Keep it between us.",
+         "text": "Between us. A Lord and a guest. *the crystal steadies a little* The Court would make it a ceremony. You make it a confidence. We find we prefer yours. When the stair comes for us, guest, it will come quietly, and you will know before the Herald does.",
+         "memory": "You kept Lord {name}'s dimming crown a secret between the two of you."}
+      ],
+      "gift": {"item": "minecraft:echo_shard", "count": 4}
+    },
+    {
+      "id": "envoy_who_did_not_return", "title": "The Envoy Who Did Not Return", "jobs": ["herald"],
+      "intro": "Before the Dragon, I cried the envoys home. Every ship that came back to {village}, I named from the balcony: the envoy, the ship, the Eyes it carried. One ship I never named. It sailed for the third purpur city the night the Dragon flew. I have kept the Gate since. I read every seal that comes up the causeway. Yours, too.",
+      "requests": [
+        {"id": "beacon", "title": "A Beacon", "item": "minecraft:end_rod", "count": 12,
+         "prompt": "Twelve end rods. In the old days the balcony burned with them, so ships could find the Gate in the dark. The Steward calls it waste. Bring them anyway, and bring them to me, not to the stores.",
+         "thanks": "*the Herald sets them along the balustrade one by one* There. The Gate has not looked like this in an age. Nobody is coming. It is still right."},
+        {"id": "bell", "title": "A Voice That Carries", "item": "minecraft:bell", "count": 1,
+         "prompt": "Your world has bells, I am told: metal that cries out when struck. My voice carries to the next island. A bell might carry to the one after. Bring me one.",
+         "thanks": "*the Herald strikes it once and listens until the last of it is gone into the void* It carries. Further than I do. I am not jealous. I am a little jealous."},
+        {"id": "far_sight", "title": "Further Sight", "item": "minecraft:spyglass", "count": 1,
+         "prompt": "A spyglass. Four eyes are not enough to watch a causeway that runs to the edge of the world. Do not tell the Riftguards I asked. They will think the Herald is going soft.",
+         "thanks": "*the Herald lifts it to the brow-eyes, then to the true ones* The rim is closer than it was. Every ship-shaped shadow on it, I can count now."}
+      ],
+      "waiting": "You listen, at least. Few do; they hear a Herald and expect shouting. Come back. When the Court knows you better, I will tell you the envoy's name.",
+      "ready": "Stand here, at the balustrade, where the rods burn. The causeway is empty. It is always empty. Now I will say the name.",
+      "confide": "Ossevreth. We kept the Gate together, side by side, before they were given a ship and a seal. An envoy does not come home without the Eyes; an envoy without a seal is a stranger, and strangers die at the Gate. So when your seal first came up the causeway, I hoped. I read it, and it was not theirs. I read every seal like that. Every one. I would know Ossevreth's mark blind.",
+      "endings": [
+        {"id": "keep_lit", "label": "Keep the beacon lit.",
+         "text": "Lit, then. Every night, rods and bell, as though ships still sailed. The Steward will complain of the waste, and I will cry the Steward down. If Ossevreth's seal ever comes up the causeway, there will be light enough to read it by.",
+         "memory": "You told Herald {name} to keep the beacon lit for the envoy who never came home."},
+        {"id": "cry_name", "label": "Cry their name one last time.",
+         "text": "*the Herald draws a breath that seems to go on forever, and cries one name out over the void, louder than any alarm* ...There. A Herald names the ships that come home. I have named one that did not. Let the void keep it. From now on I read seals only for what they are.",
+         "memory": "You asked Herald {name} to cry the lost envoy's name over the void, and they did."}
+      ],
+      "gift": {"item": "minecraft:shulker_shell", "count": 4}
+    },
+    {
+      "id": "backward_glass", "title": "The Glass That Looks Backward", "jobs": ["seer"],
+      "intro": "Something is wrong with the glass. For an age it showed me what would be: the Dragon's end, your face, the dimming of crowns. Since the Dragon fell it shows only what was. Further back each night. Last night it showed me {village} before its walls. Tonight, I think, it will show me before me.",
+      "requests": [
+        {"id": "singing_stone", "title": "Singing Stone", "item": "minecraft:amethyst_shard", "count": 16,
+         "prompt": "Sixteen shards of amethyst. The glass is set in it, and the old setting has gone quiet. Quiet stone shows quiet things. I need it to sing again, loudly, so I can hear past what it shows.",
+         "thanks": "*the Seer touches a shard, and the whole Spire hums* Yes. Loud. Too loud for comfort. Exactly loud enough."},
+        {"id": "darker_pane", "title": "A Darker Pane", "item": "minecraft:tinted_glass", "count": 8,
+         "prompt": "Eight panes of your tinted glass. Light comes through clear glass, and in this Spire light is a liar. I want to look through something that keeps most of it out.",
+         "thanks": "Dark. Good. The past is easier to see through darkness. It is where the past keeps itself."},
+        {"id": "where_fallen", "title": "Where One Fell", "item": "minecraft:recovery_compass", "count": 1,
+         "prompt": "Your world has a compass that points to where its bearer last fell. Bring me one. I wish to see where it points for me.",
+         "thanks": "*the needle spins and will not settle* It does not know where I fell. Neither do I. Perhaps I never did. Perhaps I have not yet. Keep that away from the Lord."}
+      ],
+      "waiting": "The glass went further back tonight. I will not say how far. Come again. I want someone to know, after, that I was not mad when I began.",
+      "ready": "*the Seer covers half their brow-eyes with one long hand* I looked. Last night I looked, and saw. Sit with me. Do not look at the glass while I speak.",
+      "confide": "It showed me the first time my eyes opened. Not all at once: one, then two, the oldest last. Before them was dark, and in the dark something was carrying stone. Long arms. Patient. I could not see whose arms they were. I could not see the face. I woke with my claws in the amethyst and the stone singing so loud the Riftguards came running. I have decided not to look again. I am not certain the deciding is mine.",
+      "endings": [
+        {"id": "cover_glass", "label": "Cover the glass.",
+         "text": "Covered. *a black cloth falls over the glass, and the singing dims* The Court would call that cowardice in a Seer. Let it. Some things are seen best by never being seen. If the glass ever begins to look forward again, I will lift the cloth. Not before.",
+         "memory": "You told the Seer {name} to cover the backward glass, and they drew a cloth over it."},
+        {"id": "look_again", "label": "Look again. I'll stay.",
+         "text": "With you here. *the Seer is quiet for a long time* Very well. One more night. If I see the face, I will not tell you whose it was. I will not tell anyone. But I would rather know with a witness than wonder alone forever.",
+         "memory": "You stayed with the Seer {name} while they looked into the backward glass once more."}
+      ],
+      "gift": {"item": "minecraft:experience_bottle", "count": 16}
+    },
+    {
+      "id": "face_in_the_glass", "title": "The Face in the Glass", "jobs": ["seer"],
+      "intro": "I have broken old law, guest. Not lately. An age ago. I saw the Dragon die in the glass, and the one who killed it, and I told the Court nothing. A Seer who hides an omen from the throne is unmade for it. I have kept my eyes by keeping quiet. Then the face in the glass walked up the causeway with a seal in its pack.",
+      "requests": [
+        {"id": "green_eyes", "title": "Small Green Eyes", "item": "minecraft:ender_eye", "count": 8,
+         "prompt": "Eight of your Eyes of Ender. In your world they drift toward a hidden door. I wish to hold them to the glass and see where they drift in here.",
+         "thanks": "*the Seer holds one up; in the glass, it turns slowly toward you* Ah. Even they know. Take no comfort in it."},
+        {"id": "bright_ink", "title": "Ink That Shines", "item": "minecraft:glow_ink_sac", "count": 8,
+         "prompt": "Eight sacs of glowing ink. I write my omens on the Spire wall, where only Seers read. This one I may finally write. It should be legible in the dark.",
+         "thanks": "Bright. Good. An omen kept in the dark goes sour. This one has been kept in the dark an age."},
+        {"id": "blue_flame", "title": "A Blue Flame", "item": "minecraft:soul_lantern", "count": 1,
+         "prompt": "A lantern that burns blue. In the glass, the Dragon's death was lit blue. I want a light of that colour in the Spire when I speak of it.",
+         "thanks": "*the Seer sets it by the glass, and both burn the same cold colour* There. Now the room remembers too."}
+      ],
+      "waiting": "You are wondering whether I will betray you to the Court, or myself. So am I. Come back. I will know by then.",
+      "ready": "*every brow-eye opens and fixes on you* I have read the glass on it. Both of us are still in it. Listen.",
+      "confide": "I did not hide it from fear. I hid it because the glass showed me the Court after: drawn in, quiet, alive. Had I told the Lord, every Riftguard would have gone to the pillars to wait for you, and they would have died there with the Dragon, and the Citadels would stand empty. I let the Dragon die so the Court would not die with it. That is treason. It is also the best thing I have done.",
+      "endings": [
+        {"id": "confess", "label": "Tell the Lord. Now.",
+         "text": "*the Seer bows lower than the Court ever bows* Yes. If it is to be said, it should be said while the speaker still chooses to say it. I will go to Lord {lord} tonight. Whatever is unmade, I will at least have been the one to unmake it.",
+         "memory": "You urged the Seer {name} to confess to Lord {lord}, and they went to the Throne Hall."},
+        {"id": "keep_omen", "label": "Some omens should stay hidden.",
+         "text": "Hidden, then. You, and I, and the glass. *the Seer writes one glowing line on the Spire wall, small, where only Seers read* There. Not told. Not lost. If ever I am unmade for it, guest, you will know why, and that it was worth it.",
+         "memory": "You helped the Seer {name} keep the omen of the Dragon's end hidden from the Court."}
+      ],
+      "gift": {"item": "minecraft:music_disc_5", "count": 1}
+    },
+    {
+      "id": "ledger_of_the_missing", "title": "The Ledger of the Missing", "jobs": ["steward"],
+      "intro": "Every night the thralls go through to your world to haul the Court's stone. Every morning I count them back. For an age the count has come up short. Not by much. A few a night. I keep a column for them. It is the longest column in my ledger, and the only one I have never shown the Lord.",
+      "requests": [
+        {"id": "pearls", "title": "Lines to Close", "item": "minecraft:ender_pearl", "count": 16,
+         "prompt": "Sixteen ender pearls. You know what they are. Your world calls them loot; the Court calls them the last of a thrall. Bring them, and I will close sixteen lines. A column should not stay open forever.",
+         "thanks": "*the Steward counts them twice, slowly, and makes sixteen small marks* Closed. I am obliged to you. That is not a phrase the stores use. The stores will survive it."},
+        {"id": "ink", "title": "Ink for the Column", "item": "minecraft:ink_sac", "count": 8,
+         "prompt": "Eight ink sacs. The missing column has run me dry, and the Court's ink is counted, and I would rather the Court did not count what I spend it on.",
+         "thanks": "Black and plentiful. Your squid are generous creatures. I will spend every drop on lines nobody else will read."},
+        {"id": "new_books", "title": "A Second Ledger", "item": "minecraft:book", "count": 3,
+         "prompt": "Three books. The ledger is full. I am starting another, for the missing alone. It feels wrong to keep them beside the obsidian tallies.",
+         "thanks": "They will have their own shelf, then. Behind the rest. Where a Steward keeps what a Steward should not."}
+      ],
+      "waiting": "You are wondering why a Steward cares where a thrall goes. So is the Steward. Come back. I will have counted it through by then.",
+      "ready": "*the Steward draws out the second ledger, the one behind the rest* Look. No, do not touch. Look.",
+      "confide": "There are marks beside every line. Not numbers. I could not give them names; thralls are not named. So I gave them marks. The one who stacks crooked. The one who stops at the crying wall. The one who came back holding a flower, once. Old law says a thrall is a pair of hands. I have been keeping hands with faces. If the Lord saw this I would be a Steward no longer. I cannot stop.",
+      "endings": [
+        {"id": "show_lord", "label": "Show it to the Lord.",
+         "text": "*the Steward goes very still* To the throne. Yes. A Steward who hides a ledger is no Steward at all. I will lay both books before Lord {lord} and let the Court decide what a thrall is worth. Perhaps it will finally have to count.",
+         "memory": "You told Steward {name} to show the ledger of the missing to Lord {lord}."},
+        {"id": "keep_counting", "label": "Keep counting. Quietly.",
+         "text": "Quietly. Yes. *a small, careful mark beside a fresh line* The Court never asks what is on the back shelf. I will keep the faces where the hands are counted. And if you ever meet a thrall stacking crooked in your world, guest, let them go home.",
+         "memory": "You told Steward {name} to keep the hidden ledger, and they made a new mark."}
+      ],
+      "gift": {"item": "minecraft:diamond", "count": 4}
+    },
+    {
+      "id": "debt_to_the_grove", "title": "A Debt to the Grove", "jobs": ["steward"],
+      "intro": "I inherited the ledger of {village} from a Steward long unmade, and with it one line that has never been struck through. A debt, from the days of the Old Accord, when the Court ate from Chorrin harvests and paid in protection. Then the Court loosed the Dragon on the cities, and the payments stopped. The line is still open. I hate an open line.",
+      "requests": [
+        {"id": "grove_goods", "title": "Grove Goods", "item": "minecraft:popped_chorus_fruit", "count": 32,
+         "prompt": "Thirty-two of popped chorus fruit. Yes, I know. The Court sneers at it. I want to know exactly what we ate for an age, and the measure of what was given.",
+         "thanks": "*the Steward weighs a handful, frowning* Light. Brittle. Purple. They fed whole cities on this, and the cities fed us. The arithmetic is humbling."},
+        {"id": "payment", "title": "Payment in Kind", "item": "minecraft:gold_ingot", "count": 12,
+         "prompt": "Twelve of your world's gold. Gold means nothing here, so nobody can mistake it for tribute. It can only be mistaken for payment. That is what I want.",
+         "thanks": "Soft. Bright. Useless to the Court. Perfect. Nobody will accuse me of giving away anything of value."},
+        {"id": "saplings", "title": "Growing Things", "item": "minecraft:oak_sapling", "count": 8,
+         "prompt": "Eight saplings from your world. The grove-folk would give a great deal for a growing thing that is not chorus, and the Court has never once grown anything.",
+         "thanks": "*a dry sound, not quite a laugh* Little sticks with leaves. They will root in end stone, or they will not. The Court never learned to grow. It learned to take."}
+      ],
+      "waiting": "Debts are patient. Stewards are not. Come back; I have not decided whether to settle this one or merely understand it.",
+      "ready": "*the Steward runs a claw down the old page to the open line* Here. Read it with me. It is short. That is the worst of it.",
+      "confide": "It says: owed to Low Grove, for one age of harvest, the Court's protection, in full. That is all. In full. The Court did not protect them. The Court sent the Dragon over their groves to the cities, and the grove-folk scattered into the dark. A Steward does not judge the throne. A Steward balances. This page has not balanced in an age, and I am the only one in {village} who knows it.",
+      "endings": [
+        {"id": "pay_it", "label": "Pay what can be paid.",
+         "text": "*the Steward packs the gold and saplings in a plain crate, no seal, no mark* It will be left at the edge of the nearest Stead by night, with no word of who sent it. It does not balance the page. Nothing could. But I can write 'in part', and 'in part' is a beginning.",
+         "memory": "You told Steward {name} to pay what could be paid of the Court's old debt to the grove-folk."},
+        {"id": "strike_it", "label": "Strike the line. It's done.",
+         "text": "Struck. *one hard line through the old page* There. The Court's books are clean. Mine are not. I will remember it was there, guest. I am a Steward of the Court. Remembering is the one thing we do too well.",
+         "memory": "You told Steward {name} to strike the old debt from the ledger, and they did."}
+      ],
+      "gift": {"item": "minecraft:obsidian", "count": 16}
+    },
+    {
+      "id": "sealed_city", "title": "The Sealed City", "jobs": ["marshal"],
+      "intro": "The Dragon emptied the cities. It did not seal them. That was the Voidmarshals' work, after. We went through with thralls and chain, hall by hall, and bricked shut what had to be shut. I commanded at the third city. There is a fault in my memory of it. I want it cut out.",
+      "requests": [
+        {"id": "a_shell", "title": "A Shell", "item": "minecraft:shulker_shell", "count": 1,
+         "prompt": "Bring me a shulker's shell. One. From the dead cities. You have killed enough of the things on your way here. One more will make no difference to you.",
+         "thanks": "*the Voidmarshal turns it over in one claw, very carefully, as if it might open* Light. I thought it would be heavier. I thought a great many things."},
+        {"id": "cover_wall", "title": "Covering Stone", "item": "minecraft:obsidian", "count": 32,
+         "prompt": "Thirty-two of obsidian. The east wall of the War Hall has the third city carved on it, in relief. I mean to cover it.",
+         "thanks": "Good. The thralls will set it tonight. The carving will still be there behind the stone. I know that. I am not a fool."},
+        {"id": "city_stone", "title": "Taken Stone", "item": "minecraft:purpur_block", "count": 16,
+         "prompt": "Sixteen blocks of purpur. From the cities. Not new-made. Taken. I will build something with it, and nobody will be told what for.",
+         "thanks": "From the cities. You can still smell the chorus in it. The Shulkin built this with their hands. I unbuilt their lives with mine. Leave it there."}
+      ],
+      "waiting": "Do not look at the shell. I keep it in the War Hall where I can see it. That is not sentiment. It is discipline. Come back later.",
+      "ready": "*the Voidmarshal sets the shell on the war table, over the third city* You have earned a report. Here it is.",
+      "confide": "There was a hall in the third city, and in it a Shulkin with their lid shut tight. Old shell, ivory. They would not open. My orders were to seal every hall that still held the living. I sealed it. I told myself they would open in time and find the side door. The Shulkin say a lid that never opens leaves a shell behind. You brought me a shell from that city, guest. I did not ask which hall.",
+      "endings": [
+        {"id": "return_shell", "label": "Return it to the city.",
+         "text": "Back. Yes. *the Voidmarshal wraps the shell in the hem of their own war cape* I will take it myself, to the third city, to the hall I sealed. Set it inside. Brick the door again behind it. A soldier puts things back where they were found. It is all a soldier can do.",
+         "memory": "You told Voidmarshal {name} to return the shell to the sealed city, and they went."},
+        {"id": "give_shulkin", "label": "Give it to the Shulkin.",
+         "text": "To the shell-folk. *a long silence, plate grinding* They would shut their lids at the sight of me. Then it goes by the Herald, under seal, as an envoy's gift, as in the old days, with one line: kept by its own people. They will know what it means. They record everything.",
+         "memory": "You told Voidmarshal {name} to send the shell to the Shulkin, and the Herald carried it."}
+      ],
+      "gift": {"item": "minecraft:experience_bottle", "count": 10}
+    },
+    {
+      "id": "unfought_war", "title": "The Unfought War", "jobs": ["marshal"],
+      "intro": "I was made for a siege. An age of drill and plans, of walls taken in my head a thousand ways. Then the Court loosed the Dragon, and it did in one season what I had trained an age to do. I never drew my glaive. Now the Dragon is dead, the war table is clear, and I have plans again.",
+      "requests": [
+        {"id": "war_horn", "title": "A War Horn", "item": "minecraft:goat_horn", "count": 1,
+         "prompt": "Your world has horns that sound across valleys. Bring me one. The Herald's voice is fine for alarms. A war wants a horn.",
+         "thanks": "*one short blast that makes the thralls drop their stone* Good. Loud. Ugly. A proper voice for a war."},
+        {"id": "markers", "title": "Markers of Fire", "item": "minecraft:blaze_rod", "count": 8,
+         "prompt": "Eight blaze rods. The war table's markers are old purpur, and I can no longer tell the Spires from the Steads. Rods of fire will stand out. I want to see the outer islands burning. On the table, at least.",
+         "thanks": "Hot. Bright. They scorch the table. Fitting."},
+        {"id": "powder", "title": "For the Plans", "item": "minecraft:tnt", "count": 8,
+         "prompt": "Eight of your world's blocks that burst. For the plans. In theory, for now.",
+         "thanks": "In theory. Yes. I will keep them dry. Do not tell the Steward. The Steward will want them counted, and then the Steward will want them gone."}
+      ],
+      "waiting": "The plans are not finished. Plans are never finished. That is the beauty of them. Come back when I am ready to show you.",
+      "ready": "*the Voidmarshal clears the table with one sweep of a long arm* Come. Look. You are the only one I trust to tell me what this is.",
+      "confide": "Here. Every Stead and Spire in the outer islands, marked. The approaches, the void currents, the gates. I could take them all in a season. The Court is drawn in, the lesser peoples grow bold, and is this not what the Court is for? And yet I find I want a reason more than I want the war. I have wanted the war for an age. I have never once wanted a reason. That troubles me.",
+      "endings": [
+        {"id": "burn_plans", "label": "Burn the plans.",
+         "text": "*the Voidmarshal holds a blaze rod to the charts and watches them curl* There. An age of planning, ash in a breath. I feel lighter. I do not like feeling lighter. I will run the drills harder tomorrow, to make up for it.",
+         "memory": "You told Voidmarshal {name} to burn their war plans, and they did."},
+        {"id": "keep_plans", "label": "Keep them. Never use them.",
+         "text": "Keep them, and never draw. *the Voidmarshal rolls the charts and binds them in chain* That is a Riftguard's whole life, is it not? Ready, always, for what does not come. I can learn it. It will be the hardest drill I ever ran.",
+         "memory": "You told Voidmarshal {name} to keep their war plans bound and unused."}
+      ],
+      "gift": {"item": "minecraft:diamond", "count": 5}
+    },
+    {
+      "id": "torn_cape", "title": "The Torn Cape", "jobs": ["marshal"],
+      "intro": "You have seen the tear in my cape. Everyone sees it. The Court says I keep it from the season the cities fell, as a trophy. The Court is wrong, and I have let it be wrong for an age. The tear is from the season the Dragon stopped coming when called.",
+      "requests": [
+        {"id": "arrows", "title": "Your Weapon", "item": "minecraft:arrow", "count": 32,
+         "prompt": "Thirty-two arrows. The kind you killed it with. I want to hold what did what I could not.",
+         "thanks": "*the Voidmarshal snaps one between two claws* Wood and flint and feather. That is all it took. That, and someone who did not run."},
+        {"id": "black_wool", "title": "Mending Cloth", "item": "minecraft:black_wool", "count": 8,
+         "prompt": "Eight of black wool. I have never mended this cape. I want to know that I could.",
+         "thanks": "Soft. Too soft for a war cape. It will do. I will not use it yet."},
+        {"id": "bow", "title": "The Draw", "item": "minecraft:bow", "count": 1,
+         "prompt": "A bow. Yours, or one like it. I want to learn the draw.",
+         "thanks": "*the Voidmarshal draws it, long arms making it look like a twig, and looses at nothing* Again. ...Again. Absurd weapon. It killed the Dragon."}
+      ],
+      "waiting": "I have told no one what I am about to tell you. I am not certain I will. Come back. I will decide on the yard.",
+      "ready": "*the Voidmarshal gathers the torn edge of the cape in one claw* Here is the report I never filed.",
+      "confide": "When it stopped answering, the Lord sent six Voidmarshals and twenty Riftguards to the pillars to bring it down. It came out of the sky as if the void itself had teeth. Its wing took my cape. I rifted. Away. The only time in an age I have stepped out of a fight. I came back alone and said the others fell holding. They did. I did not. You stood where I fled from, guest, and stayed.",
+      "endings": [
+        {"id": "mend_it", "label": "Mend it. You've carried enough.",
+         "text": "*a long silence, then the Voidmarshal threads the black wool with slow, exact claws* Mended. Not hidden; the seam shows. Let the Court see a seam and wonder. I am done wearing their deaths as a lie. I will wear them as a stitch.",
+         "memory": "You told Voidmarshal {name} to mend the torn cape, and they stitched it themselves."},
+        {"id": "wear_it", "label": "Wear it torn. For them.",
+         "text": "For them. Not for me. *the Voidmarshal lets the torn edge fall* Yes. The tear was a lie about a trophy. It can be the truth about twenty-five who held. Tomorrow I will tell the War Hall their names. All of them. And mine, and what I did.",
+         "memory": "You told Voidmarshal {name} to wear the torn cape for the fallen, and they named them."}
+      ],
+      "gift": {"item": "minecraft:dragon_breath", "count": 3}
+    },
+    {
+      "id": "oath_to_a_fallen_lord", "title": "An Oath to a Fallen Lord", "jobs": ["riftguard"],
+      "intro": "Before Lord {lord} there was another Lord in {village}. I swore to them. Riftguards swear once. Their crystal went dark. They went down the stair under the Throne Hall. I was not let follow. Their spire is empty. I stand in it. Every night.",
+      "requests": [
+        {"id": "their_colour", "title": "Their Colour", "item": "minecraft:magenta_candle", "count": 6,
+         "prompt": "Candles. Six. Magenta. Their colour. No fire in the old spire, says the law. For the Court. Guests, it forgot. Bring them. Light them.",
+         "thanks": "Lit. Their colour. Good. *the visor stays on the flames a long time*"},
+        {"id": "waking_stone", "title": "A Stone for Waking", "item": "minecraft:respawn_anchor", "count": 1,
+         "prompt": "Your world has a stone. Brings the fallen back to where they slept. Bring one. Do not tell me it is foolish.",
+         "thanks": "*the Riftguard sets it in the empty spire and does not charge it* It would burst here. I know. I keep it anyway."},
+        {"id": "white_light", "title": "A Crystal for the Dais", "item": "minecraft:end_crystal", "count": 1,
+         "prompt": "One end crystal. Their crown held one. The empty spire should too.",
+         "thanks": "*the Riftguard sets it on the empty dais; it burns white, not violet* Like theirs. Before."}
+      ],
+      "waiting": "Not yet. Ask again. I stand the spire every night. You know where.",
+      "ready": "*the visor lifts. It never lifts.* Come up. The spire. Now.",
+      "confide": "Some while after they went down, the door opened. Lord {lord} came up the stair. Same height. Same crown. Eight new eyes. I knelt. Lord {lord} looked at me as at a stranger. Did not know my name. Did not know the oath. I do not know if my Lord is gone, or standing in the Throne Hall, forgetting me. So I guard both. The spire. The throne. That is the oath. Both.",
+      "endings": [
+        {"id": "release", "label": "Your oath is kept. Let go.",
+         "text": "*the Riftguard is still for a long time* Kept. Yes. They went down. I stood. That is kept. *the visor lowers* I guard the throne now. Only the throne. If it is them, they have a guard. If it is not, Lord {lord} has one. Either way. Done.",
+         "memory": "You told Riftguard {name} their oath was kept, and they left the empty spire."},
+        {"id": "keep_both", "label": "Keep guarding both.",
+         "text": "Both. Yes. *the visor lowers* The spire every night. The throne every day. No rest. Riftguards do not need rest. We need a post. I have two. Most have one. I am rich.",
+         "memory": "You told Riftguard {name} to keep their double watch over the spire and the throne."}
+      ],
+      "gift": {"item": "minecraft:shulker_shell", "count": 2}
+    },
+    {
+      "id": "thrall_who_looked_up", "title": "The Thrall Who Looked Up", "jobs": ["riftguard"],
+      "intro": "There was a thrall once who looked up. The Court does not tell guests. I will. I was the one sent to remind them. I did not.",
+      "requests": [
+        {"id": "red_flower", "title": "A Red Flower", "item": "minecraft:poppy", "count": 1,
+         "prompt": "A flower. From your world. Red. One. Do not ask.",
+         "thanks": "*the Riftguard holds it like a glaive, very carefully* Small. Soft. Hm. Right colour."},
+        {"id": "flower_pot", "title": "Something to Hold It", "item": "minecraft:flower_pot", "count": 1,
+         "prompt": "A pot. For a flower. Clay. The yards have none. Nothing grows in the yards.",
+         "thanks": "Good. It fits in a claw. It fits in a niche. Nobody looks in niches."},
+        {"id": "blank_tag", "title": "A Blank Tag", "item": "minecraft:name_tag", "count": 1,
+         "prompt": "A tag. For a name. Your world hangs them on beasts. Bring one. Blank.",
+         "thanks": "*the Riftguard turns it over and over* Blank. Good. Thralls have no names. This is a tag. Not a name. Yet."}
+      ],
+      "waiting": "Later. The yards are watched by day. I am the one watching. Later.",
+      "ready": "Night. The yards. Come. Quiet. Quieter.",
+      "confide": "The thrall came back through from your world holding a red flower. Thralls carry stone. Not flowers. I took it from them. They looked up. At me. Law says: remind them. I did not. I kept the flower in my niche until it was dust. They still stack in the third yard. Every night they stop at my niche. One breath. Then on. I have guarded many things. That breath is the only one I chose.",
+      "endings": [
+        {"id": "name_them", "label": "Give them a name.",
+         "text": "*the Riftguard scratches something on the tag with one claw, hides it in the pot under the flower, and sets the pot in their niche* There. A name. Nobody will read it. They will know it is there. So will I. That is enough. That is a great deal.",
+         "memory": "You told Riftguard {name} to name the thrall who looked up, and they hid the name in a pot."},
+        {"id": "stay_nameless", "label": "A name would get them killed.",
+         "text": "Yes. *the Riftguard closes a claw over the blank tag* A name is a thing the Court can find. The flower goes in the niche. The tag stays blank. They will stop, one breath, every night, and I will be there. That is safer. That is still something.",
+         "memory": "You warned Riftguard {name} that a name would endanger the thrall, and the tag stayed blank."}
+      ],
+      "gift": {"item": "minecraft:experience_bottle", "count": 8}
+    },
+    {
+      "id": "hound_that_ran", "title": "The Hound That Ran", "jobs": ["riftguard"],
+      "intro": "I ran with a hound. Hask. Best in the kennels. Reached strangers before I did. After the Dragon fell, Hask ran. Out over the islands. Not seen since. The Court says lost. Lost is a word.",
+      "requests": [
+        {"id": "bones", "title": "Kennel Bones", "item": "minecraft:bone", "count": 16,
+         "prompt": "Bones. Sixteen. From your world. For the kennels. Hask's stall too. Empty. Fill it anyway.",
+         "thanks": "*the Riftguard drops them into an empty stall, one by one* Too many for one hound. Good. Hask ate too many."},
+        {"id": "lead", "title": "A Lead", "item": "minecraft:lead", "count": 1,
+         "prompt": "A lead. Your world ties its beasts with them. The Court does not. Bring one.",
+         "thanks": "Rope. Hm. The kennels would laugh. Hounds of the Court need no leads. I keep it."},
+        {"id": "meat", "title": "Meat Past the Wall", "item": "minecraft:beef", "count": 16,
+         "prompt": "Meat. Raw. Sixteen. The kennels have plenty. I want some of my own. To leave out. Past the wall. Do not ask where.",
+         "thanks": "Good. Past the wall, then. Every night. If something eats it, something was hungry. Either way."}
+      ],
+      "waiting": "Not now. On watch. Ask later.",
+      "ready": "*the Riftguard looks out past the wall, toward the outer dark* Now. Listen. Once.",
+      "confide": "Hask did not run. I let them go. Every night after the Dragon fell they stood at the wall and whined at the void. Never before. Hounds of the Court do not whine. I unbarred the side gate. Old law: a hound of the Court is the Court's. I gave away what was the Court's. I have stood a post an age. Never left it. Hask left for me.",
+      "endings": [
+        {"id": "call_home", "label": "Call them home.",
+         "text": "*the Riftguard whistles once, low and long, out over the void* There. If Hask hears, Hask comes, and the stall is full and the lead is ready. If not, Hask heard and chose. Either way, I called. I never could, before.",
+         "memory": "You told Riftguard {name} to call their lost hound home, and they whistled into the void."},
+        {"id": "let_run", "label": "Let them run.",
+         "text": "Run. Yes. *the Riftguard coils the lead and sets it on the wall* One of us should. The meat goes out past the wall every night. The side gate stays unbarred. If the Court asks, I say: lost. Lost is a word. It means what I choose.",
+         "memory": "You told Riftguard {name} to let their hound run free, and the side gate stays unbarred."}
+      ],
+      "gift": {"item": "minecraft:diamond", "count": 3}
+    }
+  ]
+}

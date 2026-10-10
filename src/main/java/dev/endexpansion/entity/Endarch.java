@@ -69,6 +69,7 @@ public class Endarch extends EndFolk {
         goalSelector.addGoal(0, new FloatGoal(this));
         goalSelector.addGoal(1, new TalkGoal(this));
         goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.15, true));
+        goalSelector.addGoal(3, new LeaveGoal());
         goalSelector.addGoal(5, new MoveTowardsRestrictionGoal(this, 0.6));
         goalSelector.addGoal(6, new WaterAvoidingRandomStrollGoal(this, 0.45, 0.004F));
         goalSelector.addGoal(7, new LookAtPlayerGoal(this, Player.class, 10.0F));

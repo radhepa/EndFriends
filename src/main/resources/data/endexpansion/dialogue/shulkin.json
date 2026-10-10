@@ -546,6 +546,72 @@
         "Keep it. Just stay and talk instead. That's the gift I'd choose.",
         "Not one more thing, you impossible person. Sit down."
       ]
+    },
+    "walk_off": {
+      "0": [
+        "*the lid lowers to a hairline* I find I have nothing further to say to you today. Good lamp. *they glide away*",
+        "You'll forgive me. No, on reflection, you needn't: I'm leaving. *the lid sinks low, and they turn their back*",
+        "*a long, cool look through the gap* The record will show that I tried. It will also show that I stopped. *they drift off*",
+        "I had meant to be civil. I find I've run out of civil. *the lid clicks down, and they glide away without another word*",
+        "Your blow is still in today's column, {player}. I'd rather not add to it. *they turn and float off, lid low*",
+        "*the lid tilts down, very precisely* This conversation is adjourned. Not concluded. Adjourned. *they glide away*",
+        "No. Not today. *they turn with a whisper of void-cloth and drift off toward the lamps, lid lowered*",
+        "I said I wouldn't hold it against you. I misspoke. *the lid narrows to a slit, and they glide off*"
+      ],
+      "3": [
+        "*the lid drops* I thought I could talk as if nothing had happened. I can't. Not yet. *they glide away, lid low*",
+        "I keep remembering the blow halfway through your sentences, {player}. Better I go. *they drift off without looking back*",
+        "Forgive me. No, you're the one who should be saying that. *the lid sinks, and they float away*"
+      ],
+      "6": [
+        "*the lid lowers slowly* Of everyone, I didn't expect it from you. I need the closed hours to think. *they glide away*",
+        "I'm not angry, {player}. I'm hurt, which is worse, and slower. *they turn, lid low, and drift toward their niche*",
+        "Not now. I don't trust what I'd say, and I'd have to write it down. *they glide off, very quietly*"
+      ]
+    },
+    "busy_off": {
+      "0": [
+        "Forgive me; the rota calls. A Shulkin late for a duty is entered in red ink, and I have never once been entered in red. *they glide away*",
+        "I have duties, {player}. They are written down, which makes them real. Good lamp to you. *they glide off*",
+        "That is all the time I set aside for visitors this lit hour. It was well spent. Mostly. *the lid dips, and they go*",
+        "Ah, the bell. Or near enough to the bell that I ought to be going. Good lamp.",
+        "There's a ledger open on my desk with the ink still wet. Leave it longer and it will dry with the wrong opinion. Excuse me.",
+        "Do excuse me. Somewhere a lamp needs me, or a ledger, or a loom. Something always does. *they glide off*",
+        "We'll continue this. I've marked the place. *a polite tilt of the lid, and they float back to their work*"
+      ],
+      "3": [
+        "I'd stay, {player}, I truly would, but my work has been left alone longer than is decent. Later? *they glide off*",
+        "I have to go. I say that with regret, which you should note. I rarely say anything with regret.",
+        "I'd rather keep talking. The rota disagrees, and the rota outranks me. Good lamp, friend.",
+        "Hold that thought. Write it down if you must. I'll want the rest of it after my duties. *they glide away, glancing back*"
+      ],
+      "6": [
+        "I'd stay all the lit hours if I could. I can't; something will go out, or fall, or be misfiled. I'll think of what you said the whole time.",
+        "Wait for me? I'll be quick. Quick for a Shulkin. *the lid lingers open a moment before they glide off*",
+        "It's very unfair that work goes on existing while you're visiting. I've lodged a complaint with myself. Back soon."
+      ]
+    },
+    "apology_accepted": {
+      "0": [
+        "*the lid rises slowly* An apology, and properly made. Very well. I'm striking the matter from today's column. That is not nothing.",
+        "Accepted. I'll note it beside the other entry, so anyone who reads the one reads both. That's how we forgive, here.",
+        "*a long pause, then the lid lifts a finger's width* Thank you for saying it. Not everyone does. We'll begin again from here.",
+        "Very well, {player}. The record will say you were sorry, and that I believed you. Don't make the second half untrue.",
+        "*three thin fingers smooth the edge of the lid, as if pressing out a crease* There. Forgiven. I'd rather have you than the grudge."
+      ],
+      "6": [
+        "Of course I forgive you. I'd forgiven you before you finished the sentence. I only wanted to hear the sentence.",
+        "*the lid opens all the way* There. That's the whole answer. The rest is paperwork, and I'll see to it."
+      ]
+    },
+    "apology_wary": {
+      "0": [
+        "*the lid stays low* I've heard you. I've written it down. I haven't decided yet what it means.",
+        "An apology is a good beginning. It is not, and the Bylaws are clear on this, an ending. Give me time.",
+        "I believe you're sorry. My shell doesn't, yet. It remembers in its own slow way. Come back another lit hour.",
+        "*the lid lifts a crack, then settles* Thank you. Not yet, though. A Shulkin grudge is long; I'll shorten it as I can.",
+        "Noted. Sincerely noted. But the bruise is still there under the shell, and I'd like it gone before I say 'forgiven'."
+      ]
     }
   },
   "jobs": {

@@ -588,6 +588,70 @@
         "Tomorrow. Sit with me instead. That's what I want today.",
         "One more thing and my crown will flower itself bald. Sit down."
       ]
+    },
+    "walk_off": {
+      "0": [
+        "*the crown pulls tight* No. I'm not doing this with you today. *blinks three blocks off and plods away without looking back*",
+        "You hit me, and now you want a chat? *a hard, flat hum* Talk to the kiln. I'm going.",
+        "I can still feel where you struck me. *blinks away mid-hum and doesn't come back*",
+        "Blunt answer: I don't want you near me. Not till you've said sorry and meant it. *turns and plods off*",
+        "*starts to answer, then stops* No. I can't stand here and be nice to you yet. *blinks to the far side of the yard*",
+        "Go on, then, swing again. No? Then I'm going. *a short, angry hum, a blink, and gone*",
+        "*stares at you a long moment* Some things want an apology before a chat. This is one. Goodbye, Dragon-silencer.",
+        "Don't follow me. *blinks once, twice, a whole terrace away*"
+      ],
+      "6": [
+        "I can't, {player}. Not yet. I need to be cross somewhere you aren't. *blinks away*",
+        "*the bloom on the crown shuts* From you, of all people. I'm going before I say something I'll have to hum back.",
+        "Not today. Come and say sorry when you're ready. I'll be ready when I'm ready. *plods off, then blinks*"
+      ]
+    },
+    "busy_off": {
+      "0": [
+        "*glances towards the kiln* That's my cue. Work won't do itself, more's the pity. Off I go.",
+        "Right, I've talked my share. A {job} can't stand about chatting all day. Later, Dragon-silencer.",
+        "Hm! I've left something on the go. I can smell it. Or I can't, and that's worse. Bye!",
+        "*a busy hum* Lovely talk. Can't stop. Three fingers, ten jobs. Off.",
+        "That's enough standing about for me. {neighbour} will say I'm idle. Off to prove them wrong.",
+        "*already turning away* Sorry, sorry. Work. You know how it is. You don't? Lucky you.",
+        "I'd hum with you all day, but the stead eats if I work and grumbles if I don't. Later!"
+      ],
+      "3": [
+        "I'd stay, I would, but the work's piling up like popped chorus. Come and find me later, {player}.",
+        "*pats your arm* Back to it. Walk past my way later and I'll have a better story for you.",
+        "Hold that thought for me, will you? Work first, then I'm all yours.",
+        "Ah, I've got to go. Don't look like that. I'll be back by supper and you'll be sick of me."
+      ],
+      "6": [
+        "*a warm, reluctant hum* I'd rather stay with you, honestly. But somebody's got to do the work, and the somebody's me. Soon.",
+        "I'm going, but only as far as the work. Shout if you need me. I'll blink.",
+        "You make it hard to leave, you know. Go and distract someone else for a bit. I'll find you later.",
+        "Off to work, {player}. Save me the rest of whatever you were saying. I want all of it."
+      ]
+    },
+    "apology_accepted": {
+      "0": [
+        "*a long hum, then the crown loosens* All right. Said and heard. We're square, {player}. Don't make me regret it.",
+        "Sorry, is it? *peers at you* You mean it. I can tell. Fine. It's done. Come and eat something.",
+        "*the crown lifts a little* Chorrin don't keep grudges long. They're too heavy to carry about. Forgiven.",
+        "There. That wasn't so hard, was it? For either of us. Forgiven, Dragon-silencer.",
+        "I'll hum it over the rim with a proper goodbye. It's gone. *hmmm* Gone. Hello again.",
+        "Blunt truth: I was hoping you'd say that. Done. Mended. Now hand me that bucket."
+      ],
+      "6": [
+        "*a deep hum* I was never going to stay cross with you. You just had to say it first. Come here.",
+        "*the bloom opens again* There it is. That's my {player}. Forgiven, all of it."
+      ]
+    },
+    "apology_wary": {
+      "0": [
+        "*the crown stays tight* I heard you. I'm not there yet. Give me a few days and a bit of quiet.",
+        "Sorry's a start. It isn't the whole road. *a cautious hum* Keep walking it.",
+        "I believe you mean it. My shoulder doesn't, yet. It's slower than I am.",
+        "Hmm. Words are easy. Turn up a few times without swinging, and we'll see.",
+        "*a small hum, not a warm one* Thank you for saying it. Ask me again tomorrow.",
+        "I'll think on it. Chorrin think slowly. So does stone."
+      ]
     }
   },
   "jobs": {

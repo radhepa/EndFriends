@@ -29,11 +29,11 @@ ITEMS = set((Path(__file__).parent / 'item_ids.txt').read_text().split())
 
 GIFTS = ['gift_loved', 'gift_liked', 'gift_neutral', 'gift_disliked', 'gift_limit']
 FOLK = ['first_meeting', 'greeting', 'night', 'hurt', 'chat', 'dragon', 'village', 'other', 'court',
-        'overworld', 'shulker_box', 'eyes', 'level_up'] + GIFTS
+        'overworld', 'shulker_box', 'eyes', 'level_up', 'walk_off', 'busy_off', 'apology_accepted', 'apology_wary'] + GIFTS
 TRIBUTE = ['tribute_loved', 'tribute_liked', 'tribute_neutral', 'tribute_disliked', 'tribute_limit']
 COURT = ['first_meeting', 'greeting', 'chat', 'law', 'dragon', 'thralls', 'secret', 'shulkin', 'chorrin',
          'service_offer', 'service_waiting', 'service_done', 'level_up', 'alarm', 'broken_law', 'eyes_lost',
-         'battle', 'thrall', 'hound_offer', 'hound_given', 'hound_already', 'hound_low'] + TRIBUTE
+         'battle', 'thrall', 'hound_offer', 'hound_given', 'hound_already', 'hound_low', 'dismissed'] + TRIBUTE
 REQUIRED = {
     'shulkin': FOLK + ['work', 'ancestors'],
     'chorrin': FOLK + ['work', 'void'],
@@ -47,9 +47,9 @@ JOBS = {
                 'hallkeeper', 'trader'],
 }
 RANKS = ['lord', 'marshal', 'riftguard', 'herald', 'seer', 'steward']
-RANK_MUST = {'lord': ['greeting', 'chat', 'hound_offer', 'hound_given'], 'herald': ['greeting', 'alarm', 'first_meeting'],
-             'marshal': ['greeting', 'chat'], 'riftguard': ['greeting', 'chat'], 'seer': ['greeting', 'chat', 'secret'],
-             'steward': ['greeting', 'chat', 'service_offer']}
+RANK_MUST = {'lord': ['greeting', 'chat', 'hound_offer', 'hound_given', 'dismissed'], 'herald': ['greeting', 'alarm', 'first_meeting'],
+             'marshal': ['greeting', 'chat', 'dismissed'], 'riftguard': ['greeting', 'chat'], 'seer': ['greeting', 'chat', 'secret'],
+             'steward': ['greeting', 'chat', 'service_offer', 'dismissed']}
 PLACEHOLDERS = {'player', 'name', 'village', 'neighbour', 'job', 'task', 'lord', 'title'}
 # No genders for any End people: everyone is "they".
 GENDERED = re.compile(r"\b(he|she|him|her|hers|his|himself|herself|mother|father|brother|sister|son|daughter|husband|"

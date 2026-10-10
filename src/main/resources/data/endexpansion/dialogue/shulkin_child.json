@@ -459,6 +459,60 @@
         "Best friend game! The rules are: we're best friends. That's all. We both win.",
         "Let's play Overworld! I'll be the rain. You be the cow. Moo! ...Is that how cows go? Do it properly."
       ]
+    },
+    "walk_off": {
+      "0": [
+        "*the lid drops* I don't want to talk to you right now. I'm going to the Nursery. *they scoot off, lid low*",
+        "You hit me and you didn't say sorry. So I'm going. Bye. *they float away fast, lid nearly shut*",
+        "*from behind a half-shut lid* I'm telling the keeper. I'm going right now to tell them. *zoom*",
+        "I'm not playing with you. Not today. Maybe not ever. Maybe tomorrow. *they glide off in a huff*",
+        "*the soft lid clicks shut* I'm a closed shell now. Closed shells go away. *they bob off toward the lamps*",
+        "My shell still hurts a bit. I'm going somewhere you're not. *they turn round and drift away, lid low*",
+        "The keeper says if someone's mean, you walk away. So I'm walking. Floating. Same thing. *off they go*"
+      ],
+      "6": [
+        "*the lid wobbles shut* I don't understand why you did that. I'm going to go and think about it. Somewhere else.",
+        "I'm not cross. I'm sad. Sad is worse. *they float off slowly, looking back once*"
+      ]
+    },
+    "busy_off": {
+      "0": [
+        "Oh! They're starting Lamps and Unlidded without me! Bye! *pop, and they're gone*",
+        "I have to go. It's my turn to be the Dragon. ROAR! *they zoom off*",
+        "Wait, I can hear the others. Hide and Shut! I'm counting! Bye, {player}! *they bob away at top speed*",
+        "The lamplighter said I could ring the bell! Once! I have to go before they change their mind!",
+        "I left my pebbles out by the bridge! If a Driftray takes them I'll never forgive it! Bye!",
+        "Sorry, sorry, I'm late for the Nursery story. The keeper does voices. I can't miss the voices! *zoom*",
+        "{neighbour} is waving at me. That means a game. Bye! I'll tell you who won later!"
+      ],
+      "3": [
+        "I want to stay, but they need a lamplighter for the game, and I'm the best one. Come and watch? Later? Bye!",
+        "Don't go anywhere! I'm just going to win one game really quickly and come back. Quickly for me.",
+        "I'd stay, but I promised I'd be the Unlidded. You can't break a promise to be the Unlidded. It's in the Bylaws."
+      ],
+      "6": [
+        "I'm going to play now, but I'll think about you the whole time. Even when I'm hiding.",
+        "Save my place! Nobody else can have it. I'll be back after one game. Two games. Back soon!",
+        "*the lid pops open, then droops* I have to go and play. I don't even want to. Okay, I want to a bit. Bye, best person!"
+      ]
+    },
+    "apology_accepted": {
+      "0": [
+        "*the lid peeks open* You said sorry. Properly. Okay. You're forgiven. That means we're friends again.",
+        "Okay. I forgive you. But you have to play a game with me after. That's the rule of forgiving.",
+        "*pop* Okay! Sorry is a magic word. The keeper says so. It worked.",
+        "I was going to be cross for a hundred years, but that's too long. You're forgiven. Don't do it again.",
+        "Fine. Forgiven. I'm putting it in my archive crate: '{player} said sorry.' So it's official."
+      ]
+    },
+    "apology_wary": {
+      "0": [
+        "*from behind a half-shut lid* You said sorry. But my shell still remembers. Ask again later.",
+        "I heard you. I'm still a bit cross. The keeper says cross goes away slowly, like the closed hours.",
+        "Maybe. Not yet. I'm thinking about it. I think slowly when I'm sad.",
+        "*the lid wobbles, then stays low* I want to forgive you. My lid doesn't yet. It's got its own mind.",
+        "Say it again tomorrow. If you still mean it tomorrow, then it's real."
+      ]
     }
   },
   "gifts": {

@@ -34,7 +34,15 @@ Shulkin and Chorrin have children. Nobody in the End has a gender; everyone is "
 
 Right-click any Shulkin, Chorrin or (as a guest) Endarch. The conversation screen has their portrait,
 the line typing out in their voice, numbered replies and a gift button. Friendship shows as ten chorus
-blossoms and the Court's Favor as ten eyes. About 2,000 lines of dialogue change as you grow closer.
+blossoms and the Court's Favor as ten eyes. About 2,250 lines of dialogue change as you grow closer.
+
+- **Story**: everyone has a story of their own. Help with what they ask, come back on other days,
+  and they tell you the rest; answer them one of two ways and they give you something.
+- **Journal**: your memories with each person, what you've learned about them, and their story so far.
+- **Personalities**: most stand still while you talk; the shy keep their distance, the restless pace,
+  the busy go back to work, a proud Lord ends the audience. Strike someone and they'll turn away from
+  you until you say sorry.
+
 See [docs/DIALOGUE.md](docs/DIALOGUE.md).
 
 ## Finding them

@@ -614,6 +614,25 @@
         "The hounds know whom the Court favours. They do not yet know you.",
         "Serve longer. Serve better. Then perhaps the Lord will hear the question."
       ]
+    },
+    "dismissed": {
+      "0": [
+        "Enough. The audience is ended. Withdraw, guest.",
+        "*the brow-eyes close, one after another* You have been heard. That is all you will be today.",
+        "The Court has other matters, and every one of them outranks you. Go.",
+        "You have had more of our time than a tolerated guest is owed. Back away.",
+        "That will do. Three paces backward before you turn, guest. Old law.",
+        "*a single claw lifts, and the audience is over*",
+        "We are finished speaking. You will know when the Court wishes to begin again.",
+        "Duty calls, and duty is not kept waiting for guests. Leave us."
+      ],
+      "4": [
+        "Duty calls, {player}, and it does not call twice. Another time.",
+        "I must go. Return another day and I will hear the rest of it.",
+        "The Citadel needs me elsewhere. Count yourself postponed, not dismissed.",
+        "Enough for now. Not because you weary me. Because the work does not wait for either of us.",
+        "*a short inclination of the head* The halls call. Walk in {village} as you like until I return."
+      ]
     }
   },
   "ranks": {
@@ -748,6 +767,14 @@
           "Ask again when the Court speaks your name with something other than suspicion.",
           "Not yet. Perhaps never. Serve, and we will see."
         ]
+      },
+      "dismissed": {
+        "0": [
+          "*the crystal in the crown dims* The throne has heard enough. Withdraw.",
+          "We grant audiences by the breath, guest, and you have spent yours. Go.",
+          "You are dismissed from the presence of Lord {name}. Do not turn your back until the dais is behind you.",
+          "Enough. When we wish to hear you again, the Herald will cry it."
+        ]
       }
     },
     "marshal": {
@@ -826,6 +853,19 @@
           "I have planned for this since you walked in.",
           "Into the void with it!",
           "Riftguards, flank! Hounds, the throat!"
+        ]
+      },
+      "dismissed": {
+        "0": [
+          "The war table wants me. You do not. Out.",
+          "Drill bell. We are done, guest.",
+          "*turns away mid-word, plate grinding* Dismissed.",
+          "That is enough talk. I have Riftguards to shout at."
+        ],
+        "4": [
+          "I have a drill to run, {player}. Come by the yard later. Bring your guard up.",
+          "Duty, not you. Go on, guest. We will finish this.",
+          "The War Hall calls. If you want more of my time, earn it on the wall."
         ]
       }
     },
@@ -1158,6 +1198,18 @@
         "0": [
           "No more today. I have no column left to put it in.",
           "Enough. The stores are not a midden, guest."
+        ]
+      },
+      "dismissed": {
+        "0": [
+          "You are keeping me from the tally. That is the one crime I never forgive. Go.",
+          "*the Steward shuts the ledger with a snap* We are finished. The stores are not.",
+          "A thrall has stacked something crooked. I can feel it from here. Leave me."
+        ],
+        "4": [
+          "I must see to the eastern stores, {player}. Come back; I will have a column ready for you.",
+          "The ledger calls. You have a page in it now; it will keep until tomorrow.",
+          "Excuse me. The Court does not apologise, but the count will not finish itself."
         ]
       }
     }

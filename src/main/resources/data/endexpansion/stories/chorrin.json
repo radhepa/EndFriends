@@ -1,0 +1,404 @@
+{
+  "bank": "chorrin",
+  "locked": [
+    "*hmmm* A story? From me? We've only just met, Dragon-silencer. Chorrin tell stories to folk who've eaten at the Hearth. Come back fed.",
+    "*the crown pulls in a little* That one's not for strangers. Visit a few times and I'll see if it still wants telling.",
+    "Stories are like chorus fruit. You don't pick them green. Come back when we know each other's hums.",
+    "Blunt answer: no. Kind answer: not yet. Ask again once I've stopped staring at your face.",
+    "There's a story in me, sitting like fruit in a cold kiln. It'll pop when it's ready. Not today, {player}."
+  ],
+  "personalities": [
+    {"id": "deep_rooted", "label": "Deep-rooted", "manner": "steady", "weight": 4, "jobs": [],
+     "about": "Plants both wide feet and stays put; will stand and hum with you for as long as you care to talk."},
+    {"id": "warm_stone", "label": "Warm-stone", "manner": "steady", "weight": 3, "jobs": [],
+     "about": "Slow and warm as a kiln wall; stands close, listens properly, and only answers once they've thought."},
+    {"id": "fidget_stalk", "label": "Fidget-stalk", "manner": "restless", "weight": 2, "jobs": [],
+     "about": "Can't keep still; plods a step or two back and forth while talking, but never actually leaves you."},
+    {"id": "full_handed", "label": "Full-handed", "manner": "busy", "weight": 2, "jobs": [],
+     "about": "Always halfway through a chore; chats a while, then goes back to work, unless you're close friends."},
+    {"id": "blink_happy", "label": "Blink-happy", "manner": "flighty", "weight": 2, "jobs": [],
+     "about": "Startles at nearly anything; blinks a short hop away mid-sentence and carries on talking from there."},
+    {"id": "soft_hum", "label": "Soft-hum", "manner": "shy", "weight": 1, "jobs": [],
+     "about": "Keeps a long arm's length off and backs away if you crowd them; warms up slowly, then all at once."}
+  ],
+  "stories": [
+    {
+      "id": "rim_terrace", "title": "The Terrace That Fell", "jobs": ["grove_tender"],
+      "intro": "*kneels by a bare bed at the edge of the terrace, three fingers in the dust* See this? Nothing's been planted here since I was a sprout. Everyone says leave it, it's too near the rim, void-luck. *a stubborn hum* I'm tired of leaving it. The bed's tired too. It wants feeding before anything will take, and I know just the Overworld stuff for it.",
+      "requests": [
+        {"id": "bone_meal", "title": "Growing dust", "item": "minecraft:bone_meal", "count": 16,
+         "prompt": "Traders say Overworld folk grind bones into a dust that makes anything grow. Bones! Grim, but I'll try anything. Bring me sixteen handfuls of bone meal and I'll work it into the bed.",
+         "thanks": "*rubs it between three fingers* Smells of nothing. Feels like chalk. *works it into the stone with a long hum* There. If that bed won't wake up now, it's just being stubborn. Like me."},
+        {"id": "flowers", "title": "Wild cuttings", "item": "minecraft:chorus_flower", "count": 4,
+         "prompt": "Some of the old grove that grew here drifted off on the void-wind, long ago. I'd swear there's wild chorus out on the far islands with its hum. Bring me four chorus flowers from out there and I'll know them.",
+         "thanks": "*holds one up and goes very still* That's the hum. I'd know it anywhere. *a shaky laugh-hum* Or I've gone soft. Either way, they're planted by nest-time."},
+        {"id": "lanterns", "title": "Lights at the rim", "item": "minecraft:lantern", "count": 4,
+         "prompt": "Old folk say the void reaches for dark edges. So I'll give it a lit one. Four lanterns along the rim of the bed, and let it look all it likes. You've got lanterns up there? Course you have.",
+         "thanks": "*sets them along the rim, humming each one a little welcome* There. Now the void can see somebody's tending this. Let it watch. It won't get this one."}
+      ],
+      "waiting": "*keeps glancing at the bare bed* Hm? Oh, I'm fine. There's more to that terrace than dust and stubbornness, but I'm not ready to hum it out loud. Come back another day. Help me with the beds meanwhile, if you like.",
+      "ready": "*sits down heavily on the terrace wall* You keep coming back to look at that bed. So do I. All right, {player}. Sit with me. I'll tell you why nothing's grown there.",
+      "confide": "There used to be another terrace below this one. My elder's. Best grove in the stead, white at every tip. One night in the Long Watch the Dragon passed low, the rim cracked, and the whole terrace slid off into the void. I was a sprout. I blinked away in fright instead of grabbing anything. My elder just stood at the new edge and hummed it goodbye. They never planted again. Not one stalk.",
+      "endings": [
+        {"id": "plant_rim", "label": "Plant it right at the rim",
+         "text": "*stands, dusting off both big hands* Right at the rim. Where it fell. If the void wants this terrace, it can come up and ask me to my face. *the crown flushes with bloom* My elder would hum the whole stead down over this. Good. Here, cuttings from the new bed. Plant them somewhere they'll be loved.",
+         "memory": "You told {name} to plant the new grove right at the rim, where the old one fell."},
+        {"id": "plant_safe", "label": "Plant it further in",
+         "text": "*a long, slow hum at the edge* Further in. Yes. My elder would have said the same, if they'd said anything. The new grove goes up by the stair, safe in the middle of the island, and the rim bed stays for lanterns and remembering. That's wiser. I hate it when you're wiser. Here, take some cuttings.",
+         "memory": "You told {name} to plant the new grove safe inland and keep the rim for remembering."}
+      ],
+      "gift": {"item": "minecraft:chorus_flower", "count": 6}
+    },
+    {
+      "id": "long_firing", "title": "The Long Firing", "jobs": ["kiln_keeper"],
+      "intro": "*shouting over the pops* You know what the old cities heard every harvest? Every kiln in every stead, fired at once! The Long Firing! The islands rang like bells! *quieter* We stopped in the Long Watch. The Dragon heard noise. Well, it's gone, and I want the Firing back. But a kiln fired that hard eats fuel like a Groveback eats chorus. Will you help?",
+      "requests": [
+        {"id": "coal", "title": "Fuel for the fire", "item": "minecraft:coal", "count": 32,
+         "prompt": "Chorus husks burn fast and thin. Overworld coal burns long and black and lovely, they tell me. Bring me thirty-two lumps and I'll have this kiln roaring hot enough for a proper Firing.",
+         "thanks": "*weighs a lump, delighted* Heavy! Like burning a stone that's had a good meal. *tosses one in; the kiln roars* HA! Hear that? No, you can't, it's too loud. Perfect."},
+        {"id": "fruit", "title": "Fruit for the Firing", "item": "minecraft:chorus_fruit", "count": 32,
+         "prompt": "A Long Firing wants a mountain of fruit, and the groves can't spare enough at short notice. Bring me thirty-two chorus fruit from the wild islands and I'll pop them loud enough to rattle the Spires.",
+         "thanks": "*sorts them by feel, holding each one up to an ear* This one'll pop low. This one high. This one... *a small, sad hum* well. I'll guess. Thank you. They're perfect."},
+        {"id": "bell", "title": "The bell to start it", "item": "minecraft:bell", "count": 1,
+         "prompt": "The old Firing started with a bell. Not a Chorrin thing, a trader thing, brought up from somewhere green long ago. Ours cracked in the Long Watch. You've bells up there, I'm told. Bring me one?",
+         "thanks": "*rings it once, hard, and shuts both eyes* Oh. Oh, that's a note. I heard all of that one. *hangs it by the kiln door* That stays there for ever."}
+      ],
+      "waiting": "*taps an ear, then waves you off* Not now, {player}. There's more to the Firing, but it's the kind of thing you say once and properly. Give me a few days. Bring fruit if you're bored.",
+      "ready": "*lets the kiln burn down, and for once the yard goes quiet* Hear that? Nothing. Come here, stand close. I'll keep it low for once. I've got to tell you why I'm in such a hurry.",
+      "confide": "I'm going deaf, {player}. Not quick. A pop a season. The high notes went first. I've stopped hearing the early fruit sing. Soon it'll be the low fat pops, then all of it. Before it goes, I want to stand in this yard and hear every kiln on the island fire at once, like my elder did, like their elder did. One Long Firing I can actually hear. Then I'll keep it for the quiet years.",
+      "endings": [
+        {"id": "fire_loud", "label": "Fire them all at once",
+         "text": "*the crown blooms* All of them, all at once, the old way. I'll ring the bell and the whole island will go off like the end of the world. The good end. When the quiet comes for me, I'll still have that. Here. This crystal's sat in the kiln niche since I was a sprout. It hums when the fire's high. You've earned the hum.",
+         "memory": "You helped {name} fire every kiln on the island at once: one Long Firing they could hear."},
+        {"id": "teach_ear", "label": "Teach someone your ear",
+         "text": "*a long, thoughtful hum* Teach the ear while I've still got it. You're right. The Firing will happen again, and I won't always be the one hearing it. I'll take on a sprout tomorrow and teach them every pop I know. They'll ring the bell when I can't hear it. Here. This crystal's sat in the kiln niche since I was small. Keep it humming.",
+         "memory": "You told {name} to teach a sprout their ear for the kiln while they can still hear."}
+      ],
+      "gift": {"item": "minecraft:end_crystal", "count": 1}
+    },
+    {
+      "id": "cracked_stone", "title": "The Cracked Name-Stone", "jobs": ["stonecutter"],
+      "intro": "*taps a chisel against a pale slab, listening* Rings true. Good. *looks up* You know the stead past the far bridge? They don't trade with us. Haven't since before I was cut from the quarry, as we say. It's all over a stone my grandelder cut for them. I mean to cut them a better one. My chisel's not up to it. End stone eats edges.",
+      "requests": [
+        {"id": "iron", "title": "A harder chisel", "item": "minecraft:iron_ingot", "count": 4,
+         "prompt": "Overworld iron. They say it holds an edge through anything. Bring me four ingots and I'll have a chisel made that won't blunt on end stone. Well, a trader will make it. I'll hold it very proudly.",
+         "thanks": "*turns an ingot in three fingers, tapping it* Listen to that ring. Cold and clean. *a satisfied hum* That'll cut names that last. Thank you, {player}."},
+        {"id": "end_stone", "title": "The right stone", "item": "minecraft:end_stone", "count": 32,
+         "prompt": "The quarry stone round here's tired. I want stone from the wild outer islands, where nothing's ever been cut. Bring me thirty-two blocks and I'll pick the one that rings truest.",
+         "thanks": "*taps block after block, ear pressed close* Thud. Thud. Thud. *a pause* Ring. *a deep, pleased hum* That one wants to be a name-stone. Stack the rest, they'll make steps."},
+        {"id": "poppies", "title": "Flowers for the stone", "item": "minecraft:poppy", "count": 11,
+         "prompt": "When the stone goes over, I want flowers at its foot. Eleven of them. Don't ask why eleven, not yet. Red, if you've got them. Red seems right. I don't know why.",
+         "thanks": "*lays them out on the slab, one at a time, very slowly* Eleven. *a long, low hum* Red is right. Thank you. I'll keep them cool in the shade of the stacks till it's time."}
+      ],
+      "waiting": "*keeps chipping at the slab, not looking up* The rest of it? Not yet. It isn't my shame, but I carry it, and you don't drop a thing like that in front of a guest. Come back. Bring stone if you like. I always need stone.",
+      "ready": "*sets the chisel down and wipes the slab clean with one big palm* All right. Sit on the stack, it won't fall. I'll tell you about the stone. You've earned it, and I'm tired of carrying it alone.",
+      "confide": "In the Long Watch the far stead lost eleven to the Dragon in one night. They asked my grandelder for a name-stone. My grandelder cut it in the dark, quiet, frightened, too fast. It cracked as it was set. Right through the middle name, split clean in half. The far stead said we'd cut their dead in two. They never forgave it, and my grandelder never forgave themself. Never cut another name.",
+      "endings": [
+        {"id": "carry_it", "label": "Carry it over yourself",
+         "text": "Myself. On my own back, over the far bridge, and set it down before their whole stead with the flowers. If they shout, they shout. If they shut the gate, I'll hum at it till it opens. *the crown flushes* It's what my grandelder should have done. Here. Their pick, diamond-tipped. They never cut a name with it again. You'll use it better.",
+         "memory": "You told {name} to carry the new name-stone over the far bridge themselves."},
+        {"id": "mend_crack", "label": "Mend the old stone instead",
+         "text": "*stops, then hums low* Mend it. Not hide the crack. Fill it, so the split shows and holds, so nobody forgets it happened or that it was put right. A new stone forgets. The far stead might like the mending better. *nods slowly* Yes. Here. My grandelder's pick, diamond-tipped. They never cut a name with it again. You'll use it better.",
+         "memory": "You told {name} to mend the old cracked name-stone and let the repair show."}
+      ],
+      "gift": {"item": "minecraft:diamond_pickaxe", "count": 1}
+    },
+    {
+      "id": "accord_loaf", "title": "The Accord Loaf", "jobs": ["cook"],
+      "intro": "*stirring, sniffing, stirring* Before the Dragon, every harvest, the steads baked a loaf for the Spires. The Accord Loaf. Chorus flour and something sweet. My elder baked the last one anyone remembers. I've tried a hundred times since. Never right. Always missing the sweet. *bangs the spoon on the pot* Bring me sweet things and we'll find it.",
+      "requests": [
+        {"id": "honey", "title": "Something sweet", "item": "minecraft:honey_bottle", "count": 4,
+         "prompt": "A trader swore Overworld bees make a gold that tastes like a good day. Bring me four bottles of honey. If it isn't the sweet, I'll eat it anyway, so nothing's lost.",
+         "thanks": "*a careful dab on one finger, then a long silence* ...Oh. *a wobbly hum* Close. So close. Not quite it, but close enough to make my crown shiver. Thank you, {player}."},
+        {"id": "wheat", "title": "Grain from below", "item": "minecraft:wheat", "count": 16,
+         "prompt": "The Shulkin wrote the old recipe down, of course they did. Their record says 'one part grain from below'. Grain! From the Overworld! Bring me sixteen bundles of wheat and I'll grind it in with the chorus.",
+         "thanks": "*rubs a stalk between three fingers and sniffs* Dry, sweet, a bit like warm stone. Like the kiln yard in the morning. *hums* That's in it. I'm sure that's in it."},
+        {"id": "berries", "title": "The red part", "item": "minecraft:sweet_berries", "count": 16,
+         "prompt": "My elder always said the old loaf had red in it. Little red bursts. I thought they were dreaming. Then a trader mentioned berries. Sweet ones, red ones. Bring me sixteen?",
+         "thanks": "*bites one and the crown jumps* RED. Little red bursts! They weren't dreaming! *blinks a block left, then plods straight back* Sorry. Sorry. Oh, I could hum all night. Thank you."}
+      ],
+      "waiting": "*taps the spoon on the rim, thinking* There's more to the loaf than flour and honey. There's a reason it has to be right. I'll tell you, but not between the stew and the washing-up. Come back when the Hearth's quieter.",
+      "ready": "*sets two bowls on the edge of the oven and sits* Supper's done, everyone's fed, and you're still here. Eat. And listen. I'll tell you about the last loaf.",
+      "confide": "My elder cooked here before me. In the Long Watch they lost their taste. Too much hiding, they said; food went grey. They cooked by hum after that, and by memory, and fed the stead every day of it. They'd say, when the sky's quiet I'll bake the Accord Loaf and I'll taste it, I know I will. They went into the dark one season before you silenced the Dragon. One season. I want to bake it for them. Even late.",
+      "endings": [
+        {"id": "elder_way", "label": "Bake it their way",
+         "text": "Their way. Exactly the old way: honey, grain, berries, chorus, and a hum over the oven door like they always did. The first slice goes on their stone, and the rest goes to the Hearth, so nobody eats alone. *hums softly* Here. Take these for the road. You never eat enough.",
+         "memory": "You told {name} to bake the Accord Loaf just as their elder did, and set a slice on their stone."},
+        {"id": "own_way", "label": "Bake it your own way",
+         "text": "*a startled hum, then a slow nod* My own way. They cooked by hum, not by record. They never baked the same loaf twice. So I'll bake it as I would, and that's the loaf they taught me, isn't it? *the crown blooms* The Accord Loaf, by {name}. Here. Take these for the road. You never eat enough.",
+         "memory": "You told {name} to bake the Accord Loaf their own way, the way their elder taught them."}
+      ],
+      "gift": {"item": "minecraft:golden_carrot", "count": 6}
+    },
+    {
+      "id": "pouch_letter", "title": "The Letter in the Pouch", "jobs": ["blinker"],
+      "intro": "*pats a hip pouch, then pats it again* Every blinker carries one thing they never delivered. Mine's a letter. Shell-sealed paper, gone soft as cloth. It's falling apart in here and I can't stand to look at it. If I'm going to keep carrying it, it needs a proper wrap. You have paper in the green place?",
+      "requests": [
+        {"id": "paper", "title": "A fresh wrap", "item": "minecraft:paper", "count": 8,
+         "prompt": "Eight sheets of paper, good and dry. I'll wrap the letter fresh so it lasts. No, I'm not opening it. It isn't mine to open. That's the first rule of blinking.",
+         "thanks": "*wraps the old letter slowly, sheet by sheet, three fingers very careful* There. Snug. It looks younger. I feel older. Thank you, {player}."},
+        {"id": "bread", "title": "Food that keeps", "item": "minecraft:bread", "count": 6,
+         "prompt": "Blinker's rule: never blink over the void on an empty belly. A long run wants food that keeps. Traders say Overworld bread lasts for days in a pouch. Bring me six loaves?",
+         "thanks": "*tucks one loaf in the pouch beside the letter and eats another on the spot* That one's for the run. That one was... also for the run. Planning ahead. Thank you!"},
+        {"id": "spyglass", "title": "A far-seeing glass", "item": "minecraft:spyglass", "count": 1,
+         "prompt": "Last time I blinked blind and paid for it. Next time I want to see where I'm landing. Have you got one of those far-seeing tubes? A spyglass? Bring me one and I'll never land short again.",
+         "thanks": "*squints through it at the far islands, then lowers it, stunned* I can see the hairs on a Groveback two islands off. Grovebacks have hairs! Look! Oh, {player}. Thank you."}
+      ],
+      "waiting": "*keeps a hand on the pouch* You want to know who it's for. I can see it on you. I'll tell you. Not today. A blinker has to be sure of a thing before handing it over, even a story. Come back when I'm sure.",
+      "ready": "*takes out the letter and holds it in both hands* I'm sure now. Sit. Don't blink. Ha. Sorry, blinker joke. Sit, and I'll tell you how I got this and why it's still here.",
+      "confide": "My first long run. An elder here gave me this for their sibling, in a stead past the wide gap. A Driftray startled me at the rim. I blinked, and blinked, and landed on a rock no bigger than a nest, too far out to blink back. Three days before anyone found me. When I got home, the elder had gone into the dark. Waiting for an answer that never came, I thought. I never went on. I've carried it ever since.",
+      "endings": [
+        {"id": "deliver", "label": "Deliver it, however late",
+         "text": "*straightens up* However late. The sibling may be gone too, but someone over there carries their grove and their name. They'll want it. And I'll say sorry to a face, which is the part I've dodged all these years. *a big breath of a hum* Here. Sky-sparks. Blinkers use them for signals. If you're ever stranded, light one. I'll come.",
+         "memory": "You told {name} to deliver the old letter past the wide gap at last, however late."},
+        {"id": "let_go", "label": "Hum it to the void",
+         "text": "*very quiet* Hum it goodbye. Over the rim, with a proper hum, so it doesn't come back in my dreams asking why. The elder's gone, the sibling's likely gone, and it's been heavy so long. *a slow, low note* Tonight, with you there. Here. Sky-sparks. Blinkers use them for signals. If you're ever stranded, light one. I'll come.",
+         "memory": "You helped {name} hum the old letter goodbye into the void and let it go."}
+      ],
+      "gift": {"item": "minecraft:firework_rocket", "count": 16}
+    },
+    {
+      "id": "adequate", "title": "Better Than Adequate", "jobs": ["brewer"],
+      "intro": "*glares at the cauldron* There's a Shulkin at the market who tastes my cordial every season. Every season, the same word. 'Adequate.' ADEQUATE. *stirs hard enough to slop* I'm going to brew something that makes that lid fly open. For that I need things you can't get round here. Bright things. Overworld things.",
+      "requests": [
+        {"id": "glow", "title": "Berries that shine", "item": "minecraft:glow_berries", "count": 12,
+         "prompt": "A trader says there are berries in the Overworld that glow. GLOW. A cordial that glows! Even a Shulkin couldn't call that adequate. Bring me twelve glow berries?",
+         "thanks": "*drops one in; the cauldron lights up violet and gold* Look at that. LOOK at it. *a gleeful hum* Lid, prepare to fly."},
+        {"id": "sugar", "title": "Lamp-sugar", "item": "minecraft:sugar", "count": 16,
+         "prompt": "There's an old cordial from before the Dragon that wants 'lamp-sugar'. Nobody's made it since the cities. My guess is it was plain Overworld sugar, glowing in lamplight. Bring me sixteen spoonfuls?",
+         "thanks": "*tastes, frowns, tastes again, and the crown pops a bud* That's... closer. Much closer. Sweet as an old story. Thank you, {player}."},
+        {"id": "honey", "title": "A golden finish", "item": "minecraft:honey_bottle", "count": 3,
+         "prompt": "Every good cordial wants a slow finish, something that stays on the tongue. Honey, I think. Three bottles. Don't tell the cook, they'll want it all.",
+         "thanks": "*swirls a cup in the firelight* Glow, sugar, chorus, honey. I think this is it. I think. *a nervous hum* Now I've got to let a Shulkin taste it."}
+      ],
+      "waiting": "*stirring slowly, staring into the glow* Mm? Oh. There's more to this than spite, if you want the truth. I'm not ready to say it. The brew's not ready either. We'll both keep.",
+      "ready": "*ladles out two small cups and pushes one at you* Taste. Don't say adequate. Now sit by the fire. I'll tell you why that word stings so much.",
+      "confide": "Before the Dragon, my elder brewed with a Shulkin in the old city. Chorus and lamp-sugar, poured at every Accord feast. Then the cities fell, and they never saw each other again. That Shulkin at the market? They're the old partner's child, grown old themself. They tasted that cordial when they were young. Every season they taste mine, and every season it isn't that. 'Adequate' means 'not the one I remember'.",
+      "endings": [
+        {"id": "old_recipe", "label": "Pour them the old cordial",
+         "text": "The old one, as close as I can get it. I'll carry a cup to the market myself and pour it without a word. If the lid opens, it opens. If they say adequate, I'll laugh. *a warm hum* Either way they'll know someone remembered. Here, a few bottles. Bottled cleverness, the Shulkin call these. Don't ask how I came by them.",
+         "memory": "You told {name} to pour the old Accord cordial for the Shulkin taster."},
+        {"id": "brew_together", "label": "Brew a new one together",
+         "text": "*the ladle stops* Together. Invite them into the Brewhouse. A Shulkin in my Brewhouse! They'll hate the floor. *a big rolling laugh-hum* But you're right. The old cordial was two peoples' work. A new one should be too. Here, a few bottles. Bottled cleverness, the Shulkin call these. Don't ask how I came by them.",
+         "memory": "You told {name} to invite the Shulkin taster to brew a new cordial together."}
+      ],
+      "gift": {"item": "minecraft:experience_bottle", "count": 10}
+    },
+    {
+      "id": "bare_calf", "title": "The Bare-Backed Calf", "jobs": ["herder"],
+      "intro": "*crouched by the pen, scratching a small Groveback behind the ear* This one was born this season with no grove. Not a sprout. Bare back, smooth as a bowl. The others shoulder it off the trough. *a low, cross hum* It eats last and it eats least. I want it strong first. Then we'll see about the rest.",
+      "requests": [
+        {"id": "popped", "title": "Calf food", "item": "minecraft:popped_chorus_fruit", "count": 16,
+         "prompt": "It needs fattening, and I can't keep pinching from the kiln-keeper. Bring me sixteen popped chorus fruit. I'll feed it by hand, away from the big ones.",
+         "thanks": "*holds one out; the calf lips it up and leans into a stony knee* Look at that. Look. *a soft hum* Eats from my hand now. It'll eat from yours too, since you brought it."},
+        {"id": "moss", "title": "Green fur", "item": "minecraft:moss_block", "count": 4,
+         "prompt": "A trader told me there's a green fur in the Overworld called moss that grows on anything. Rocks. Logs. Maybe a bare back? Bring me four blocks of it. Worst case, it makes a lovely bed.",
+         "thanks": "*lays a mossy square on the calf's back; the calf looks deeply offended, then lies down on it* Well. It's a lovely bed. That counts."},
+        {"id": "flower", "title": "A wild graft", "item": "minecraft:chorus_flower", "count": 1,
+         "prompt": "Old Lump won't spare a cutting, the grumpy thing. A wild chorus flower, though, from out on the islands... I could graft it on, maybe. Gently. Bring me one, and I'll think about whether I dare.",
+         "thanks": "*cups it in both big hands, very carefully* Small. Alive. Hums like a sprout. *a long breath of a hum* Now I've got to decide. Don't rush me."}
+      ],
+      "waiting": "*watching the calf nose about* Why does it matter so much to me? Long answer, and I'm a short talker. Come back when the herd's settled. Keep it fed meanwhile, if you're passing.",
+      "ready": "*leans on the pen wall beside you* The calf's asleep. That's rare. All right. Here's why I care so much about a beast with no grove.",
+      "confide": "I was a bare-head. My sprout didn't come till I was nearly grown. The other sprouts called me Pebble and wouldn't let me play Grovebacks, because what grove would I have? My elder hummed to my bare head every night for years. Said, it's in there, it's just shy. Then one morning there it was. One little shoot. I hummed so hard I blinked straight into the pen. Landed on a Groveback. It didn't mind.",
+      "endings": [
+        {"id": "graft", "label": "Graft it a grove",
+         "text": "*nods slowly* A graft, then. Gently, in the soft spot between the shoulders, with a hum every night. If it takes, it takes, and nobody shoulders that calf off the trough again. *the crown sways* My elder would've grafted me a crown if they could have. Here. Overworld tags for naming beasts. Find something worth a name.",
+         "memory": "You told {name} to graft a grove onto the bare-backed calf."},
+        {"id": "let_be", "label": "Let it grow in its own time",
+         "text": "*a long quiet, then a deep hum* Its own time. Like mine. I'll hum to it every night the way my elder hummed to me, and feed it first at the trough, and if it never grows a stalk it's still the best calf in the pen. Here. Overworld tags for naming beasts. Name something you love.",
+         "memory": "You told {name} to let the bare calf grow its grove in its own time, as they once did."}
+      ],
+      "gift": {"item": "minecraft:name_tag", "count": 2}
+    },
+    {
+      "id": "far_rock", "title": "The Friend on the Far Rock", "jobs": ["gatherer"],
+      "intro": "*turns a smooth pebble over and over* Every few days I walk out to a flat rock past the last bridge. A Shulkin comes there too, from the Spire side. We sit. They write, I hum. We've never said ten words to each other. It's the best part of my week. *the pebble stops* They haven't come for nine days. I want to leave them a light, in case they're lost.",
+      "requests": [
+        {"id": "end_rods", "title": "A Shulkin light", "item": "minecraft:end_rod", "count": 2,
+         "prompt": "Shulkin lamps are those long white rods. Set two on the rock and they'll see it from the Spire and know somebody's waiting. Bring me two end rods? A lantern would do, but they'd think it untidy.",
+         "thanks": "*holds one up like it might break* Bright. Tidy. Very Shulkin. *a pleased hum* They go on the rock tonight. One for them, one for me. Thank you."},
+        {"id": "book", "title": "Something to write in", "item": "minecraft:writable_book", "count": 1,
+         "prompt": "They're always writing on scraps. Bits of shell, old wraps. I want to leave them a proper book with a quill, so when they come back there's something worth writing in. Bring me one?",
+         "thanks": "*opens it and hums at the blank pages* All empty. Waiting. *closes it gently* I'll write one word on the first page. 'Hello.' So they know I can do it too. Badly."},
+        {"id": "cornflowers", "title": "Something from me", "item": "minecraft:cornflower", "count": 3,
+         "prompt": "I want to leave something from me, not just Shulkin things. Something from the green place, flat enough to press in a book. Three flowers? Blue ones, if you can. Blue's calm. Shulkin like calm.",
+         "thanks": "*presses one between the first pages, very carefully* There. Blue, flat, tidy. Even a Shulkin couldn't complain. Probably. Thank you, {player}."}
+      ],
+      "waiting": "*glances towards the far bridge* No sign yet. Mm? The rest? You're nosy. I like that. But I'm a gatherer, I know when a thing isn't ripe. Come back. Keep an eye on the far rocks for me.",
+      "ready": "*pockets the pebble and faces you properly* All right. I've decided to tell you. Nobody in {village} knows about the rock. You'll see why.",
+      "confide": "When I was young, a stead I gathered for laughed at me for sitting with Shulkin. Said I'd go stiff and start writing everything down. So I kept quiet about it. But that Shulkin on the rock is the only one who's never asked what my real job is. They just let me sit. If they've closed for good, I'll never even have told anyone they existed. As if they were never there. That's worse than losing them.",
+      "endings": [
+        {"id": "go_spire", "label": "Go and knock at their Spire",
+         "text": "*the crown bristles, then settles* Knock. At a Spire. Me. *a nervous laugh-hum* You're right. If they're ill, someone should bring them a hum. If they've closed, someone should tell the archivists they mattered. I'll carry the book and go. Here. Found this on the rocks seasons ago, from some wreck. A gold apple. Too good for me to eat.",
+         "memory": "You told {name} to go to the Spire and ask after their Shulkin friend from the rock."},
+        {"id": "keep_lit", "label": "Keep the rock lit for them",
+         "text": "*a slow, settled hum* Keep the rock lit. Leave the book and the flowers, sit there every few days like always. Shulkin keep their own time. If they come back, it'll be to a light. And I'll tell {village} about them now, out loud, so they're remembered either way. Here. Found this on the rocks seasons ago. A gold apple. Too good for me.",
+         "memory": "You told {name} to keep the far rock lit and tell the stead about their Shulkin friend."}
+      ],
+      "gift": {"item": "minecraft:golden_apple", "count": 1}
+    },
+    {
+      "id": "middle_line", "title": "The Line Down the Middle", "jobs": ["hallkeeper"],
+      "intro": "*stands on one side of the Hall floor, scowling at nothing* See the line? Nobody drew it. Everyone keeps to it. Shulkin this side, Chorrin that side, and the young ones get told off for crossing. I'm sick of it. I'm going to cover it with something soft that both sides have to stand on. Overworld rugs. Carpets, the traders call them.",
+      "requests": [
+        {"id": "carpet", "title": "A rug for both sides", "item": "minecraft:purple_carpet", "count": 16,
+         "prompt": "Sixteen carpets. Purple, so neither side can say it's the other's colour. Well, the Shulkin will say purple's theirs. Everything's purple. That's the point. Bring me sixteen?",
+         "thanks": "*rolls the carpets across the floor, right over the line, and rocks heel to toe on them* Soft! Oh, the Shulkin are going to hate how much they like this."},
+        {"id": "candles", "title": "Lights for the middle", "item": "minecraft:white_candle", "count": 6,
+         "prompt": "I want lights along where the line was. Not to mark it. To make the middle the warmest bit of the Hall. Six candles, plain white. Shulkin like plain. Chorrin like candles. Everyone wins.",
+         "thanks": "*sets them in a row and lights them with a long hum* Look. The middle's the brightest place in the Hall now. My co-keeper wrote that down. That means it's true."},
+        {"id": "cake", "title": "Something to share", "item": "minecraft:cake", "count": 1,
+         "prompt": "If you want two peoples to sit in the middle, you put food there. One Overworld cake, set right on the rug. Nobody can eat cake from across a line. Bring me one?",
+         "thanks": "*sets it on the rug between both halves* Now we wait. Shulkin can't resist a thing that needs dividing fairly, and Chorrin can't resist cake. *a sly hum* Watch."}
+      ],
+      "waiting": "*watches folk step around the new rug instead of onto it* Ha. They still won't cross. Mm? Oh, there's a reason, and I know it, and I've never said it. Not yet. Give me time to be brave about it.",
+      "ready": "*sits down right on the line, legs folded on the rug* Come and sit. Middle of the Hall. I'll tell you who drew the line, since nobody else will.",
+      "confide": "My elder did. I'm the only one who knows. The day the Hall opened, they chalked a line down the middle as a joke: this side for the folk who write, that side for the folk who hum. Everyone laughed. Then nobody crossed it. The chalk wore off and the line stayed. My elder was ashamed of it all their life. They used to say, 'I meant it as a seam. They made it a wall.'",
+      "endings": [
+        {"id": "tell_all", "label": "Tell everyone who drew it",
+         "text": "*a deep breath of a hum* Tell them. At the hearth, tonight, both peoples. My elder drew it as a seam, and I'll say so. Let them laugh. It was a joke. Now the joke can finally be funny. *the eyes crinkle* My co-keeper asked me to give you these. Shell from their own trade-store. That's a big thing, for a Shulkin.",
+         "memory": "You told {name} to tell the whole Hall that their elder drew the line as a joke."},
+        {"id": "fade_quiet", "label": "Let the line fade quietly",
+         "text": "*a slow, thoughtful hum* Let it fade. No speeches. Just the rug and the candles and the cake, and a few more feet on the middle every night. In a season nobody will remember there was a line, and my elder's secret stays theirs. *nods* My co-keeper asked me to give you these. Shell from their own trade-store. That's a big thing, for a Shulkin.",
+         "memory": "You told {name} to let the line fade quietly and keep their elder's secret."}
+      ],
+      "gift": {"item": "minecraft:shulker_shell", "count": 2}
+    },
+    {
+      "id": "unpaid_line", "title": "The Unpaid Line", "jobs": ["trader"],
+      "intro": "*counting shell, then stopping* Here's a thing about Shulkin: they write down every debt. Every one. And there's a debt in a Spire book with my family's name on it, unpaid since the Long Watch. A whole season of food, lent to my elder. *a flat hum* Shell won't pay it. Shulkin have shell. I want to pay it in things they can't get.",
+      "requests": [
+        {"id": "glass", "title": "Clear Overworld glass", "item": "minecraft:glass", "count": 16,
+         "prompt": "Shulkin love glass. All those lamps and windows. Overworld glass, clear as nothing, is worth more than shell to them. Bring me sixteen blocks of it and we'll start the paying.",
+         "thanks": "*holds a block up and looks at you through it* I can see you perfectly. The Shulkin will weep. Well. Their lids will twitch. Same thing. Thank you, {player}."},
+        {"id": "apples", "title": "Food for food", "item": "minecraft:apple", "count": 16,
+         "prompt": "Food was lent, so food goes back. Something they've never tasted. Apples, off a tree! Sixteen of them, red and round. Every Shulkin in that Spire will want to write about them.",
+         "thanks": "*sniffs one with both eyes shut* It smells the way the word 'green' sounds. *a happy hum* They'll write pages. Pages! Thank you."},
+        {"id": "wax", "title": "Wax for their seals", "item": "minecraft:honeycomb", "count": 6,
+         "prompt": "Shulkin seal everything. Letters, records, jars of nothing. They use shell paste and it cracks. Overworld wax, from bees, seals soft and holds. Six combs of it, and they can seal the paid line themselves.",
+         "thanks": "*presses a thumb into the wax and holds it up* A three-finger seal. Perfect. I'll stamp the parcel so they know it's from a Chorrin. As if they couldn't tell from the smell."}
+      ],
+      "waiting": "*rearranging the back shelf for the third time* Why now, after all this time? Ha. That's the part I don't hum about at the stall. Come back another day and I'll tell you over supper. Not here. Everyone listens at a market.",
+      "ready": "*pulls down the stall shutter* Supper. You and me. I'll tell you about the debt, and why I can't sleep with it open.",
+      "confide": "In the Long Watch our grove died back, and we'd have starved. A Shulkin trader gave us a season of food and wrote it down: 'To be repaid when the sky is quiet.' My elder said it every night. When the sky is quiet. They went into the dark before it was. Here, a debt unpaid at death is a stone on the grave. And a Shulkin book keeps it there for ever. I won't let them be an unpaid line.",
+      "endings": [
+        {"id": "pay_all", "label": "Pay it, every last bit",
+         "text": "Every bit. Glass, apples, wax, and I'll stand there while they strike the line through. My elder's stone gets lighter today. *the crown blooms* And you'll come with me, so someone sees it done who isn't a Shulkin with a pen. Here, the best odd thing on my back shelf. It plays music in some Overworld box, they say. I've no box. You do.",
+         "memory": "You helped {name} pay off their elder's old debt to the Spire, every last bit."},
+        {"id": "leave_one", "label": "Pay it, but leave a little",
+         "text": "*stops, then a slow, delighted hum* Leave one apple owing. Just one. A debt kept open is a door kept open. They'll have to keep visiting, and so will we. My elder would love that. The Shulkin will hate it, write a page about it, then come round for supper. Here, the best odd thing on my back shelf. It plays music in some Overworld box, they say.",
+         "memory": "You told {name} to repay the old debt but leave one apple owing, to keep the door open."}
+      ],
+      "gift": {"item": "minecraft:music_disc_far", "count": 1}
+    },
+    {
+      "id": "quiet_crown", "title": "The Crown That Went Quiet", "jobs": [],
+      "intro": "*touches the crown, which is bare and grey at the tips* Three seasons, no bloom. Not a bud. The whole stead pretends not to notice, which means everybody's noticed. *a flat hum* Blunt truth, I've tried everything. Everything from here, anyway. The sprouts have a daft idea involving Overworld things. I'm desperate enough to try it.",
+      "requests": [
+        {"id": "petals", "title": "A nest of petals", "item": "minecraft:pink_petals", "count": 8,
+         "prompt": "Sprouts say if you sleep on Overworld petals, your crown dreams bright and blooms by morning. Utter nonsense. Bring me eight bunches of pink petals anyway. I've a nest to fill.",
+         "thanks": "*stuffs them into the nest fibre, very businesslike, then sniffs* Oh. Oh, that's nice. Even if it doesn't work, I'll sleep sweet. Thank you, {player}."},
+        {"id": "pot", "title": "A clay pot", "item": "minecraft:flower_pot", "count": 1,
+         "prompt": "I've had a seed in my pouch three seasons and never planted it. I think it's time. It wants an Overworld pot, I've decided. The clay kind. Round. Will you bring me one?",
+         "thanks": "*turns the pot in both big hands* Round. Good. Round things last. *a small hum* The seed stays in my pouch till the pot's got something worth growing in."},
+        {"id": "grass", "title": "Green earth", "item": "minecraft:grass_block", "count": 1,
+         "prompt": "That seed came from someone who always, always wanted to see grass. So: one block of real green Overworld earth for the pot. If it's going to grow anywhere, let it grow in that.",
+         "thanks": "*sets a palm flat on the grass and stays very still a long while* It's soft. It's alive. They were right about everything. *a shaky hum* Thank you, {player}."}
+      ],
+      "waiting": "*touches the bare crown again, then stops* Nothing yet. I didn't expect anything. Mm. There's a why under all this. I'll tell it when I can say it without blinking off halfway. Come back.",
+      "ready": "*takes your sleeve in three fingers* Come round the back of the dome, where nobody's looking. I'll tell you why it stopped. I think I know.",
+      "confide": "My crown-friend went into the dark three seasons ago. We were sprouts together, budded the same week, flowered the same morning every year. Our crowns used to answer each other across the Hum Circle. When they went, mine just... stopped answering. I think it's still listening for theirs. I don't think it knows how to bloom alone.",
+      "endings": [
+        {"id": "plant_now", "label": "Plant the seed today",
+         "text": "Today. In the grass, in the pot, by my nest. I'll hum to it every morning the way we used to hum across the Circle. *touches the crown; one tiny bud has opened at a tip* Oh. Oh, look. It heard. *a laugh-hum, wobbly at the edges* Here. The first blooms back. They should be yours.",
+         "memory": "You told {name} to plant their crown-friend's seed, and their crown budded again."},
+        {"id": "hum_circle", "label": "Share it at the Hum Circle",
+         "text": "*a long, slow breath* The Circle. Tell everyone, and plant it in the middle where all the crowns can answer. Not alone. Never alone again. *the crown stirs; a bud has opened at one tip* Oh. Look at that. It's listening to all of them. Here. The first blooms back. They should be yours.",
+         "memory": "You told {name} to plant their crown-friend's seed at the Hum Circle, for everyone."}
+      ],
+      "gift": {"item": "minecraft:chorus_flower", "count": 3}
+    },
+    {
+      "id": "one_rain", "title": "Just One Rain", "jobs": [],
+      "intro": "*staring up at the black sky* Does it really just fall? Out of nowhere, on everyone, for nothing? *shakes the crown* I've decided. If I can't go to the rain, the rain can come to {village}. Well. Some of it. In buckets. I'll climb the kiln roof and pour it over the yard. Don't laugh. Bring me water. Real water.",
+      "requests": [
+        {"id": "water", "title": "Real water", "item": "minecraft:water_bucket", "count": 2,
+         "prompt": "Two buckets of water from the Overworld. Not a brewer's barrel. River water, sky water, whatever you have up there. Two buckets, and I'll do the rest.",
+         "thanks": "*dips three fingers in, very slowly, then lifts them and watches the drops fall* It falls. Look at it fall. *a stunned hum* That's it, isn't it. That's the bit. Thank you."},
+        {"id": "snow", "title": "Cold rain", "item": "minecraft:snowball", "count": 16,
+         "prompt": "You said there's a cold rain that gives up halfway and floats. Snow! And you can squash it into balls? Bring me sixteen. The sprouts deserve rain they can throw.",
+         "thanks": "*squeezes one; it crumbles in the huge hand* COLD. It bites! *blinks two blocks away, then plods back humming with laughter* The sprouts are going to lose their minds. Thank you!"},
+        {"id": "leaves", "title": "Leaves to fall on", "item": "minecraft:oak_leaves", "count": 8,
+         "prompt": "You told me rain sounds different on leaves. Pattering. I want that sound. Bring me eight blocks of Overworld leaves and I'll pile them in the yard where the water lands.",
+         "thanks": "*rustles a leafy block with one finger and shivers all over* It's like a crown, but loose and green and nobody's. Oh, the yard's going to sound like a story."}
+      ],
+      "waiting": "*keeps the buckets covered under the nest fibre, like eggs* Not yet. I'm saving it. Why? Ha. You ask a lot. I'll tell you once I've worked out how to say it without sounding a fool.",
+      "ready": "*sits on the edge of the kiln roof, legs dangling* Come up. Mind the hot bit. I'll tell you who the rain is for.",
+      "confide": "My elder dreamed of rain all through the Long Watch. Every bad night they'd hum to me about it: soft, cold, falling on everyone at once, and the Dragon can't stop it. At their last nest-time they made me promise. Feel the rain for me, sprout. I said yes. I didn't know how. There's no rain here. There's never been rain here. So I'm making some. It's daft. I promised.",
+      "endings": [
+        {"id": "pour_now", "label": "Pour it over the whole stead",
+         "text": "*stands on the kiln roof with both buckets* Everyone out! *the stead gathers, puzzled, and the water tips* It falls on the leaves, the sprouts, me. Pattering. Cold. Everyone at once. *a long, shaking hum* That's for you, elder. I felt it. Here. They left me these, carried out of the old cities. Take them. You brought the sky.",
+         "memory": "You helped {name} pour a little rain over the whole stead, for their elder."},
+        {"id": "save_trip", "label": "Save it for a real rain",
+         "text": "*lowers the buckets slowly* A real one. Up through the gate. You're right; a bucket's a promise half kept. Take me one day, {player}, when you think I'm brave enough. Till then the water stays under my nest so I don't forget. Here. My elder carried these out of the old cities. Take them. You brought me the sky.",
+         "memory": "You told {name} to save their promise for a real rain in the Overworld, one day."}
+      ],
+      "gift": {"item": "minecraft:diamond", "count": 2}
+    },
+    {
+      "id": "groveback_name", "title": "A Groveback by Any Name", "jobs": [],
+      "intro": "*hums crossly at a Groveback in the pen* Four seasons ago my wall-mate and I fell out over that beast's name. I wanted one name. They wanted 'Lumpkin'. LUMPKIN. We haven't spoken since. We share a wall! We hum at each other through it like two angry kilns. I want it over. A peace-bowl first. That's the custom.",
+      "requests": [
+        {"id": "stew", "title": "A peace-bowl", "item": "minecraft:mushroom_stew", "count": 1,
+         "prompt": "Custom says a peace-bowl must hold something neither of you has ever tasted, so it can't taste of the quarrel. An Overworld stew, then. Mushroom, the traders call it. Bring me one bowl?",
+         "thanks": "*sniffs it and the crown recoils, then leans back in* Earthy. Brown. Strange. Perfect. Nobody can stay angry eating something this confusing. Thank you."},
+        {"id": "tag", "title": "A proper name tag", "item": "minecraft:name_tag", "count": 1,
+         "prompt": "You said Overworld folk hang names on their beasts with little tags. Bring me one. Whatever name we settle on goes on properly this time, where nobody can argue with it.",
+         "thanks": "*turns the blank tag over and over* Empty. Waiting for a name. Like that pen's been for four seasons. *a long hum* Thank you."},
+        {"id": "carrots", "title": "A naming-day treat", "item": "minecraft:carrot", "count": 8,
+         "prompt": "When we name it, the beast should get a treat, so it remembers the day kindly. A trader said Overworld beasts go silly for carrots. Bring me eight? We'll see if Grovebacks count.",
+         "thanks": "*offers one through the fence; the Groveback crunches it slowly, all six knees trembling* It's in love. Look at it. Six legs and every one of them happy."}
+      ],
+      "waiting": "*holding the bowl, not moving towards the wall* I've got the bowl. I haven't got the nerve. And there's a reason that name mattered so much. I'm not ready to hum that one yet. Come back.",
+      "ready": "*sets the bowl down carefully* I'll tell you why I couldn't let them have Lumpkin. Then you tell me whether I'm a fool.",
+      "confide": "The name I wanted was Bramm. My sibling's name. They were lost off a bridge in the void-wind the season before that calf was born. I never told my wall-mate why. I just said Bramm, and they laughed, because it's a plain old name. And I shouted. Four seasons of silence because I never said, it's for Bramm. They don't even know they hurt me. They only know I shouted.",
+      "endings": [
+        {"id": "tell_why", "label": "Tell them why it mattered",
+         "text": "*picks up the bowl* I'll tell them. At their door, with the stew, and I'll say Bramm's name out loud for the first time in four seasons. *a shaky hum* And if they still want Lumpkin, they can have Lumpkin. I'll have my wall-mate back. Here, a cake. Every peace in {village} gets a cake. You've earned this one.",
+         "memory": "You told {name} to tell their wall-mate why the Groveback's name mattered so much."},
+        {"id": "give_name", "label": "Let them pick the name",
+         "text": "*a long pause, then a slow nod* Let them have it. Lumpkin. Ugh. And I'll hum Bramm's name at the Circle like always, where it belongs. A beast doesn't have to carry it. *carries the stew towards the wall door* Wish me luck. Here, a cake. Every peace in {village} gets a cake. You've earned this one.",
+         "memory": "You told {name} to let their wall-mate name the Groveback Lumpkin, and make peace."}
+      ],
+      "gift": {"item": "minecraft:cake", "count": 1}
+    },
+    {
+      "id": "tall_quiet", "title": "The One That Caught Me", "jobs": [],
+      "intro": "*glances round to check nobody's listening* Can I ask you something odd? Overworld folk know a trick for looking a Tall Quiet in the face without it going wild. Something about a pumpkin. A carved one. On your head. *a nervous hum* Don't ask why I want to know. Just... is it true? Could you bring me one?",
+      "requests": [
+        {"id": "pumpkin", "title": "A carved pumpkin", "item": "minecraft:carved_pumpkin", "count": 1,
+         "prompt": "One carved pumpkin. I'll wear it, apparently. On my crown. I'll look a fool. Bring it anyway, and don't tell anyone in {village}.",
+         "thanks": "*lowers it over the crown; chorus pokes out of the eye holes* How do I look? Don't answer. *peers out* Dark in here. Dark and orange. Is this what being brave feels like?"},
+        {"id": "sunflower", "title": "Something of its own", "item": "minecraft:sunflower", "count": 1,
+         "prompt": "The Tall Quiet only ever carry stone for the Court. Never anything of their own. I want to leave one something to carry that's just for it. The tallest Overworld flower you can find. One will do.",
+         "thanks": "*holds it up against the black sky* Tall, yellow, turning its face about. Looking for something. *a soft hum* Just like them. It'll carry this. I know it will."},
+        {"id": "wool", "title": "A seat for the tall", "item": "minecraft:white_wool", "count": 4,
+         "prompt": "They never sit. Not once, not ever. I want a soft seat on the rim rock, in case one ever wants to. Overworld wool's the softest thing there is, the traders say. Four white blocks of it?",
+         "thanks": "*presses a fist into the wool and gasps* SOFT. It gives! *arranges it on the rock and plumps it twice* There. If I were tall and tired, I'd sit there. Maybe it will."}
+      ],
+      "waiting": "*hides the pumpkin under the nest fibre* You want to know who I mean to look at. I can tell. Not yet. If the elders heard, they'd hum me off the stone. Come back when I've found my nerve.",
+      "ready": "*barely a hum, close to a whisper* Come out by the rim with me. Nobody comes out here. I'll tell you about the Tall Quiet.",
+      "confide": "In the Long Watch, when I was a sprout, the Dragon roared right over the stead and I blinked in fright straight off the rim. I was falling. Then a Tall Quiet was there, holding me. It blinked us both back onto the stone, set me down, and was gone. The Court forbids them to help anyone. It did anyway. Every season since, there's been a pearl left on that rock. I want to say thank you. To its face.",
+      "endings": [
+        {"id": "look_eye", "label": "Look it in the eye",
+         "text": "*puts on the pumpkin with shaking hands* In the eye, then. Tonight, at the rock. I'll hum thank you as loud as I dare and let it see me see it. *peers out* If it's anything like me, nobody's thanked it in its whole long life. Here. The pearls it's left me, all these seasons. Not bad luck. Never were. You keep them.",
+         "memory": "You told {name} to wear the pumpkin and thank the Tall Quiet face to face."},
+        {"id": "leave_gift", "label": "Leave the gifts and go",
+         "text": "*sets the pumpkin aside with a slow hum* No looking. The Tall Quiet don't want eyes on them, even kind ones. I'll leave the flower and the seat on the rock and walk away, the way it left the pearls. Its manners, not mine. Here. The pearls it's left me, all these seasons. Not bad luck. Never were. You keep them.",
+         "memory": "You told {name} to leave the gifts on the rock and let the Tall Quiet keep its quiet."}
+      ],
+      "gift": {"item": "minecraft:ender_pearl", "count": 4}
+    }
+  ]
+}

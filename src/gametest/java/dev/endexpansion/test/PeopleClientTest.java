@@ -15,6 +15,10 @@ import dev.endexpansion.entity.Shulkin;
 import dev.endexpansion.entity.Voidhound;
 import dev.endexpansion.talk.Conversation;
 import dev.endexpansion.talk.DialogueBank;
+import dev.endexpansion.talk.Manner;
+import dev.endexpansion.talk.StoryBook;
+import dev.endexpansion.talk.TalkPayload;
+import dev.endexpansion.talk.Tale;
 import dev.endexpansion.world.Settlement;
 import java.util.Comparator;
 import java.util.List;
@@ -34,6 +38,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
@@ -44,7 +49,10 @@ import net.minecraft.world.phys.AABB;
  * The peoples and creatures in a real game: every mob lined up for a portrait, residents spawned by
  * their villages, conversations opened by right-click with replies and gifts pressed in the screen,
  * a Shulkin's lid, a Chorrin's blink, a Groveback's harvest, the Citadel's guest-law with and without
- * Enderman Eyes, a Court service task and the Lord's hound, and a Driftray tamed and saddled.
+ * Enderman Eyes, a Court service task and the Lord's hound, and a Driftray tamed and saddled. Also
+ * the Story and Journal tabs (a whole story told, a child's, the Lord's begun), and how people
+ * behave while you talk: still, pacing, cutting it short when busy, upset with you or woken at night,
+ * an apology accepted, and the Court ending an audience.
  *   gradlew runClientGameTest -PendTests=People -PtestHeap=1536m
  */
 @SuppressWarnings("UnstableApiUsage")
@@ -92,6 +100,7 @@ public class PeopleClientTest implements FabricClientGameTest {
                 server.runCommand(cmd);
             }
             checkBanks();
+            checkBooks();
             lineup(ctx, world, server);
             village(ctx, world, server, "spire_village");
             village(ctx, world, server, "stead_village");
@@ -111,6 +120,16 @@ public class PeopleClientTest implements FabricClientGameTest {
             check(!b.names().isEmpty(), bank + ": has names");
         }
         check(!DialogueBank.get("court").places().isEmpty(), "court: has Citadel names");
+    }
+
+    private static void checkBooks() {
+        for (String bank : List.of("shulkin", "chorrin", "shulkin_child", "chorrin_child", "court")) {
+            StoryBook b = StoryBook.get(bank);
+            check(!b.stories().isEmpty() && !b.personalities().isEmpty(), bank + ": story book loaded (" + b.stories().size() + " stories, "
+                    + b.personalities().size() + " personalities)");
+            boolean items = b.stories().stream().allMatch(st -> st.gift() != Items.AIR && st.requests().stream().allMatch(r -> r.item() != Items.AIR));
+            check(items, bank + ": every request and gift is a real item");
+        }
     }
 
     // -- every mob, posed for a portrait ---------------------------------------------------------------
@@ -188,6 +207,7 @@ public class PeopleClientTest implements FabricClientGameTest {
         if (kind.startsWith("spire")) {
             converse(ctx, server, o, "shulkin", true, kind);
             lid(server, o);
+            manners(ctx, server, o, kind);
         }
         if (kind.startsWith("stead")) {
             converse(ctx, server, o, "chorrin", true, kind);
@@ -219,10 +239,14 @@ public class PeopleClientTest implements FabricClientGameTest {
                 .stream().min(Comparator.comparingDouble((EndFolk e) -> e.distanceToSqr(net.minecraft.world.phys.Vec3.atCenterOf(o)))).map(Entity::getId).orElse(-1));
     }
 
-    /** Walks up to a resident, right-clicks, reads the opening, asks something, gives a gift, says farewell. */
+    /**
+     * Walks up to a resident, right-clicks, reads the opening, checks they stand still, asks something,
+     * gives a gift, opens their Story (and tells all of it in a Spire) and the Journal, says farewell.
+     */
     private void converse(ClientGameTestContext ctx, TestServerContext server, BlockPos o, String people, boolean child, String kind) {
         int id = nearest(server, o, people, child, EndFolk.class);
         check(id >= 0, kind + ": found a " + (child ? "child" : "grown") + " " + people + " to talk to");
+        calm(server, id);
         faceAndTalk(ctx, server, id);
         var opened = ctx.computeOnClient(client -> ((ConversationScreen) client.gui.screen()).data());
         check(opened.dialogue().length() > 3 && !opened.dialogue().contains("{"), kind + ": the opening line is filled in: " + opened.dialogue());
@@ -230,6 +254,13 @@ public class PeopleClientTest implements FabricClientGameTest {
         log(kind + ": " + opened.name() + " (" + opened.title() + ", " + opened.home() + "): " + opened.dialogue());
         waitTyped(ctx);
         shoot(ctx, (child ? people + "-child" : people) + "-hello");
+        if (!child) {
+            var start = server.computeOnServer(srv -> folk(srv, id).position());
+            ctx.waitTicks(60);
+            double moved = server.computeOnServer(srv -> folk(srv, id).position().distanceTo(start));
+            boolean talking = server.computeOnServer(srv -> folk(srv, id).flag(EndFolk.TALKING));
+            check(talking && moved < 0.3, kind + ": a steady resident stands still while you talk (moved " + String.format("%.2f", moved) + ")");
+        }
         int before = bondPoints(server, id);
         press(ctx, "chat");
         var chatted = ctx.computeOnClient(client -> ((ConversationScreen) client.gui.screen()).data());
@@ -251,10 +282,209 @@ public class PeopleClientTest implements FabricClientGameTest {
         log(kind + ": gift of " + loved + ": " + ctx.computeOnClient(client -> ((ConversationScreen) client.gui.screen()).data().status()));
         check(afterGift > beforeGift, kind + ": a gift they like brings them closer (" + beforeGift + " -> " + afterGift + ")");
         check(left == 2, kind + ": the gift left the player's hand");
+        if (kind.startsWith("spire") || child) story(ctx, server, id, kind + (child ? " child" : ""));
+        else {
+            press(ctx, "tab_story");
+            var page = screen(ctx);
+            check(page.tab().equals("story") && page.choices().stream().anyMatch(c -> c.id().equals("story_help")),
+                    kind + ": they have a story to tell: " + page.dialogue());
+        }
+        journal(ctx, server, id, kind + (child ? " child" : ""));
         ctx.runOnClient(client -> client.gui.screen().onClose());
         ctx.waitTicks(10);
         boolean talking = server.computeOnServer(srv -> ((EndFolk) srv.getLevel(Level.END).getEntity(id)).flag(EndFolk.TALKING));
         check(!talking, kind + ": farewell ends the conversation");
+    }
+
+    private static EndFolk folk(MinecraftServer srv, int id) {
+        return (EndFolk) srv.getLevel(Level.END).getEntity(id);
+    }
+
+    private static TalkPayload screen(ClientGameTestContext ctx) {
+        return ctx.computeOnClient(client -> ((ConversationScreen) client.gui.screen()).data());
+    }
+
+    /** Gives them a personality of this manner (if their people have one); true if it did. */
+    private static boolean mannered(TestServerContext server, int id, Manner manner) {
+        return server.computeOnServer(srv -> {
+            EndFolk f = folk(srv, id);
+            var p = StoryBook.get(f.bank()).personalities().stream().filter(x -> x.manner() == manner && (x.jobs().isEmpty() || x.jobs().contains(f.job())))
+                    .findFirst();
+            p.ifPresent(x -> f.setPersonality(x.id()));
+            return p.isPresent();
+        });
+    }
+
+    /** A personality that won't cut the test's conversation short. */
+    private static void calm(TestServerContext server, int id) {
+        if (!mannered(server, id, Manner.STEADY) && !mannered(server, id, Manner.RESTLESS)) mannered(server, id, Manner.SHY);
+    }
+
+    /** Puts things in the player's inventory, one at a time (some don't stack). */
+    private static void hand(MinecraftServer srv, Item item, int count) {
+        for (int i = 0; i < count; i++) player(srv).getInventory().add(new ItemStack(item));
+    }
+
+    /** Their whole story: offered help, the first request, days and closeness pass, the rest, the other requests, an ending, the gift. */
+    private void story(ClientGameTestContext ctx, TestServerContext server, int id, String kind) {
+        press(ctx, "tab_story");
+        var page = screen(ctx);
+        String title = server.computeOnServer(srv -> folk(srv, id).story().title());
+        check(page.tab().equals("story") && page.choices().stream().anyMatch(c -> c.id().equals("story_help")),
+                kind + ": the Story tab opens on '" + title + "': " + page.dialogue());
+        log(kind + ": story intro: " + page.dialogue());
+        press(ctx, "story_help");
+        check(server.computeOnServer(srv -> folk(srv, id).tale(player(srv)).chapter) == Tale.ASKED, kind + ": offering to help moves the story on");
+        boolean isShort = server.computeOnServer(srv -> folk(srv, id).story().isShort());
+        var first = server.computeOnServer(srv -> folk(srv, id).story().requests().getFirst());
+        int had = server.computeOnServer(srv -> player(srv).getInventory().countItem(first.item()));
+        server.runOnServer(srv -> hand(srv, first.item(), first.count()));
+        press(ctx, "story_give0");
+        int have = server.computeOnServer(srv -> player(srv).getInventory().countItem(first.item()));
+        int chapter = server.computeOnServer(srv -> folk(srv, id).tale(player(srv)).chapter);
+        check(have == had && chapter == (isShort ? Tale.ENDED : Tale.HELPED), kind + ": bringing " + first.count() + " " + first.item()
+                + " is taken and thanked (chapter " + chapter + ")");
+        log(kind + ": thanks: " + screen(ctx).dialogue());
+        var gift = server.computeOnServer(srv -> folk(srv, id).story());
+        if (!isShort) {
+            check(screen(ctx).choices().stream().anyMatch(c -> c.id().equals("story_listen") && !c.enabled()),
+                    kind + ": they aren't ready to tell the rest yet: " + screen(ctx).status());
+            // the days and the closeness the rest of the story waits for
+            server.runOnServer(srv -> {
+                EndFolk f = folk(srv, id);
+                f.tale(player(srv)).visits = 5;
+                f.bond(player(srv)).points = Math.max(f.bond(player(srv)).points, f.meter().floor(5));
+            });
+            press(ctx, "tab_story");
+            press(ctx, "story_listen");
+            check(server.computeOnServer(srv -> folk(srv, id).tale(player(srv)).chapter) == Tale.CONFIDED, kind + ": they tell you the rest: "
+                    + screen(ctx).dialogue());
+            for (int i = 1; i < gift.requests().size(); i++) {
+                var r = gift.requests().get(i);
+                server.runOnServer(srv -> hand(srv, r.item(), r.count()));
+                press(ctx, "story_give" + i);
+            }
+            int done = server.computeOnServer(srv -> folk(srv, id).tale(player(srv)).done.size());
+            check(done == 3, kind + ": all three requests done (" + done + ")");
+            press(ctx, "tab_story");
+            check(screen(ctx).choices().stream().filter(c -> c.id().startsWith("story_end")).allMatch(TalkPayload.Choice::enabled),
+                    kind + ": the endings open: " + screen(ctx).choices().stream().map(TalkPayload.Choice::label).toList());
+            press(ctx, "story_end0");
+        }
+        int got = server.computeOnServer(srv -> player(srv).getInventory().countItem(gift.gift()));
+        int end = server.computeOnServer(srv -> folk(srv, id).tale(player(srv)).chapter);
+        check(end == Tale.ENDED && got >= gift.giftCount(), kind + ": the story ends with a gift (" + got + " " + gift.gift() + ")");
+        log(kind + ": ending: " + screen(ctx).dialogue() + " / " + screen(ctx).status());
+        waitTyped(ctx);
+        shoot(ctx, kind.replace(' ', '-').replace("_village", "") + "-story");
+    }
+
+    /** The Journal: memories, about them, story notes. */
+    private void journal(ClientGameTestContext ctx, TestServerContext server, int id, String kind) {
+        press(ctx, "tab_journal");
+        var page = screen(ctx);
+        check(page.tab().equals("journal") && page.dialogue().contains("Day ") && page.dialogue().contains("# Memories"),
+                kind + ": the Journal lists your memories together");
+        log(kind + ": journal: " + page.dialogue().replace('\n', '|'));
+        waitTyped(ctx);
+        shoot(ctx, kind.replace(' ', '-').replace("_village", "") + "-journal");
+        press(ctx, "journal_about");
+        String label = server.computeOnServer(srv -> folk(srv, id).personality().label());
+        check(screen(ctx).dialogue().contains("Personality: " + label), kind + ": the Journal knows their personality (" + label + ")");
+        press(ctx, "journal_story");
+        check(screen(ctx).dialogue().startsWith("# "), kind + ": the Journal keeps story notes");
+        press(ctx, "tab_talk");
+        check(screen(ctx).tab().equals("talk"), kind + ": back to talking");
+    }
+
+    /** How people behave while you talk to them, by personality and by how they feel about you. */
+    private void manners(ClientGameTestContext ctx, TestServerContext server, BlockPos o, String kind) {
+        java.util.Set<Integer> used = new java.util.HashSet<>();
+        used.add(nearest(server, o, "shulkin", false, EndFolk.class));
+        // restless: paces while you talk, but stays
+        int pacer = nearestExcept(server, o, "shulkin", used);
+        used.add(pacer);
+        if (pacer >= 0 && mannered(server, pacer, Manner.RESTLESS)) {
+            faceAndTalk(ctx, server, pacer);
+            var start = server.computeOnServer(srv -> folk(srv, pacer).position());
+            ctx.waitTicks(240);
+            double moved = server.computeOnServer(srv -> folk(srv, pacer).position().distanceTo(start));
+            boolean talking = server.computeOnServer(srv -> folk(srv, pacer).flag(EndFolk.TALKING));
+            log(kind + ": a restless one paced " + String.format("%.2f", moved) + " blocks while talking (" + (talking ? "still talking" : "conversation over: "
+                    + ctx.computeOnClient(client -> client.gui.screen() instanceof ConversationScreen s ? s.data().status() : "window closed")) + ")");
+            check(talking && moved < 4.0, kind + ": a restless resident paces but stays to talk");
+            ctx.runOnClient(client -> client.gui.screen().onClose());
+            ctx.waitTicks(5);
+        }
+        // busy: excuses themselves after a while, and won't talk again just yet
+        int busy = nearestExcept(server, o, "shulkin", used);
+        used.add(busy);
+        check(busy >= 0 && mannered(server, busy, Manner.BUSY), kind + ": a busy Shulkin");
+        faceAndTalk(ctx, server, busy);
+        check(server.computeOnServer(srv -> folk(srv, busy).leaving()).equals("busy"), kind + ": a busy resident means to get back to work");
+        server.runOnServer(srv -> folk(srv, busy).hurryLeave(10));
+        check(eventually(ctx, server, srv -> !folk(srv, busy).flag(EndFolk.TALKING), 200), kind + ": the busy resident ends the conversation");
+        ctx.waitFor(client -> client.gui.screen() instanceof ConversationScreen s && s.data().left(), 100);
+        log(kind + ": busy: " + screen(ctx).dialogue() + " / " + screen(ctx).status());
+        check(screen(ctx).choices().stream().noneMatch(TalkPayload.Choice::enabled), kind + ": once they've gone the replies close");
+        waitTyped(ctx);
+        shoot(ctx, "shulkin-busy");
+        ctx.runOnClient(client -> client.gui.screen().onClose());
+        ctx.waitTicks(5);
+        server.runOnServer(srv -> folk(srv, busy).interact(player(srv), InteractionHand.MAIN_HAND, folk(srv, busy).position()));
+        ctx.waitTicks(10);
+        check(ctx.computeOnClient(client -> !(client.gui.screen() instanceof ConversationScreen)), kind + ": a busy resident won't talk again just yet");
+
+        // upset with you: struck, they're cool with you and mean to walk off; a sorry mends one blow
+        int hurt = nearestExcept(server, o, "shulkin", used);
+        used.add(hurt);
+        mannered(server, hurt, Manner.STEADY);
+        server.runOnServer(srv -> {
+            ServerLevel end = srv.getLevel(Level.END);
+            folk(srv, hurt).hurtServer(end, end.damageSources().playerAttack(player(srv)), 1.0F);
+        });
+        ctx.waitTicks(70);
+        faceAndTalk(ctx, server, hurt);
+        var opened = screen(ctx);
+        check(opened.choices().getFirst().id().equals("apology") && server.computeOnServer(srv -> folk(srv, hurt).leaving()).equals("dislike"),
+                kind + ": struck, they're upset and mean to walk off (" + opened.status() + ")");
+        press(ctx, "apology");
+        check(server.computeOnServer(srv -> folk(srv, hurt).leaving()).isEmpty() && screen(ctx).status().contains("forgives"),
+                kind + ": a sorry is accepted, and they stay: " + screen(ctx).dialogue());
+        ctx.runOnClient(client -> client.gui.screen().onClose());
+        ctx.waitTicks(5);
+        // twice more: a sorry isn't enough this time, and they turn away
+        for (int i = 0; i < 2; i++) {
+            server.runOnServer(srv -> {
+                ServerLevel end = srv.getLevel(Level.END);
+                folk(srv, hurt).hurtServer(end, end.damageSources().playerAttack(player(srv)), 1.0F);
+            });
+            ctx.waitTicks(20);
+        }
+        ctx.waitTicks(60);
+        // a sorry is once a day: as if this were the next
+        server.runOnServer(srv -> folk(srv, hurt).bond(player(srv)).apologized = false);
+        faceAndTalk(ctx, server, hurt);
+        press(ctx, "apology");
+        check(server.computeOnServer(srv -> folk(srv, hurt).leaving()).equals("dislike"), kind + ": still upset after one sorry: " + screen(ctx).status());
+        server.runOnServer(srv -> folk(srv, hurt).hurryLeave(10));
+        check(eventually(ctx, server, srv -> !folk(srv, hurt).flag(EndFolk.TALKING), 200), kind + ": someone upset with you cuts the conversation short");
+        ctx.waitFor(client -> client.gui.screen() instanceof ConversationScreen s && s.data().left(), 100);
+        log(kind + ": turned away: " + screen(ctx).dialogue() + " / " + screen(ctx).status());
+        check(screen(ctx).choices().stream().noneMatch(TalkPayload.Choice::enabled), kind + ": and the replies close");
+        waitTyped(ctx);
+        shoot(ctx, "shulkin-turned-away");
+        press(ctx, "tab_journal");
+        check(screen(ctx).tab().equals("journal") && screen(ctx).dialogue().contains("turned away from you"),
+                kind + ": the Journal still opens once they've gone, and remembers it");
+        ctx.runOnClient(client -> client.gui.screen().onClose());
+        ctx.waitTicks(5);
+    }
+
+    private static int nearestExcept(TestServerContext server, BlockPos o, String people, java.util.Set<Integer> except) {
+        return server.computeOnServer(srv -> srv.getLevel(Level.END).getEntitiesOfClass(EndFolk.class, new AABB(o).inflate(96),
+                        e -> e.people().equals(people) && !e.isChild() && e.isAlive() && !e.isSleeping() && !except.contains(e.getId()))
+                .stream().min(Comparator.comparingDouble((EndFolk e) -> e.distanceToSqr(net.minecraft.world.phys.Vec3.atCenterOf(o)))).map(Entity::getId).orElse(-1));
     }
 
     /** Stands in the open beside a mob, looking at it, and right-clicks it (server side, as the click would). */
@@ -403,6 +633,15 @@ public class PeopleClientTest implements FabricClientGameTest {
             });
             settle(ctx, world);
             shoot(ctx, "chorrin-asleep");
+            faceAndTalk(ctx, server, sleeper);
+            check(server.computeOnServer(srv -> folk(srv, sleeper).leaving()).equals("sleep"), "woken at night, they mean to go back to sleep");
+            server.runOnServer(srv -> folk(srv, sleeper).hurryLeave(10));
+            check(eventually(ctx, server, srv -> !folk(srv, sleeper).flag(EndFolk.TALKING), 200), "and do, ending the conversation: "
+                    + ctx.computeOnClient(client -> client.gui.screen() instanceof ConversationScreen s ? s.data().status() : "(closed)"));
+            ctx.runOnClient(client -> {
+                if (client.gui.screen() != null) client.gui.screen().onClose();
+            });
+            check(eventually(ctx, server, srv -> folk(srv, sleeper).isSleeping(), 400), "and fall asleep again");
         }
         server.runCommand("time set 2000");
     }
@@ -453,6 +692,7 @@ public class PeopleClientTest implements FabricClientGameTest {
         int lord = server.computeOnServer(srv -> srv.getLevel(Level.END).getEntitiesOfClass(Endarch.class, box, e -> e.job().equals("lord"))
                 .stream().findFirst().map(Entity::getId).orElse(-1));
         check(lord >= 0, "citadel: the Lord is on the throne");
+        calm(server, lord);
         faceAndTalk(ctx, server, lord);
         var audience = ctx.computeOnClient(client -> ((ConversationScreen) client.gui.screen()).data());
         check(audience.voice().equals("court") && audience.meter().equals("eye"), "citadel: the Lord speaks as the Court, with Favor as eyes");
@@ -479,6 +719,20 @@ public class PeopleClientTest implements FabricClientGameTest {
         check(pup, "citadel: at high Favor the Lord gives a Voidhound pup");
         waitTyped(ctx);
         shoot(ctx, "lord-hound");
+        // the Lord's own story, begun
+        press(ctx, "tab_story");
+        check(screen(ctx).tab().equals("story") && screen(ctx).choices().stream().anyMatch(c -> c.id().equals("story_help")),
+                "citadel: the Lord has a story: " + screen(ctx).dialogue());
+        press(ctx, "story_help");
+        var asked = server.computeOnServer(srv -> folk(srv, lord).story().requests().getFirst());
+        server.runOnServer(srv -> hand(srv, asked.item(), asked.count()));
+        press(ctx, "story_give0");
+        check(server.computeOnServer(srv -> folk(srv, lord).tale(player(srv)).chapter) == Tale.HELPED, "citadel: the Lord's first request done: "
+                + screen(ctx).dialogue());
+        press(ctx, "tab_journal");
+        check(screen(ctx).dialogue().contains("Voidhound pup"), "citadel: the Journal remembers the hound");
+        waitTyped(ctx);
+        shoot(ctx, "lord-journal");
         ctx.runOnClient(client -> client.gui.screen().onClose());
         ctx.waitTicks(10);
         server.runOnServer(srv -> {
@@ -494,6 +748,20 @@ public class PeopleClientTest implements FabricClientGameTest {
         server.runOnServer(srv -> srv.getLevel(Level.END).getEntity(thrall).interact(player(srv), InteractionHand.MAIN_HAND, player(srv).position()));
         ctx.waitTicks(5);
         check(ctx.computeOnClient(client -> !(client.gui.screen() instanceof ConversationScreen)), "citadel: a thrall won't talk");
+        // a busy Voidmarshal, unimpressed by a guest of little Favor, ends the audience
+        server.runOnServer(srv -> CourtFavor.get(srv).bond(citadel.key(), player(srv).getUUID()).points = 10);
+        int marshal = server.computeOnServer(srv -> srv.getLevel(Level.END).getEntitiesOfClass(Endarch.class, box,
+                e -> e.job().equals("marshal") && e.getTarget() == null).stream().findFirst().map(Entity::getId).orElse(-1));
+        check(marshal >= 0 && mannered(server, marshal, Manner.BUSY), "citadel: a busy Voidmarshal");
+        faceAndTalk(ctx, server, marshal);
+        check(server.computeOnServer(srv -> folk(srv, marshal).leaving()).equals("dismissed"), "citadel: at low Favor they mean to end the audience");
+        server.runOnServer(srv -> folk(srv, marshal).hurryLeave(10));
+        check(eventually(ctx, server, srv -> !folk(srv, marshal).flag(EndFolk.TALKING), 200), "citadel: and do: "
+                + ctx.computeOnClient(client -> client.gui.screen() instanceof ConversationScreen s ? s.data().dialogue() : "(closed)"));
+        ctx.runOnClient(client -> {
+            if (client.gui.screen() != null) client.gui.screen().onClose();
+        });
+        ctx.waitTicks(5);
         // 4. losing the Eyes inside ends guest-law
         server.runCommand("clear @a endexpansion:enderman_eyes");
         check(eventually(ctx, server, srv -> CitadelLaw.isOutlawAt(player(srv), citadel), 200), "citadel: losing the Eyes inside ends guest-law");

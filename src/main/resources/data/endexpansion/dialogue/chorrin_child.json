@@ -456,6 +456,58 @@
         "Let's play for ever. Or till supper. Supper's nearly for ever.",
         "Do the Dragon story again! And this time I'm there too, and I help. That's the right way."
       ]
+    },
+    "walk_off": {
+      "0": [
+        "*sprout droops* I don't want to talk to you. You hit me. *blinks behind the kiln*",
+        "No! You were mean! I'm going to play with someone NICE. *runs off*",
+        "*hides behind a barrel, then blinks further away* Go away! I'm not your friend today!",
+        "I'm telling Elder {neighbour}. Right now. *stomps off, then blinks to go faster*",
+        "You didn't say sorry. You HAVE to say sorry. Till then I'm not here. *blinks away*",
+        "*a sniffly hum* I'm going to sit in the pen with the Grovebacks. Grovebacks don't hit.",
+        "*folds both long arms* Hmph. *turns and plods off very grandly, trips, and blinks away*"
+      ]
+    },
+    "busy_off": {
+      "0": [
+        "Oh! They're starting Hide-and-Blink without me! Bye! BYE!",
+        "I have to go, it's my turn to be the Dragon! ROAR! *runs off*",
+        "*sprout perks up* I can hear the others! Got to go! Tell me the rest later!",
+        "Wait, the Groveback calf's loose! I'm helping! Well, I'm chasing. Bye!",
+        "I just remembered I hid a pebble and forgot where. Very important. Bye!",
+        "*hops from foot to foot* I've been still too long. My legs are bored. Running now!",
+        "The cook said there's chorus sweets if we're quick! Sorry! Quick!"
+      ],
+      "3": [
+        "I've got to go and play, but you can find me after! I'll be behind the kiln. Don't tell!",
+        "Bye, {player}! I'm going to tell everyone you're my friend. Then I'm going to play tag.",
+        "*waves both long arms while running backwards* Come and play later! Promise!",
+        "My friends are waiting, but you're my friend too. So I'll be QUICK. Bye!"
+      ],
+      "6": [
+        "I'm going to play, but I'll save you a turn. The best turn. The Dragon turn!",
+        "*hugs your leg quickly* Got to go. I'll come back. I always come back. Bye, best grown-up!",
+        "You can come too! No? Grown-up things? Boring. I'll play double for you!",
+        "Don't go anywhere! I'll be back before you can count to a hundred. Well. Two hundred."
+      ]
+    },
+    "apology_accepted": {
+      "0": [
+        "Okay! You said sorry, so we're friends again. That's the rule. *sprout wiggles*",
+        "*peeks out* You mean it? Really? Okay. I forgive you. Don't do it again!",
+        "Sorry accepted! Elder says you have to say it properly, so: I accept your sorry. There.",
+        "Fine. But you owe me a piggyback. That's the price. Forgiven!",
+        "*a happy hum* I was hoping you'd say it. I'm bad at being cross. It's boring."
+      ]
+    },
+    "apology_wary": {
+      "0": [
+        "*stays behind the barrel* You said sorry. I heard. I'm still a bit scared, though.",
+        "Hmm. Elder says sorry is a seed. It takes time to grow. Mine's still a seed.",
+        "I'll think about it. Maybe tomorrow. Maybe after a game. Not now.",
+        "*sprout trembles a little* Okay... but stay over there a bit. Just for now.",
+        "I want to forgive you. My sprout doesn't yet. Look, it's still all curled up."
+      ]
     }
   },
   "gifts": {

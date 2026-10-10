@@ -45,9 +45,10 @@ public abstract class Resident extends EndFolk {
     protected void registerGoals() {
         goalSelector.addGoal(0, new FloatGoal(this));
         goalSelector.addGoal(1, new TalkGoal(this));
-        goalSelector.addGoal(2, new SleepGoal());
-        goalSelector.addGoal(3, new RoutineGoal());
-        goalSelector.addGoal(4, new OpenDoorGoal(this, true));
+        goalSelector.addGoal(2, new LeaveGoal());
+        goalSelector.addGoal(3, new SleepGoal());
+        goalSelector.addGoal(4, new RoutineGoal());
+        goalSelector.addGoal(5, new OpenDoorGoal(this, true));
         goalSelector.addGoal(6, new WaterAvoidingRandomStrollGoal(this, isChild() ? 0.75 : 0.55));
         goalSelector.addGoal(7, new LookAtPlayerGoal(this, Player.class, 8.0F));
         goalSelector.addGoal(8, new RandomLookAroundGoal(this));

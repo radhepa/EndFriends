@@ -180,8 +180,9 @@ Same layout as Village Friends, purpur palette:
 - Paper `#f6eef7`, paper shade `#e6d6e8`, edge `#4a2c52`, light edge `#b48fb6`, ink `#3b2544`,
   muted `#8a7393`, status text in ender-pearl teal `#2f8f84`.
 - Friendship shown as ten chorus blossoms (instead of hearts) that fill as you get closer.
-- Dock: Talk, Gift (Tribute for the Court), Farewell. (Village Friends' Story, Time, Travel, Journal,
-  Trade and Settlement tabs are not part of this mod yet.)
+- Tabs: Talk, Story and Journal (see `DIALOGUE.md`). Dock: Greet (Bow for the Court), Gift (Tribute
+  for the Court), Farewell. (Village Friends' Time, Travel, Trade and Settlement tabs are not part of
+  this mod yet.)
 - Typing voice: Shulkin blips are high and glassy; Chorrin are a low hum; Endarchs a low, warped buzz.
 - With Endarchs the meter is Favor, shown as ten eyes instead of blossoms.
 

@@ -1,0 +1,185 @@
+{
+  "bank": "shulkin_child",
+  "locked": [
+    "*the lid pops, then hides* I don't tell stories to people I don't know properly. The keeper says. Come back when we're friends.",
+    "I've got a secret story. But it's only for friends. You're nearly a friend. Not yet, though.",
+    "*from behind a half-shut lid* Stories are for after you've played with me lots. That's the rule. I made it.",
+    "Nope! Not telling. You have to know me first. Ask me my favourite lamp. Actually, don't. I'm not telling that either."
+  ],
+  "personalities": [
+    {
+      "id": "poppy",
+      "label": "Poppy",
+      "manner": "restless",
+      "weight": 4,
+      "jobs": [],
+      "about": "A young lid that pops at everything; bobs and fidgets the whole time you talk, but stays to the end."
+    },
+    {
+      "id": "peeky",
+      "label": "Peeky",
+      "manner": "shy",
+      "weight": 2,
+      "jobs": [],
+      "about": "Talks from behind a half-shut lid and keeps a step away; come too close and they scoot back."
+    },
+    {
+      "id": "game_mad",
+      "label": "Game-Mad",
+      "manner": "busy",
+      "weight": 2,
+      "jobs": [],
+      "about": "Listens for a while, then remembers a game and dashes off to play, unless you're their very best person."
+    },
+    {
+      "id": "solemn",
+      "label": "Solemn",
+      "manner": "steady",
+      "weight": 1,
+      "jobs": [],
+      "about": "Practising to be a grown-up archivist; hovers very still and very seriously for as long as you talk."
+    }
+  ],
+  "stories": [
+    {
+      "id": "driftray_feather",
+      "title": "The Driftray Feather",
+      "jobs": [],
+      "intro": "I had a Driftray feather. A real one; I found it under the bridge. The wayfinder says Driftrays don't have feathers. So it was a very rare one. Then the void sneezed and it blew off the edge. I watched it go down for ages and ages.",
+      "requests": [
+        {
+          "id": "feather",
+          "title": "A New Feather",
+          "item": "minecraft:feather",
+          "count": 1,
+          "prompt": "Have you got a feather? Any feather. I'll say it's a Driftray one. You don't have to say it is. You just have to not say it isn't.",
+          "thanks": "*POP* It's perfect! It's even rarer than the last one! I'm keeping it inside my shell this time, under the lid, where the void can't sneeze on it."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:popped_chorus_fruit",
+        "count": 3
+      }
+    },
+    {
+      "id": "floppy_lid",
+      "title": "The Lid That Won't Stay Up",
+      "jobs": [],
+      "intro": "My lid won't stay up. When I'm excited it pops open, and then it flops shut, and then it pops, and then it flops. The keeper says it'll stiffen when I'm older. I don't want to be older. I want it to stay up NOW, for the naming feast. Everyone will be looking.",
+      "requests": [
+        {
+          "id": "sticky",
+          "title": "Something Sticky",
+          "item": "minecraft:slime_ball",
+          "count": 1,
+          "prompt": "The shellwright says never put anything sticky on your hinge. So I need something sticky. Have you got a slime ball? Just one. I'll only use a little bit. Probably.",
+          "thanks": "*the lid pops up, wobbles, and stays* It's working! Look! Don't tell the shellwright. Actually, do tell them. I want them to see it working."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:amethyst_shard",
+        "count": 2
+      }
+    },
+    {
+      "id": "something_blue",
+      "title": "Something Blue from Up There",
+      "jobs": [],
+      "intro": "The Overworld has flowers. Lots. Just growing on the ground, and nobody even counts them. The archivist showed me a drawing of one, but it was in purple ink, because all the ink is purple. I want to see a real one. A blue one, if they come in blue.",
+      "requests": [
+        {
+          "id": "flower",
+          "title": "A Blue Flower",
+          "item": "minecraft:cornflower",
+          "count": 1,
+          "prompt": "Could you bring me a flower from up there? A blue one. Do they come in blue? Say they come in blue.",
+          "thanks": "*the lid pops open and stays open a long, long time* It's blue. It's really blue. It's the bluest thing in the whole End. I'm showing every single person. Twice."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:music_disc_far",
+        "count": 1
+      }
+    },
+    {
+      "id": "snow_for_a_sprout",
+      "title": "Snow for a Sprout",
+      "jobs": [],
+      "intro": "My friend's a Chorrin sprout from the Stead across the bridge. They can blink and I can pop, so we're even. They want to see snow more than anything. I said I know someone from the Overworld. I said I'd ask. So this is me, asking.",
+      "requests": [
+        {
+          "id": "snow",
+          "title": "Two Snowballs",
+          "item": "minecraft:snowball",
+          "count": 2,
+          "prompt": "Could you bring two snowballs? One for them and one for me, so we can throw them at each other. Does it hurt? Say it doesn't hurt.",
+          "thanks": "Snow! It's so cold! It's cold on purpose! I'm going straight to the Stead. Well, after this. My friend's going to blink so hard."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:chorus_flower",
+        "count": 1
+      }
+    },
+    {
+      "id": "scariest_unlidded",
+      "title": "The Scariest Unlidded",
+      "jobs": [],
+      "intro": "We play Lamps and Unlidded every lit hour, and I'm never a good Unlidded. Nobody's scared of me. The grown-ups say the Unlidded can't bear to look at a carved face from up there. If I wore one, I'd be the scariest Unlidded in {village}. Or the safest. One of those.",
+      "requests": [
+        {
+          "id": "pumpkin",
+          "title": "A Carved Face",
+          "item": "minecraft:carved_pumpkin",
+          "count": 1,
+          "prompt": "Can you get me a carved face? The grown-ups call it a pumpkin. It goes on your head. I'll balance it on my lid. Just one. I've only got one head.",
+          "thanks": "*a muffled voice from inside the pumpkin* I can't see anything! It's perfect! RAAH! Was that scary? Don't answer. It was scary."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:end_rod",
+        "count": 1
+      }
+    },
+    {
+      "id": "dark_bit",
+      "title": "The Dark Bit by My Niche",
+      "jobs": [],
+      "intro": "There's a dark bit between the lamps by my niche. Only a little one. The lamplighter says it's not big enough for an Unlidded, but I measured it, and it's big enough for an Unlidded's foot. I want my own light. A small one. Just for me.",
+      "requests": [
+        {
+          "id": "glow",
+          "title": "Glowing Ink",
+          "item": "minecraft:glow_ink_sac",
+          "count": 1,
+          "prompt": "Glow ink makes things shine without a rod. The archivist said. If I had one glow ink sac, I'd paint the dark bit and it wouldn't be dark any more. Could you find one?",
+          "thanks": "*pop* It glows! I'm going to paint a lamp on the wall. A big one, with a face. It's going to be called 'Mine'."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:magenta_candle",
+        "count": 2
+      }
+    },
+    {
+      "id": "two_hundred_pages",
+      "title": "Two Hundred Pages",
+      "jobs": [],
+      "intro": "I rang the bell three times. By accident. A bit on purpose. So I have to copy out the Bylaws of the Lamp Court, all two hundred pages, and I've used up all my paper and I'm only on page nine. The Bylaws are really long. They have a rule about rules.",
+      "requests": [
+        {
+          "id": "paper",
+          "title": "Paper for Page Ten",
+          "item": "minecraft:paper",
+          "count": 6,
+          "prompt": "Could you bring me some paper? Six sheets. Then I can do page ten. And eleven. I'm going to write very small so it lasts.",
+          "thanks": "Six! That's three pages if I'm careful, or twelve if I write very small. The keeper says I mustn't write very small. I'll write medium-small."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:amethyst_cluster",
+        "count": 1
+      }
+    }
+  ]
+}

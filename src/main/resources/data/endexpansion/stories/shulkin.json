@@ -1,0 +1,714 @@
+{
+  "bank": "shulkin",
+  "locked": [
+    "*the lid lowers a polite finger's width* There is a matter on my mind, {player}, but not the kind one shares with an entry this new. In time, perhaps.",
+    "Forgive me. Some things are recorded only for friends. You are, at present, a margin note. A promising one.",
+    "I don't tell personal histories to visitors. Not because you're unworthy. Because I'd have to record that I did, and I'd like that to mean something.",
+    "Ask me again when I know you better. Shulkin take a long while to open. Most find it worth the wait.",
+    "*a long look through the gap* No. Not yet. Talk with me a few more times, and we'll see which of us opens first."
+  ],
+  "personalities": [
+    {
+      "id": "measured",
+      "label": "Measured",
+      "manner": "steady",
+      "weight": 4,
+      "jobs": [],
+      "about": "Unhurried as good ink; hovers perfectly still and listens for as long as you care to stay."
+    },
+    {
+      "id": "ceremonious",
+      "label": "Ceremonious",
+      "manner": "steady",
+      "weight": 2,
+      "jobs": [],
+      "about": "Keeps every courtesy in the Bylaws, which require standing quite still while a guest speaks."
+    },
+    {
+      "id": "half_lidded",
+      "label": "Half-Lidded",
+      "manner": "shy",
+      "weight": 2,
+      "jobs": [],
+      "about": "Talks with the lid low and a polite step back; crowd them and they glide off to a safer distance."
+    },
+    {
+      "id": "wary_hinge",
+      "label": "Wary Hinge",
+      "manner": "shy",
+      "weight": 1,
+      "jobs": [],
+      "about": "Remembers every slight in the record and keeps a careful distance until they are sure of you."
+    },
+    {
+      "id": "draughty",
+      "label": "Draughty",
+      "manner": "restless",
+      "weight": 2,
+      "jobs": [],
+      "about": "Never quite settles: drifts a step this way and that while talking, but would never leave mid-sentence."
+    },
+    {
+      "id": "on_the_rota",
+      "label": "On the Rota",
+      "manner": "busy",
+      "weight": 2,
+      "jobs": [],
+      "about": "Always has a lamp, ledger or loom waiting; excuses themselves after a while unless you are dear to them."
+    }
+  ],
+  "stories": [
+    {
+      "id": "late_entry",
+      "title": "The Late Ostrevane",
+      "jobs": [
+        "archivist"
+      ],
+      "intro": "Do you know how to cross something out in the Archive? You don't. It's forbidden; every entry stands forever, right or wrong. A fine rule, until you're the one who wrote that old Ostrevane had closed for good, seventy years ago, and Ostrevane is still very much open. They've attended their own remembrance every year since. They bring chorus.",
+      "requests": [
+        {
+          "id": "amendment",
+          "title": "Paper for an Amendment",
+          "item": "minecraft:paper",
+          "count": 8,
+          "prompt": "The only way to mend a record is a late entry, filed beside the old one. It wants good paper: eight sheets, for I draft long. Would you bring them? The Archive's own stock is accounted for down to the corner.",
+          "thanks": "Eight sheets, clean edges. *they square the stack twice* Thank you, {player}. Now I've no excuse not to begin, which was, I suspect, the real shortage."
+        },
+        {
+          "id": "vault_ink",
+          "title": "Ink for the Vault",
+          "item": "minecraft:glow_ink_sac",
+          "count": 2,
+          "prompt": "The vault is kept dark, to spare the oldest pages, and ordinary ink vanishes there. An entry that matters is written in glowing ink, so it can be read without a lamp. Two glow ink sacs would do it.",
+          "thanks": "There. Something in the vault that can be read in the dark. It will be the first thing Ostrevane's page has had to say for itself in seventy years."
+        },
+        {
+          "id": "binding",
+          "title": "A Cover for It",
+          "item": "minecraft:book",
+          "count": 1,
+          "prompt": "A late entry is bound, not tucked in. Loose pages get lost, or worse, read out of order. Bring me a book and I'll unstitch it for the cover. Don't look at me like that; it's a very old practice.",
+          "thanks": "*three thin fingers run along the spine* Good stitching. I'll take it apart with great respect. Thank you, {player}; the amendment has a home."
+        }
+      ],
+      "waiting": "I've drafted the amendment eleven times. Each draft is correct. None of them is right. There's a part of this I haven't told you, and I'm not ready to. Come back in a few lit hours, and a few after that.",
+      "ready": "Sit, {player}. I've finished drafting, or given up, which in the Archive look identical. There's a part of this I left out of the record. I'd like to leave it with you instead.",
+      "confide": "I didn't misfile them. I was young, the Dragon had passed over three nights running, and Ostrevane's lid hadn't opened in a season. Everyone else still hoped. I wrote 'closed' because I'd stopped. When they opened, I was too ashamed to say why I'd been so quick. Seventy years they've lived as a clerical error. It was never an error. It was me, giving up on them.",
+      "endings": [
+        {
+          "id": "confess",
+          "label": "Add the late entry, all of it",
+          "text": "Then I'll write all of it. Not only that they live, but that I wrote them off, and why. The Archive will be less flattering to me. It will be truer. *the lid lifts* Ostrevane will laugh; they always do. Here. For carrying my ink, and my nerve.",
+          "memory": "You told {name} to add the late entry about Ostrevane, confession and all."
+        },
+        {
+          "id": "say_aloud",
+          "label": "Tell Ostrevane, not the shelf",
+          "text": "Yes. The record can stay wrong a while longer; it's had practice. I'll go to Ostrevane tonight and say it aloud, to their face. A Shulkin telling a thing instead of writing it down. They'll think I'm closing. *a dry laugh* I'll bring chorus. Here; this is for you.",
+          "memory": "You told {name} to say it to Ostrevane aloud instead of writing it down."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:experience_bottle",
+        "count": 8
+      }
+    },
+    {
+      "id": "ninth_lamp",
+      "title": "The Ninth Lamp",
+      "jobs": [
+        "lamplighter"
+      ],
+      "intro": "Count the lamps on the tower with me. Eight lit, and one hook bare on the side that faces the centre. That's the Ninth. It went out the night the Dragon passed so low the tiles rattled, and it has never been relit. Every lamplighter since has trimmed round it. I've trimmed round it for forty years. Lately the gap bothers me in a way it didn't.",
+      "requests": [
+        {
+          "id": "rods",
+          "title": "Four Good Rods",
+          "item": "minecraft:end_rod",
+          "count": 4,
+          "prompt": "If I'm to light it again, it must be done properly: four new rods, so the Ninth burns as bright as its neighbours and nobody can say it came back weak. Would you bring them? Stock is for lamps that never went out.",
+          "thanks": "Four. *they hold one up to the bare hook, not quite touching* It fits. Of course it fits; I've kept that hook polished for forty years. Thank you, {player}."
+        },
+        {
+          "id": "hood",
+          "title": "A New Hood",
+          "item": "minecraft:magenta_stained_glass",
+          "count": 4,
+          "prompt": "The Ninth's hood cracked in the Dragon years and was never replaced. Glass first, then rods; that's the order. Four panes of magenta, if you have them. Clear glass makes the light look surprised.",
+          "thanks": "Good, even colour. *they hold a pane up to one eye* The whole Spire looks a little kinder through it. I'll fit the hood myself. I don't trust the shellwright with sentiment."
+        },
+        {
+          "id": "vigil",
+          "title": "Candles for a Vigil",
+          "item": "minecraft:white_candle",
+          "count": 4,
+          "prompt": "When a lamp is relit, or let rest, the lamplighter keeps a vigil: one candle for every decade it stood dark. That's four. White, please. I'm told the old ones liked white.",
+          "thanks": "Four candles, four decades. I'll set them on the ledge by the Ninth. I've never kept a vigil there. I was always too busy keeping the lamps."
+        }
+      ],
+      "waiting": "I've stood at the Ninth with your rods every lit hour since. I haven't set one. It isn't the light I'm stuck on; it's the rest of the story. Come and see me a few more times. I'll have the words by then.",
+      "ready": "Climb up with me, {player}. All three hundred steps; I'll name them as we go. At the top I'll tell you why the Ninth stayed dark. I've never told anyone. There was never anyone up here to tell.",
+      "confide": "My elder kept this tower in the Dragon years. That night the order came: hood every lamp that faces the centre. The ninth hood had cracked, so they put that lamp out with their own hand and stood on the ledge in its place all night, keeping watch where the light should be. By morning their lid was shut, and it never opened again. The Ninth isn't dark. It's where my elder stood.",
+      "endings": [
+        {
+          "id": "relight",
+          "label": "Light the Ninth again",
+          "text": "Then it burns tonight. Not to fill the gap; to tell them the watch is over and they can come down off the ledge. *the lid lifts* Stand with me while I set the rods? And take this. It's the oldest light in the tower and it was never lit for anyone. Now it has been.",
+          "memory": "You told {name} to light the Ninth Lamp again, and stood with them while they did."
+        },
+        {
+          "id": "leave_dark",
+          "label": "Leave it dark",
+          "text": "Yes. I think I knew. The rods go in the store, the candles on the ledge, and every lit hour I'll trim round the Ninth and say good lamp to the dark there. Not every gap needs filling. Some of them are holding someone's place. Here; I'd like you to have this.",
+          "memory": "You told {name} to leave the Ninth Lamp dark, keeping their elder's place on the ledge."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:end_crystal",
+        "count": 1
+      }
+    },
+    {
+      "id": "bolt_of_sky",
+      "title": "A Bolt of Sky",
+      "jobs": [
+        "weaver"
+      ],
+      "intro": "My elder taught me every colour I know, and every one of them is a purple. Now their shell has gone dark and their eyes have gone dim, and they've asked for one last robe. Not purpur. Not magenta. 'Weave me the sky the Dragon-slayer talks about,' they said. I have never seen it. I don't even know what blue is for.",
+      "requests": [
+        {
+          "id": "wool",
+          "title": "Pale Thread",
+          "item": "minecraft:white_wool",
+          "count": 16,
+          "prompt": "Sky can't be woven on void-cloth; it drinks the light. It needs pale thread to start from. Sixteen white wool, from your Overworld beasts. I'm told they grow it on their backs and don't mind being shorn. I'm choosing to believe that.",
+          "thanks": "*they bury three fingers in it* It's so soft. Nothing here is soft except young lids. Thank you, {player}. My elder will ask what animal. Practise a description."
+        },
+        {
+          "id": "blue",
+          "title": "The Colour Itself",
+          "item": "minecraft:light_blue_dye",
+          "count": 8,
+          "prompt": "Now the colour. The Archive has the word 'sky' and no sample. Eight of whatever dye you'd call sky-blue on a clear day up there. Don't bring me dark blue. That's just the void with ambitions.",
+          "thanks": "*a long silence; the lid rises all the way* So that's it. That's what you walk under. I've no word for how this makes me feel. I'll have to weave one."
+        },
+        {
+          "id": "sun",
+          "title": "A Lamp Nobody Tends",
+          "item": "minecraft:yellow_dye",
+          "count": 2,
+          "prompt": "Your sky has a lamp in it that nobody tends. I'll need a little yellow for it: two dyes' worth. I'll put it near the hem, where my elder's hand rests. They'll want to touch the lamp.",
+          "thanks": "Yellow. Like an end rod that's been told a joke. Thank you. The sun goes by the hem, on the lamp-hand side."
+        }
+      ],
+      "waiting": "The loom's threaded and I've woven nothing. Every time I start, I think: what if I get the sky wrong, and it's the last thing they see? Visit a few more times. I'll tell you the rest when my hands stop shaking.",
+      "ready": "The first rows are done. Sit by the loom, {player}, and tell me if it's right, while I tell you the part I've kept back. It's easier to say with my hands busy.",
+      "confide": "My elder has always said they saw a sky once, as a soft shell: blue, through a gateway, before the Long Watch. The Archive says that's impossible, and I have always believed the Archive. But the blue they describe, all my life, is exactly the blue you brought me. Exactly. They weren't dreaming. Or they were, and the dream was true. I don't know which frightens me more.",
+      "endings": [
+        {
+          "id": "true_sky",
+          "label": "Weave it as I described it",
+          "text": "Then they'll have your sky, true to the thread: pale, plain, impossibly blue, with the lamp nobody tends. If they say 'yes, that's it', I'll write it in the Archive and let the Archive argue. *the lid lifts* Take these. I was saving them for robe clasps. This robe needs none.",
+          "memory": "You told {name} to weave their elder the sky exactly as you'd described it."
+        },
+        {
+          "id": "dreamed_sky",
+          "label": "Weave it as they remember",
+          "text": "Yes. Their sky, not yours. I'll put stars in it, and a little purple at the edges where they always said it went dark. If it's wrong, it's wrong the way they remember, and that's the only right that matters at the end. *they press something into your hands* For the wool. And the blue.",
+          "memory": "You told {name} to weave their elder's sky the way they remembered it."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:amethyst_shard",
+        "count": 10
+      }
+    },
+    {
+      "id": "hair_to_the_east",
+      "title": "A Hair to the East",
+      "jobs": [
+        "shellwright"
+      ],
+      "intro": "Look at the little tower over the Nursery. No, properly, with one eye shut. It leans. A hair to the east; a hair and a half at the top. It's the first thing I ever cut, a hundred and twenty years ago, and for a hundred and twenty years I've told everyone it was designed that way, for the wind. We have no wind. Nobody has ever asked me about the wind.",
+      "requests": [
+        {
+          "id": "pillars",
+          "title": "Shims for the Footing",
+          "item": "minecraft:purpur_pillar",
+          "count": 16,
+          "prompt": "I mean to brace it at last. Shims under the east footing, cut along the grain: sixteen purpur pillars' worth. Quietly, please. If anyone asks, you're bringing me pillars for some unrelated purpose. Make one up.",
+          "thanks": "Sixteen. Good grain on these. *they sight down one* And if anyone asked, what did you say they were for? ...That's a terrible lie. I'll use it."
+        },
+        {
+          "id": "spyglass",
+          "title": "A Stranger's Eye",
+          "item": "minecraft:spyglass",
+          "count": 1,
+          "prompt": "I need to see the lean the way a stranger does, from the far bridge. A spyglass, if you have one. I've measured with one eye shut for a century, and I suspect the eye has opinions.",
+          "thanks": "*they squint through it toward the tower* ...Oh. Oh, it's worse from over there. Thank you. I think."
+        },
+        {
+          "id": "plaque",
+          "title": "Wood for a Plaque",
+          "item": "minecraft:oak_sign",
+          "count": 1,
+          "prompt": "Whatever I decide, the tower will want a plaque, and a plaque that matters is cut from wood, which we haven't got. One sign from up there, please. It's going on a tower. It should be dignified wood.",
+          "thanks": "Real wood, flat and ready for lettering. *they stroke the grain* It's the most precious thing on my bench, and I keep a box of ivory shell offcuts. Thank you."
+        }
+      ],
+      "waiting": "The shims are cut. I keep not fitting them. The work's easy; it's not the work. There's a reason I've let it lean so long, and I'm not ready to say it with a straight face, or a straight tower. Come back a few more times.",
+      "ready": "Stand here with me, {player}, where the lean is worst. I'll tell you whose tower this really is. Nobody alive knows. The Archive thinks it does.",
+      "confide": "I cut the footing against the grain. An apprentice's mistake; the whole thing settled east. My master saw it, said nothing, walked into the Archive and wrote: 'The lean is mine. I misjudged the wind.' They had never misjudged anything in their life. They closed a few years later with that the only error on their record. I've let it lean so their kindness stays true.",
+      "endings": [
+        {
+          "id": "straighten",
+          "label": "Straighten it, tell the truth",
+          "text": "Then I'll shim it true, and the plaque will say: 'Braced by the apprentice who leaned it. Their master took the blame, and was kind.' Two lines, and the record honest at last. My master would hate it. *the lid lifts* Here, for the pillars. Mind the grain.",
+          "memory": "You told {name} to straighten the tower and tell the truth about the lean."
+        },
+        {
+          "id": "let_lean",
+          "label": "Let it lean",
+          "text": "Yes. It's the last thing they gave me: a lie in good ink, to keep me in work. The plaque goes at the footing: 'The lean is intended.' Only you and I will know who intended it, and why. *they hand you something* For the pillars. I'll use them on the bridges. Bridges never lean.",
+          "memory": "You told {name} to let the tower lean, keeping their master's kind lie."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:diamond",
+        "count": 2
+      }
+    },
+    {
+      "id": "emberlid_run",
+      "title": "The Emberlid Run",
+      "jobs": [
+        "wayfinder"
+      ],
+      "intro": "Before the Long Watch there was a route from here to a Spire called Emberlid, three gaps out past the last lamp. My teacher flew it every season. Their charts went into the void, and Emberlid went silent in the Dragon years. Nobody has flown there since. Lately I sit at the Roost looking that way. My ray has noticed. Rays notice everything.",
+      "requests": [
+        {
+          "id": "charts",
+          "title": "Charts That Draw Themselves",
+          "item": "minecraft:map",
+          "count": 3,
+          "prompt": "Charts first. Rays remember the way, but I don't, and I'd like to come back. Three empty maps from your pack, if you carry any. Ours are drawn by hand and they all show the same thing: purple, gap, purple.",
+          "thanks": "*they unroll one, puzzled* It draws itself as you go? That's cheating. I love it. Thank you, {player}. My teacher would have flown off with all three."
+        },
+        {
+          "id": "flowers",
+          "title": "A Younger Ray",
+          "item": "minecraft:chorus_flower",
+          "count": 2,
+          "prompt": "My ray is old and won't fly three gaps. A young one will, if I tame it, and that takes chorus flowers held out very patiently. Two, please. One for taming and one for when I lose my nerve and drop the first.",
+          "thanks": "Two good, full ones. *the lid lifts* I'll hold them out at the Roost this lit hour and look completely calm. One of us should."
+        },
+        {
+          "id": "lanterns",
+          "title": "Lights to Leave Behind",
+          "item": "minecraft:lantern",
+          "count": 2,
+          "prompt": "I mean to hang a light at each gap I pass, so whoever follows can see how far I got. Two lanterns. Our rods want a tower to sit in; a lantern will hang off anything, like a wayfinder off a ray.",
+          "thanks": "Two lights to leave behind me. My teacher left none. I've always wished they had. Thank you, {player}."
+        }
+      ],
+      "waiting": "I've flown out to the second gap twice and turned back both times. Not the currents. Not the ray. Me. There's a part of this route I haven't told you. Come back a few more times; I'll say it when I can say it without looking down. I never look down.",
+      "ready": "Come out on the Roost with me, {player}. Stand at the open end; the rays know you now, they'll look first. I'll tell you why I turned back.",
+      "confide": "My teacher didn't lose the charts by accident. The Dragon was loose, Emberlid had gone dark, and they said: 'someone should see whether anyone is left.' I was to fly second ray. At the edge of the last lamp, I turned back. I told the Lid Hall the currents were wrong. They weren't. My teacher flew on alone. Sixty years the best wayfinder in the record, and I've never once flown past that lamp.",
+      "endings": [
+        {
+          "id": "fly_it",
+          "label": "Fly to Emberlid",
+          "text": "Then I fly. Next clear lit hour: the young ray, your charts, a lantern at every gap. Whatever is at Emberlid, empty or not, I'll write it down, and I'll write that I went the whole way this time. *the lid lifts* Take these, for the wings you came in on. Fly far, and come back. That's the whole art.",
+          "memory": "You told {name} to fly the old route to Emberlid at last."
+        },
+        {
+          "id": "close_route",
+          "label": "Let the route close",
+          "text": "Yes. I'll file it in the Archive as closed: 'Emberlid, three gaps out. The last to fly it was the best of us.' And I'll hang your lanterns at the edge of the last lamp, where I turned back, so my teacher has a light to come home by. Take these; I won't need them for far gaps now.",
+          "memory": "You told {name} to close the Emberlid route and hang a light where they turned back."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:firework_rocket",
+        "count": 16
+      }
+    },
+    {
+      "id": "keep_a_door",
+      "title": "To Keep a Door",
+      "jobs": [
+        "keeper"
+      ],
+      "intro": "There's an ivory shell by the Nursery door, the oldest one we keep. That was my elder. Before they closed, they asked to be carried to the old cities to keep a door there, as the closed always were. But the Dragon was circling then, and we couldn't. Now the Dragon is gone and the cities are open. I've run out of reasons not to go. I have not run out of fear.",
+      "requests": [
+        {
+          "id": "wrapping",
+          "title": "Pale Wrapping",
+          "item": "minecraft:white_wool",
+          "count": 8,
+          "prompt": "A closed shell travels wrapped in pale cloth, so they can feel the light change through it. Void-cloth won't do; it drinks the light. Eight white wool, please, for the wrapping.",
+          "thanks": "*they fold it once, very carefully, over nothing* Like that. Thank you, {player}. The young ones will want to help wrap. I'll let them hold a corner each."
+        },
+        {
+          "id": "lamp",
+          "title": "A Lamp for the Road",
+          "item": "minecraft:end_rod",
+          "count": 2,
+          "prompt": "A shell carried to the cities has a lamp beside it all the way, so it never wakes in the dark. Two end rods: one to carry, one to leave lit by the door they keep.",
+          "thanks": "Two lights. One for the road and one for the door. Thank you. Whichever way this goes, they won't be in the dark."
+        },
+        {
+          "id": "chime",
+          "title": "A Goodbye Chime",
+          "item": "minecraft:amethyst_shard",
+          "count": 6,
+          "prompt": "The young ones want to say goodbye in their own way, which is noise. Amethyst rings when they tap it. Six shards, and they'll make a chime for the shell. And for my head, regrettably.",
+          "thanks": "*a shard tinks against their sleeve; somewhere in the nest, a small lid pops* There. They've heard it already. Thank you, {player}."
+        }
+      ],
+      "waiting": "The wrapping's ready. I've wrapped them, and unwrapped them, three times now. The young ones think it's a game. Come back in a few lit hours, and a few more. There's something I need to say out loud before I can decide anything.",
+      "ready": "Sit by the nest, {player}. Mind the soft shells. The young ones are asleep, mostly; this is the only quiet I ever get. I'll tell you what I haven't told the Lid Hall.",
+      "confide": "I don't think they want to go any more. When the young ones laugh, the ivory shell's lid lifts. A hair, no more, and only when they laugh. Eighty years I've kept this Nursery and I've seen it a hundred times. The Archive would call it settling. I call it listening. If I carry them to the cities, I take them away from the only sound they still answer.",
+      "endings": [
+        {
+          "id": "carry",
+          "label": "Carry them to the city",
+          "text": "Then I keep the promise as it was made. A wayfinder, a calm ray, the wrapping and the lamp, and the young ones ringing the chime until we're past the gap. A door in the old cities is an honour, and they asked for it. *the lid lifts* Take this. For the wool, and for sitting with me.",
+          "memory": "You told {name} to carry their elder's shell to keep a door in the old cities."
+        },
+        {
+          "id": "stay",
+          "label": "Let them stay and listen",
+          "text": "Yes. Promises are made by the living. The closed may change their minds, and I think they have. They stay by the Nursery door, where the laughing is. I'll hang the chime over them and write: 'They chose the Nursery.' *the lid lifts* Take this. For the wool, and for sitting with me.",
+          "memory": "You told {name} to let their elder's shell stay in the Nursery, near the laughing."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:recovery_compass",
+        "count": 1
+      }
+    },
+    {
+      "id": "in_or_out",
+      "title": "In or Out",
+      "jobs": [
+        "hallkeeper"
+      ],
+      "intro": "Forty-one years I've argued with the dome keeper about the Hall door. In or out. We've had it rehung nine times. The Lid Hall keeps a file on it; the Chorrin have a song about it with nineteen verses. Lately the dome keeper's crown has gone pale, and they've started letting me win small things. The cushions. The hearth rota. I don't like it.",
+      "requests": [
+        {
+          "id": "feast",
+          "title": "Chorus for the Feast",
+          "item": "minecraft:popped_chorus_fruit",
+          "count": 16,
+          "prompt": "The Hall feast is soon, and I want it to be a good one this year. Sixteen popped chorus for the tables, please. Formal Shulkin dinners are eaten popped. The Chorrin eat theirs raw and blink into the soup. Everyone's happy.",
+          "thanks": "Sixteen, well popped. *they make a note* The dome keeper will claim they'd have brought better. They will be wrong. Thank you, {player}."
+        },
+        {
+          "id": "flowers",
+          "title": "Flowers for Their Side",
+          "item": "minecraft:chorus_flower",
+          "count": 3,
+          "prompt": "I want to put a chorus flower over the door, on their side. They put one there every year and pretend it grew. Three, please, in case I plant them wrong. I will plant them wrong.",
+          "thanks": "Three. I'll plant them the Chorrin way: badly, with a great deal of humming. Don't tell the dome keeper I hummed."
+        },
+        {
+          "id": "door",
+          "title": "A Tenth Door",
+          "item": "minecraft:oak_door",
+          "count": 1,
+          "prompt": "If it's to be rehung a tenth time, I want a new one. Wood, from up there. There are six wooden doors in the whole Spire and every one of them is spoken for.",
+          "thanks": "*they swing it gently on nothing* It opens both ways, if you hold it right. Did you know that? Of course you did. Thank you, {player}. This changes the whole argument."
+        }
+      ],
+      "waiting": "I've been watching the dome keeper. Yesterday they hummed the door song and left out the verse where I'm wrong. They have never left out that verse. Visit me a few more times. I'm not ready to say what I think it means.",
+      "ready": "Come and sit at the long table, {player}. Shulkin end. No, the Chorrin end; it's warmer, I've measured. I've worked out what's wrong, and I'd rather say it here than in the ledger.",
+      "confide": "They're closing. Going quiet, the Chorrin call it. Their crown is drying, they let me win the cushions, and they've stopped fighting about the door. I could finally have it my way. And I find I don't want the door. I want the argument. Forty-one years, it's been the only way either of us knew how to say 'I'll see you tomorrow.'",
+      "endings": [
+        {
+          "id": "concede",
+          "label": "Give them the door",
+          "text": "Then they get their door. I'll rehang it their way tonight, inward, toward the hearth, and stand there holding it open like a fool when they arrive. If they argue, the argument's alive. If not, they'll have won at last, and I'll have let them. *the lid lifts* Take this. They hum it. I never told them I had a copy.",
+          "memory": "You told {name} to give the dome keeper the door at last."
+        },
+        {
+          "id": "keep_arguing",
+          "label": "Keep the argument going",
+          "text": "Yes. I'll hang the new door my way, outward, make a great fuss, and add a verse to their song in which they're wrong. They'll have to come and correct it; a Chorrin can't stand a wrong verse. Every tomorrow I can get, I'll get by being insufferable. *a dry laugh* Here. They hum this one.",
+          "memory": "You told {name} to keep arguing about the door, for every tomorrow they can get."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:music_disc_otherside",
+        "count": 1
+      }
+    },
+    {
+      "id": "light_for_light",
+      "title": "A Light for a Light",
+      "jobs": [
+        "trader"
+      ],
+      "intro": "My ledger has a line in it in the Crowned's own script. When the Dragon came, my elder bought safe passage for the young ones, me among them, from a Court envoy. The price: 'a light for a light', one end rod sent to the Citadel every year, for ever. My elder paid until they closed. I paid after. When you silenced the Dragon, I stopped. Nobody has come asking. Yet.",
+      "requests": [
+        {
+          "id": "arrears",
+          "title": "The Arrears",
+          "item": "minecraft:end_rod",
+          "count": 12,
+          "prompt": "Whatever I decide, I want the rods in hand. Call the arrears twelve. I won't take them from the lamps. Would you bring them? I'll pay you in gratitude, which the Archive values higher than purpur and I value lower.",
+          "thanks": "Twelve. *they count them twice, then a third time out of habit* Thank you, {player}. That covers the arrears, if I pay. I've written 'if' very small."
+        },
+        {
+          "id": "wrapping",
+          "title": "The Court's Wrapping",
+          "item": "minecraft:obsidian",
+          "count": 8,
+          "prompt": "If I pay, it must go the Court's way: wrapped in obsidian, eight blocks, or the Herald won't accept it. They're particular about wrapping. They're particular about everything. I'd rather not quarry it; it means going near the centre.",
+          "thanks": "Eight blocks. Heavy, black, humourless. The Court's favourite qualities. Thank you. I'll keep it behind the stall and try not to look at it."
+        },
+        {
+          "id": "letter",
+          "title": "A Bound Letter",
+          "item": "minecraft:writable_book",
+          "count": 1,
+          "prompt": "Either way, a letter goes with the rods, or instead of them. A book and quill, please. Paper blows away. A bound letter has to be read, or very deliberately not read, and the Court is very good at deliberately.",
+          "thanks": "A proper book. *they turn it over* I'll write in my best hand. If the Crowned dislike the contents, they can at least admire the lettering."
+        }
+      ],
+      "waiting": "I've packed the rods and unpacked them four times. A trader should know a fair price. I don't know this one. There's something about the debt I've never written down. Visit again a few times; I'll say it when I know the sum.",
+      "ready": "Pull the stall's awning down behind you, {player}. There. Now I'm shut, and we can talk the way shut people talk. I'll tell you what the ledger leaves out.",
+      "confide": "The debt was never fair. The Court loosed the Dragon, then sold us passage away from it. My elder knew. They paid every year anyway, with great courtesy, so the Crowned would remember {village} as a place that keeps its word. That was the real trade. Not rods for passage: a reputation, so we'd never look worth punishing. If I stop now, I spend what they saved.",
+      "endings": [
+        {
+          "id": "pay_in_full",
+          "label": "Pay it, and call it settled",
+          "text": "Then the arrears go, and one rod more, and a letter: 'This debt is settled. {village} kept its word to the last light.' Let them file that. My elder's honour, paid in full and closed. *they set a cloth bundle in your hands* The Court's coin. I can't bear to keep it near the lamps. You can.",
+          "memory": "You told {name} to pay the Court's old debt in full and close it."
+        },
+        {
+          "id": "stop_paying",
+          "label": "Let the Crowned come asking",
+          "text": "Yes. The Dragon is dead; the passage isn't worth a rod. The twelve go into our lamps, and a letter goes instead: 'Settled by the one who silenced the Dragon.' If the Crowned want their light, they can come and ask, and look me in the lid. *they hand you a cloth bundle* Their coin. I'm done holding it.",
+          "memory": "You told {name} to stop paying the Court and let the Crowned come asking."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:ender_pearl",
+        "count": 6
+      }
+    },
+    {
+      "id": "sealed_lid",
+      "title": "The Sealed Lid",
+      "jobs": [],
+      "intro": "My sibling kept the Watch-count in the Long Watch: every circle the Dragon flew, a mark. Forty thousand marks and more. The night you silenced it, they put down the pen, closed their lid, and sealed it. Not closed for good; we can hear them shift. They simply haven't opened since. I talk to the shell every lit hour. I've begun to run out of news.",
+      "requests": [
+        {
+          "id": "note",
+          "title": "A Note Through the Shell",
+          "item": "minecraft:note_block",
+          "count": 1,
+          "prompt": "I want to play them something. They loved the hum of the tower rods; they said it was the island thinking. A note block, if you can make one. I'll tune it to the rods and play it by their niche.",
+          "thanks": "*they tap it once; a clear note rings out* Oh, that's close. That's very close. Thank you, {player}. If anything gets through a sealed lid, it's that."
+        },
+        {
+          "id": "candles",
+          "title": "Light by the Niche",
+          "item": "minecraft:magenta_candle",
+          "count": 3,
+          "prompt": "A sealed shell should have a light beside it, so it knows it isn't the closed hours. Their favourite colour is magenta, the loud one. Three candles. The keeper says one is proper. My sibling never did anything by halves.",
+          "thanks": "Three. They'll be appalled at the waste. Good. Being appalled is a start."
+        },
+        {
+          "id": "quill",
+          "title": "A New Quill",
+          "item": "minecraft:feather",
+          "count": 2,
+          "prompt": "They wrote the whole count with one quill, worn to the nub. I'd like to leave a new one by their niche. Two feathers, please; I'll cut the better one.",
+          "thanks": "Two. I'll cut the quill tonight and lay it beside the old one. Not replacing it. Keeping it company."
+        }
+      ],
+      "waiting": "I played the note by their niche. The shell shifted, just once. I've been sitting there ever since, which is why I look like this. There's more to tell you, about why they sealed. Come back in a while. I can't leave them long yet.",
+      "ready": "Come with me to their niche, {player}. Quietly. I'd like to say this where they can hear it, if they're listening. I think they'd want you to know. You're part of it, after all.",
+      "confide": "The count was their whole life. Every night, the same line: 'still circling.' They told me once they dreaded the night it stopped, because then they'd have to decide who they were without it. Then you silenced it, and they had to. I think they're in there deciding. I'm afraid of what they'll decide. I'm more afraid they'll decide nothing at all.",
+      "endings": [
+        {
+          "id": "tell_it_over",
+          "label": "Tell them it's over",
+          "text": "Then I'll read them your page. The fight, all of it, start to end, in my plainest voice: the last entry of the Watch-count, and the first of whatever comes next. If they open, they'll open knowing. If not, they'll have heard it from someone who loves them. *the lid lifts* Here. They counted every circle through this. It's done with dragons.",
+          "memory": "You told {name} to read their sealed sibling the end of the Dragon's story."
+        },
+        {
+          "id": "give_time",
+          "label": "Give them all the time",
+          "text": "Yes. We're Shulkin. We waited out a Dragon; I can wait out my own sibling. The candles stay lit, the quill stays sharp, and every lit hour I'll tell the shell one small thing that isn't about dragons. Something worth opening for. *they hand you something* Theirs. They'd want it to look at something better now.",
+          "memory": "You told {name} to wait for their sibling, and tell the shell small things."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:spyglass",
+        "count": 1
+      }
+    },
+    {
+      "id": "hidden_in_grove",
+      "title": "Hidden in the Grove",
+      "jobs": [],
+      "intro": "When the Dragon came, I was a soft shell, and the Chorrin hid us young ones in their groves. A sprout called Bollum shared their nest with me for a whole year; I still remember the hum coming up through the stone. We've written ever since. I send ledgers. They send songs. Their last letter was very short. I want to send something better than a ledger, and I don't know how.",
+      "requests": [
+        {
+          "id": "saplings",
+          "title": "Something That Grows",
+          "item": "minecraft:oak_sapling",
+          "count": 2,
+          "prompt": "Bollum tends a grove, and for forty years they've asked what grows up there besides grass. Two saplings, any kind: a tree, for a grove-keeper. Whether it will grow on end stone is their problem, and they'll love the problem.",
+          "thanks": "*they hold one at arm's length, as if it might blink* It's a tree. A small one, but a tree. Thank you, {player}. Bollum is going to hum so loudly."
+        },
+        {
+          "id": "bell",
+          "title": "A Sound to Send Back",
+          "item": "minecraft:bell",
+          "count": 1,
+          "prompt": "Chorrin hum; I can't. I want to send a sound back instead. A bell, from up there. Ours are lamp-bells, and they only know how to say 'lit' and 'closed'.",
+          "thanks": "*they strike it once, very softly, and listen to it fade* That one says something else entirely. I don't know what. Bollum will. Thank you."
+        },
+        {
+          "id": "chorus",
+          "title": "Popped, Formally",
+          "item": "minecraft:popped_chorus_fruit",
+          "count": 8,
+          "prompt": "A Shulkin letter of thanks goes with popped chorus. It means 'what was yours, made into something of ours.' Eight, please. Bollum will laugh at the formality and eat all eight at once.",
+          "thanks": "Eight, formally popped. I'll wrap them in the correct order. Bollum will eat them in the wrong one. That's how it has always gone."
+        }
+      ],
+      "waiting": "I've written the letter nine times. Each one is a beautiful ledger. None of them is a song. There's something I've never said to Bollum, and I need to say it to someone first. Visit me a few more times.",
+      "ready": "Walk with me to the bridge that faces the Stead, {player}. You can just see their grove from here. I'll tell you what I owe them.",
+      "confide": "I've never thanked them. Not once. Shulkin don't say thanks; we record it. Every year the Archive reads aloud the names of the Chorrin who hid us, and Bollum's is among them. They don't know. To them I'm the stiff little shell who writes every season about chorus prices. Their last letter said only: 'Are we still friends, or only correspondents?' I couldn't answer it.",
+      "endings": [
+        {
+          "id": "say_it",
+          "label": "Go and say it yourself",
+          "text": "Yes. In person. I'll cross to the Stead with the saplings and the bell and the chorus, stand in their grove, and say it out loud: thank you, for the nest, for the year, for the hum. Very badly. I may attempt to hum. *the lid lifts* Here, for your help. If I come back humming, don't tell the Archive.",
+          "memory": "You told {name} to cross to the Stead and thank their Chorrin friend out loud."
+        },
+        {
+          "id": "send_record",
+          "label": "Send them the record",
+          "text": "Yes. That's how we say it, isn't it? I'll copy the Archive page in my best hand: every year the names were read, and theirs among them. Sixty readings. They'll see it was never only chorus prices. Then they'll come here and hug me, and I'll have to survive that. *they hand you something* For your trouble.",
+          "memory": "You told {name} to send Bollum the Archive's record of their thanks."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:experience_bottle",
+        "count": 6
+      }
+    },
+    {
+      "id": "tail_light",
+      "title": "Named for a Tail-Light",
+      "jobs": [],
+      "intro": "I'm named for the Fifth Lamp. So the record says. But the keeper who sat with me the night my lid first opened told me, years later, there was no Fifth Lamp lit that night. There was a wild Driftray passing the Nursery window with its tail aglow. The archivist wouldn't name a child for a ray. So I'm of the Fifth Lamp. It has never once felt like me.",
+      "requests": [
+        {
+          "id": "flowers",
+          "title": "Something to Offer",
+          "item": "minecraft:chorus_flower",
+          "count": 3,
+          "prompt": "I want to find that ray. They live long, and the old ones still nest under the Nursery bridge. Taming one takes chorus flowers, held out very patiently. Three, please. I'll need two to drop in a panic.",
+          "thanks": "*they hold one out at arm's length, practising* Like this? Don't answer. I'll find out under the bridge. Thank you, {player}."
+        },
+        {
+          "id": "saddle",
+          "title": "A Saddle of My Own",
+          "item": "minecraft:saddle",
+          "count": 1,
+          "prompt": "If it lets me near, I'll want to ride it. A saddle, please. The wayfinders' saddles all have names, and one doesn't borrow a named saddle.",
+          "thanks": "A saddle. *the lid rises, then is hastily lowered* I'm not going to sit on it here, on the ground, like a fool. ...I'm going to sit on it a little."
+        },
+        {
+          "id": "ink",
+          "title": "Ink in the Ray's Colour",
+          "item": "minecraft:pink_dye",
+          "count": 2,
+          "prompt": "If I change my record, the ink goes in the ray's colour. Its tail glows pink. Two pink dyes, please. The archivist will faint. That's a bonus.",
+          "thanks": "Pink. Unrecordable, undignified, perfect. Thank you. I'll keep it whatever I decide."
+        }
+      ],
+      "waiting": "I've been under the Nursery bridge every closed hour. There's an old ray down there with a nicked wing and a tail that glows a little pink. It looks at me. I look at it. Neither of us has said anything. Come back a few more times. I'm working up to more than looking.",
+      "ready": "Come down under the bridge, {player}. Slowly; it's there. The pink-tailed one. While it decides about us, I'll tell you why this matters more than a name should.",
+      "confide": "All my life I've been steady, punctual and correct. A lamp's sort of person. And all my life I've wanted to be out over the gaps, somewhere nobody keeps a record. I thought it was a flaw, and I kept it shut. Now I wonder whether I was only ever named wrong. Whether the thing I'm named for was never meant to stay lit in one place.",
+      "endings": [
+        {
+          "id": "take_ray_name",
+          "label": "Take the ray's name",
+          "text": "Then I'll file it, in pink: '{name} of the Passing Tail, named for a ray that didn't stop.' The archivist will need to sit down. Then I'll learn to fly. *the lid flips fully open* Take this. It never worked out here anyway; it only spins. I won't need it on a ray.",
+          "memory": "You told {name} to take the name of the ray that passed the night their lid opened."
+        },
+        {
+          "id": "keep_lamp",
+          "label": "Keep the lamp's name",
+          "text": "Yes. The name has been mine for two hundred years, and I've made it mean me, ray or no ray. I'll keep the Fifth Lamp in the record and the pink ink in my pocket. And on clear dark hours I'll fly, and nobody need write it down. *they hand you something* Both halves of me thank you.",
+          "memory": "You told {name} to keep their lamp's name, and to fly anyway."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:clock",
+        "count": 1
+      }
+    },
+    {
+      "id": "lamp_count",
+      "title": "The Lamp Count",
+      "jobs": [],
+      "intro": "Every year {village} and the Spire across the gap count each other's lamps and flash the tally over by hooded rod. They have beaten us forty years running. I am fairly sure they count the reflections in their glass. This year I mean to win: honestly if possible, and with mirrors if not. Mostly honestly. Will you help?",
+      "requests": [
+        {
+          "id": "rods",
+          "title": "Eight to Count",
+          "item": "minecraft:end_rod",
+          "count": 8,
+          "prompt": "Rods first. Eight new ones, hung on the side that faces them, where they'll count every one twice out of spite. I'd take them from stock, but the lamplighter has started locking the stock when they see me coming.",
+          "thanks": "Eight. *they hold one up toward the far Spire* Let them count that. Thank you, {player}. I'll hang them tonight and look innocent tomorrow."
+        },
+        {
+          "id": "glass",
+          "title": "Reflections",
+          "item": "minecraft:glass_pane",
+          "count": 8,
+          "prompt": "If they count their glass, so shall we. Eight clear panes; behind the rods they'll look like twice as many. Is it cheating if they started it? The Archive says yes. I say it's a correction.",
+          "thanks": "*they tilt a pane until it catches the light* Oh, that's wicked. Thank you. I'll put them up and feel only slightly ashamed."
+        },
+        {
+          "id": "hood",
+          "title": "A Tighter Hood",
+          "item": "minecraft:black_wool",
+          "count": 4,
+          "prompt": "Tally flashes are made with a hood: cover, uncover. Mine is frayed and lets light through at the edges. Four black wool, please. I'll weave one tight enough to say exactly what I mean.",
+          "thanks": "Black wool, good and dense. Now my flashes will be crisp enough to read from the far bridge. Thank you, {player}."
+        }
+      ],
+      "waiting": "The rods are up. Across the gap, three new lamps appeared overnight. Coincidence, they'll say. Come back a few more times, {player}. There's more to this than lamps, and I'd like to be sure of you before I say it.",
+      "ready": "Come up to the balcony on the gap side. Watch their lamps blink; that's tonight's tally. While they count, I'll tell you who's counting.",
+      "confide": "My sibling lives over there. We quarrelled sixty years ago, over a promise I broke, and they crossed the gap and never crossed back. We haven't spoken since. But every year, for the count, they flash their tally and I flash mine. It's the only way I know they're well. I've never once wanted to win. I want them to keep counting.",
+      "endings": [
+        {
+          "id": "flash_message",
+          "label": "Flash them a real message",
+          "text": "Then tonight, after the tally, I'll keep the hood moving. Not numbers. Words, in the old lamp-code: 'I was wrong. Come home for the feast.' If their lamps go dark, I'll know. If they all flash back at once... *the lid trembles* Take this. I was going to hang it up to cheat. I don't need to win now.",
+          "memory": "You told {name} to flash a real message across the gap to their sibling."
+        },
+        {
+          "id": "keep_counting",
+          "label": "Keep the count going",
+          "text": "Yes. The count is how we talk, and I won't spoil it with words neither of us can take back. I'll lose by one lamp, gracefully, so they're smug for a whole year and flash back next year to gloat. That's how I'll know they're well. *they hand you something* My secret weapon. Keep it away from me.",
+          "memory": "You told {name} to keep the lamp count going with their sibling across the gap."
+        }
+      ],
+      "gift": {
+        "item": "minecraft:end_crystal",
+        "count": 1
+      }
+    }
+  ]
+}

@@ -26,8 +26,11 @@ import net.minecraft.world.item.Items;
  * The conversation window: the Village Friends layout in purpur. The resident stays in view in the
  * world; a dialogue box with their portrait and name ribbon sits at the bottom, the line typing out
  * in their voice (glassy Shulkin chimes, a low Chorrin hum, the Court's warped bass); replies float
- * as numbered bubbles on the right; a dock offers talk, a gift (tribute, for the Court) and farewell;
- * and a card shows how close you are as ten chorus blossoms, or the Court's Favor as ten eyes.
+ * as numbered bubbles on the right; a dock offers a greeting (a bow, for the Court), a gift (tribute)
+ * and farewell; and a card shows how close you are as ten chorus blossoms, or the Court's Favor as
+ * ten eyes. Tabs on the box switch between Talk, their Story (marked when there's something to do
+ * there) and your Journal (shown whole, to scroll through; Tab cycles them). If they walk off, the
+ * replies close and only the Journal still opens.
  */
 public final class ConversationScreen extends Screen {
     static final int PAPER = 0xFFF6EEF7, PAPER_SHADE = 0xFFE6D6E8, EDGE = 0xFF4A2C52, EDGE_LIGHT = 0xFFB48FB6, INK = 0xFF3B2544,
@@ -36,10 +39,12 @@ public final class ConversationScreen extends Screen {
     /** Level badge colours by fifths of the way to 10. */
     static final int[] TIERS = {0xFF9A8AA0, 0xFF8E78B8, 0xFFA05FB8, 0xFFC055C0, 0xFFE07FD0};
     private static final float CHARS_PER_SECOND = 36F;
-    private static final int SPACE_KEY = 32, KEY_1 = 49, LINE = 10;
+    private static final int SPACE_KEY = 32, KEY_1 = 49, TAB_KEY = 258, UP_KEY = 265, DOWN_KEY = 264, LINE = 10;
+    private static final String[] TABS = {"talk", "story", "journal"}, TAB_LABELS = {"Talk", "Story", "Journal"};
 
     private TalkPayload data;
     private final List<Button> actions = new ArrayList<>();
+    private final List<TabButton> tabs = new ArrayList<>();
     private boolean waiting, closing;
     private int waitTicks, ticks;
     private int boxX, boxY, boxW, boxH, textX, textW, portraitX, portraitY, portraitW, portraitH, cardX, cardY, cardW, cardH;
@@ -101,6 +106,11 @@ public final class ConversationScreen extends Screen {
         return data.voice().equals("court");
     }
 
+    /** The Journal is your own notes: shown whole, not spoken. */
+    private boolean instant() {
+        return data.tab().equals("journal");
+    }
+
     // -- typing ------------------------------------------------------------------------------------
 
     private void restartTyping() {
@@ -147,13 +157,18 @@ public final class ConversationScreen extends Screen {
             total += typeLines.get(i).length();
         }
         typeFlat = String.join("", typeLines);
-        shown = wholeLines ? total : Math.min(shown, total);
+        shown = wholeLines || instant() ? total : Math.min(shown, total);
     }
 
     private void advanceTyping() {
         long now = System.nanoTime();
         float dt = lastFrameNanos == 0 ? 0F : Math.min(0.25F, (now - lastFrameNanos) / 1.0E9F);
         lastFrameNanos = now;
+        if (instant()) {
+            popPending = false;
+            finishLine();
+            return;
+        }
         if (popPending) {
             popPending = false;
             playUi(court() ? SoundEvents.ENDERMAN_AMBIENT : SoundEvents.AMETHYST_BLOCK_CHIME, court() ? 1.4F : 1.2F, 0.25F);
@@ -185,6 +200,7 @@ public final class ConversationScreen extends Screen {
     @Override
     protected void init() {
         actions.clear();
+        tabs.clear();
         int dockH = 20, bottom = height - 8 - dockH - 5;
         boxW = Math.min(430, width - 16);
         boxX = (width - boxW) / 2;
@@ -195,7 +211,10 @@ public final class ConversationScreen extends Screen {
         int columns = count * row > bottom - baseH - 30 ? 2 : 1;
         int rows = (count + columns - 1) / columns;
         int replyW = columns == 1 ? Math.clamp(width * 2 / 5, 130, 186) : Math.clamp((boxW - 12) / 2 - 2, 100, 170);
-        boxH = baseH;
+        // a story or a Journal page wants a taller box, as far as the replies above leave room
+        int lines = font.splitIgnoringLanguage(Component.literal(data.dialogue()), textW).size();
+        int wanted = Math.clamp(lines, 4, instant() ? 15 : 8) * LINE + 24;
+        boxH = Math.max(baseH, Math.min(wanted, bottom - 30 - rows * row - 12));
         boxY = bottom - boxH;
         portraitH = Math.min(boxH + 30, 118);
         portraitX = boxX + 7;
@@ -210,15 +229,40 @@ public final class ConversationScreen extends Screen {
             int column = columns == 1 ? 0 : i % 2, r = columns == 1 ? i : i / 2;
             int x = replyRight - (columns - column) * (replyW + 4) + 4, y = replyBottom - (rows - r) * row;
             var button = new ReplyButton(x, y, replyW, row - 3, i + 1, choice.label(), pressed -> send(choice.id()));
-            button.active = !waiting && choice.enabled();
+            button.active = !waiting && choice.enabled() && (!data.left() || choice.id().startsWith("journal_"));
             if (!choice.hint().isEmpty()) button.setTooltip(Tooltip.create(Component.literal(choice.hint())));
             actions.add(button);
             addRenderableWidget(button);
         }
-        // the dock: talk, a gift (or tribute), farewell
+        // the tabs, on the top edge of the box at the right
+        int tabH = 13, tabGap = 2, tabsW = -tabGap;
+        int[] tabW = new int[TABS.length];
+        for (int i = 0; i < TABS.length; i++) tabsW += (tabW[i] = font.width(TAB_LABELS[i]) + 14) + tabGap;
+        boolean shortTabs = tabsW > boxW - portraitW - 120;
+        if (shortTabs) {
+            tabsW = -tabGap;
+            for (int i = 0; i < TABS.length; i++) tabsW += (tabW[i] = font.width(TAB_LABELS[i].substring(0, 1)) + 12) + tabGap;
+        }
+        int tx = boxX + boxW - 6 - tabsW;
+        for (int i = 0; i < TABS.length; i++) {
+            String tab = TABS[i];
+            String label = shortTabs ? TAB_LABELS[i].substring(0, 1) : TAB_LABELS[i];
+            var button = new TabButton(tx, boxY - tabH + 1, tabW[i], tabH, label, tab.equals(data.tab()),
+                    tab.equals("story") && data.storyAlert(), court(), pressed -> send("tab_" + tab));
+            button.setTooltip(Tooltip.create(Component.literal(switch (tab) {
+                case "story" -> court() ? "Story: their own matter, beyond Court business" : "Story: what's on their mind";
+                case "journal" -> "Journal: your memories with them, what you know of them, their story so far";
+                default -> court() ? "Talk: the audience" : "Talk: chat and ask about things";
+            } + " (Tab)")));
+            button.active = !waiting && (!data.left() || tab.equals("journal"));
+            tabs.add(button);
+            addRenderableWidget(button);
+            tx += tabW[i] + tabGap;
+        }
+        // the dock: a greeting (a bow, for the Court), a gift (or tribute), farewell
         var player = Minecraft.getInstance().player;
         ItemStack held = player == null ? ItemStack.EMPTY : player.getMainHandItem();
-        String[] labels = {"Talk", data.giftLabel(), "Farewell"};
+        String[] labels = {court() ? "Bow" : "Greet", data.giftLabel(), "Farewell"};
         String[] ids = {"talk", "gift", "goodbye"};
         ItemStack[] icons = {new ItemStack(court() ? Items.ENDER_EYE : Items.CHORUS_FLOWER),
                 held.isEmpty() ? new ItemStack(court() ? Items.CRYING_OBSIDIAN : Items.POPPED_CHORUS_FRUIT) : held.copyWithCount(1),
@@ -235,8 +279,8 @@ public final class ConversationScreen extends Screen {
                         else send(id);
                     });
             button.setTooltip(Tooltip.create(Component.literal(tooltip(id, held))));
-            if (id.equals("gift")) button.active = !waiting && data.giftsLeft() > 0;
-            else if (!id.equals("goodbye")) button.active = !waiting;
+            if (id.equals("gift")) button.active = !waiting && !data.left() && data.giftsLeft() > 0;
+            else if (!id.equals("goodbye")) button.active = !waiting && !data.left();
             if (!id.equals("goodbye")) actions.add(button);
             addRenderableWidget(button);
             x += each + gap;
@@ -245,7 +289,7 @@ public final class ConversationScreen extends Screen {
 
     private String tooltip(String id, ItemStack held) {
         return switch (id) {
-            case "talk" -> court() ? "Talk: begin the audience again" : "Talk: say hello again";
+            case "talk" -> court() ? "Bow: begin the audience again" : "Greet: say hello again";
             case "gift" -> (court() ? "Tribute: offer " : "Gift: give ")
                     + (held.isEmpty() ? "what you hold in your main hand" : "one " + held.getHoverName().getString()) + ". " + data.giftsLeft() + " left today.";
             default -> "Farewell (Esc)";
@@ -258,6 +302,7 @@ public final class ConversationScreen extends Screen {
         waiting = true;
         waitTicks = 0;
         actions.forEach(button -> button.active = false);
+        tabs.forEach(button -> button.active = false);
     }
 
     /** Presses a reply or dock button by id, as a click would (for tests). */
@@ -271,6 +316,21 @@ public final class ConversationScreen extends Screen {
     public boolean keyPressed(KeyEvent event) {
         if (event.key() == SPACE_KEY && typing()) {
             finishLine();
+            return true;
+        }
+        if (event.key() == TAB_KEY && !waiting) {
+            int at = List.of(TABS).indexOf(data.tab());
+            for (int step = 1; step < TABS.length; step++) {
+                String next = TABS[Math.floorMod(at + (event.hasShiftDown() ? -step : step), TABS.length)];
+                if (!data.left() || next.equals("journal")) {
+                    send("tab_" + next);
+                    break;
+                }
+            }
+            return true;
+        }
+        if ((event.key() == UP_KEY || event.key() == DOWN_KEY) && typeLines.size() > visibleLines()) {
+            dialogueScroll = Math.clamp(dialogueScroll + (event.key() == DOWN_KEY ? 1 : -1), 0, typeLines.size() - visibleLines());
             return true;
         }
         int index = event.key() - KEY_1;
@@ -310,7 +370,9 @@ public final class ConversationScreen extends Screen {
             return;
         }
         var who = minecraft.level.getEntity(data.entityId());
-        if (who == null || !who.isAlive() || !who.getUUID().equals(data.id()) || minecraft.player.distanceToSqr(who) > 64 || !minecraft.player.isAlive()) {
+        // once they've cut it short the window stays, so you can read what they said (and your Journal)
+        double reach = data.left() ? 32 : 8;
+        if (who == null || !who.isAlive() || !who.getUUID().equals(data.id()) || minecraft.player.distanceToSqr(who) > reach * reach || !minecraft.player.isAlive()) {
             onClose();
             return;
         }
@@ -343,7 +405,7 @@ public final class ConversationScreen extends Screen {
     @Override
     public Component getNarrationMessage() {
         return Component.literal(data.name() + ", " + data.title() + ". " + (court() ? "Favor " : "Friendship ") + data.level() + ", "
-                + data.levelName() + ". " + data.dialogue() + " " + data.status());
+                + data.levelName() + ". " + TAB_LABELS[Math.max(0, List.of(TABS).indexOf(data.tab()))] + ". " + data.dialogue() + " " + data.status());
     }
 
     // -- drawing -----------------------------------------------------------------------------------
@@ -390,7 +452,7 @@ public final class ConversationScreen extends Screen {
         for (int line = dialogueScroll, y = top; line < Math.min(typeLines.size(), dialogueScroll + visible); line++, y += LINE) {
             int chars = Math.min(typeLines.get(line).length(), shown - lineStarts[line]);
             if (chars <= 0) break;
-            g.text(font, typeLines.get(line).substring(0, chars), textX, y, INK, false);
+            drawLine(g, typeLines.get(line).substring(0, chars), textX, y);
         }
         g.disableScissor();
         if (typeLines.size() > visible) scrollbar(g, top, visible);
@@ -407,6 +469,28 @@ public final class ConversationScreen extends Screen {
         }
         super.extractRenderState(g, mouseX, mouseY, delta);
         drawLevelUp(g, now);
+    }
+
+    /** A line of the box; Journal pages mark headings (# ), dates (Day N:) and steps done or not (✓, ○). */
+    private void drawLine(GuiGraphicsExtractor g, String text, int x, int y) {
+        if (!instant()) {
+            g.text(font, text, x, y, INK, false);
+            return;
+        }
+        if (text.startsWith("# ")) {
+            g.text(font, text.substring(2), x, y, court() ? 0xFF6A2A86 : EDGE, false);
+            g.fill(x, y + 9, x + Math.min(textW - 4, font.width(text.substring(2)) + 6), y + 10, EDGE_LIGHT);
+            return;
+        }
+        int colon = text.indexOf(':');
+        String lead = text.startsWith("✓ ") || text.startsWith("○ ") ? text.substring(0, 2)
+                : text.startsWith("Day ") && colon > 4 && colon < 10 ? text.substring(0, colon + 1) : "";
+        if (lead.isEmpty()) {
+            g.text(font, text, x, y, INK, false);
+            return;
+        }
+        g.text(font, lead, x, y, lead.startsWith("✓") ? STATUS : MUTED, false);
+        g.text(font, text.substring(lead.length()), x + font.width(lead), y, INK, false);
     }
 
     private void drawCard(GuiGraphicsExtractor g, int mouseX, int mouseY) {
@@ -458,8 +542,11 @@ public final class ConversationScreen extends Screen {
         g.fill(x + w, y + 1, x + w + 1, y + 12, darker(color));
         g.text(font, name, x + 7, y + 3, 0xFFFFFFFF, true);
         String subtitle = data.title() + " · " + data.home();
-        int room = boxX + boxW - (x + w + 6) - 6;
-        if (room > 40) g.text(font, font.plainSubstrByWidth(subtitle, room), x + w + 6, y + 3, 0xFFF6EEF7, true);
+        int tabsLeft = tabs.isEmpty() ? boxX + boxW : tabs.getFirst().getX();
+        int room = tabsLeft - (x + w + 6) - 6;
+        // the job and home if they fit, else the job alone; never cut off mid-word
+        String fits = font.width(subtitle) <= room ? subtitle : font.width(data.title()) <= room ? data.title() : "";
+        if (!fits.isEmpty()) g.text(font, fits, x + w + 6, y + 3, 0xFFF6EEF7, true);
         if (mouseX >= x && mouseX < x + w && mouseY >= y && mouseY < y + 13) g.setTooltipForNextFrame(Component.literal(subtitle), mouseX, mouseY);
     }
 
@@ -570,6 +657,37 @@ public final class ConversationScreen extends Screen {
             g.centeredText(font, String.valueOf(number), x + 8, y + (h - 8) / 2, 0xFFFFFFFF);
             String label = font.plainSubstrByWidth(getMessage().getString(), w - 20);
             g.text(font, label, x + 16, y + (h - 8) / 2, active ? INK : 0xFF9A8A9E, false);
+        }
+    }
+
+    /** A paper tab on the top edge of the dialogue box; the open one joins the box. */
+    static final class TabButton extends Button {
+        private final boolean selected, alert, court;
+
+        TabButton(int x, int y, int w, int h, String label, boolean selected, boolean alert, boolean court, OnPress action) {
+            super(x, y, w, h, Component.literal(label), action, DEFAULT_NARRATION);
+            this.selected = selected;
+            this.alert = alert;
+            this.court = court;
+        }
+
+        @Override
+        protected void extractContents(GuiGraphicsExtractor g, int mouseX, int mouseY, float delta) {
+            boolean hover = active && isHoveredOrFocused();
+            int x = getX(), y = getY() + (selected ? 0 : 2), w = getWidth(), h = getHeight() - (selected ? 0 : 2);
+            int paper = selected ? PAPER : !active ? 0xFFD9CCDB : hover ? 0xFFFBF5FC : PAPER_SHADE;
+            int edge = active || selected ? EDGE : 0xFFA592A8;
+            g.fill(x + 1, y, x + w - 1, y + h, edge);
+            g.fill(x, y + 1, x + w, y + h, edge);
+            g.fill(x + 1, y + 1, x + w - 1, y + h + (selected ? 1 : 0), paper);
+            var font = Minecraft.getInstance().font;
+            int ink = !active && !selected ? 0xFF9A8A9E : selected ? INK : hover ? INK : MUTED;
+            g.centeredText(font, getMessage().getString(), x + w / 2, y + (h - 7) / 2, ink);
+            if (alert && !selected) {
+                long t = System.currentTimeMillis() / 400 % 2;
+                if (court) eye(g, x + w - 6, y - 4, 1);
+                else blossom(g, x + w - 6, y - 4, t == 0 ? 1 : 0.7F);
+            }
         }
     }
 
