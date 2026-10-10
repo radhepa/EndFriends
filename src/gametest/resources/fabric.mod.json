@@ -5,7 +5,7 @@
 	"name": "End Expansion game tests",
 	"environment": "*",
 	"entrypoints": {
-		"fabric-client-gametest": ["dev.endexpansion.test.VillagesClientTest", "dev.endexpansion.test.PeopleClientTest"]
+		"fabric-client-gametest": ["dev.endexpansion.test.VillagesClientTest", "dev.endexpansion.test.PeopleClientTest", "dev.endexpansion.test.AnimationClientTest"]
 	},
 	"depends": {
 		"endexpansion": "*"

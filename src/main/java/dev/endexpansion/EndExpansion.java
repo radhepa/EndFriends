@@ -2,6 +2,7 @@ package dev.endexpansion;
 
 import dev.endexpansion.court.CitadelLaw;
 import dev.endexpansion.registry.MobRegistry;
+import dev.endexpansion.anim.Cue;
 import dev.endexpansion.talk.Conversation;
 import dev.endexpansion.world.EndVillages;
 import net.fabricmc.api.ModInitializer;
@@ -27,6 +28,7 @@ public final class EndExpansion implements ModInitializer {
         MobRegistry.wireUp();
         EndVillages.register();
         Conversation.register();
+        Cue.init();
         ServerTickEvents.END_SERVER_TICK.register(CitadelLaw::tick);
         ServerLifecycleEvents.SERVER_STOPPED.register(server -> CitadelLaw.clear());
     }

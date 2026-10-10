@@ -1,5 +1,6 @@
 package dev.endexpansion.client.model;
 
+import dev.endexpansion.client.anim.Poser;
 import dev.endexpansion.client.render.EndRenderState;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.util.Mth;
@@ -10,7 +11,8 @@ import org.jspecify.annotations.Nullable;
  * They share a body plan (head, two arms with optional forearms, two legs with optional shins) and
  * these poses: walking, looking, talking (a Shulkin's lid lifts, a Chorrin's crown sways as it hums),
  * working at their trade, a Shulkin shut in its shell, asleep (Shulkin curled shut, everyone else
- * sitting), carrying a block (thralls), and striking.
+ * sitting), carrying a block (thralls), and striking. On top of these, the clips of the people's animation pack
+ * (tools/animations, played by {@link Poser}); while one plays, the model's own work and talk gestures rest.
  */
 public class FolkModel extends EndModel {
     /** How far the Shulkin lid sits above the collar in the model: closing it lowers it by this. */
@@ -86,6 +88,8 @@ public class FolkModel extends EndModel {
             leftArm.xRot = -0.75F;
             rightArm.zRot = 0.05F;
             leftArm.zRot = -0.05F;
+        } else if (s.pose.any()) {
+            // a clip is playing: it does the gesturing
         } else if (s.working && !s.talking) {
             // busy hands at their trade
             rightArm.xRot -= 0.8F + Mth.sin(t * 0.25F) * 0.25F;
@@ -110,6 +114,7 @@ public class FolkModel extends EndModel {
             body.yRot -= k * 0.25F;
             if (rightForearm != null) rightForearm.xRot -= k * 0.4F;
         }
+        Poser.apply(root(), s.pose);
     }
 
     /** Shulkin curl up shut; everyone else sits with their legs out. */

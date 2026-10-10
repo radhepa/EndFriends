@@ -146,11 +146,16 @@ a `talk/Tale.java`.
 ## The dialogue bank
 
 `src/main/resources/data/endexpansion/dialogue/`: `shulkin.json`, `chorrin.json`,
-`shulkin_child.json`, `chorrin_child.json` and `court.json`, about 2,250 lines in all. Check it with
+`shulkin_child.json`, `chorrin_child.json` and `court.json`, about 9,300 lines in all (Shulkin 2,179 and
+their children 986, Chorrin 2,264 and sprouts 851, the Court 3,023). Check it with
 
     python tools/dialogue/check.py
 
-which enforces the schema and the rules: every topic keyed by minimum level (`"0"` to `"10"`; for
+Big batches of new lines are easiest written as fragment files and merged in with `python tools/dialogue/more.py`
+(its docstring has the format): it checks a fragment against every rule here, refuses lines nobody would hear
+(the shared `work` pool, Court topics every rank overrides) and skips lines the bank already has.
+
+check.py enforces the schema and the rules: every topic keyed by minimum level (`"0"` to `"10"`; for
 level L the lines under the largest key at or below L are used), placeholders limited to `{player}`,
 `{name}`, `{village}`, `{neighbour}`, `{job}`, `{task}`, `{lord}` and `{title}`, lines of at most 200
 characters, no duplicates, and no gendered words: every End person is "they". Adult banks also hold

@@ -121,6 +121,11 @@ public final class ConversationScreen extends Screen {
         popPending = true;
     }
 
+    /** True while their line is still typing out: they gesture as they speak. */
+    public boolean speaking() {
+        return typing();
+    }
+
     private boolean typing() {
         return shown < typeFlat.length();
     }

@@ -1,6 +1,7 @@
 package dev.endexpansion.talk;
 
 import dev.endexpansion.EndEntities;
+import dev.endexpansion.anim.Cue;
 import dev.endexpansion.court.CitadelLaw;
 import dev.endexpansion.entity.EndFolk;
 import dev.endexpansion.entity.Endarch;
@@ -166,6 +167,7 @@ public final class Conversation {
         if (reason.equals("dismissed")) tale.remember(day, folk.getName().getString() + " ended your audience.");
         int level = folk.meter().level(bond.points);
         String said = reason.equals("dislike") ? sayAt(folk, player, topic, bond, 0) : say(folk, player, topic, bond);
+        Cue.send(folk, reason.equals("dislike") ? "annoyed" : "farewell", player);
         send(player, folk, bond, talkPage(folk, bond, said, status), level, false, true);
     }
 
@@ -227,6 +229,7 @@ public final class Conversation {
                 bond.apologized = true;
                 bond.grudge--;
                 String first = folk.firstName();
+                Cue.send(folk, bond.grudge == 0 ? "pleased" : "decline", player);
                 if (bond.grudge == 0) {
                     said = say(folk, player, "apology_accepted", bond);
                     status = first + " forgives you.";
@@ -287,6 +290,11 @@ public final class Conversation {
         if (!player.hasInfiniteMaterials()) held.shrink(1);
         bond.gifts++;
         gain(folk, bond, points);
+        Cue.send(folk, switch (taste) {
+            case "loved" -> "happy";
+            case "disliked" -> "decline";
+            default -> "thanks";
+        }, player);
         Tale tale = folk.tale(player);
         long day = folk.dayNumber();
         String first = folk.firstName();
@@ -492,6 +500,7 @@ public final class Conversation {
         Tale tale = folk.tale(player);
         String dialogue = page.text();
         if (levelUp) {
+            Cue.send(folk, "happy", player);
             String up = bank.pick("level_up", level, folk.people().equals("court") ? folk.job() : null, null, folk.getRandom(), null);
             // in their story and your Journal the banner says it; the quip is for small talk
             if (up != null && page.tab().equals("talk")) dialogue = dialogue + " " + DialogueBank.fill(up, vars(folk, player, bond));

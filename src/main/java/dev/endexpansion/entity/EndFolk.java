@@ -57,6 +57,8 @@ public abstract class EndFolk extends PathfinderMob implements Settler {
     /** Synced pose flags for the renderer. */
     public static final int TALKING = 1, SLEEPING = 2, WORKING = 4, CLOSED = 8, CARRYING = 16;
     private static final EntityDataAccessor<Byte> FLAGS = SynchedEntityData.defineId(EndFolk.class, EntityDataSerializers.BYTE);
+    /** "job|manner", synced so the client can pick animation clips that suit them. */
+    private static final EntityDataAccessor<String> MOTION = SynchedEntityData.defineId(EndFolk.class, EntityDataSerializers.STRING);
     private static final Codec<Map<UUID, Bond>> BONDS = Codec.unboundedMap(UUIDUtil.STRING_CODEC, Bond.CODEC);
     private static final Codec<Map<UUID, Tale>> TALES = Codec.unboundedMap(UUIDUtil.STRING_CODEC, Tale.CODEC);
     /** A conversation nobody has touched for this long (five minutes) is over. */
@@ -206,6 +208,12 @@ public abstract class EndFolk extends PathfinderMob implements Settler {
     protected void defineSynchedData(SynchedEntityData.Builder builder) {
         super.defineSynchedData(builder);
         builder.define(FLAGS, (byte) 0);
+        builder.define(MOTION, "");
+    }
+
+    /** Their job and manner as the client knows them ("archivist|shy"), for the animations. */
+    public String motion() {
+        return entityData.get(MOTION);
     }
 
     public boolean flag(int flag) {
@@ -376,6 +384,10 @@ public abstract class EndFolk extends PathfinderMob implements Settler {
 
     @Override
     protected void customServerAiStep(ServerLevel level) {
+        if (tickCount % 40 == 0 && !(this instanceof EndermanThrall)) {
+            String motion = job + "|" + manner().name().toLowerCase(java.util.Locale.ROOT);
+            if (!motion.equals(entityData.get(MOTION))) entityData.set(MOTION, motion);
+        }
         super.customServerAiStep(level);
         if (talkingTo != null) {
             ServerPlayer partner = talkPartner();

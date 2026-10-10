@@ -34,7 +34,7 @@ Shulkin and Chorrin have children. Nobody in the End has a gender; everyone is "
 
 Right-click any Shulkin, Chorrin or (as a guest) Endarch. The conversation screen has their portrait,
 the line typing out in their voice, numbered replies and a gift button. Friendship shows as ten chorus
-blossoms and the Court's Favor as ten eyes. About 2,250 lines of dialogue change as you grow closer.
+blossoms and the Court's Favor as ten eyes. About 9,300 lines of dialogue change as you grow closer.
 
 - **Story**: everyone has a story of their own. Help with what they ask, come back on other days,
   and they tell you the rest; answer them one of two ways and they give you something.
@@ -44,6 +44,14 @@ blossoms and the Court's Favor as ten eyes. About 2,250 lines of dialogue change
   you until you say sorry.
 
 See [docs/DIALOGUE.md](docs/DIALOGUE.md).
+
+## How they move
+
+Each people has an animation pack of about seventy clips (Shulkin, Chorrin and the Endarchs; the children have
+their own). They idle in character and practise their trade, chat with a neighbour, greet you, gesture while
+they speak and listen while you choose a reply, and react to gifts and tribute, a new level of friendship or Favor,
+a sorry accepted and a blow. A Shulkin's lid peeks and lifts, a Chorrin hums and blink-hops, a Lord looms. See
+[docs/ANIMATIONS.md](docs/ANIMATIONS.md).
 
 ## Finding them
 
@@ -61,14 +69,16 @@ Requires Java 25.
     gradlew build                                              the mod jar, in build/libs
     gradlew runClientGameTest -PendTests=People                in-game test of the peoples, with screenshots
     gradlew runClientGameTest -PendTests=Villages              in-game test of the villages
+    gradlew runClientGameTest -PendTests=Animations            every clip acted out in game, with screenshots
 
 Design and developer notes are in `docs/`:
 - [PEOPLE.md](docs/PEOPLE.md): the peoples and their lore.
 - [VILLAGES.md](docs/VILLAGES.md): the buildings and how villages are generated.
 - [DIALOGUE.md](docs/DIALOGUE.md): conversations, friendship, Favor and the dialogue bank.
+- [ANIMATIONS.md](docs/ANIMATIONS.md): the animation packs and how to author them.
 
-The `tools/` folder holds the Python that makes the models, textures, buildings, village layouts and
-dialogue checks.
+The `tools/` folder holds the Python that makes the models, textures, buildings, village layouts,
+animation packs and dialogue checks.
 
 ## License
 

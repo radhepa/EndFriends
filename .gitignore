@@ -15,3 +15,5 @@ tools/design/out/
 tools/buildings/out/
 tools/villages/out/
 build_*.log
+tools/animations/out/
+build-*.log

@@ -2,6 +2,7 @@ package dev.endexpansion.client.render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import dev.endexpansion.EndExpansion;
+import dev.endexpansion.client.anim.Life;
 import dev.endexpansion.client.model.EndModel;
 import dev.endexpansion.client.model.Geometry;
 import java.util.HashMap;
@@ -90,6 +91,7 @@ public class EndRenderer<T extends Mob> extends MobRenderer<T, EndRenderState, E
         state.aggressive = entity.isAggressive();
         state.swing = entity.getSwingAnimation(partialTicks);
         extract.accept(entity, state);
+        Life.fill(entity, state.pose, partialTicks);
     }
 
     /** Draws {@code <id>_glow.png} at full brightness when the art has one (eyes, gaps, rods). */

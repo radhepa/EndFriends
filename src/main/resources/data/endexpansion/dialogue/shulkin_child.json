@@ -8,7 +8,33 @@
         "*pop* Oh! You're real! The keeper said you were real, but the keeper says lots of things. I'm {name}. My shell's still soft. Don't poke it.",
         "Are you the one who silenced the Dragon? You're smaller than in the play. We do a play. I'm usually the Dragon.",
         "Greetings, honoured visitor. *the lid wobbles* I practised that. Was it good? I'm {name}.",
-        "Did you really kill the Dragon? With your hands? Can I see your hands? ...They're just hands."
+        "Did you really kill the Dragon? With your hands? Can I see your hands? ...They're just hands.",
+        "*the lid lifts a crack, then a bit more* You're taller than the drawing. The archivist's drawing had you as a stick with a sword. I'm {name}.",
+        "Shh, I'm doing this properly. *a tiny clack* Welcome to {village}, Dragon one. I'm {name}. That's all I'm allowed to say to strangers.",
+        "I'm not hiding! I'm standing behind a lamp-post. It's different. I'm {name}. Is it true you silenced the Dragon?",
+        "*pop* You came across the bridge! Did it creak? It creaks for everybody. I'm {name}, and I counted your steps.",
+        "Everyone said you'd come one day. I said tomorrow. I said tomorrow for forty days in a row. Now I'm right! I'm {name}.",
+        "*half-shut lid, one bright eye* Are you the Dragon one, or just somebody tall? I'm {name}. Tall people keep fooling me.",
+        "I'm {name}. My lid first opened in the middle of the closed hours and I yelled so loud the whole Nursery woke. It was a very good naming.",
+        "Oh! You smell like outside. Cold and stone. I'm {name}. Can I tell the others you're here? I'm going to anyway.",
+        "I was told to say 'be welcome' and then stop talking. Be welcome. *a long wobbly silence* I can't stop. I'm {name}.",
+        "Are you a grown-up? You're too loud to be one, but too tall to be one of us. I'm {name}, and I'm confused.",
+        "*the lid pops and flops* Sorry! New people do that to me. I'm {name}. I'll say hello again, slower. ...Hello.",
+        "You're the first person I've met from so far away. Even the Chorrin only come across the bridge. I'm {name}. Hello hello hello.",
+        "Don't be scared of me. I'm small, but I'm very official. I'm {name}, junior keeper of nothing, so far.",
+        "The play makes you much bigger. The play also gives you a very silly sword. I'm {name}. Is the sword real?",
+        "Wait, wait! Let me write it down first. *scribbles on a scrap* 'Visitor. Tall. Smells of outside.' I'm {name}.",
+        "*the lid peeks over a railing* You're the one who ended the Circle, aren't you? The grown-ups say 'the Circle' like it's a secret word. I'm {name}.",
+        "I've been practising a bow in the polished panel all lit hours. *bows; the lid slips* ...That was the good one, I swear. I'm {name}.",
+        "You can look at me, I'm not an Unlidded. I'm {name}. My lid's just soft, that's why it's so wobbly.",
+        "I ask every newcomer three questions. One: you're {player}, aren't you? Right. I forgot the other two. I'm {name}.",
+        "Are you really the Dragon-silencer? The real one? I'm {name}. I was told you'd be taller. Or shorter. Something.",
+        "Good lamp! That's what you say. I say it to everybody. I said it to a Driftray once. I'm {name}, and I'm very glad you're here.",
+        "Nobody here has met someone who saw the end of the Dragon. I'm {name}. Can I sit near you? Just near. Not on.",
+        "{player}! I know your name already. It's in the Archive, in letters this big. I'm {name}, in letters this small.",
+        "*the lid clatters open* I'm {name}! I'm very new, but very serious. The keeper says new things should be held to the light and looked at. So, look!",
+        "You're standing on the Lamp Court tiles. It's all right! They're only tiles. But the grown-ups would say 'ahem'. Hello, I'm {name}.",
+        "Is it true you walked all this way and didn't ride a Driftray? Your legs must be tired. I'm {name}. I'll find you somewhere to sit."
       ]
     },
     "greeting": {
@@ -16,69 +42,153 @@
         "*pop* Oh! It's you!",
         "Good lamp, {player}! That's how grown-ups say hello. I say it better.",
         "Hello, Dragon one! I mean {player}. I'm supposed to say your name properly.",
-        "You're back! I knew it. I wrote it down. I write everything down, like a real archivist."
+        "You're back! I knew it. I wrote it down. I write everything down, like a real archivist.",
+        "Good lamp! That's the first half. The second half is your name. I'm saving it. ...{player}! There. It came out.",
+        "*pop* Hello again! I bet a pebble you'd come back. Nobody took the bet, so I win nothing. I'm winning it anyway.",
+        "*the lid tilts* You're the tall one with the outside smell. I remember. I remember everything. Mostly.",
+        "Hello! I was counting bridge planks. I lost count at forty. I'll start again. Don't tell anyone.",
+        "Oh, you again! Good! I mean, hello. I mean, good lamp. I have three ways of saying it now.",
+        "*peeks out from behind a post* Is it you? It is! Come in, come in, the lamps are lit.",
+        "The keeper says greet people properly, so: good lamp, {player}. There. I did it before I popped."
       ],
       "3": [
         "{player}! Did you bring a story? You always bring a story.",
         "*the lid flips open so hard it clatters* Hi! Sorry. It does that.",
         "I've been waiting by the bridge forever. Well, a bit. The bit felt like forever.",
-        "Good lamp! I learned a new word. 'Provisional'. I don't know what it means. It sounds important."
+        "Good lamp! I learned a new word. 'Provisional'. I don't know what it means. It sounds important.",
+        "{player}! Quick, sit down, I have something to show you. It's a pebble. It has a stripe. Look!",
+        "*the lid flips up with a clack* You're early! Or I'm late. One of us is early.",
+        "There you are! I've been guarding the good end of the bridge. Nobody tried to take it. I'm counting that as a victory.",
+        "Good lamp, {player}. I've got a joke. Why did the Driftray cross the bridge? ...I haven't finished it. I'm working on the end.",
+        "You came back the same day the bridge got a new plank! I think it's for you. Step on it first.",
+        "*waves with all three fingers* Hello, hello! I counted the lit hours since last time. It's a big number. Bigger than I like.",
+        "Oh good, it's you. I was worried it would be someone who wants me to copy out the Bylaws."
       ],
       "6": [
         "{player}! I told everyone you'd come and you did, so now I'm right.",
         "You came! My lid's been open the whole lit hours, waiting.",
         "Hi, hi, hi! I saved you a seat in the Lamp Court. Nobody else wanted it, but still.",
-        "There you are! I've got so many questions. I wrote them down. There are forty."
+        "There you are! I've got so many questions. I wrote them down. There are forty.",
+        "{player}! My lid popped before I even saw you. I think it knew.",
+        "You're here! Everybody keep calm. Don't keep calm. Be excited like me.",
+        "*pop pop pop* Sorry, three pops. One for hello, one for you're back, one for I missed you. They came out all at once.",
+        "I told the lamps you were coming. They didn't say anything back. They're not great at it. But they looked ready.",
+        "I told the weaver I know someone who walks the whole End. They said nobody does. Ha! I'm telling them again.",
+        "There you are! Tell me everything, from the beginning. Slowly. And then again fast.",
+        "I made a greeting just for you. *wiggles all three fingers and pops twice* It's called the {player}. Don't tell anyone else."
       ],
       "9": [
         "{player}! *the lid pops open and stays open* You're my favourite grown-up. The keeper's allowed to be second.",
         "I knew it was you. You walk like nobody else. Thumpy.",
         "You're back! I'm going to be a wayfinder, and when I am, I'll fly you everywhere first.",
-        "My best person is here! That's you. I decided."
+        "My best person is here! That's you. I decided.",
+        "My best person! *the lid opens and stays* I tidied the niche so there's room for visitors. Visitors with long legs.",
+        "{player}, {player}, {player}! I only wanted to say it three times. Now I can start properly.",
+        "I knew you were close. The bridges creak differently when you're coming. Happier.",
+        "You're home! I mean, you're here. But it feels like home. Is that a thing I'm allowed to say?",
+        "*hugs your arm with all three fingers, lid wobbling* Hello! Don't tell the keeper. Actually, tell them. I don't mind.",
+        "I put your name on the first line of today. Before the lamps were even lit. That's how it goes now.",
+        "The lamps were brighter this lit hour. I think they knew you were coming too. Good lamp, best person."
       ]
     },
     "night": {
       "0": [
         "*a tiny, muffled voice from a shut shell* ...I'm not awake. I'm closed. Closed people can't talk.",
         "*the lid cracks open; a sleepy violet eye* Is it a Dragon? ...Oh. It's you. I'm telling the keeper.",
-        "It's the closed hours! Little ones have to be shut. It's the rule. I'm being very good."
+        "It's the closed hours! Little ones have to be shut. It's the rule. I'm being very good.",
+        "*a muffled voice from inside the shell* The closed hours aren't for visiting. It's in the Bylaws. Page... a page. Go away. Nicely.",
+        "*the lid opens one tiny gap; a violet glint* ...Who's there? Say the password. ...I forgot the password. Say something else.",
+        "Mmf. I'm not here. I'm a shell. Shells don't answer. *a tinkling little snore*",
+        "*groggy clack* Is the bell going to ring? ...No? Then why are you here? You're not the bell.",
+        "I was in the middle of a dream with a Driftray the size of the Lamp Tower. Now it's gone. You owe me a Driftray.",
+        "*the lid wobbles open an inch* It's still dark. That means it's not the right time. Check the lamps, tall one.",
+        "*sleepy* ...Is this the part where I'm supposed to be brave? I'm using all my bravery on not opening my lid."
       ],
       "3": [
         "*pop* I wasn't sleeping! I was resting my lid. Is it the bell? Did I miss the bell?",
         "Did you hear an Unlidded? I heard something. It was probably the Driftrays. Probably.",
-        "Can you stay till I close again? Just till then. I'm not scared. I'm checking."
+        "Can you stay till I close again? Just till then. I'm not scared. I'm checking.",
+        "*lid half open, eyes swimming* I had the biggest yawn. It's still in here. Do you want to see it? ...It's gone. It went with the dream.",
+        "Don't tell the keeper I'm awake. Tell them I'm sort of awake. Awake in a closed way.",
+        "I woke up and the dark between the lamps was a bit bigger than I remembered. Is it bigger? Will you check?",
+        "*a wide, slow yawn* Are you doing the rounds, like the lamplighter? You can check my lamp. It's lit. See?",
+        "Mm... I counted to a hundred and fifty and I'm still not sleepy. Maybe if you stay quiet next to my niche.",
+        "I like it when it's quiet and one lamp is still lit. Is it quiet enough? ...There's a Driftray snoring.",
+        "*peeks out* If you're sneaking about, can you sneak me a sweet berry? ...No? Okay. Good dark."
       ],
       "6": [
         "*a sleepy giggle from inside* Shh. If the keeper hears you, they'll write you down.",
         "I had a dream you took me up to the Overworld and the sky was blue and I wasn't even scared.",
-        "Tell me about the cows again. The quiet way. Until I close."
+        "Tell me about the cows again. The quiet way. Until I close.",
+        "*a sleepy little giggle* You smell like outside. It's nice. It's like the bridge but colder.",
+        "Mm. Come in, come in, it's quiet. I'll tell you the dream. I was a Driftray. I could see everything. You were small.",
+        "I can't sleep when the wind is loud. Can you sit here? You don't have to say anything. Just be shaped like a person.",
+        "*the lid creaks up a crack* I wasn't dreaming about you. Okay, I was. You were arguing with a bridge. The bridge won.",
+        "It's all right to wake me. I mean it. I'd rather be woken than miss a hello.",
+        "I was thinking, in my shell, that I'll say 'good dark' to everything I see in the morning. Starting with you.",
+        "If I'm very quiet, will you tell me the one about the rain? In a whisper? Rain is best in a whisper."
       ],
       "9": [
         "*the lid lifts a crack, warm and drowsy* You came to say good dark? Nobody does that. Good dark, {player}.",
         "I can sleep now. The lamps are lit and you're here. That's two good things.",
-        "Will you be here when I open again? Promise? Not a grown-up promise. A real one."
+        "Will you be here when I open again? Promise? Not a grown-up promise. A real one.",
+        "*a sleepy, happy hum* Mm, it's you. I could tell by your footsteps. They're slow and heavy and kind.",
+        "You can wake me anytime. Even for nothing. Especially for nothing. Nothing is my favourite thing to be woken for.",
+        "I dreamt you didn't come back and I woke up with my lid shut tight. And now you're here, so the dream was wrong.",
+        "*the lid stays half open, content* I'll go back to sleep in a bit. I want to look at you a moment first. Is that strange?",
+        "The dark isn't so big when you're here. It shrinks. Like when the lamplighter walks along and everything goes small.",
+        "Will you shut the lamp-shutter gently on your way out? Then I'll know you were here, even after I'm asleep.",
+        "You are the best thing to wake up for. Better than the bell. Don't tell the bell."
       ]
     },
     "hurt": {
       "0": [
         "*the lid slams shut* OW! I'm telling! I'm telling the whole Archive!",
         "*from inside the shell, very small* ...Why did you do that? I'm only little.",
-        "*CLACK* I'm closed now. You can't get me. I'm a fortress."
+        "*CLACK* I'm closed now. You can't get me. I'm a fortress.",
+        "*CLACK* Ow! Ow ow ow! My shell's squishy! It's not meant for that!",
+        "*from inside the shut shell, a thin wail* I'm going to tell the Archive. I'm going to tell it in letters THIS big.",
+        "*the lid slams and rattles* That wasn't a game! I know what a game is! That was a hit!",
+        "*muffled* I can hear you. I'm choosing not to. You can do that when you're shut.",
+        "*muffled* You're not allowed to hit people with soft shells. It's on page one of the Bylaws. Or it ought to be.",
+        "*a shaky voice behind the shell* I'm very small. Did you see how small I am? Look! Small!",
+        "OW. My lid's gone all rattly. The shellwright is going to be so cross with you."
       ],
       "3": [
         "*a wobbly sniff from inside the shell* That's not how you play. That's not the rules.",
         "My shell's still soft, you know! The keeper said! You're not supposed to!",
-        "*peeks out* ...Was it an accident? Say it was an accident."
+        "*peeks out* ...Was it an accident? Say it was an accident.",
+        "*the lid cracks open a hair* Why? I didn't do anything. I didn't even pop at you.",
+        "*sniffles in the shell* Friends don't do that. I wrote that down once. Friends don't.",
+        "Now my shell has a bump. A little one. I'm not showing you. I'm being private.",
+        "*quietly, from inside* I thought you were careful. I told {neighbour} you were careful.",
+        "That was a bad pop. The bad kind. Don't do it again. Please? I'm asking in my polite voice.",
+        "My hinge went all wobbly. I'm going to sit down until it stops. You can sit too, but over there.",
+        "*a long, quiet clack* ...I'm not mad yet. I'm waiting to see if you say something."
       ],
       "6": [
         "*the lid shuts with a little click* I thought we were friends. Are we still friends?",
         "That hurt. I'm not going to cry. Shulkin don't cry. We go quiet. I'm going quiet.",
-        "*the lid peeks open* ...Okay. I forgive you. But only because you're you."
+        "*the lid peeks open* ...Okay. I forgive you. But only because you're you.",
+        "*the lid closes slowly, not slammed* I don't think you meant it. But my lid thinks you did. It's slow to learn.",
+        "It's okay. It didn't hurt as much as it surprised me. I thought you were the one who never would.",
+        "*sniff* I'm doing the quiet thing. Shulkin don't wail. We hum. *a thin, wobbly hum*",
+        "Can you not do it again? That's all. Just that. I'll forgive the rest.",
+        "Do you need to sit down? You look like you feel bad. I feel bad too, but you look worse.",
+        "My lid's saying one thing and I'm saying another. My lid says shut. I say... shut a bit. Then open.",
+        "I'll tell the keeper I tripped. I don't want you written in the Bylaws. Don't make me say it twice."
       ],
       "9": [
         "*the shell trembles, then slowly opens* You didn't mean it. I know you didn't. Right?",
         "I closed. I didn't want to. It just happens. I'm open now. See? Still here.",
-        "Did something scary happen to you? Is that why? You can tell me. I'm a good listener. The keeper says so."
+        "Did something scary happen to you? Is that why? You can tell me. I'm a good listener. The keeper says so.",
+        "*the lid trembles but doesn't shut all the way* ...That wasn't you. That was a bad moment. Wasn't it?",
+        "I'm not scared of you. I'm just surprised my own shell went shut. It's got a mind of its own. Silly shell.",
+        "You don't have to explain. I know you. Only, next time, tell me before you're cross, and I'll hide the soft bit.",
+        "*the lid opens, wet-eyed* It's fine. It's fine. I'm still on your side. I'll always be on your side. Even shut.",
+        "I thought about it and I decided: you're my best person, and best people sometimes get things wrong.",
+        "It hurt in the shell and in the middle bit. But the middle bit's mending already.",
+        "Come and sit down. I'll show you where it hurts. Then you'll be gentler. Not because you're bad. Because you're you."
       ]
     },
     "chat": {
@@ -95,7 +205,22 @@
         "Do you have a lid? No? Where do you go when you're scared? Do you just stand there?",
         "{neighbour} says the void goes down forever. Forever's not a real distance. I asked the archivist. They said 'quite'.",
         "Driftrays are the best. They glide, and their tails glow. I'm going to have one called Biscuit. I don't know what a biscuit is. It sounds nice.",
-        "I can hold my lid shut for a count of a hundred. The record is two hundred and six. The record is mine. I was asleep for most of it."
+        "I can hold my lid shut for a count of a hundred. The record is two hundred and six. The record is mine. I was asleep for most of it.",
+        "I have a pebble for every lit hour I've been good. I have one pebble.",
+        "My shell has a smell. Warm cloth. The keeper says old shells smell of dust and polish. I can't wait.",
+        "The lamplighter's bell has one note. The lamplighter says that's its opinion. I call the note Bong, but only quietly.",
+        "I know every creak on the bridge from the Nursery to the Archive. The fourth one is a liar. It creaks and nothing's there.",
+        "At a naming feast they give you a name, a pebble and a very long speech. I kept the pebble.",
+        "A string ties me to a post when I go near the bridges. I call it Tether. Tether is my friend.",
+        "Grown-ups say 'in a moment' and then it's three lit hours. A moment is longer than it sounds.",
+        "I tried to count all the lamps in {village}. I got to ninety and a Driftray flew past. I started again. I'm on ninety-four.",
+        "If I stand very still I can hear the whole Spire humming, like a huge sleepy bell. It's my favourite sound that isn't me.",
+        "I'm in the sixth niche from the left. Don't tell anyone which. Nobody's supposed to know. Everybody knows.",
+        "I drew the Eye of the Spires in the dust. It looked like a wobbly egg. The weaver said it had character.",
+        "Violet is the best colour. It's also the only colour. But it's the best of the only ones.",
+        "I'm very good at being quiet. Listen. ...Hear that? That's me being quiet. Loudly.",
+        "Yesterday I found a feather-shaped crack in a tile. I named it Quill. Quill has been very good.",
+        "I tried to whistle once. A pop came out, and the lamplighter looked at me for a very long time."
       ],
       "3": [
         "I've started my own archive. It's a crate under my niche. Not a shell box! A normal crate. It has nine pebbles and a feather.",
@@ -110,7 +235,22 @@
         "Want a secret? {neighbour} can't float straight. They wobble. I've seen it. It's only recorded in me, so don't spread it.",
         "Popped chorus is boring. Raw chorus is exciting. The grown-ups say that's the whole problem with being young.",
         "I asked the archivist what the most important record is. They said 'the next one'. I think that's a trick answer.",
-        "My lid made a squeak! A real squeak! The shellwright says it means I'm growing. I squeaked it all lit hours to make sure."
+        "My lid made a squeak! A real squeak! The shellwright says it means I'm growing. I squeaked it all lit hours to make sure.",
+        "I keep a list of who has been kind to me. It's short. It has the keeper, the weaver, a Driftray, and you.",
+        "The weaver gave me a bit of thread and said tie a knot for every promise you keep. I have six knots. Two were small promises.",
+        "I dream of lamps going out one by one and then coming back on in a line, like a bridge. Do you dream? Up there?",
+        "I asked the wayfinder how they know where the islands are. They said 'by remembering where they aren't'. That's not an answer. That's a riddle.",
+        "My elder says I'm half pop, half question. I said I'm all question. They said that's the half that matters.",
+        "I found a gap in the railing I'm not supposed to know about. I won't use it. I'll just know it. Is that fair?",
+        "When I'm sad I count my pebbles. When I'm happy I count them faster. They keep coming out different.",
+        "The Archive has a drawer for lost things. I looked. A tassel, a button, and a pebble with a face. I want the pebble.",
+        "Gliding isn't flying. Flying is what Driftrays do. We glide. We're better at standing.",
+        "I'm learning to keep my lid down during long speeches. The trick is to think of a lamp. A very specific lamp.",
+        "I invented a new way of walking. You float, but sideways. It's called the Slant. It confuses the lamplighter.",
+        "The keeper told me about patience. It sounds like a kind of cloth. I'm waiting to be given some.",
+        "I wrote a very small record about today. 'A visitor came. They were tall.' That's all I had. Tomorrow I'll write more.",
+        "Do you think the lamps get lonely when we close? I leave them a little song. It's not a good song. It has four notes.",
+        "I bet my pop is louder than {neighbour}'s. I tested it from the far bridge. Mine won. {neighbour} isn't speaking to me."
       ],
       "6": [
         "Sometimes I lie in my niche and pretend the lid is the sky and the little cracks are stars. Is that what your sky looks like?",
@@ -125,7 +265,22 @@
         "I'm not scared of the Unlidded when you're here. Is that what having a friend is? It feels like an extra lamp.",
         "I learned to write my name in proper archive hand. It took ages. It's beautiful. I left it in my niche, so you'll have to imagine it.",
         "Sometimes I'm the Dragon in the play and I let the pretend you win. But I'm thinking of the real you.",
-        "I want to know everything. Is that bad? The keeper says it's the most Shulkin thing a person can want."
+        "I want to know everything. Is that bad? The keeper says it's the most Shulkin thing a person can want.",
+        "If I could keep one thing forever, it'd be the moment between the bell and the first game. Everything's possible then.",
+        "I told the old shells in the Nursery how I met you. It was a long telling. I hope they weren't bored. They didn't move.",
+        "When I'm angry I make my lid go small. When I'm happy I make it big. Today it's mediumish. Is that a feeling?",
+        "Sometimes I wish I was already grown, with a hard dark shell and lots of memories. Then I remember a soft shell can squish into small places.",
+        "I asked the archivist if I could write a record of just the silly things. They said it would be the largest record in the Archive.",
+        "The Nursery is loud because everyone's afraid of the quiet. I figured that out myself. Don't tell the keeper I figured it out.",
+        "I think I'm getting taller. I measured against the lamp-post and I'm ten pebbles higher than before. Or the post shrank.",
+        "I miss people who aren't even gone. Does that make sense? I miss the keeper on lit hours they're only in the next room.",
+        "I wrote a tiny rule at the bottom of my crate: 'Be kind to {player}.' Nobody made me. I just wanted a rule.",
+        "A Driftray looked at me yesterday for a whole count of twenty. I think we had a conversation. I think it said I was fine.",
+        "The weaver says void-cloth likes to be sung to. I hum while I wind the thread. The thread's got nicer. Or I have.",
+        "Once I fell asleep in the Archive and woke up under a shelf. The archivist wrote 'child, found' and shelved me. Under C.",
+        "If I could change one Bylaw it'd be the one about no running in the Lamp Court. I'd make it 'running is for the brave'.",
+        "Funny thing. I used to want to be grown right now. Now I want to be grown after you've visited a lot more times.",
+        "I made a rule that each lit hour I'll tell one true thing and one made-up thing and you guess which. Today: I like you. And: I'm a Driftray."
       ],
       "9": [
         "I'm going to tell you my lamp. It's the little one over the Nursery door. Shh. You're the first not-family I've told.",
@@ -139,302 +294,708 @@
         "I made you a lid-tracing. I put my lid on paper and drew round it. It's the shape of me. Keep it, okay?",
         "When I grow up I'm going to come with you to the Overworld. I'll be tall then, and I'll float over all the grass.",
         "I don't pop at you any more. Did you notice? Only good pops. Happy ones.",
-        "The keeper says I'm growing up fast since you came. I don't know if that's good. I hope it's good."
+        "The keeper says I'm growing up fast since you came. I don't know if that's good. I hope it's good.",
+        "Sometimes I practise being you. I walk stompy and say 'noted' in a deep voice. The Nursery cries laughing.",
+        "I saved the first pebble I ever found. It's crooked. I'm giving it to you someday. Not today. When I'm brave enough.",
+        "I think about when my shell goes hard. I'll look like the keeper. I hope I still remember how to pop. Do you think I will?",
+        "I told the keeper you're my family, sort of. They said family is whoever sits with you in the closed hours. So you are.",
+        "You know the feeling when the bell rings and everyone's together? You're that feeling. In a person.",
+        "I wrote a letter to myself for when I'm old. It says: 'Remember {player}. Also remember to eat.'",
+        "If the whole Spire went dark and silent I'd still find you. I'd follow the creak. It's very particular.",
+        "I made a secret pop that only means you. It goes *pop-pop-pop*. Did you hear? That was you.",
+        "When I'm old I want to tell the little ones about the Dragon one. Starting with how they never stopped being kind.",
+        "I draw you every lit hour. They're all bad. But I keep them in order, and in a long row you look like you're walking.",
+        "I don't know what I'll be, but I know I'll be it near you. Or near a window facing where you are.",
+        "The keeper said I smile with my whole shell now. I don't have a smile. I have a pop. Same thing, I think.",
+        "Every night I shut my lid and say good dark to the lamps, the old shells, the Driftrays, the keeper, and you. You're last, because last is the one I take into my dreams.",
+        "I hope the world is kind to you. If it isn't, come here and I'll lend you my lid. It's too small. But the thought counts.",
+        "You made me braver by accident. I didn't ask you to. It just happened. Like rain, I think."
       ]
     },
     "dragon": {
       "0": [
         "Was it big? How big? Bigger than the Lamp Tower? Bigger than two Lamp Towers?",
         "We do a play about you and the Dragon. I'm usually the Dragon. I'm a very good Dragon. I go ROAR.",
-        "The grown-ups say the Dragon circled forever and ever. And then you came, and it didn't. That's the best story in the whole Archive."
+        "The grown-ups say the Dragon circled forever and ever. And then you came, and it didn't. That's the best story in the whole Archive.",
+        "In the play there's a part where the Dragon sneezes and everybody falls over. Did it sneeze? Did it really?",
+        "Did the Dragon have a name once? The keeper says it was just 'the Dragon'. Even Dragons need names. I'd call it Wibble.",
+        "I've only ever known the Dragon as a noise. A big noise far off. Is it quieter now? I can't tell.",
+        "Did the Dragon have a bedtime? Where did it sleep? Did it have a niche? A giant niche?",
+        "The play has a bit where I hold up a lamp and the Dragon runs away. Did you have a lamp? I always forget to ask.",
+        "At the end of the play the Dragon falls and everyone claps. I lie down very slowly. I take my time. It's my best bit.",
+        "Dragons are bigger than bridges, aren't they? Then how did it fit in the sky? There isn't much sky here."
       ],
       "3": [
         "Did it breathe fire? Purple fire? Did you get burnt? Show me where. ...That's just your arm.",
         "The keeper says the Crowned made the Dragon go bad. Is that true? Why would anyone want a bad dragon?",
-        "If the Dragon came back, would you beat it again? Promise you would. Promise on all your fingers. How many have you got?"
+        "If the Dragon came back, would you beat it again? Promise you would. Promise on all your fingers. How many have you got?",
+        "I made a Dragon out of void-cloth scraps. It's lumpy. The weaver said it looks like a shy cloud with opinions.",
+        "When the Circle went round the far side, the grown-ups put us in the Nursery and sang. Out of tune, on purpose, so we wouldn't hear it.",
+        "Did you hear it up close? What did it sound like? A big bell? A big drum? A bell and a drum having an argument?",
+        "Sometimes I still shut my lid when the wind is big. Then I remember: it's only wind. Wind hasn't got a mouth.",
+        "The wayfinder says the Dragon's eyes were two purple moons. I said moons aren't purple. They said these ones were.",
+        "Does a Dragon's tail go on forever? I drew one that went round the whole page and onto the next. The archivist said I was wasting paper.",
+        "The Dragon didn't ask to be loosed, did it? Somebody pushed it. That's the part I keep thinking about."
       ],
       "6": [
         "I used to have dreams about the Dragon. Now I have dreams about you beating it. They're much better dreams.",
         "Were you scared? It's okay if you were. I'd be scared. I'd be shut the whole time.",
-        "I asked the archivist if I could write the Dragon story. They said it's been written. I said not by me."
+        "I asked the archivist if I could write the Dragon story. They said it's been written. I said not by me.",
+        "I had a dream I was the Dragon. I flew all the way to the Citadel and dropped a letter. It said 'be nicer'.",
+        "When you were fighting, did you think of something happy? I think of the Nursery lamp. It helps when I'm scared.",
+        "I don't want the Dragon back. But I'm glad somebody was brave enough that I could write about it.",
+        "{neighbour} says you saved us. I said you saved everybody, including {neighbour}. They went quiet and floated off. Hm.",
+        "I stopped playing the Dragon in the play. I didn't want to be the loser any more. Now I play the lamp. Lamps always win.",
+        "What was it like when it fell? Quiet? I bet it was quiet. I bet everything went quiet at once, like a held breath.",
+        "They sing a song about you in the Lamp Court. The tune is slow. The words are 'and then the sky was still'. I like the sky bit."
       ],
       "9": [
         "When I'm grown I'm going to write the real Dragon story. With you in it properly. Not just the fighting. The you bits.",
         "Do you ever feel sad for the Dragon? I do, a bit. Is that allowed? Keep it between us.",
-        "I'm not scared of the dark middle any more. You made it not scary. That's the best thing anyone's ever done."
+        "I'm not scared of the dark middle any more. You made it not scary. That's the best thing anyone's ever done.",
+        "I wrote you a thank-you in my best hand. It's got forty words. Thirty of them are 'thank'.",
+        "When I'm scared of the dark I picture you standing in front of the Dragon. Then I stand a little taller. In my head. My body stays small.",
+        "I don't think the Dragon is gone-gone. I think it's quiet-gone. Like a lamp that's out. Someone might light it again. Not you. Someone kind.",
+        "Do you know what I want most? A day with no scary in it. Just a plain lit hour. You made that possible. I'm having one right now.",
+        "I'm going to carve your name on the highest lamp someday. The lamplighter says carve small. I'll carve very big and small at once.",
+        "If it ever came back I'd stand next to you. I'd be a very small shield. But a loud one. I'd pop.",
+        "I read the whole Dragon record just for the part where you arrive. It's three lines. I've read it forty times. It's still brave."
       ]
     },
     "village": {
       "0": [
         "This is {village}! It's the best Spire. I haven't been to any others, but I'm sure.",
         "The Lamp Tower's the tallest. I've been up it. Halfway. Then I sat down and the lamplighter carried me.",
-        "The Nursery's where I sleep. It's loud. The old shells sit there too, but they're quiet. They're very good at quiet."
+        "The Nursery's where I sleep. It's loud. The old shells sit there too, but they're quiet. They're very good at quiet.",
+        "There are eleven bridges in {village}. I've been on nine. The other two have rules.",
+        "We have a lamp for every lit hour and one big bell for all of them. The lamplighter keeps them in order, and talks to them.",
+        "The best place to hide is behind the Archive door when it's open. Nobody checks. It's open every lit hour. It's perfect.",
+        "{neighbour} snores. You can hear it across the whole Lamp Court. The grown-ups say 'noted'. I say 'rrrrrr'.",
+        "The Lid Hall echoes. If you shout 'pop' it comes back as 'pop pop pop'. I tested it nine times. It works.",
+        "We have a Roost for the Driftrays and a Nursery for us. The Roost is cleaner. The Roost is also a little smug.",
+        "From the top of the Nursery steps you can see three lamps and a dark bit. The dark bit is the best bit."
       ],
       "3": [
         "{neighbour} is the grumpiest person in {village}. I'm going to make them laugh before I'm grown. I've been trying for ages.",
         "The bridges have rails now. The grown-ups argued for ten years. I'd have just done it.",
-        "The Archive smells like old cloth and lamp-dust. I love it. I'm not allowed in the vault. Yet."
+        "The Archive smells like old cloth and lamp-dust. I love it. I'm not allowed in the vault. Yet.",
+        "The stairs in {village} count differently going up and down. Down has seven. Up has eight. I checked. Someone's cheating.",
+        "Every spire has a proper name but nobody uses it. We say 'the leaning one', 'the tall one', 'the one with the loud step'.",
+        "The weaver's loom clacks at the same time as my heart when I'm excited. I think they planned it.",
+        "There's a bit of the bridge rail that's warmer than the rest. It's where the lamplighter always rests a hand. I rest mine there too.",
+        "In {village} you can tell who's coming by how they glide. {neighbour} glides crooked. The keeper glides like a lamp being carried.",
+        "The Archive has a ladder that goes into the dark. I asked where it goes. The archivist said 'to the next shelf'. That's a very big shelf.",
+        "At the last market the Chorrin brought something sweet and crunchy made of chorus. I ate two. Then I was a bit sick. Worth it."
       ],
       "6": [
         "I know every lamp in {village}. This one's 'Steady'. That one's 'Old Grumble'. I named that one 'Wobbly'. Nobody else calls it that.",
         "{neighbour} gave me a scrap of void-cloth for my archive crate. It's my favourite thing. After you.",
-        "Everyone in {village} talks about you. Even when you're not here. Especially then."
+        "Everyone in {village} talks about you. Even when you're not here. Especially then.",
+        "I know where every loose tile is in {village}. I'll show you the quiet ones so you can sneak. Only to look at lamps. Not for anything bad.",
+        "There's a window in the Archive that looks over the far gap. When the light is right you can see a Chorrin Stead glowing. I wave.",
+        "{village} sounds different at each lit hour. Early is creak. Middle is hum. Late is whisper. I have a name for each.",
+        "I'm trying to learn the name of every person in {village}. I'm on ten. The last ones are very long.",
+        "Sometimes I float to the edge of {village} and look back. It's like a little crown of lamps. I feel proud and I don't know why.",
+        "The lamplighter showed me how to trim a wick. I'm not allowed to light one. I'm allowed to touch the unlit ones. It's a start.",
+        "When it rains, do lamps get wet? I worry about ours. They've never been rained on. They wouldn't know what to do."
       ],
       "9": [
         "When I'm grown I want to live in the tall spire with the balcony, so I can see you coming from the farthest bridge.",
         "Everything in {village} feels bigger when you're here. Or I feel bigger. One of those.",
-        "If we ever have to leave {village}, I'll carry the lamp from the Nursery door. That's my lamp. I already decided."
+        "If we ever have to leave {village}, I'll carry the lamp from the Nursery door. That's my lamp. I already decided.",
+        "I decided {village} is the best place because it's got you in it sometimes. That's the deciding thing.",
+        "Someday I'm going to guard the Nursery door. Not to keep people out. To say good lamp to every new lid.",
+        "I found a place under the bridge where the world stops and it's quiet. I'd take you there. We'd be quiet together.",
+        "The grown-ups say every Spire has a heart-lamp. I think {village}'s is the Nursery lamp. It's lit the longest.",
+        "I draw {village} every few lit hours and each time I add one more thing. This time it's you. You're the big one on the left.",
+        "There's a tile by the Lid Hall door that says 'welcome' in old letters. Whenever you're here, I step on it first. For luck.",
+        "If I were the keeper of {village}, I'd put your name on the gate, under the lamp, where everyone sees it coming in."
       ]
     },
     "other": {
       "0": [
         "The Chorrin are made of stone! Real stone! And they have plants growing on their heads! I want a plant on my head. The keeper said no.",
         "Chorrin sprouts can blink. Just, gone! And then over there! It's not fair. I can only pop.",
-        "The Chorrin don't have mouths. They hum. I hummed back once and a sprout laughed so hard they blinked into a barrel."
+        "The Chorrin don't have mouths. They hum. I hummed back once and a sprout laughed so hard they blinked into a barrel.",
+        "Chorrin are as heavy as three of us. I sat on one's shoulder once. It didn't move. I think it was asleep. Or being polite.",
+        "Their hands are huge! They've got three fingers like ours but fat. Mine are the thin kind. We could swap and see.",
+        "A sprout showed me their sprout. It's a tiny green stem. I showed them my lid. They poked it. I poked their sprout. We were even.",
+        "A Chorrin hum can be a question. It goes up at the end, like a lid. I tried one on a sprout. I think I asked whether it liked bridges. It said yes anyway.",
+        "The Chorrin cook with chorus. I had a bit once. It tickled all the way down. I didn't blink. I only felt like I might.",
+        "Do they sleep in a ball, like a round stone? Or standing up? Or in a pile with all their friends?",
+        "I asked a sprout what their favourite thing is. They hummed for ages. I think the answer was 'everything'."
       ],
       "3": [
         "I've got a Chorrin friend in the Stead. Well, I saw them once. Across a bridge. They waved. That counts.",
         "The grown-ups say we built everything out of the Chorrin's chorus. So our houses are made of their food. That's so weird.",
-        "Chorrin hugs are like being hugged by a wall. A nice wall. A warm wall."
+        "Chorrin hugs are like being hugged by a wall. A nice wall. A warm wall.",
+        "The Chorrin Stead is sunk in the ground like a kiln, round and warm. I wish our Spire could be low sometimes. Just for naps.",
+        "A sprout and I tried swapping places. They blinked to my side of the bridge and I floated to theirs and we met in the middle and said 'oh'.",
+        "Chorrin hum higher when they're happy and lower when they're not. I'm learning the notes. I'm bad at the low one.",
+        "When a Chorrin grows a new bloom everybody comes to look. When I got a new squeak, nobody came. Not even the keeper.",
+        "A sprout once gave me a seed. I put it in a pebble-cup and sang to it. It hasn't done anything. I think it's shy.",
+        "The Chorrin don't have bridges like ours. They have a path that goes down in curls. I got dizzy and had to sit.",
+        "We make purpur out of their popped chorus. I said thank you to a purpur block once. The keeper said 'say it to the Chorrin'. So I did."
       ],
       "6": [
         "The grown-ups are a bit funny about the Chorrin. Polite, but funny. I don't get it. The Chorrin are great.",
         "A sprout told me their crown flowers when they're happy. I wish my lid did something like that. It just pops.",
-        "I want the Old Accord back. The keeper told me about it. Everyone working together. That sounds better than now."
+        "I want the Old Accord back. The keeper told me about it. Everyone working together. That sounds better than now.",
+        "I'm learning the Chorrin hum for 'friend'. It's low and has a wobble. I do it in the Nursery and the old shells listen.",
+        "A Chorrin hugged me with one arm, because the other was full of chorus. I smelled of chorus for three lit hours. The keeper could tell where I'd been from across the Court.",
+        "I asked a sprout if they were afraid of us. They hummed 'a little'. I said 'me too'. We shared a fruit.",
+        "Chorrin laughter looks like shaking. Their whole crown trembles and little petals fall. I collected eight. I'm keeping them for something.",
+        "I'm not allowed to visit the Stead alone. I'm allowed to wave from the bridge. I wave very hard so it counts as visiting.",
+        "The grown-ups say 'we are not the same' about the Chorrin and then they say 'but we are equals'. I think both are true. Is that allowed?",
+        "Sprouts get to blink out of trouble. We get to shut our lids. We're equal. But I want the blinking one."
       ],
       "9": [
         "When I'm grown I'm going to be friends with the Chorrin properly. Loud friends. Not the polite grown-up kind.",
         "A sprout and I swapped secrets at the market. They said they're scared of us. I said we're scared of everything. We laughed and laughed.",
-        "Do you think Shulkin and Chorrin could be one big family? Like how you're sort of in ours? I hope so."
+        "Do you think Shulkin and Chorrin could be one big family? Like how you're sort of in ours? I hope so.",
+        "If you see my sprout friend, tell them I named a star after them. There aren't any stars. I named a lamp. Same thing.",
+        "I think the Chorrin and the Shulkin are secretly the same people in different clothes. I've told no one. Just you.",
+        "Next market I'm going to give a sprout my best pebble to keep in the Stead. Then a bit of me lives there.",
+        "I want to learn their hum all the way and sing it to the Nursery lamp. It would be the first Shulkin hum-song. I'd be famous. Quietly.",
+        "When I'm grown I'll walk across the bridge on my own and knock on a round door. And someone will say 'come in'. That's the dream.",
+        "The Chorrin have a hum for the kind of friend you keep for a long time. I'm learning it. It's mostly a feeling.",
+        "You know what's best? You treat the Chorrin like us. I noticed. Children notice."
       ]
     },
     "court": {
       "0": [
         "The Unlidded are the tall dark ones. You mustn't look at their eyes. Not even a bit. I shut my lid to be safe.",
         "The Crowned are the Unlidded's masters. They have crowns of eyes! I hope I never see one. I'd pop so hard.",
-        "The keeper says if we're naughty the Crowned will come. I think that's just a keeper thing to say. Right? ...Right?"
+        "The keeper says if we're naughty the Crowned will come. I think that's just a keeper thing to say. Right? ...Right?",
+        "The Crowned are tall and they make no noise. The keeper says they step like thoughts. I don't know what that means. It sounds scary.",
+        "The Unlidded haul blocks all day. They never stop. I'd get tired. I'd sit down on the block.",
+        "The Crowned have hounds that blink from place to place like little black sparks. I saw a picture. I covered it with my hand.",
+        "Is it true they wear crowns made of eyes? Real ones? Do they all blink at once? That would be so noisy.",
+        "In the Nursery they tell us: if you hear nothing at all, hide. I hide a lot.",
+        "The Crowned don't have children. The keeper says so. Where do they come from, then? I asked. The keeper said 'not here'.",
+        "I made up a rhyme: 'Crowned and cold, tall and old, hide your lamp and don't be bold.' The keeper says not to sing it outside."
       ],
       "3": [
         "I saw an Unlidded at the edge of the lamps once. It was holding a block. It looked sad. Are they sad?",
         "The grown-ups go all quiet when you say 'Court'. Watch. Court! ...See? Nobody's here. But they act like someone is.",
-        "Why does everyone have to be afraid of the Crowned? Somebody should tell them to be nicer."
+        "Why does everyone have to be afraid of the Crowned? Somebody should tell them to be nicer.",
+        "A Court ship came past once, very far off. It had a dragon head on the front. I held my lid shut till it was gone.",
+        "I heard that in the Citadels the Unlidded wear purpur collars. Purpur is our colour. Why do they have it?",
+        "The Court is all old law. Our law is about lamps. It's friendlier.",
+        "If you meet a Crowned, don't look at the thing on their head. Look at their feet. The keeper says feet are polite.",
+        "Do the Crowned have a bedtime? Maybe they never sleep. Maybe they stand there thinking all night. I'd go lid-mad.",
+        "Voidmarshals, Riftguards, Heralds... they have so many jobs. We have lamplighter and archivist and weaver and a few more, but none of ours come with a glaive.",
+        "I asked the Archive what's in a Citadel. It's a very thin book. It says 'do not go'. Twice."
       ],
       "6": [
         "I had a dream the Crowned came and all the lamps went out. I woke up and checked every one. They were all lit.",
         "The Unlidded can't look up because it's against the law. That's an awful law. Our laws are about lamps.",
-        "If the Court ever comes, I'm going to be really, really brave. And formal. Like the grown-ups."
+        "If the Court ever comes, I'm going to be really, really brave. And formal. Like the grown-ups.",
+        "Sometimes I think the Crowned are scared too. They have to hide being scared behind all those eyes.",
+        "The Seers can see what's coming. Do they see me? Do they see me being brave? I'd like to be seen being brave.",
+        "I'd like to ask a Crowned one thing: do you ever want to step outside the law? Just for a lit hour?",
+        "What if I wrote the Court a letter that only said 'please be kind'? Would they read it? Would a Herald read it out?",
+        "The keeper told me about guest-law. If you carry the Eyes they won't hurt you. It's a strange law. Eyes for a pass.",
+        "The Court's voices sound warped, like a bell dragged along a bridge. I heard one carried on the wind once. I still hear it.",
+        "I told {neighbour} I wasn't scared of the Court. They said 'your lid's shut'. I said 'it's a hat'."
       ],
       "9": [
         "You'd keep us safe from the Crowned. I know you would. You did the Dragon. The Crowned are just more.",
         "Maybe some of the Unlidded want to be free. Maybe they just need someone to tell them they can look up.",
-        "I'm not as scared of the Court now. I'm still scared. But it's a smaller scared, with you around."
+        "I'm not as scared of the Court now. I'm still scared. But it's a smaller scared, with you around.",
+        "If you go to the Citadel and come back, I'll hang a lamp at the bridge so you can see the way. A big one. I'll ask the lamplighter.",
+        "I think kindness is stronger than eyes. I've no proof. But I've got you as an example, and you're not that scary.",
+        "I draw the Court sometimes with their crowns on backwards. It makes them funny. It makes me braver.",
+        "I'd like to be the one who tells them the Dragon's gone. In person. In a very loud voice. With a lamp.",
+        "Someday the Crowned and the Shulkin might sit together. I picture a long table with lamps on it. And a very patient Herald.",
+        "I'm still scared, but a wee bit less each time. You're the reason. I wrote it down. 'Less scared. Reason: {player}.'",
+        "If a Crowned ever hurt you, I'd find them and I'd pop. As loud as I can. Right in their ear."
       ]
     },
     "overworld": {
       "0": [
         "Water falls out of the SKY? On purpose? Does it hurt? Do you have to catch it?",
         "Cows! Tell me about cows again! They say 'moo'? What does that mean? Is it a word?",
-        "Grass is green and it's on the ground and you walk on it and it doesn't mind? I want to walk on grass. Float on it, really."
+        "Grass is green and it's on the ground and you walk on it and it doesn't mind? I want to walk on grass. Float on it, really.",
+        "Do they have lamps up there? Or is it all just sky and sky and sky? That seems like a lot of sky.",
+        "What's a sheep? Wool on legs? Who wove it? Does it walk away before it's finished?",
+        "Do trees really grow from a seed? Do they know they're growing? Do they get tired?",
+        "I asked what colour the sky is. You said blue. I don't know blue. Is it like violet but cold?",
+        "Fish live in water? And the water doesn't fall? Only some of it does? The rules up there are so strange.",
+        "Is it true the Overworld has no void? Where does it end? Does it end? Or does it just carry on like a bridge?",
+        "What do you eat up there? Do you eat sky? Do you eat grass? I'd eat grass if it was crunchy."
       ],
       "3": [
         "The sun's a lamp nobody lights? Who's its lamplighter? Can I be? I'd be good.",
         "You have night AND day? Which one do you sleep in? Both? I'd sleep in day. It sounds bright.",
-        "Snow is cold water that's soft? I don't understand. I love it. Bring me some. It won't melt here, will it?"
+        "Snow is cold water that's soft? I don't understand. I love it. Bring me some. It won't melt here, will it?",
+        "Do you have a Lamp Court up there? Or is it all just open? I'd get lost. I'd need a rope.",
+        "The sun comes up and goes down, you said. Who pulls it? Do they get tired? Do they get a rest?",
+        "Tell me about boats. They float on water, on purpose? I float on nothing, on purpose. We're alike.",
+        "If I came up, would I stay soft? Or would the air make my shell go dark? I've been wondering for three lit hours.",
+        "I've heard of horses. They're like Grovebacks but fast? And you sit on them? And they let you?",
+        "I dreamt a rainbow. I don't know how I knew the word. Lots of colours in an arch, all at once. Is that real?",
+        "What does morning feel like? Is it like the first lamp of the lit hours, but for the whole sky?"
       ],
       "6": [
         "I drew the Overworld from what you said. Green bottom, blue top, a lamp in the middle. Is it close? Be honest.",
         "Do they have children up there? Do they have lids? Do they have a keeper? Do they have to copy out the Bylaws?",
-        "I want to see a tree. Just one. Our doors are made of trees, the shellwright said. I touched a door for ages. It's warm."
+        "I want to see a tree. Just one. Our doors are made of trees, the shellwright said. I touched a door for ages. It's warm.",
+        "I'd like to ride in a boat. I'd wear my lid very tight. And bring a lamp. And you.",
+        "Do you get frightened of the open sky? I think I'd get dizzy, with no ceiling. Do the clouds hold it up?",
+        "I wrote a list called 'Things Up There I Want To See'. It has forty things. Number one is a cow. Number forty is a cow again.",
+        "Do the people up there have naming feasts? Do they say 'good lamp'? Or something different? I'd like a new greeting.",
+        "I think the Overworld must be loud with so many things. Birds, cows, rain... do you ever get a quiet bit?",
+        "I've decided I'm brave enough to look at a tree. From a distance. And then closer. And then maybe touch.",
+        "You said there are villages up there with doors that open for anyone. Not locked, not hidden. How do they keep things safe?"
       ],
       "9": [
         "When I'm grown I'll visit the Overworld. I'll bring a lamp in case it's dark. You'll show me the cows.",
         "I asked the archivist to start an Overworld shelf just for me. They said there already is one, and it's all from you.",
-        "If I saw rain, I think my lid would pop open and never shut again. Is that bad? It sounds like the best thing."
+        "If I saw rain, I think my lid would pop open and never shut again. Is that bad? It sounds like the best thing.",
+        "I think I'm half Overworld already, from your stories. My lid's got a bit of grass-green in it. Check. ...No? Maybe it's the lamp.",
+        "When I come up I'll wear a big hat so the sun doesn't hit my soft shell. A lid on my lid. A lid-lid.",
+        "Take me to see a cow someday. I'll say good lamp to it. It'll say 'moo'. We'll have a lovely conversation.",
+        "I made a little Overworld in my niche. A green cloth for grass, a blue ribbon for the sky, one pebble for a cow.",
+        "I think the first thing I'll do is lie on the grass and look up. I'll let the sky be bigger than me. Just for a while.",
+        "If the Overworld were a person it'd be you. A big warm thing with stories coming out of it.",
+        "I'll go up when I'm ready. Not yet. But when I do, I want you to be the one who shows me the first tree."
       ]
     },
     "ancestors": {
       "0": [
         "The shulkers in the old cities are our great-great-great-great elders. Lots of greats. They're asleep in their shells. Sort of.",
         "The keeper says when you're very, very old you close and don't open, and you stay a shell forever. I'm not doing that for ages.",
-        "The old ones float you up into the air if you get too close. That's how they say 'go away'. I want to do that."
+        "The old ones float you up into the air if you get too close. That's how they say 'go away'. I want to do that.",
+        "You say good lamp to the old shells when you pass, even if you're in a hurry. Especially if you're in a hurry. I whisper it at the Nursery wall. Just in case.",
+        "Closing is when a Shulkin goes into their shell and stays. It isn't sad, the keeper says. It's just very long.",
+        "Do the old ones have names? I bet they do. I bet they're really long, like ours, but older.",
+        "The old ones' glowing seeds make you float up and up. The wayfinder says it's the only free flight in the End. They don't recommend it.",
+        "Grown-ups say never tap an old shell. It's like tapping someone on the shoulder when they're asleep. Rude, and sometimes dangerous.",
+        "Someday my soft shell goes dark and strong, and when I'm very old I'll sleep in it. I'm not looking forward to that bit.",
+        "The old shells smell of cold dust and lamp-oil. I like it. I don't like that I like it."
       ],
       "3": [
         "The old shells in the Nursery are family. I say good lamp to them. One opened a tiny bit once. I'm sure it did.",
         "Did you see the old ones in the cities? Were they nice? Did they float you? Did you say sorry?",
-        "Sometimes I'm scared I'll close and not open. The keeper says that's ages and ages away. I count the ages."
+        "Sometimes I'm scared I'll close and not open. The keeper says that's ages and ages away. I count the ages.",
+        "I asked the keeper if the old ones remember us. They said 'in their own way'. I said 'what way?' They said 'quietly'.",
+        "Sometimes I put my ear against the Nursery wall and I think I hear a hum. The keeper says it's the lamps. I think it's them.",
+        "If I close forever, who tells my story? The archivist says whoever remembers. So I'd better be memorable.",
+        "I made a little shell out of soft lamp-wax for an old one. It's a present. It's lumpy. They'd like it if they could.",
+        "Do the old ones get lonely in the cities? We left them. I'd be lonely. Can we visit? With lots of lamps?",
+        "The shellwright says the shell is the oldest craft. Older than weaving, older than lamps, older than the Archive. Imagine.",
+        "Some of them get as tall as the Lid Hall door. I'd fit inside with room left for my pebbles."
       ],
       "6": [
         "I think the old ones are dreaming. I hope they dream about us. About the Nursery. About good things.",
         "Grown-ups go all quiet about the old cities. I asked why. The keeper said 'because they're ours, and we left them'.",
-        "When I'm grown and I go to the cities, I'm going to say hello to every single shell. Even if it takes forever."
+        "When I'm grown and I go to the cities, I'm going to say hello to every single shell. Even if it takes forever.",
+        "I'm not scared of closing any more, mostly. It's like a very long sleep with the lamps lit outside.",
+        "The keeper says when an old one closes we put a lamp beside the shell and it stays lit forever. Forever is a long time for a lamp.",
+        "I wonder what it's like inside a shell when it's closed. Is it dark? Is it warm? Is there a little room?",
+        "Sometimes the old ones in the Nursery move their lids by a hair. The keeper says it's the draught. I say it's a hello.",
+        "I want to carve my name inside my shell when it hardens. Small. Only for me and whoever opens it. Or nobody.",
+        "If you meet an old one, tell them {name} says good lamp. They might not hear. But I think the telling counts.",
+        "We don't say dead. We say closed. It sounds softer. It also sounds like a door, which is polite."
       ],
       "9": [
         "If an old one ever floats you, it means they're scared, not mean. The keeper says. So be gentle with them, okay?",
         "When I'm a closed shell someday, I hope I'm somewhere you can visit. You could tell me about cows.",
-        "I told an old shell in the Nursery about you. They didn't say anything. But I think they liked hearing your name."
+        "I told an old shell in the Nursery about you. They didn't say anything. But I think they liked hearing your name.",
+        "When I close someday, put me where the lamps are. And tell the cows about me.",
+        "I think my elder will close before I'm grown. I don't want them to. I told them. They said 'noted'. They said it softly.",
+        "If I ever get lost, I'll go to the old shells. I'd tell them everything. They'd listen without interrupting.",
+        "I wrote a story for the old ones. It's called 'The Day I Met a Tall Person'. It's about you. I read it to the Nursery wall.",
+        "I used to think closing meant ending. Now I think it means keeping. Like a lid over a lamp, which keeps it safe from the wind.",
+        "Do you think you'll close someday? Even though you haven't got a lid? I hope there's a way. I hope you get a place in the Nursery.",
+        "I'll be here for the old shells if you can't be. And you can be there for mine. Deal? Shake on it. Three fingers. Okay, two."
       ]
     },
     "shulker_box": {
       "0": [
         "*pop* Is that a shell box? Made out of real shells? ...Whose shells?",
         "The grown-ups go funny when they see those boxes. Why? Is there something scary inside?",
-        "That's made of somebody's elder. I think. The keeper told me. I'm not supposed to look at it."
+        "That's made of somebody's elder. I think. The keeper told me. I'm not supposed to look at it.",
+        "That box has a lid! A lid with a little handle! Does it pop? Mine pops. Does yours?",
+        "*the lid dips* Is that made of shell? Is it empty? Please say it's empty. I don't want anyone inside.",
+        "My middle did a drop. That's what happens when I see those boxes. Like a bridge plank going missing.",
+        "The keeper says never call them boxes. They say 'a borrowed shell'. But I'm not sure who borrowed it.",
+        "Is it heavy? The old ones are heavy when they're tired. I mean... yes. I don't know what I mean. I'm confused.",
+        "Do you keep your things in that? In someone's shell? Do you say sorry? I'd say sorry. I'd say it every time.",
+        "*backs up a step* I'm not scared of it. I'm just standing over here. For my own reasons."
       ],
       "3": [
         "Can I see inside? No! Don't! I don't want to see. Okay, maybe. No.",
         "Is it heavy? Shells are light. Mine is. Is it heavy because of your stuff, or because of them?",
-        "Please don't open it here. The old shells in the Nursery might hear, and get sad."
+        "Please don't open it here. The old shells in the Nursery might hear, and get sad.",
+        "It's pretty. That's the worst part. It's pretty and it's sad and my lid doesn't know which to do.",
+        "I wonder if the old one knew they'd become a box. Maybe they'd be all right with it. Maybe they wanted to see the world.",
+        "Can I touch it? Just the corner. Just one finger. ...It's warm! Why is it warm? That's strange. I'm going away now.",
+        "You have to ask the shell before you open it. Not out loud. In your head. Say 'excuse me'. It's polite.",
+        "In the Archive there's a record that says a shell can be borrowed and returned. But nothing about how. I looked.",
+        "The shellwright can tell whose shell it was just by looking. They won't say. They say it's rude.",
+        "I've decided I'm not cross, because you didn't know. Do you know now? Yes? Good. Then we're all caught up."
       ],
       "6": [
         "I asked the keeper about your box. They said up there, a shell's just a shell. That's so strange. I'm not just a shell.",
         "If it's someone's elder, I hope you're taking them somewhere nice. Are you?",
-        "I'm not cross. The grown-ups are cross. I'm just sad, a bit. And curious. Mostly curious."
+        "I'm not cross. The grown-ups are cross. I'm just sad, a bit. And curious. Mostly curious.",
+        "I whispered hello to your box and nothing happened. Then something did, a bit. The air went still. I think that's a hello.",
+        "If it goes where you go, it must see lots of things. Can you tell it a story from me? A short one. 'Good lamp.'",
+        "It's strange how sad and curious feel the same in my lid. They both make it flutter.",
+        "You carry it carefully. I watch. You never bang it on things. That's how I know you.",
+        "I made a tiny cloth for it, void-cloth. You could put it over the box when it's raining. If it rains. Up there.",
+        "If you get a new one, don't throw the old one away. Promise? Give it to the Nursery. We'll sit with it.",
+        "My elder says the boxes are a sign the world is bigger and stranger than the Spire. That's very true and I'd like it smaller."
       ],
       "9": [
         "I said hello to your box. Just in case. Whoever it is, they're lucky. They get to go everywhere with you.",
         "You can keep it. You're careful. If it was me in there, I'd want to be with you.",
-        "Is it nice in there, do you think? Do they get to see out when you open it? I hope so."
+        "Is it nice in there, do you think? Do they get to see out when you open it? I hope so.",
+        "I trust you with it. I trust you with everything. You'd never be careless with someone's elder.",
+        "Whoever's in there, I hope they like the Overworld. I hope they get to see a cow.",
+        "I don't mind it any more. It feels like a piece of the Nursery is travelling with you, to keep you safe.",
+        "When you open it, will you whisper a good lamp? Just in case? For me? For both of us?",
+        "If an old one ever chose to go with someone, I think they'd choose someone like you. I mean it.",
+        "Sometimes I dream of the boxes opening and little lamps floating out, all different colours, all wishing the Overworld a good dark.",
+        "Don't worry about the box. Worry about me crying when you leave. I'm doing it now, a bit. Only with my lid."
       ]
     },
     "eyes": {
       "0": [
         "*the lid slams shut* What's THAT? It's looking at me! Put it away! Put it AWAY!",
         "Those are the Crowned's eyes, aren't they? The keeper said if you ever see them, run. I'm running. In a minute.",
-        "*from inside a tightly shut shell* I'm not here. Nobody's here. Go away, scary jar."
+        "*from inside a tightly shut shell* I'm not here. Nobody's here. Go away, scary jar.",
+        "*the lid snaps shut* Eyes! There's EYES! Put them somewhere! Put them under your coat! You haven't got a coat! Under something!",
+        "I can feel them looking even though they're in a pocket. It's like a draught on the back of my lid.",
+        "Are those from a real Crowned? Do they miss them? Are they sad about it?",
+        "*one eye peeks out* I'm not looking. If I don't look, they can't see me. The keeper said. That's the whole rule.",
+        "Those belong to the Court. We don't touch the Court's things. We don't even say 'the Court's things'. I've said it now. Oh no.",
+        "Everything's gone cold. Can you put them away? I'll count to ten, then I'll open. One... two... I'll skip to seven.",
+        "Why do you have them? Did you steal them? Did you borrow them? Did you ask nicely? ...Did they have to say yes?"
       ],
       "3": [
         "Why have you got those? Are you going to a Citadel? Don't. The keeper says a Citadel is the scariest place in everywhere.",
         "*peeks out* Are they... alive? Can they see me? I don't want them to know my name.",
-        "If you carry those, do the Unlidded think you're one of the Crowned? That's clever. And scary. Mostly scary."
+        "If you carry those, do the Unlidded think you're one of the Crowned? That's clever. And scary. Mostly scary.",
+        "Don't hold them near the lamps. The lamps don't like it. I can tell. They flicker.",
+        "They look like a jewel. A mean jewel. I want to look and I don't want to look. My lid's arguing with itself.",
+        "The keeper says they're a pass, like a bridge toll. But the toll is looking. Doesn't that sound odd?",
+        "Do the Unlidded see them and bow? I'd bow too, if I were them. I'd bow right down to the ground. Then I'd hide.",
+        "If you hold them up in the dark, do they glow? Don't. Don't show me. Okay, show me. No. A little. No. Put them away.",
+        "I wrote 'EYES' in my archive crate in big letters. Underneath I wrote 'not my business'. That seemed wise.",
+        "The grown-ups lower their voices when those come out. They're being brave. I'm being brave too. A different kind. The hiding kind."
       ],
       "6": [
         "I know you're brave. But please put those in a different pocket. A far one.",
         "Promise you'll come back if you go to the Citadel. You have to. I've still got so many questions.",
-        "I'm being brave. Look, my lid's only half shut. That's very brave for me."
+        "I'm being brave. Look, my lid's only half shut. That's very brave for me.",
+        "I know you only carry them to be safe. But I don't like how my lid feels. Can you put them away when you're near me?",
+        "I dreamt the eyes opened and winked. I woke up shaking. The keeper said dreams can't wink. They can, though.",
+        "I hope whoever they belonged to wouldn't mind that you're using them for something good.",
+        "When you leave with those, I count to a hundred, then to two hundred. Then I count your footsteps in my head until I fall asleep.",
+        "You must be scared too, a little, even if you don't show it. Brave people are scared. They just carry it neatly.",
+        "I made you a charm. A pebble in a bit of cloth. It isn't magic. It's just from me. Take it to the Citadel. Bring it back.",
+        "I'd like it if you gave them back. Not for the Court. For me. So you'd never need them."
       ],
       "9": [
         "*the lid stays open, just* I'm not closing. Because it's you. But I'm holding the keeper's sleeve. In my head.",
         "If you go to the Court, tell them {village} isn't scared. Even though I am. Say it anyway.",
-        "Come back, okay? Eyes or no eyes. Just come back."
+        "Come back, okay? Eyes or no eyes. Just come back.",
+        "Come back with all your fingers and your whole self. That's my only rule about the Citadel.",
+        "I'll keep a lamp lit on the bridge for you while you're gone. The lamplighter said it's a waste of oil. I said it's not.",
+        "I don't need to see them to be afraid for you. I'm afraid for you anyway. It's the not-seeing that's worst.",
+        "If the Court looks at you with all those eyes, look back with just yours. Yours are the kindest ones.",
+        "I trust you. I trust your eyes more than theirs. Even though you've only got two.",
+        "Tell me everything when you're back. Even the boring bits. Especially the boring bits. Those mean it was safe.",
+        "I've been practising my bravest voice for the day you come back from the Court. It goes: 'Welcome home, {player}.' That's all."
       ]
     },
     "level_up": {
       "0": [
         "I'm putting you in my archive crate! That's a big deal. There's only pebbles in it otherwise.",
-        "You're getting more important. I can tell, because my lid feels funny."
+        "You're getting more important. I can tell, because my lid feels funny.",
+        "Something's different. My lid feels lighter. Did you do something? Or did I?",
+        "Hello again, but sort of better. I can't explain it. It's like a lamp turned up a notch.",
+        "I think we're getting somewhere. I'm not sure where. Somewhere with a nice view.",
+        "You're a little bit more of a person to me than before. Just a little. A pebble's worth.",
+        "I wrote 'maybe friend' in my crate. In very small letters. In smudge-ink, in case I'm wrong."
       ],
       "1": [
         "You're my friend now. Officially. I said 'so recorded' in my head.",
-        "I told the keeper you're nice. They said 'noted'. That's a grown-up yes."
+        "I told the keeper you're nice. They said 'noted'. That's a grown-up yes.",
+        "I've decided something in the middle of a pop: you count as a friend. I don't know the rules for that. I'll make some.",
+        "I told the weaver, 'I have a friend from the Overworld.' They said 'quite'. I said 'quite right'.",
+        "Friends get a lid-nod. It goes like this. *the lid dips once* Did you see? That was for you. It's a good one.",
+        "I'm going to save you a game. For every game I play, I'll save one for you. So I'll always have a game to look forward to.",
+        "We're friends! I'm putting you in the proper section of my crate. The nice section, by the feather."
       ],
       "3": [
         "You're not a visitor any more. You're a regular! Regulars get the good seat.",
-        "I'm going to tell you a secret every time you visit now. Here's the first: I'm scared of the bell. Only when it's loud. It's always loud."
+        "I'm going to tell you a secret every time you visit now. Here's the first: I'm scared of the bell. Only when it's loud. It's always loud.",
+        "I'm telling you the dark-bit thing: it's not the dark I'm afraid of. It's what's in it. And I know what's in it. Nothing. Mostly.",
+        "I've put you on the Lamp Court visitor list. You're the only name on it. I'm the one who writes the list.",
+        "Friends share. I'll share my best hiding place. It's behind the old banner. Don't tell. It isn't that good. But it's mine.",
+        "I made a rule: friends can say 'noted' to me and I can't be cross. It's only fair.",
+        "I feel braver already. It's a small brave. But it's got your shape."
       ],
       "5": [
         "I wrote your name in my niche! Small. Under the lid. The keeper won't find it.",
-        "You're in my top three people. You're number two. Number one is the keeper. Sorry. Okay, a tie."
+        "You're in my top three people. You're number two. Number one is the keeper. Sorry. Okay, a tie.",
+        "You've got a seat in the Lamp Court now, with your name scratched underneath. It's the highest honour a visitor can get. I made it up. It's still real.",
+        "I'd say you're nearly family. But the keeper says 'nearly' is a word that does a lot of work.",
+        "I read the Bylaws, and nowhere does it say you can't be my best friend. So you can. And it isn't against the rules.",
+        "I'm keeping a record of all the things you've done that made me braver. It's page two now.",
+        "I told my elder about you. They said 'good'. Then they went quiet and looked at me with their lid wide open. That's something."
       ],
       "7": [
         "You're number one now. I moved you. The keeper understands. They said they're used to it.",
-        "I taught my lid to stay open for you. It's hard. It wants to pop. I'm making it behave."
+        "I taught my lid to stay open for you. It's hard. It wants to pop. I'm making it behave.",
+        "It's different now. I don't count how many times you've visited. I count how many I want.",
+        "You've got a nickname. I won't tell you. But it's the nicest one I know.",
+        "I want to be like you. But in a Shulkin way. With a lid. And a lamp. And a lot of pebbles.",
+        "I used to wait for you at the Roost. Now I wait by the niche. It's closer. It's more private. You'll see.",
+        "I wrote your name in the margin of the Bylaws. Don't tell. It's the only margin I ever wrote in."
       ],
       "10": [
         "You're my best person forever. Shulkin forever is longer than anybody's. That's how long.",
         "*the soft lid opens all the way* That's how the grown-ups say love. I'm saying it too. Little-sized.",
-        "When I'm grown and I'm an archivist, your page goes first. I've already told everyone."
+        "When I'm grown and I'm an archivist, your page goes first. I've already told everyone.",
+        "I'm putting your name in the vault. The archivist said it takes a thousand years of friendship. I said I've got time.",
+        "You're in every record I'll ever keep. Even if it's about the Dragon. Even if it's about the weather.",
+        "There aren't any more levels, so I'll invent one. It's called 'Stays'. That's us.",
+        "If a Shulkin forgets, the Archive remembers. If the Archive forgets, I remember. If I forget... that won't happen.",
+        "You can have my best pebble. The crooked one. I never let anyone hold it. Hold it. Don't drop it."
       ]
     },
     "gift_loved": {
       "0": [
         "*POP* For ME? Oh oh oh! It's going in my archive crate! Right on top!",
         "It's perfect! It's the best thing I've ever had! I'm going to show everyone!",
-        "*the lid pops open so fast it wobbles* You're the best! The actual best!"
+        "*the lid pops open so fast it wobbles* You're the best! The actual best!",
+        "*the lid flips open and flops back* Is this for ME? Really, truly? I'm going to need a moment. My lid's gone funny.",
+        "I've wanted one of these forever! I mean, I didn't know I did. But now I've got it, I always have.",
+        "Oh oh oh. I'll put it right in the middle of my pebbles, where the special things go. Look, I made the middle bigger.",
+        "That's SO good. That's the best thing anyone's given me this lit hour. Also the only thing. But still.",
+        "*vibrating with joy* I'm going to show the keeper, then the weaver, then the whole bridge, then the lamps.",
+        "Is it rude to hug a present? I'm doing it. If it's rude, I'll say sorry later.",
+        "I'm going to write it in the Archive. 'Gift received. Excellent. Nine lamps out of nine.'"
       ],
       "3": [
         "You remembered! Nobody remembers what I like. Except the keeper. And now you!",
-        "This is going straight to my niche. I'm going to sleep right next to it."
+        "This is going straight to my niche. I'm going to sleep right next to it.",
+        "You remembered what I like! I never told you. Did a Driftray tell you? They gossip.",
+        "My niche is going to be so nice with this in it. The old pebbles will be jealous.",
+        "I'll show it to {neighbour} but only for a little. Then it goes in my shell for safe-keeping. Not literally.",
+        "I don't know what to say. I'm normally full of words. *the lid flutters* ...Thank you. That's the word.",
+        "Every time I look at it I'll think of you. Which means I'll think of you all the time, because I'll look at it all the time.",
+        "I'll give you a pebble back. The second-best one. The best one is staying with the present.",
+        "That's the loveliest thing, and I haven't even finished looking at it yet."
       ],
       "6": [
         "I love it! I love it! Now I'll thank you properly. Thank you, {player}. It is noted and so recorded. There!",
-        "I'll keep it till my shell's all dark and old. That's ages."
+        "I'll keep it till my shell's all dark and old. That's ages.",
+        "It's exactly right. How are you this good at gifts? Do you secretly read my crate?",
+        "I'm going to keep this until my shell goes hard and my lid squeaks and my elder goes quiet. Then I'll still have it.",
+        "I told the whole Nursery you gave me this. They all went 'ooh'. Three of them asked to borrow it. I said no. Politely.",
+        "You've spoiled me. In a nice way. The best way. Do it again sometime? Not today. I need to digest the happy.",
+        "Even the keeper said 'my, my'. That's their highest praise. You've earned a 'my, my'.",
+        "It's so good I don't even want to pop. I want to hold it and not move. This is the stillest I've ever been.",
+        "You must have looked for ages. I can tell. Thank you for looking."
       ],
       "9": [
         "You always know. How do you always know? Is it a Dragon-slayer thing?",
-        "Best person, best present. That's the rule now."
+        "Best person, best present. That's the rule now.",
+        "It's perfect, like you. I mean you're perfect, like it. No. You're both perfect. Done.",
+        "You always bring me the right thing. You're the only one. The rest just bring me what I already have.",
+        "I'm giving you my lid-nod, the one I use for very important things. *the lid dips low and slow* That's thank you.",
+        "This gets the place of honour in my niche. It's a very small niche, so the pebbles had to move over. They volunteered.",
+        "I wish I had something as good to give back. I have a pebble. And a hug. And a song with four notes.",
+        "I'm going to dream about this tonight, and in the dream you'll be there, handing me another one.",
+        "*the lid stays open and glows brighter* Is this what grown-ups mean when they say 'moved'? I'm moved. I feel moved."
       ]
     },
     "gift_liked": {
       "0": [
         "Ooh! Thank you! That's good. That's really good.",
         "For me? Thank you! I'll find it a place. A good place.",
-        "Nice! I'm showing {neighbour}. They'll be so jealous."
+        "Nice! I'm showing {neighbour}. They'll be so jealous.",
+        "Ooh, a present! For me? It's nice. It's really nice. I'll say thank you in a loud voice.",
+        "That's a good one! Not the best, but I can tell you thought about it. Thanks!",
+        "I like it! I like it a lot, like seven lamps' worth. I'll keep it somewhere safe.",
+        "*pop* You're a good present-giver. The keeper says it's rude to say so. But I said it. Hee.",
+        "I don't have one of these yet. Now I do. I'll put it on the left side of my crate.",
+        "Thank you! I'll show it to the lamplighter later. They're picky about gifts.",
+        "That's kind. I'll remember you did that. I remember kind things. It's my hobby."
       ],
       "3": [
         "Thank you! It's not my favourite favourite, but it's very nearly.",
-        "I like it! It can go with my pebbles."
+        "I like it! It can go with my pebbles.",
+        "Oooh, I love it. Almost. Like ninety-nine out of a hundred. The last one is just me being fussy.",
+        "I'll trade you a story for it. No, I'll give you the story free. It's about a Driftray who lost its tail.",
+        "{neighbour} will want this but they can't have it. I'm being firm. I'm practising being firm.",
+        "That's so thoughtful. I'm going to make something with it. I don't know what yet. Something that pops.",
+        "I like it! It's got a good feel. Everything good has a feel. I can tell by holding it.",
+        "That'll look nice on my shelf. I mean my crate. I mean the floor of my niche. I mean wherever I put it.",
+        "You're good at this. I'm giving you a pebble. A good one. Don't lose it."
       ],
       "6": [
         "Thanks, {player}! You're good at presents. Better than the grown-ups. They give us books.",
-        "Ooh. I'm going to trade it at the market. No I'm not. I'm keeping it."
+        "Ooh. I'm going to trade it at the market. No I'm not. I'm keeping it.",
+        "Thank you! Honestly it's much better than what the grown-ups give. They give us sensible things. Sensible things don't pop.",
+        "I'm happy. You can tell because I'm doing my small pop. The big pop is for the loved ones. This is the happy-in-between pop.",
+        "Good one, {player}! You must have been listening. I like it when people listen. It's like being seen.",
+        "I'm going to carry this around all lit hours and show it to everyone and not let them touch it.",
+        "It's lovely. It's a bit shy, like me. They'd get on.",
+        "Mm! You always pick the nicest ones. I trust your picking.",
+        "I'll put this where I can see it when I'm falling asleep. It'll watch over my lamp."
       ],
       "9": [
         "Thank you! Everything from you is good. Even the okay things.",
-        "This goes in the special pile. The you pile."
+        "This goes in the special pile. The you pile.",
+        "Even the okay ones from you are better than the best ones from other people. That's how it works with best people.",
+        "Thank you, thank you! It goes right in the 'from you' pile. The pile is getting taller than the keeper.",
+        "You didn't have to. But I'm glad you did. That's how all the best things happen.",
+        "I like it. I like you more. I like it a lot because of you. It's complicated. I'll draw it.",
+        "Thanks! I'm putting it in the special spot, the one by my lamp. I'll tell it about you at night.",
+        "You really thought about me, didn't you? I can tell. It's in how you hold it out. Very slowly.",
+        "That's my kind of present. A little bit of you inside. Hee."
       ]
     },
     "gift_neutral": {
       "0": [
         "Um. Thank you? What is it?",
-        "Oh. Okay! I'll find a use. Probably."
+        "Oh. Okay! I'll find a use. Probably.",
+        "Oh. Thanks. What is it for? Is it for eating? Is it for wearing? Is it for hitting things?",
+        "It's... interesting. I'll put it with the other interesting things. There are a lot of interesting things.",
+        "I don't have a use for it. But I'll keep it in case a use turns up. Uses do that.",
+        "Hm. It's a sort of present, isn't it? It has the feel. Thank you. I think.",
+        "My crate is full of pebbles and one feather, and now this. It'll fit in the corner where the lost things go.",
+        "*tilts the lid, puzzled* Does it do anything? Does it talk? Does it glow? ...It does nothing. Okay! Thanks!",
+        "I'll ask the weaver what it's made of. I'll ask the lamplighter how it burns. I'll ask the wayfinder if it flies. Then I'll know three things."
       ],
       "3": [
         "Is this a grown-up present? It feels like a grown-up present.",
-        "I'll put it in my archive crate. In the 'don't know' corner."
+        "I'll put it in my archive crate. In the 'don't know' corner.",
+        "It's nice you thought of me. The thing is, I don't know what I think of the thing. But I do know I think of you.",
+        "Hm. It might be a hat. Let me try. ...No. A shelf? ...No. I give up. Thank you.",
+        "I'm not sure how I feel about it. It's like a word I haven't learned yet. I'll look it up.",
+        "I'll show {neighbour}. They know about odd things. They've got an odd-things shelf and everything.",
+        "It's a bit grown-up. I'll grow into it. Like my shell.",
+        "I'll hold on to it till I work out what it's for. Everything has a for. I just haven't found its for yet.",
+        "Thank you! I'll give it a good home. A middling home. A home that doesn't mind."
       ],
       "6": [
         "Hm. It's a bit boring. But it's from you, so it's a bit not.",
-        "I'll ask the archivist what it is. They know everything. Nearly."
+        "I'll ask the archivist what it is. They know everything. Nearly.",
+        "Honestly? I don't get it. But you held it out with such a nice face that I'm keeping it.",
+        "It's not my kind of thing. But it's your kind of thing, so now it's sort of mine.",
+        "I'll put it on the shelf of mysteries. I like that shelf. It has the most mystery per pebble.",
+        "Okay. I'll be honest, since we're friends. I have no idea. Do you? No? Great, we'll find out together.",
+        "I'll keep it close and see if it grows on me. Some things do. Like Lamp Court tiles.",
+        "Maybe I'll give it to the keeper. They like practical things. This is a thing. It might be practical.",
+        "It's weird. I like weird. So I like it a bit. Is that how it works?"
       ],
       "9": [
         "I don't know what it is, but I'm keeping it. Because you.",
-        "Thanks! I'll make it into something. A hat, maybe. Anything can be a hat if you balance it on a lid."
+        "Thanks! I'll make it into something. A hat, maybe. Anything can be a hat if you balance it on a lid.",
+        "Hm! A mystery! I love a mystery. I'm going to sleep on it. Literally. On top of it.",
+        "It's not my favourite. You're my favourite. The present is just the thing you came in carrying.",
+        "I'm going to love it out of loyalty. Watch. It'll work. I'm already getting fond.",
+        "Even plain things look nicer when you hold them out to me. Is that a trick? Do you do that on purpose?",
+        "I'll keep it forever, like all the other things. The pile is getting tall. I'll need a bigger niche.",
+        "I wonder what it does. I'm going to find out, and then I'm going to tell you everything.",
+        "Thank you. I'd have been happy with nothing, but I'm very happy with this nothing-ish thing."
       ]
     },
     "gift_disliked": {
       "0": [
         "*the lid slams shut* No! No no. I don't want it. Take it away!",
         "Eww. Why would you give me that? Is it a joke? Is it a grown-up joke?",
-        "That's the worst present. The keeper would be so cross if they saw."
+        "That's the worst present. The keeper would be so cross if they saw.",
+        "*the lid slams* Ugh! Not that! Not THAT! Why would you bring me THAT?",
+        "Take it away, take it away! It gives me a bad feeling in my hinge!",
+        "*from inside the shell* Tell me when it's gone. I'll be in here. Being a shell.",
+        "That's a horrible present. I don't even have a better word. The word is horrible. It's in the Bylaws.",
+        "I don't want it. Please. I'm saying it nicely. I don't want it, thank you.",
+        "*the lid trembles* That's one of the things I'm not supposed to like, and I don't. See? I'm being good.",
+        "My lid just shut itself. It does that when it disagrees. It disagrees very strongly."
       ],
       "3": [
         "*peeks out* Is it gone yet? Tell me when it's gone.",
-        "I don't like that. Sorry. I'm being honest. The Bylaws say be honest."
+        "I don't like that. Sorry. I'm being honest. The Bylaws say be honest.",
+        "Why would you do that? That makes me sad. Well, you didn't know. But now you do.",
+        "*lid peeks out* Can you put it away somewhere I can't see? Somewhere far? Like the Citadel.",
+        "That's one of the bad ones. The keeper says some gifts give you a gloomy feeling. Now I know what they mean.",
+        "I'm going to tell you something honest: I'd rather have a pebble. Any pebble. Even a dull one.",
+        "Don't be cross if I'm shut for a bit. It isn't about you. It's about the thing. The thing is the problem.",
+        "No, thank you. I'm saying it twice so it counts: no, thank you.",
+        "My elder says never accept a gift that makes your hinge hurt. So I'm not. Sorry."
       ],
       "6": [
         "You didn't mean it, right? You just didn't know. I'll tell you what I like instead. Later.",
-        "That's a no. A polite no. Thank you, but no."
+        "That's a no. A polite no. Thank you, but no.",
+        "I know you didn't mean it badly. But I'm still going to say no. A kind no. With a smile. It's inside my lid, so you can't see.",
+        "Next time, ask what I like. I'll tell you. I like lots of things. Not that thing.",
+        "*sighs* Okay. It's all right. Everybody gets one wrong. That's the one.",
+        "I'll stay next to you while you take it back. That way it's a kind thing, even though it's an unkind thing.",
+        "I don't hate it. I hate how it makes me feel. Those are different. The archivist said.",
+        "I'll still be your friend. I just won't be that thing's friend. Is that okay? That's the arrangement.",
+        "I won't be cross. I'll be sad for a bit, then I'll be fine. Give it a count of a hundred."
       ],
       "9": [
         "I know you're teasing. You are teasing, right? Take it back and I'll forgive you.",
-        "Not that one! Anything but that one! ...Okay, I'm done popping. Still no."
+        "Not that one! Anything but that one! ...Okay, I'm done popping. Still no.",
+        "You know I'd take anything from you, but not that. I'd even take a Dragon's tooth. Not that, though.",
+        "I'm being brave right now. I'm only a little bit shut. Go on, put it away. I'll count to ten and open.",
+        "It's okay, I'll forgive you. You must have been confused. Or you were testing me. Which is worse.",
+        "I love you, but I don't love that. Those are two separate lamps.",
+        "I'll hold your sleeve till the bad feeling goes away. Is that okay? Thanks.",
+        "I think it's a funny joke, but I'm too scared to laugh. Maybe later. At the other end of the bridge.",
+        "Don't worry. I'm not mad. I'm just... *pop* ...a bit shut. Give me one lit hour."
       ]
     },
     "gift_limit": {
       "0": [
         "That's too many presents! My archive crate is full! It's mostly pebbles, but still!",
-        "No more till after sleep! The keeper says one is plenty, and you've done lots."
+        "No more till after sleep! The keeper says one is plenty, and you've done lots.",
+        "Again? You gave me one already today! My hands are full. I've only got six fingers, three each.",
+        "Slow down! One is a gift, two is a lot, three is a lot of lot. Save the rest.",
+        "I can't take more. I'd have to put it in my lid, and my lid is full of dreams.",
+        "No more today! That's a rule. It's a keeper rule, which is the strongest kind.",
+        "You'll spoil me and then I'll want everything and then I'll be a monster. A small one. With a lid.",
+        "Come back after the closed hours. I'll make room. I'll clear the crate.",
+        "You're so generous! The weaver says that's a danger. Too much and I'll pop and I won't stop."
       ],
       "3": [
         "I can't hold any more. I've only got three fingers.",
-        "Save it for next time! Then I've got something to wait for."
+        "Save it for next time! Then I've got something to wait for.",
+        "I'm too full of presents. If I get any more, I'll tip over.",
+        "Wait for the bell to ring again. Then I'll accept one. Maybe two. Maybe the one you've got now.",
+        "Stop! I have to think about all the other ones first. Each one deserves a think.",
+        "Save it for later. Something to look forward to. Waiting is half the fun. The other half is the thing.",
+        "That's enough gifts for today. I'll give you a hug instead. A small one. A one-arm one.",
+        "My niche is full of 'from {player}' things. There's no room. I'm starting a second niche. Don't tell the keeper."
       ],
       "6": [
-        "Enough! Come and play instead. Playing is better than presents. Mostly."
+        "Enough! Come and play instead. Playing is better than presents. Mostly.",
+        "Honestly, the best gift today is that you came. The rest is too much. Come and sit.",
+        "Put it back in your bag. Keep it for me. I'll ask for it when I have room.",
+        "You're giving me too much happy! There's no more space for happy! Let me finish this one first.",
+        "I can't take any more. I mean, I want to. I just can't. My hands are full. So are my pebbles.",
+        "Keep it till tomorrow. Or the day after. Or when I'm much taller. I'll still say yes.",
+        "Okay, okay, let's stop and play instead. Gifts are good. Games are better. Together is best."
       ],
       "9": [
         "You don't need to give me things. Just stay. That's the best present.",
-        "Stop, stop! I'm too happy. My lid's going to fall off."
+        "Stop, stop! I'm too happy. My lid's going to fall off.",
+        "You're spoiling me, and I love it, and I'm still saying no. For now. Tomorrow I'll say yes.",
+        "Don't give me any more. Just sit with me. That's the thing I want most, and it doesn't fit in my hands.",
+        "I have too many pebbles. I have too many everythings. I have the right number of you. Keep that one.",
+        "Hold on to it for a bit. When I come to the Overworld I'll take it then. That's the plan.",
+        "I'm all full up. Not with things. With feelings. You can't give me more feelings. They won't fit.",
+        "Wait, wait. I want to be happy about this one properly first. Then I'll be happy about the next one."
       ]
     },
     "play": {
@@ -442,22 +1003,50 @@
         "Play? With me? *pop* Yes! Lamps and Unlidded! You be the Unlidded. Don't look at my eyes!",
         "You want to play? Okay! Rule one: no touching shells. Rule two: I win.",
         "We could play Dragon! I'll be the Dragon. You be you. You know how it ends.",
-        "Hide and Shut! I shut my lid and you hide, and I count to a hundred. One... I peeked. Sorry. Again."
+        "Hide and Shut! I shut my lid and you hide, and I count to a hundred. One... I peeked. Sorry. Again.",
+        "Let's play Bridge Count! We walk across and count the planks out loud. If we get different numbers, someone's lying, or the bridge is.",
+        "Do you want to play Name the Creak? I step on a plank and you guess which one. Nobody ever wins. It's the best.",
+        "Let's play Tail-Light! We follow the nearest Driftray's glow until it flies away. Then we say 'oh' very loudly.",
+        "Pebble Court! I'm the judge. You're a pebble. You've done something wrong. What did you do? ...Doesn't matter. Guilty!",
+        "Nursery Hush! The first to make a sound loses. Go. ...*pop* I always pop. You win. Again.",
+        "Pop or Not! I show you something and you guess if I'll pop. Here's a feather. ...*pop* Ha! Trick feather.",
+        "We could play Void-Cloth Tag. You chase me, but only on the cloth. Off the cloth is the void. Off the cloth you're out for a count of ten."
       ],
       "3": [
         "Let's play Archive! You do something and I write it down. Go! ...You're just standing there. Noted!",
         "Race you to the Lamp Court! No floating! Wait, I can only float. Okay, floating's allowed.",
-        "Let's play Wayfinder. You be the Driftray. Flap your arms. Bigger! Now glide! You're terrible. Again!"
+        "Let's play Wayfinder. You be the Driftray. Flap your arms. Bigger! Now glide! You're terrible. Again!",
+        "I've invented Lantern Relay. We pass a small lamp from person to person and nobody's allowed to blink. Or pop. Ready? Go.",
+        "Let's play Ledger. We each collect things on the island and write them down. Longest list wins. I'm cheating by writing small.",
+        "I'll be the Dragon and you be the Archive, and you have to record everything I do. ROAR. 'The Dragon roared.' Good. ROAR again.",
+        "Still Lamp! You stand very still and I try to make you laugh. I've never won. You have a very good still.",
+        "Let's play 'Who's the Keeper?' I'm the keeper, you're a naughty lid. Come here. Lid down. We say 'noted' a lot.",
+        "Hide and Shut with a twist: I shut my lid, you hide, and I find you by listening. I'm going to hear your steps. Easy.",
+        "We could race our shadows. Mine's shorter. Yours is longer. We'll see who's faster. Hm, they keep following us."
       ],
       "6": [
         "I made up a game. It's called Guess the Lamp. I point at a lamp and you guess its name. It's 'Steady'. They're all 'Steady' in this game.",
         "Can we do the Dragon play, but you be the Dragon this time? I want to be you.",
-        "Let's play Lid Hall! I'm the speaker. Order! Order! You're out of order for not sitting down!"
+        "Let's play Lid Hall! I'm the speaker. Order! Order! You're out of order for not sitting down!",
+        "Let's play Overworld Day. We pretend it's morning, and everything's new, and we say what we'd see. You first.",
+        "I want to play the Quiet Game. We both stay quiet as long as we can, then I tell you the first thing I thought of. It's always lamps.",
+        "Let's do the Dragon play again but with new bits. I want a bit where the Dragon and the hero become friends. Is that allowed? It's my play.",
+        "What about Lamplighter? I carry the little lamp from one end of the Court to the other and you shout 'wind!' and I have to cover it. It's a scary game.",
+        "Let's play Guess My Pop. I pop and you say what feeling it was. Surprise? Joy? Hunger? That last one is mostly it.",
+        "You pick the game this time. Anything you like. I'll even play the ones I'm bad at. Which is most of them.",
+        "I'll teach you my secret knock. It goes tap-pop-tap-tap. Then you say 'lamp'. Then we both whisper it back. That's a game and a secret."
       ],
       "9": [
         "Play with me forever? Okay, not forever. Until the bell. Until two bells.",
         "Best friend game! The rules are: we're best friends. That's all. We both win.",
-        "Let's play Overworld! I'll be the rain. You be the cow. Moo! ...Is that how cows go? Do it properly."
+        "Let's play Overworld! I'll be the rain. You be the cow. Moo! ...Is that how cows go? Do it properly.",
+        "We could play Remember When. I start: remember when you first came and I hid behind the lamp-post? Your turn.",
+        "Let's play Best Friend Ledger. We write down every game we've ever played and give each one a dot. I've got fifty already. Every dot is a pop.",
+        "I made a game just for us. It's called Walk. We walk around {village}, and I show you every place, and nobody wins. It's perfect.",
+        "Pretend game: we're old and wise and we sit on a ledge and say 'ah' at things. Ah. Ah. Ahh. ...I'm very good at old.",
+        "Let's play Hello Goodbye, where we pretend to leave and come back. I'll do goodbye. You do hello. Then we swap. It's a long game.",
+        "Whatever we play, let's play it again after. And after that, again. That's the only rule.",
+        "I made a pretend bridge across the void that only we can walk on. It's made of games. Come on, it holds."
       ]
     },
     "walk_off": {
@@ -468,11 +1057,37 @@
         "I'm not playing with you. Not today. Maybe not ever. Maybe tomorrow. *they glide off in a huff*",
         "*the soft lid clicks shut* I'm a closed shell now. Closed shells go away. *they bob off toward the lamps*",
         "My shell still hurts a bit. I'm going somewhere you're not. *they turn round and drift away, lid low*",
-        "The keeper says if someone's mean, you walk away. So I'm walking. Floating. Same thing. *off they go*"
+        "The keeper says if someone's mean, you walk away. So I'm walking. Floating. Same thing. *off they go*",
+        "I'm going to go and sit with the old shells. They don't hit people. *they glide off, lid held low*",
+        "I don't like how that felt. I'm going. *they turn their back and float away, shell tilted*",
+        "*the lid snaps shut* Bye. I'm a rock now. Rocks don't talk to people who hit. *they bob off*",
+        "I'm walking away. I'm using my angry float. See? It's very stiff. *they drift off, rigid as a lamp-post*",
+        "I want my elder. *a small, wet voice* I'm going to get them. *they scoot away with the lid trembling*",
+        "*the lid hovers a hair* You're not on my list any more. I'm crossing you out. In my head. *they leave*",
+        "I need to go and count my pebbles. When I'm upset, I count. It's the only thing that helps. *off they float*",
+        "That was mean. I'm telling the lamps. They'll remember. *they float off, muttering to the nearest one*",
+        "Don't follow me. I'm not playing. *the soft lid clacks shut* I'm going to the Nursery to sulk. Properly. *zoom*",
+        "*a shaky sniff* I'm only little. I'm going somewhere with no big people. *they slip behind a pillar and away*",
+        "I'm going to hide in the Archive. Nobody looks in the Archive for sad people. *they scoot off, head low*",
+        "*the lid drops* The keeper says when someone's unkind you leave and think about nice things. I'm thinking about nice things. Bye.",
+        "Hmph. *they turn in the air, very slowly, to show how upset they are, and then drift off*",
+        "I'm not talking to you until the bell rings. Twice. Maybe three times. *they float away stiffly*",
+        "*from behind a half-closed lid* I thought you were different. I thought. I'm going now. *they glide off, not looking back*",
+        "You don't get to be near me today. Those are the rules. Not mine. The lamps'. *they bob away, lid shut*",
+        "I'm going to go and be small somewhere. *they curl in on themselves and drift away*",
+        "My lid doesn't want to be open near you. So I'm going where it can. *they scoot off, lid clamped*"
       ],
       "6": [
         "*the lid wobbles shut* I don't understand why you did that. I'm going to go and think about it. Somewhere else.",
-        "I'm not cross. I'm sad. Sad is worse. *they float off slowly, looking back once*"
+        "I'm not cross. I'm sad. Sad is worse. *they float off slowly, looking back once*",
+        "I thought you were safe. *the lid sinks slowly* I need a moment. A big moment. *they float off, looking small*",
+        "I'm not going to shout. I'm just going to go and be sad where you can't see it. *they drift away, lid low*",
+        "*the lid closes without a clack* I'll come back when the sad is smaller. It's very big right now. *they glide off*",
+        "It's not that it hurt. It's that it was you. *a quiet sniff* I'll be in the Nursery. *they float away slowly*",
+        "I'm going to tell the old shells about it. They'll understand. They've had worse. *they drift off, lid half open*",
+        "Don't say sorry yet. I won't hear it properly. Say it after I've had my sad. *they glide off with a small, wobbly hum*",
+        "I need to think about whether you meant it. I'm slow at thinking when I'm hurt. *they turn away, lid trembling*",
+        "*the lid dips* I'm going to be brave and go quietly instead of being cross. Going quietly is harder. *they go*"
       ]
     },
     "busy_off": {
@@ -483,17 +1098,45 @@
         "The lamplighter said I could ring the bell! Once! I have to go before they change their mind!",
         "I left my pebbles out by the bridge! If a Driftray takes them I'll never forgive it! Bye!",
         "Sorry, sorry, I'm late for the Nursery story. The keeper does voices. I can't miss the voices! *zoom*",
-        "{neighbour} is waving at me. That means a game. Bye! I'll tell you who won later!"
+        "{neighbour} is waving at me. That means a game. Bye! I'll tell you who won later!",
+        "Oh! I can hear the bell for Nursery games! I have to go or I'll lose my place in the line! Bye! *pop and gone*",
+        "I have to go and check my pebbles! They might have run away! Pebbles do that! Bye! *zoom*",
+        "Shh, I can hear {neighbour} calling. It's the 'come and see' voice. I love that voice. *they bob away at speed*",
+        "I forgot, I'm supposed to be the lamp in the game! A lamp can't leave! Bye! *they dart off*",
+        "There's a Driftray on the Roost and it's looking at me! I have to go and look back! *off they float*",
+        "I'm so sorry, I promised to hold the end of the rope. It's a very important rope. Bye! *whoosh*",
+        "My turn! My turn! It's my turn to be It! Bye, {player}! *the lid rattles as they speed off*",
+        "I just remembered a brilliant thing and I have to tell everyone before it falls out of my head! *zoom*",
+        "Someone said 'free pebbles' and I didn't check where! Bye! I'm going to check! *pop*",
+        "The keeper's calling my whole name. That's never good. Or it's very good. I have to find out! *they zip off*",
+        "Sorry! I think I just heard the lamplighter laugh, and it's rare, and I want to see! *off they scoot*",
+        "It's sweet-berry time in the Nursery! Not that I'm hungry. I'm just very interested in the schedule. Bye!"
       ],
       "3": [
         "I want to stay, but they need a lamplighter for the game, and I'm the best one. Come and watch? Later? Bye!",
         "Don't go anywhere! I'm just going to win one game really quickly and come back. Quickly for me.",
-        "I'd stay, but I promised I'd be the Unlidded. You can't break a promise to be the Unlidded. It's in the Bylaws."
+        "I'd stay, but I promised I'd be the Unlidded. You can't break a promise to be the Unlidded. It's in the Bylaws.",
+        "I'd stay, but there's a game of Bridge Count and they need a fair counter. That's me. I'll be right back. Probably.",
+        "I'll come back in a count of fifty! A real count! Not a grown-up count! Just wait there and don't move!",
+        "Don't miss me too much! I'll be back before you finish thinking about me. Start thinking now.",
+        "The others are calling. I'll tell them you said hello. They'll say 'who?' I'll say 'the Dragon one'. They'll go 'ooh'.",
+        "I've got to go and win something. Anything. A game, a pebble, a staring contest. I feel lucky.",
+        "I'm sorry. The game's about to start. I'm the only one who knows the rules, because I made them up. Bye!",
+        "Hold that thought! I'll be back for it! Don't let it get away!",
+        "A whole line of Driftrays just landed on the Roost! I have to count! It's a once-in-a-lit-hour thing! *zoom*"
       ],
       "6": [
         "I'm going to play now, but I'll think about you the whole time. Even when I'm hiding.",
         "Save my place! Nobody else can have it. I'll be back after one game. Two games. Back soon!",
-        "*the lid pops open, then droops* I have to go and play. I don't even want to. Okay, I want to a bit. Bye, best person!"
+        "*the lid pops open, then droops* I have to go and play. I don't even want to. Okay, I want to a bit. Bye, best person!",
+        "I'll be back, I promise. I'd stay if I could. Wait for me by the bridge? Please? I'll run the whole way. Float, I mean.",
+        "Sorry sorry sorry! They need me in the game, but I'm already missing you. See? I'm doing both.",
+        "Save what you were going to say. I want to hear it. Save the whole thing. Keep it warm.",
+        "I'll play one round and win it for you. Then I'll bring the win here. It'll be a present.",
+        "The others called but I said I'm busy. They said 'with what?' I said 'with {player}'. And then I got dragged away.",
+        "Don't leave while I'm gone. If you have to, leave a sign. A pebble. A feather. A scrap. Anything. So I know.",
+        "It'll be quick. I mean slow. I mean, whatever length makes me come back the soonest.",
+        "I'll think of you in the middle of the game. I'll lose on purpose, a bit, to get back faster."
       ]
     },
     "apology_accepted": {
@@ -502,7 +1145,32 @@
         "Okay. I forgive you. But you have to play a game with me after. That's the rule of forgiving.",
         "*pop* Okay! Sorry is a magic word. The keeper says so. It worked.",
         "I was going to be cross for a hundred years, but that's too long. You're forgiven. Don't do it again.",
-        "Fine. Forgiven. I'm putting it in my archive crate: '{player} said sorry.' So it's official."
+        "Fine. Forgiven. I'm putting it in my archive crate: '{player} said sorry.' So it's official.",
+        "*the lid opens a little* All right. I forgive you, but you have to promise to be gentle with soft shells. All soft shells.",
+        "You said sorry like you meant it. I can tell. You said it with your whole self. Apology accepted. So recorded.",
+        "I'll forgive you now, because staying cross gives me a funny feeling and I don't like it. Hurry, before I change my mind.",
+        "Sorry is a good word. It's one of the best. Better than 'pop'. Okay, equal with pop.",
+        "*pop* Fine. We're friends. But next time you say sorry first and hit never. That's the proper order.",
+        "The keeper says forgiving is like opening a lid. You have to do it yourself. So I did it. Look, it's open.",
+        "Apology noted! I'm writing it down: 'Sorry received. All better.' See? It's in the crate.",
+        "Okay, okay, I'm not cross. I'm only a bit cross. A very, very small bit. It's gone. There.",
+        "I forgive you, and my lid forgives you too. We checked. Together.",
+        "Thank you for saying it. It was hard, I could tell. Grown-ups go stiff when they say sorry.",
+        "*peeks out and then out all the way* All right. You can stay. I'll play something gentle. Not a Dragon game.",
+        "I wasn't sure you would. But you did. That's what makes it count.",
+        "I accept! In the proper grown-up way. *bows, nearly drops the lid* There. Official.",
+        "It's okay. Everyone pops wrong sometimes. I popped right into the lamplighter's best lamp-glass yesterday. It's still being swept.",
+        "Sorry makes the bad feeling smaller. Did you know that? It does! I just checked. It's smaller.",
+        "I'll forgive you. But you owe me a story. A long one, with a cow in it.",
+        "Forgiven. A good sorry gets a dot of ink in the margin. Yours has one. It's a very little dot, but it's real.",
+        "It's all right. Come here, sit down. Let's not talk about it again. Let's talk about something nice.",
+        "*the lid slowly lifts* There. That's my forgiving noise. It's a click. Did you hear? That's a done.",
+        "I'm glad you told me. It's harder not to say it. I'd rather have a sorry than a silence.",
+        "Hm. I'll forgive you a bit now, and the rest on the way. Forgiveness comes in parts.",
+        "That was a very nice sorry. If sorry were a lamp, it'd be a good steady one.",
+        "We can be friends again. But no more hitting. I've written it in the Bylaws. At the bottom. In my handwriting.",
+        "I forgive you. The old shells forgive you too. I asked on the way over. They didn't object.",
+        "Hooray! The best kind of friend is the kind who said sorry. Those are extra strong. The keeper says."
       ]
     },
     "apology_wary": {
@@ -511,37 +1179,34 @@
         "I heard you. I'm still a bit cross. The keeper says cross goes away slowly, like the closed hours.",
         "Maybe. Not yet. I'm thinking about it. I think slowly when I'm sad.",
         "*the lid wobbles, then stays low* I want to forgive you. My lid doesn't yet. It's got its own mind.",
-        "Say it again tomorrow. If you still mean it tomorrow, then it's real."
+        "Say it again tomorrow. If you still mean it tomorrow, then it's real.",
+        "I heard you, and I'm thinking about it. Thinking is slow. Please wait while I think.",
+        "*from behind a half-shut lid* A sorry is a good start. But my shell isn't finished listening.",
+        "Maybe. Ask me again after the bell. I'll know better by then.",
+        "I want to say yes. My lid wants to say yes. The rest of me is still a bit shut.",
+        "That's a nice sorry, but I'm still sore. You can't see it but it's there. Like a bruise on a shell.",
+        "I'll forgive you when the sore stops. Not before. That's my rule. I invented it this lit hour.",
+        "I'm not saying no. I'm saying not yet. Those are different words. They're cousins.",
+        "*the lid wobbles* Come back tomorrow and say it again. If it's the same sorry, I'll believe it.",
+        "Hmm. I'm weighing it. On the scales in my head. They're a bit wobbly.",
+        "It's a good sorry, I think. It's just that my lid has a long memory. Longer than I do.",
+        "I'm still cross. Cross takes a while to leave. It's like a Driftray: it only goes when it wants.",
+        "Not yet. But I like that you said it. Keep saying it. I'll catch it eventually.",
+        "I'm going to sit here quietly, and you stay over there quietly, and we'll see how the quiet goes.",
+        "I appreciate it. That's a grown-up word. It means 'I heard you, but I'm not done being sad.'",
+        "It helps a bit. Only a bit. The bit is going to grow, but slowly.",
+        "*peeks out, then back in* Still thinking. Please don't poke. Poking resets the thinking.",
+        "My elder says a forgiveness that comes too fast is the kind that breaks. I want mine to hold.",
+        "Say it with a gift tomorrow. Not a big one. A feather would do. Or a small yes.",
+        "I'm not cross exactly. I'm... squashed. Squashed takes longer than cross.",
+        "That's a start. A good one. Come back later for the middle.",
+        "I believe you meant it. I just need my shell to believe it too. It's stubborn.",
+        "If you hang about nicely for a bit, maybe I'll forgive you without noticing. That's how I forgave the weaver once.",
+        "I'm saying 'maybe' with my whole lid, so you know it's a real maybe and not a polite one.",
+        "Try again when I'm less wobbly. I'll be less wobbly soon. Probably.",
+        "Sorry heard. Sorry filed. Sorry under 'pending'. That's a good folder. It's one step from 'accepted'."
       ]
     }
   },
-  "gifts": {
-    "loved": [
-      "minecraft:chorus_fruit",
-      "minecraft:snowball",
-      "minecraft:feather",
-      "minecraft:glow_ink_sac",
-      "minecraft:amethyst_cluster",
-      "minecraft:spyglass"
-    ],
-    "liked": [
-      "minecraft:amethyst_shard",
-      "minecraft:end_rod",
-      "minecraft:cookie",
-      "minecraft:sweet_berries",
-      "minecraft:glow_berries",
-      "minecraft:paper",
-      "minecraft:popped_chorus_fruit",
-      "minecraft:slime_ball",
-      "minecraft:purple_candle"
-    ],
-    "disliked": [
-      "minecraft:shulker_shell",
-      "minecraft:shulker_box",
-      "minecraft:purple_shulker_box",
-      "minecraft:book",
-      "minecraft:rotten_flesh",
-      "minecraft:dragon_head"
-    ]
-  }
+  "gifts": {"loved": ["minecraft:chorus_fruit", "minecraft:snowball", "minecraft:feather", "minecraft:glow_ink_sac", "minecraft:amethyst_cluster", "minecraft:spyglass"], "liked": ["minecraft:amethyst_shard", "minecraft:end_rod", "minecraft:cookie", "minecraft:sweet_berries", "minecraft:glow_berries", "minecraft:paper", "minecraft:popped_chorus_fruit", "minecraft:slime_ball", "minecraft:purple_candle"], "disliked": ["minecraft:shulker_shell", "minecraft:shulker_box", "minecraft:purple_shulker_box", "minecraft:book", "minecraft:rotten_flesh", "minecraft:dragon_head"]}
 }

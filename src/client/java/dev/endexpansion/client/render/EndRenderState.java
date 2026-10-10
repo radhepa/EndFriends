@@ -1,5 +1,6 @@
 package dev.endexpansion.client.render;
 
+import dev.endexpansion.client.anim.Pose;
 import net.minecraft.client.renderer.block.BlockModelRenderState;
 import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 
@@ -14,4 +15,6 @@ public class EndRenderState extends LivingEntityRenderState {
     public float grove = 1.0F;
     /** The block a thrall carries. */
     public final BlockModelRenderState carriedBlock = new BlockModelRenderState();
+    /** People: the clips they're acting out this frame (tools/animations). */
+    public final Pose pose = new Pose();
 }

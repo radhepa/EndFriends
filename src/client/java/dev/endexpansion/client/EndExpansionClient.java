@@ -1,6 +1,11 @@
 package dev.endexpansion.client;
 
 import dev.endexpansion.EndEntities;
+import dev.endexpansion.anim.Cue;
+import dev.endexpansion.client.anim.Life;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.minecraft.client.Minecraft;
+import net.minecraft.world.entity.LivingEntity;
 import dev.endexpansion.client.model.DriftrayModel;
 import dev.endexpansion.client.model.FolkModel;
 import dev.endexpansion.client.model.Geometry;
@@ -58,11 +63,42 @@ public final class EndExpansionClient implements ClientModInitializer {
         EntityRendererRegistry.register(EndEntities.VOIDHOUND, ctx -> new EndRenderer<>(ctx, "voidhound", "voidhound_pup", VoidhoundModel::new, 0.5F,
                 (e, s) -> s.sitting = e.isInSittingPose()));
 
+        animations();
         ClientPlayNetworking.registerGlobalReceiver(TalkPayload.TYPE, (payload, context) -> {
             var client = context.client();
             if (client.gui.screen() instanceof ConversationScreen screen && screen.matches(payload)) screen.update(payload);
             else if (payload.opening() && client.player != null) client.gui.setScreen(new ConversationScreen(payload));
         });
+    }
+
+    /**
+     * The peoples' animation packs (docs/ANIMATIONS.md): who plays them, when they can't (asleep, fighting, a
+     * Shulkin shut in its shell), and the tags that pick clips (job, manner, rank, at work).
+     */
+    static void animations() {
+        java.util.function.Predicate<LivingEntity> able = e -> e instanceof EndFolk f && !f.isAggressive() && !f.flag(EndFolk.CLOSED)
+                && !f.flag(EndFolk.SLEEPING);
+        Life.register(EndEntities.SHULKIN, new Life.Kind("shulkin", able, EndExpansionClient::tags, e -> false));
+        Life.register(EndEntities.SHULKIN_CHILD, new Life.Kind("shulkin", able, EndExpansionClient::tags, e -> true));
+        Life.register(EndEntities.CHORRIN, new Life.Kind("chorrin", able, EndExpansionClient::tags, e -> false));
+        Life.register(EndEntities.CHORRIN_CHILD, new Life.Kind("chorrin", able, EndExpansionClient::tags, e -> true));
+        Life.register(EndEntities.ENDARCH_LORD, new Life.Kind("endarch", able, (e, t) -> { tags(e, t); t.add("rank:lord"); }, e -> false));
+        Life.register(EndEntities.ENDARCH_MARSHAL, new Life.Kind("endarch", able, (e, t) -> { tags(e, t); t.add("rank:marshal"); }, e -> false));
+        Life.register(EndEntities.ENDARCH_RIFTGUARD, new Life.Kind("endarch", able, (e, t) -> { tags(e, t); t.add("rank:riftguard"); }, e -> false));
+        // in a conversation: 2 while their line types out, 1 while you choose what to say
+        Life.conversation = e -> Minecraft.getInstance().gui.screen() instanceof ConversationScreen c && c.data().entityId() == e.getId()
+                ? (c.speaking() ? 2 : 1) : 0;
+        ClientTickEvents.END_CLIENT_TICK.register(Life::tickAll);
+        ClientPlayNetworking.registerGlobalReceiver(Cue.TYPE, (cue, context) -> Life.cue(cue.entityId(), cue.trigger()));
+    }
+
+    /** job:&lt;job&gt; and manner:&lt;manner&gt; from the synced motion string, and working while at their workplace. */
+    static void tags(LivingEntity e, java.util.Set<String> tags) {
+        if (!(e instanceof EndFolk f)) return;
+        String[] motion = f.motion().split("[|]");
+        if (motion.length > 0 && !motion[0].isEmpty()) tags.add("job:" + motion[0]);
+        if (motion.length > 1 && !motion[1].isEmpty()) tags.add("manner:" + motion[1]);
+        if (f.flag(EndFolk.WORKING)) tags.add("working");
     }
 
     private static <T extends EndFolk> void folk(EntityType<T> type, String id, float shadow) {
