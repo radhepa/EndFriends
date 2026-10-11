@@ -59,9 +59,9 @@ def loot(drops):
             "rolls": 1,
             "entries": [{
                 "type": "minecraft:item", "name": item,
-                "functions": [
-                    {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": lo, "max": hi}},
-                    {"function": "minecraft:enchanted_count_increase", "enchantment": "minecraft:looting",
+                "modifier": [
+                    {"type": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": lo, "max": hi}},
+                    {"type": "minecraft:enchanted_count_increase", "enchantment": "minecraft:looting",
                      "count": {"type": "minecraft:uniform", "min": 0, "max": 1}},
                 ],
             }],
